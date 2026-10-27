@@ -23,6 +23,12 @@
         white-space: nowrap;
     }
 
+    &__field {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
     &__collapsed {
         display: flex;
         flex-direction: column;

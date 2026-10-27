@@ -1,6 +1,9 @@
 {
     "id": "2be8c41a-80e8-4d20-808c-c49797bb6b3f",
-    "author": "",
+    "author": "eutech",
+	"widgets":[],
+"uis":[],
+    "sidebarLinks": [],
     "components": [
         {
             "id": "ebr",

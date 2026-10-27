@@ -10,6 +10,7 @@ import {
     ToolbarItem,
     useAlert,
     useCounter,
+    useExecuteRequest,
     useMultiEventSubscriber,
     useRouterContext,
     useSearchParams,
@@ -65,6 +66,9 @@ const BillDetailsBase: FunctionComponent<BillDetailsProps> = ({ billId, onClose 
     const { counter, updateCounter } = useCounter();
 
     const [bill, setBill] = useState<Bill | null>(null);
+
+    // master list of extracted fields — drives both the details view and the edit form
+    const { data: fieldNames = [] } = useExecuteRequest<string[]>(BillServices.fieldNames());
     const lastStatusRef = useRef<string>(null);
 
     useMultiEventSubscriber(instanceId, {
@@ -148,7 +152,7 @@ const BillDetailsBase: FunctionComponent<BillDetailsProps> = ({ billId, onClose 
             );
         }
 
-        const fields = Object.entries(getExtractedFields(item)).map(([key, value]) => ({
+        const fields = Object.entries(getExtractedFields(item, fieldNames)).map(([key, value]) => ({
             label: toFieldLabel(key),
             value: formatFieldValue(value),
         }));
@@ -163,7 +167,7 @@ const BillDetailsBase: FunctionComponent<BillDetailsProps> = ({ billId, onClose 
         }
 
         return <ObjectInfoCard fields={fields} columns={2} loading={loading} />;
-    }, []);
+    }, [fieldNames]);
 
     const renderUploadInfo = useCallback(
         (item: Bill, loading?: boolean) => (
@@ -228,6 +232,7 @@ const BillDetailsBase: FunctionComponent<BillDetailsProps> = ({ billId, onClose 
             <BillFieldsForm
                 isOpen={edit === '1'}
                 bill={bill}
+                fieldNames={fieldNames}
                 onClose={closeForm}
                 afterSave={(id) => {
                     closeForm();

@@ -15,6 +15,7 @@ import {
     OSCColumn,
     RowData,
     Sort,
+    useExecuteRequest,
     useMultiEventSubscriber,
     useRouterContext,
     useSearchParams,
@@ -31,15 +32,24 @@ import {
     BillUpdatedEvent,
     buildListFilter,
     formatDateTime,
+    formatFieldValue,
     getBillName,
+    getFieldValue,
     getFileIcon,
     isInFlight,
+    toFieldLabel,
     triggerBillCreatedEvent,
 } from '../../utils';
 import './BillsView.scss';
 
 // How often to refresh the list while any visible bill is still being extracted
 const RefreshInterval = 15000;
+
+// Columns shown by default; extracted-field columns are opt-in through the column picker
+const DefaultColumns = ['fileName', 'status', 'uploadedAt', 'uploadedBy'];
+
+// Column ids for extracted fields are prefixed so they can't clash with the bill's own properties
+const FieldColumnPrefix = 'field:';
 
 interface SearchParams {
     upload?: string;
@@ -59,6 +69,9 @@ const BillsViewBase: FunctionComponent = () => {
     const { navigate, generateURL } = useRouterContext();
 
     const objectSearchRef = useRef<ObjectSearchComponentHandlers>(null);
+
+    // master list of extracted fields — each one is offered as an optional column
+    const { data: fieldNames = [] } = useExecuteRequest<string[]>(BillServices.fieldNames());
     const hasInFlightRef = useRef(false);
     const filterPanelOpenRef = useRef(false);
 
@@ -163,8 +176,21 @@ const BillsViewBase: FunctionComponent = () => {
                 label: uxpContext.$L('ebr.field.uploaded-by'),
                 isResizable: true,
             },
+            ...(fieldNames || []).map(
+                (name): OSCColumn => ({
+                    id: `${FieldColumnPrefix}${name}`,
+                    label: toFieldLabel(name),
+                    isResizable: true,
+                    renderColumn: (item: Bill) => (
+                        <div className="ebr_billsview__field" title={formatFieldValue(getFieldValue(item, name))}>
+                            {formatFieldValue(getFieldValue(item, name))}
+                        </div>
+                    ),
+                    formatter: (_value, row) => formatFieldValue(getFieldValue(row as Bill, name)),
+                })
+            ),
         ],
-        [renderName]
+        [renderName, fieldNames]
     );
 
     const actionButtons = useMemo(
@@ -210,13 +236,13 @@ const BillsViewBase: FunctionComponent = () => {
             id: 'all-bills',
             name: uxpContext.$L('ebr.view.all'),
             group: uxpContext.$L('ebr.view.group'),
-            configurations: { filters: { filters: {} }, sort: { uploadedAt: -1 } },
+            configurations: { filters: { filters: {} }, sort: { uploadedAt: -1 }, columns: DefaultColumns },
         };
         const statusViews: View[] = BillStatuses.map((s) => ({
             id: `${s.toLowerCase()}-bills`,
             name: uxpContext.$L(`ebr.view.${s.toLowerCase()}`),
             group: uxpContext.$L('ebr.view.group'),
-            configurations: { filters: { filters: { status: s } }, sort: { uploadedAt: -1 } },
+            configurations: { filters: { filters: { status: s } }, sort: { uploadedAt: -1 }, columns: DefaultColumns },
         }));
 
         return {

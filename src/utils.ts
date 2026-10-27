@@ -71,8 +71,8 @@ export const getFileIcon = (bill: Bill): string => {
     return 'fal file-invoice';
 };
 
-/** Extracted fields of a bill — nested `fields` wins, otherwise every non-system property */
-export const getExtractedFields = (bill: Bill): Record<string, any> => {
+/** Raw extracted values of a bill — nested `fields` wins, otherwise every non-system property */
+const getRawFields = (bill: Bill): Record<string, any> => {
     if (!bill) return {};
     if (bill.fields && typeof bill.fields === 'object') return bill.fields;
 
@@ -80,6 +80,25 @@ export const getExtractedFields = (bill: Bill): Record<string, any> => {
     Object.entries(bill).forEach(([key, value]) => {
         if (BillSystemFields.includes(key)) return;
         fields[key] = value;
+    });
+    return fields;
+};
+
+/** Value of a single extracted field (null when the bill has none) */
+export const getFieldValue = (bill: Bill, name: string): any => getRawFields(bill)[name] ?? null;
+
+/**
+ * Extracted fields of a bill, in display order.
+ * With a master field list, exactly those fields are returned (null when the bill has no value);
+ * without one (not loaded / empty), whatever the bill carries is returned.
+ */
+export const getExtractedFields = (bill: Bill, fieldNames: string[] = []): Record<string, any> => {
+    const raw = getRawFields(bill);
+    if (fieldNames.length === 0) return raw;
+
+    const fields: Record<string, any> = {};
+    fieldNames.forEach((name) => {
+        fields[name] = raw[name] ?? null;
     });
     return fields;
 };

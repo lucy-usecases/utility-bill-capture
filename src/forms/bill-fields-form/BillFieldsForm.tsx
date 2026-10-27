@@ -13,15 +13,17 @@ import { getExtractedFields, toFieldLabel } from '../../utils';
 interface BillFieldsFormProps {
     isOpen: boolean;
     bill: Bill | null;
+    /** Master list of field names; the form falls back to the bill's own fields when empty */
+    fieldNames: string[];
     onClose: () => void;
     afterSave: (id: string) => void;
 }
 
-const BillFieldsFormBase: FunctionComponent<BillFieldsFormProps> = ({ isOpen, bill, onClose, afterSave }) => {
+const BillFieldsFormBase: FunctionComponent<BillFieldsFormProps> = ({ isOpen, bill, fieldNames, onClose, afterSave }) => {
     const uxpContext = useUXPContext();
     const alerts = useAlert();
 
-    const extractedFields = useMemo(() => getExtractedFields(bill), [bill]);
+    const extractedFields = useMemo(() => getExtractedFields(bill, fieldNames), [bill, fieldNames]);
 
     const formStructure = useMemo((): FormSectionProps[] => {
         const fields: DynamicFormFieldProps[] = Object.entries(extractedFields).map(([key, value]) => {

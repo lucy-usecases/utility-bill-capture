@@ -7,6 +7,10 @@ export const BillModel = 'EBR.Bill';
 // Data collection on the model that holds the bill records
 export const BillCollection = 'bills';
 
+// Data collection holding the master list of extracted fields — one `name` column per field
+export const FieldsCollection = 'fields';
+const MaxFields = 1000;
+
 export type BillStatus = 'Pending' | 'Processing' | 'Done' | 'Error';
 export const BillStatuses: BillStatus[] = ['Pending', 'Processing', 'Done', 'Error'];
 
@@ -40,14 +44,24 @@ const withId = (bill: any): Bill => {
 };
 
 // Collection queries return [{ data: '<json array of documents>' }] (possibly as a JSON string)
-const normalizeList = (data: any): Bill[] => {
+const parseCollectionDocs = (data: any): any[] => {
     try {
         const rows = parseJSON(data);
         const docs = parseJSON(Array.isArray(rows) ? rows[0]?.data : rows?.data);
-        return Array.isArray(docs) ? docs.map(withId) : [];
+        return Array.isArray(docs) ? docs : [];
     } catch {
         return [];
     }
+};
+
+const normalizeList = (data: any): Bill[] => parseCollectionDocs(data).map(withId);
+
+// Unique, non-empty field names in collection order
+const normalizeFieldNames = (data: any): string[] => {
+    const names = parseCollectionDocs(data)
+        .map((doc) => (typeof doc?.name === 'string' ? doc.name.trim() : ''))
+        .filter(Boolean);
+    return Array.from(new Set(names));
 };
 
 // Details may return a single object or a one-item array
@@ -80,6 +94,23 @@ export const BillServices = {
         },
         options: {},
         transformData: normalizeList,
+        defaultValue: [],
+    }),
+
+    /** Master list of extracted field names from the `fields` data collection */
+    fieldNames: (): ExecuteCollectionConfig => ({
+        type: 'collection',
+        model: BillModel,
+        collection: FieldsCollection,
+        parameters: {
+            modelName: BillModel,
+            collectionName: FieldsCollection,
+            max: MaxFields,
+            last: 0,
+            filter: JSON.stringify({}),
+        },
+        options: { enableCache: true },
+        transformData: normalizeFieldNames,
         defaultValue: [],
     }),
 
