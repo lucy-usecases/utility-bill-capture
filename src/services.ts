@@ -1,8 +1,11 @@
 import axios from 'axios';
-import { ExecuteActionConfig, ExecutionResult, IContextProvider, generateUUID, hasValue, trimSlash } from 'uxp/components';
+import { ExecuteActionConfig, ExecuteCollectionConfig, ExecutionResult, IContextProvider, generateUUID, hasValue, trimSlash } from 'uxp/components';
 
 // Lucy model that stores uploaded bills and runs the extraction
 export const BillModel = 'EBR.Bill';
+
+// Data collection on the model that holds the bill records
+export const BillCollection = 'bills';
 
 export type BillStatus = 'Pending' | 'Processing' | 'Done' | 'Error';
 export const BillStatuses: BillStatus[] = ['Pending', 'Processing', 'Done', 'Error'];
@@ -24,37 +27,58 @@ export interface Bill {
 }
 
 // Properties that describe the upload itself — everything else is treated as an extracted field
-export const BillSystemFields = ['id', 'status', 'fileName', 'filePath', 'uploadedAt', 'uploadedBy', 'error', 'fields', '__totalcount__'];
+export const BillSystemFields = ['id', '_id', 'status', 'fileName', 'filePath', 'uploadedAt', 'uploadedBy', 'error', 'fields', '__totalcount__'];
 
-// List may return a plain array or a { items: [] } envelope
+const parseJSON = (value: any) => (typeof value === 'string' ? JSON.parse(value) : value);
+
+// Records may be keyed by `id` or `_id` (a plain value or a Mongo-style { $oid } object) — expose it as `id`
+const withId = (bill: any): Bill => {
+    if (!bill || typeof bill !== 'object') return bill;
+    const rawId = hasValue(bill.id) ? bill.id : bill._id;
+    const id = rawId && typeof rawId === 'object' ? rawId.$oid ?? String(rawId) : rawId;
+    return { ...bill, id: hasValue(id) ? String(id) : id };
+};
+
+// Collection queries return [{ data: '<json array of documents>' }] (possibly as a JSON string)
 const normalizeList = (data: any): Bill[] => {
-    if (Array.isArray(data)) return data;
-    if (Array.isArray(data?.items)) return data.items;
-    return [];
+    try {
+        const rows = parseJSON(data);
+        const docs = parseJSON(Array.isArray(rows) ? rows[0]?.data : rows?.data);
+        return Array.isArray(docs) ? docs.map(withId) : [];
+    } catch {
+        return [];
+    }
 };
 
 // Details may return a single object or a one-item array
 const normalizeDetails = (data: any): Bill | null => {
-    if (Array.isArray(data)) return data[0] ?? null;
-    return data ?? null;
+    const bill = Array.isArray(data) ? data[0] : data;
+    return bill ? withId(bill) : null;
 };
 
 export const BillServices = {
-    upload: (path: string): ExecuteActionConfig => ({
+    upload: (filePath: string, fileName: string): ExecuteActionConfig => ({
         type: 'action',
         model: BillModel,
         action: 'Upload',
-        parameters: { filePath:path,fileName:path },
+        parameters: { filePath, fileName },
         options: { json: true },
         defaultValue: null,
     }),
 
-    list: (params = {}): ExecuteActionConfig => ({
-        type: 'action',
+    /** Query the `bills` data collection. `filter` is the collection query object. */
+    list: (max: number, last: number, filter: Record<string, any> = {}): ExecuteCollectionConfig => ({
+        type: 'collection',
         model: BillModel,
-        action: 'List',
-        parameters: params,
-        options: { json: true },
+        collection: BillCollection,
+        parameters: {
+            modelName: BillModel,
+            collectionName: BillCollection,
+            max,
+            last,
+            filter: JSON.stringify(filter),
+        },
+        options: {},
         transformData: normalizeList,
         defaultValue: [],
     }),

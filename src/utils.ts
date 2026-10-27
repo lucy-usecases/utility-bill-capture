@@ -1,4 +1,4 @@
-import { ChipVariant, eventDispatcher, Filters, generateUUID, hasValue, Sort } from 'uxp/components';
+import { ChipVariant, eventDispatcher, Filters, generateUUID, hasValue } from 'uxp/components';
 import { Bill, BillStatus, BillSystemFields } from './services';
 
 // ── Events ──
@@ -8,38 +8,23 @@ export const BillUpdatedEvent = 'EBR:BillUpdated';
 export const triggerBillCreatedEvent = (id: string) => eventDispatcher(generateUUID(), BillCreatedEvent, { id });
 export const triggerBillUpdatedEvent = (id: string) => eventDispatcher(generateUUID(), BillUpdatedEvent, { id });
 
-// ── List params ──
-type ServiceParams = Record<string, any>;
+// ── List query ──
+const escapeRegExp = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-export const buildListParams = (
-    page: number,
-    pageSize: number,
-    query?: string,
-    filters?: Filters,
-    sort?: Sort
-): ServiceParams => {
-    const params: ServiceParams = {
-        max: pageSize,
-        last: (page - 1) * pageSize,
-    };
-
-    if (hasValue(query)) params.q = query;
+/** Collection query for the `bills` collection from the search box + filter panel values */
+export const buildListFilter = (query?: string, filters?: Filters): Record<string, any> => {
+    const filter: Record<string, any> = {};
 
     if (filters?.filters) {
         Object.entries(filters.filters).forEach(([key, value]) => {
             if (!hasValue(value)) return;
-            params[key] = value;
+            filter[key] = value;
         });
     }
 
-    const sortEntry = Object.entries(sort || {}).find(([_, v]) => v !== 0);
-    if (sortEntry) {
-        const [field, order] = sortEntry;
-        params.__sort__ = field;
-        params.__sortorder__ = order === 1 ? 'asc' : 'desc';
-    }
+    if (hasValue(query)) filter.fileName = { $regex: escapeRegExp(query), $options: 'i' };
 
-    return params;
+    return filter;
 };
 
 // ── Status ──

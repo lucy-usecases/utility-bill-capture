@@ -29,7 +29,7 @@ import { UploadBillDialog } from '../../forms/upload-bill/UploadBillDialog';
 import {
     BillCreatedEvent,
     BillUpdatedEvent,
-    buildListParams,
+    buildListFilter,
     formatDateTime,
     getBillName,
     getFileIcon,
@@ -80,9 +80,12 @@ const BillsViewBase: FunctionComponent = () => {
     }, []);
 
     const getAll = useCallback(
-        async (page: number, pageSize: number, query?: string, filters?: Filters, sort?: Sort): Promise<{ items: RowData[] }> => {
-            const params = buildListParams(page, pageSize, query, filters, sort);
-            const { data, error } = await executeConfig<Bill[]>(uxpContext, BillServices.list(params));
+        async (page: number, pageSize: number, query?: string, filters?: Filters, _sort?: Sort): Promise<{ items: RowData[] }> => {
+            const filter = buildListFilter(query, filters);
+            const { data, error } = await executeConfig<Bill[]>(
+                uxpContext,
+                BillServices.list(pageSize, (page - 1) * pageSize, filter)
+            );
             if (error) {
                 toast.error(uxpContext.$L('ebr.message.load-failed'));
                 return { items: [] };
@@ -104,7 +107,7 @@ const BillsViewBase: FunctionComponent = () => {
             return;
         }
 
-        const { data, error } = await executeConfig(uxpContext, BillServices.upload(url));
+        const { data, error } = await executeConfig(uxpContext, BillServices.upload(url, file.name));
         if (error) {
             toast.error(uxpContext.$L('ebr.message.upload-failed', { name: file.name }));
             return;
@@ -145,14 +148,12 @@ const BillsViewBase: FunctionComponent = () => {
             {
                 id: 'status',
                 label: uxpContext.$L('ebr.field.status'),
-                isSortable: true,
                 isResizable: true,
                 renderColumn: (item) => <BillStatusChip bill={item as Bill} />,
             },
             {
                 id: 'uploadedAt',
                 label: uxpContext.$L('ebr.field.uploaded-at'),
-                isSortable: true,
                 isResizable: true,
                 renderColumn: (item: Bill) => formatDateTime(item.uploadedAt),
                 formatter: (value) => formatDateTime(value),
@@ -231,7 +232,7 @@ const BillsViewBase: FunctionComponent = () => {
             actionsColumn: {
                 enable: true,
                 headerActions: {
-                    sort: true,
+                    sort: false,
                     multiColumnSort: false,
                     customiseColumns: true,
                 },
