@@ -1,0 +1,120 @@
+{
+    "items": [
+        {
+            "Key": "1",
+            "ID": "ITEM-001",
+            "Name": "Sample Item 1",
+            "Description": "This is a sample item for preview and testing",
+            "Type": "Type A",
+            "Status": "active",
+            "Priority": "high",
+            "CreatedDate": "2024-01-15T10:30:00Z",
+            "ModifiedDate": "2024-02-01T14:20:00Z",
+            "CreatedBy": "John Doe",
+            "Tags": ["sample", "preview", "test"]
+        },
+        {
+            "Key": "2",
+            "ID": "ITEM-002",
+            "Name": "Sample Item 2",
+            "Description": "Another sample item with different properties",
+            "Type": "Type B",
+            "Status": "pending",
+            "Priority": "medium",
+            "CreatedDate": "2024-01-20T09:15:00Z",
+            "ModifiedDate": "2024-02-05T16:45:00Z",
+            "CreatedBy": "Jane Smith",
+            "Tags": ["sample", "test"]
+        },
+        {
+            "Key": "3",
+            "ID": "ITEM-003",
+            "Name": "Sample Item 3",
+            "Description": "Third sample item for grid/list display testing",
+            "Type": "Type A",
+            "Status": "active",
+            "Priority": "low",
+            "CreatedDate": "2024-02-01T11:00:00Z",
+            "ModifiedDate": "2024-02-06T10:30:00Z",
+            "CreatedBy": "Bob Johnson",
+            "Tags": ["preview"]
+        }
+    ],
+    "users": [
+        {
+            "UserKey": "1",
+            "LoginID": "john.doe",
+            "FirstName": "John",
+            "LastName": "Doe",
+            "FullName": "John Doe",
+            "Email": "john.doe@example.com",
+            "Phone": "+1-555-0100",
+            "UserType": "Admin",
+            "IsActive": "1"
+        },
+        {
+            "UserKey": "2",
+            "LoginID": "jane.smith",
+            "FirstName": "Jane",
+            "LastName": "Smith",
+            "FullName": "Jane Smith",
+            "Email": "jane.smith@example.com",
+            "Phone": "+1-555-0101",
+            "UserType": "User",
+            "IsActive": "1"
+        }
+    ],
+    "locations": [
+        {
+            "Key": "1",
+            "ID": "LOC-001",
+            "Name": "Building A",
+            "Type": "Building",
+            "Address": "123 Main Street",
+            "City": "New York",
+            "Country": "USA",
+            "Latitude": 40.7128,
+            "Longitude": -74.0060,
+            "TimeZone": "America/New_York",
+            "IsActive": "1"
+        },
+        {
+            "Key": "2",
+            "ID": "LOC-002",
+            "Name": "Floor 1",
+            "Type": "Floor",
+            "ParentKey": "1",
+            "Address": "123 Main Street",
+            "City": "New York",
+            "Country": "USA",
+            "TimeZone": "America/New_York",
+            "IsActive": "1"
+        }
+    ],
+    "chartData": {
+        "pieChart": [
+            { "name": "Category A", "value": 400, "color": "#8884d8" },
+            { "name": "Category B", "value": 300, "color": "#82ca9d" },
+            { "name": "Category C", "value": 200, "color": "#ffc658" },
+            { "name": "Category D", "value": 100, "color": "#ff8042" }
+        ],
+        "trendData": [
+            { "date": "2024-01", "value": 400, "target": 380 },
+            { "date": "2024-02", "value": 450, "target": 420 },
+            { "date": "2024-03", "value": 380, "target": 400 },
+            { "date": "2024-04", "value": 520, "target": 450 },
+            { "date": "2024-05", "value": 490, "target": 480 }
+        ]
+    },
+    "statusOptions": [
+        { "label": "Active", "value": "active", "color": "success" },
+        { "label": "Pending", "value": "pending", "color": "warning" },
+        { "label": "Inactive", "value": "inactive", "color": "default" },
+        { "label": "Completed", "value": "completed", "color": "info" }
+    ],
+    "typeOptions": [
+        { "label": "Type A", "value": "type-a" },
+        { "label": "Type B", "value": "type-b" },
+        { "label": "Type C", "value": "type-c" }
+    ]
+}

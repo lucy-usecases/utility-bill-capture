@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="https://static.iviva.com/lucy/logos/lucy-canvas-square.svg" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="https://uxp.iviva.com/dist/v5.0.0-alpha-1/uxp_dashboard.css">
+
+    <title>UXP Development Environment - UI</title>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <!-- Dependencies -->
+    <!-- React | Development | For debugging -->
+    <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
+
+    <script src="https://uxp.iviva.com/packages/prop-types/prop-types.min.js"></script>
+    <script src="https://uxp.iviva.com/packages/recharts/2.15.1/recharts.min.js"></script>
+
+    <script src="https://uxp.iviva.com/font-awesome/dist/main.js"></script>
+    <script src="https://uxp.iviva.com/icons/phosphor/2.1.5/main.js"></script>
+
+    <!-- UXP Framework -->
+    <script src="https://uxp.iviva.com/dist/v5.0.0-alpha-1/main.js"></script>
+    <!-- Your widget bundle - registers the UI component -->
+    <script src="./dist/main.js"></script>
+
+    <script>
+        /**
+         * UXP V5 UI Development Page
+         *
+         * This page renders a single UI component identified by URL parameters:
+         *   ?moduleId=<bundleId>&componentId=<uiId>
+         *
+         * It is opened automatically by the developer dashboard when you click
+         * "Open UI" in the widget drawer (UIs tab).
+         *
+         * You can also open it manually:
+         *   ui.html?moduleId=<your-bundle-id>&componentId=<your-ui-id>
+         *
+         * Setup:
+         * 1. Keep Lucy connection details (lucyUrl, apiKey) in sync with index.html
+         * 2. Run: npm run build
+         * 3. Open index.html first (dev dashboard) and use the widget drawer to open UIs,
+         *    or open this page directly with the correct URL parameters.
+         */
+
+        const userDetails = {
+            LoginID: 'admin',
+            FirstName: 'John',
+            LastName: 'Doe',
+            FullName: 'John Doe',
+            ProfileImageName: '',
+            UserType: 'Administator',
+            Phone: '',
+            Email: 'john@iviva.com',
+            OfficePhone: '',
+            SiteKey: '1',
+            TimeFormat: '',
+            DateFormat: '',
+            CurrencyFormat: '',
+            Language: 'en',
+            UserGroupKey: '1',
+            IsLoginDisabled: '0',
+            IdentificationNumber: '',
+            InheritanceUserKey: '',
+            LegalName: '',
+            LastLoginDate: '',
+            IsHiddenByConversion: '',
+            Hidden: '0',
+            IsBlacklist: '0',
+            IsAnonymous: '0',
+            UserKey: '1',
+            ObjectID: '1',
+            ObjectKey: '',
+            __key__: '',
+            DisplayName: 'John Doe',
+            ObjectID1: '',
+            UserGroupID: '',
+            InheritUserName: '',
+            InheritanceUserDisplayName: '',
+        };
+
+        let contextProviderValue = {
+            // Environment & basics
+            environment: "dev",
+            root: "root",
+
+            // Lucy connection - keep in sync with index.html
+            fullAccountUrl: 'YOUR_LUCY_URL',
+            lucyUrl: localStorage.getItem('lucyUrl'),
+            apiKey: localStorage.getItem('lucyApiKey'),
+            onLogout: () => {
+                console.log('User logged out');
+            },
+
+            // User details
+            userKey: "user_001",
+            loginType: "local",
+            appRoles: {},
+            userDetails: userDetails,
+
+            // User preferences
+            userDataFormat: null,
+            userTimeFormat: null,
+            userCurrencyFormat: null,
+            userSiteTimeZoneName: null,
+            userTimezoneCode: null,
+            userSiteTimeZoneOffsetInSeconds: 0,
+            userSiteKey: '',
+            userSiteName: '',
+            userSiteImageKey: '',
+
+            // Localization
+            language: 'en',
+            enabledLanguages: [
+                { "Name": "English", "Code": "en", "Direction": "ltr" },
+                { "Name": "Hungarian", "Code": "hu", "Direction": "ltr" },
+                { "Name": "Arabic - Saudi Arabia", "Code": "ar-sa", "Direction": "rtl" },
+                { "Name": "French", "Code": "fr", "Direction": "ltr" }
+            ],
+
+            // Theme
+            themeName: localStorage.getItem('uxp-theme') || 'Light',
+            customThemes: {},
+            setTheme: (name, config, type) => {
+                localStorage.setItem('uxp-theme', name);
+                console.log('Theme changed to:', name, type);
+            },
+
+            // Widget scripts
+            scriptFiles: {},
+
+            // Navigation & routing
+            navigationLinks: [],
+            routes: {},
+            configuredPages: [],
+
+            // Loading state
+            isLoading: false,
+            loadingMessage: 'Loading',
+            setLoading: (isLoading, message) => {
+                console.log('Loading:', isLoading, message);
+            },
+
+            // Marketplace
+            marketplaceUrl: "https://marketplace.spaceworx.io",
+            widgetSearchAPI: 'YOUR_LUCY_URL/api/uxp/search2',
+
+            // Analytics
+            trackAnalytics: (event, data) => {
+                console.log('Analytics:', event, data);
+            },
+
+            // Widget lifecycle
+            loaded: (instanceId, uxpFunctions) => {
+                console.log('Widget loaded:', instanceId);
+            },
+        };
+
+        // Renders the UI component identified by ?id=<bundleId>/ui/<componentId> in the URL.
+        // In production, use: renderUI(context, '<bundleId>/ui/<componentId>', additionalProps)
+        renderDevUI(contextProviderValue);
+    </script>
+
+</body>
+
+</html>

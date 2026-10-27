@@ -1,0 +1,20 @@
+.ebr_uploadbill {
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 28rem;
+        max-width: 100%;
+    }
+
+    &__hint {
+        color: var(--secondaryTextColor);
+        font-size: 0.875rem;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5rem;
+    }
+}

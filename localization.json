@@ -1,0 +1,131 @@
+{
+    "ebr.text.title": {
+        "en": "Utility Bills"
+    },
+    "ebr.text.no-bills": {
+        "en": "No bills uploaded yet. Use Upload Bill to add one."
+    },
+    "ebr.field.bill": {
+        "en": "Bill"
+    },
+    "ebr.field.file-name": {
+        "en": "File"
+    },
+    "ebr.field.status": {
+        "en": "Status"
+    },
+    "ebr.field.uploaded-at": {
+        "en": "Uploaded At"
+    },
+    "ebr.field.uploaded-by": {
+        "en": "Uploaded By"
+    },
+    "ebr.field.id": {
+        "en": "Upload ID"
+    },
+    "ebr.field.error": {
+        "en": "Error"
+    },
+    "ebr.status.pending": {
+        "en": "Pending"
+    },
+    "ebr.status.processing": {
+        "en": "Processing"
+    },
+    "ebr.status.done": {
+        "en": "Done"
+    },
+    "ebr.status.error": {
+        "en": "Error"
+    },
+    "ebr.filter.all": {
+        "en": "All"
+    },
+    "ebr.view.group": {
+        "en": "Bills"
+    },
+    "ebr.view.all": {
+        "en": "All Bills"
+    },
+    "ebr.view.pending": {
+        "en": "Pending Bills"
+    },
+    "ebr.view.processing": {
+        "en": "Processing Bills"
+    },
+    "ebr.view.done": {
+        "en": "Completed Bills"
+    },
+    "ebr.view.error": {
+        "en": "Failed Bills"
+    },
+    "ebr.action.upload-bill": {
+        "en": "Upload Bill"
+    },
+    "ebr.action.upload": {
+        "en": "Upload"
+    },
+    "ebr.action.cancel": {
+        "en": "Cancel"
+    },
+    "ebr.action.download": {
+        "en": "Download"
+    },
+    "ebr.action.edit": {
+        "en": "Edit Fields"
+    },
+    "ebr.upload.title": {
+        "en": "Upload Bill"
+    },
+    "ebr.upload.hint": {
+        "en": "Upload a water or energy bill (PDF or image). Fields will be extracted automatically once the upload completes."
+    },
+    "ebr.upload.drop-label": {
+        "en": "Drop a bill here or click to browse"
+    },
+    "ebr.details.tab-fields": {
+        "en": "Extracted Fields"
+    },
+    "ebr.details.tab-upload": {
+        "en": "Upload Info"
+    },
+    "ebr.details.extracted-fields": {
+        "en": "Extracted Fields"
+    },
+    "ebr.details.uploaded-on": {
+        "en": "Uploaded $date"
+    },
+    "ebr.details.extraction-pending": {
+        "en": "Fields are still being extracted from this bill."
+    },
+    "ebr.details.extraction-failed": {
+        "en": "Field extraction failed for this bill."
+    },
+    "ebr.details.no-fields": {
+        "en": "No fields were extracted from this bill."
+    },
+    "ebr.form.edit-title": {
+        "en": "Edit Extracted Fields"
+    },
+    "ebr.message.uploading": {
+        "en": "Uploading $name…"
+    },
+    "ebr.message.uploaded": {
+        "en": "$name uploaded. Extraction has started."
+    },
+    "ebr.message.upload-failed": {
+        "en": "Failed to upload $name"
+    },
+    "ebr.message.load-failed": {
+        "en": "Failed to load bills"
+    },
+    "ebr.message.load-details-failed": {
+        "en": "Failed to load bill details"
+    },
+    "ebr.message.update-failed": {
+        "en": "Failed to save the extracted fields"
+    },
+    "ebr.message.no-file": {
+        "en": "The original file is not available for this bill"
+    }
+}

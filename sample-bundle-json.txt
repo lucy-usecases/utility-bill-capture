@@ -1,0 +1,181 @@
+// bundle.json — V5 reference
+//
+// This file is the metadata source of truth for your UXP module.
+// iviva reads bundle.json at upload time — not the compiled JS — so every field
+// listed here is indexed and available to the platform without executing your code.
+//
+// Field ownership:
+//   bundle.json owns : id, name, description, modes, isTemplate, tags, vendor, icon
+//   Code owns        : component, configs.layout, configs.props, configs.configPanel, defaultProps
+//
+// "id"     — your bundle identifier, must be globally unique (use reverse-domain style)
+// "author" — your name or organisation
+
+{
+    "id": "iviva-my-app",
+    "author": "My Company",
+    "components": [
+
+        // --- Widget (dashboard grid component) ---
+        {
+            "id": "my-widget",
+            "name": "My Widget",
+            "description": "Short description shown in the widget drawer",
+            "modes": ["widget"],        // appears in the widget drawer → Widgets tab
+            "isTemplate": false,
+            "tags": ["my-app"],         // used for filtering in the drawer
+            "vendor": "My Company",     // publisher name shown in the drawer
+            "icon": "fas fa-chart-bar"  // icon shown in the drawer (FontAwesome class)
+        },
+
+        // --- UI view (full-page navigation view) ---
+        {
+            "id": "my-view",
+            "name": "My View",
+            "description": "Full-page view linked from Configuration.yml navigationLinks",
+            "modes": ["ui"],            // appears in the widget drawer → UIs tab
+            "isTemplate": false,
+            "tags": [],
+            "vendor": "",
+            "icon": ""
+        },
+
+        // --- Component registered for both modes ---
+        // The same component can work as a dashboard widget AND a full-page view.
+        // Declare configs.props in registerComponent() to make it configurable per instance.
+        {
+            "id": "my-floor-plan",
+            "name": "Floor Plan",
+            "description": "Interactive floor plan — configurable per dashboard instance",
+            "modes": ["widget", "ui"],
+            "isTemplate": false,
+            "tags": ["floor-plan", "maps"],
+            "vendor": "",
+            "icon": ""
+        },
+
+        // --- Background surface (renders behind the dashboard canvas) ---
+        // New in V5. Users select it in the dashboard settings panel.
+        {
+            "id": "my-background",
+            "name": "My Background",
+            "description": "Custom animated background for dashboards",
+            "modes": ["background-surface"],
+            "isTemplate": false,
+            "tags": [],
+            "vendor": "",
+            "icon": ""
+        }
+
+    ],
+
+    // --- Injected object-detail tabs (top-level array, sibling of components) ---
+    // Tabs your app contributes to ANOTHER object type's details page (e.g. add an
+    // "Assets" tab to the Location details page). All metadata lives here; in code you
+    // call registerTabInjection({ id }) — only the id is repeated (see notes below).
+    "objectTabs": [
+        {
+            "id": "my-asset-tab",           // unique within this bundle — the tab's contribution id
+            "objectType": "location",       // the object-details page to inject into
+            "name": "Assets",
+            "icon": "fas fa-boxes",
+            "componentId": "my-view",       // a component from components[] above (joined by id)
+            "priority": 1,                   // order in the tab strip
+            "appRoles": ["MyApp:canview"],  // optional — empty/absent = everyone can see the tab
+            "userGroups": [],               // optional — user group keys
+            "showUnauthorizedError": false  // optional — false/absent: hide the tab when denied;
+                                             //            true: show the inline "not authorised" message
+        }
+    ]
+}
+
+
+// --- Available modes ---
+//
+//   "widget"             — placed on a dashboard grid; receives uxpContext and configured props
+//   "ui"                 — rendered as a full-page view via a navigation route
+//   "background-surface" — rendered behind the dashboard canvas (new in V5)
+//
+// A component can declare multiple modes. Each mode makes it available in a different context.
+
+
+// --- Matching code registration (index.tsx) ---
+//
+// Only code-only fields go in registerComponent().
+// Metadata (name, description, modes, tags, vendor, icon, isTemplate) comes from bundle.json.
+
+/*
+registerComponent({
+    id: 'my-widget',        // must match the id in bundle.json
+    component: MyWidget,
+    configs: {
+        layout: { w: 12, h: 8, minW: 6, minH: 4 },   // default grid size
+        props: [
+            { name: 'siteKey', label: 'Site',  type: 'select', getOptions: async () => [] },
+            { name: 'title',   label: 'Title', type: 'text',   value: 'My Widget'          }
+        ]
+    },
+    defaultProps: { title: 'My Widget' }
+});
+
+registerComponent({
+    id: 'my-view',          // must match the id in bundle.json
+    component: MyView,
+    configs: { props: [] }
+});
+
+registerComponent({
+    id: 'my-floor-plan',    // must match the id in bundle.json
+    component: FloorPlan,
+    configs: {
+        layout: { w: 20, h: 14, minW: 10, minH: 8 },
+        props: [
+            { name: 'siteKey', label: 'Site',  type: 'select', getOptions: async () => [] },
+            { name: 'floor',   label: 'Floor', type: 'number', value: 1,
+              validate: { required: true, minVal: 1 } }
+        ]
+    },
+    defaultProps: { floor: 1 }
+});
+
+registerComponent({
+    id: 'my-background',    // must match the id in bundle.json
+    component: MyBackground,
+    configs: {
+        props: [
+            { name: 'colorStart', label: 'Start Color', type: 'text', value: '#1a1a2e' },
+            { name: 'colorEnd',   label: 'End Color',   type: 'text', value: '#16213e' }
+        ]
+    }
+});
+*/
+
+
+// --- Notes ---
+//
+// layout, defaultProps, configs.props — these contain functions and React references
+//   and cannot be serialised to JSON. Keep them in code (registerComponent).
+//   bundle.json is read by the server and must be static JSON.
+//
+// sidebarLinks, menuItems — existed in older UXP versions but are no-ops in V5.
+//   Navigation is now defined in Configuration.yml → navigationLinks.
+//   Do not add these to your bundle.json for V5 projects.
+//
+// widgets / uis — legacy arrays from older scaffolds. Still supported via adapters but
+//   replaced by the unified "components" array above. Do not mix both in the same file.
+//
+// objectTabs — declares tabs your app injects into another object type's details page.
+//   The declaration owns all JSON-able metadata (objectType, name, icon, componentId, priority,
+//   roles, showUnauthorizedError); the tab's content is a normal component from components[].
+//   In code you register the tab at runtime with the PARTIAL id — the uxp.ts wrapper merges
+//   this declaration and generates the composite bundleId/tabId id, exactly like
+//   registerComponent:
+//
+//       import { registerTabInjection } from './uxp';
+//       registerTabInjection({ id: 'my-asset-tab' });
+//
+//   Because the server reads the declaration at upload, the details panel knows which tabs to
+//   expect: it shows a single loading spinner until every declared tab has registered, and it
+//   loads the needed module scripts as soon as the panel opens (no waiting for background
+//   bundle loading). Fields: id, objectType, name, icon, componentId, priority, appRoles?,
+//   userGroups?, showUnauthorizedError?.

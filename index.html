@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="https://static.iviva.com/lucy/logos/lucy-canvas-square.svg" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="https://uxp.iviva.com/dist/v5.0.0-alpha-1/uxp_dashboard.css">
+
+    <title>UXP Development Environment</title>
+</head>
+
+<body>
+    <div id="root"></div>
+
+
+    <!-- Dependencies -->
+    <!-- React | Production -->
+    <!-- <script src="https://uxp.iviva.com/packages/react/18.3.1/react.production.min.js"></script>
+    <script src="https://uxp.iviva.com/packages/react/18.3.1/react-dom.production.min.js"></script> -->
+
+    <!-- React | Development | For debuging  -->
+    <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
+
+    <script src="https://uxp.iviva.com/packages/prop-types/prop-types.min.js"></script>
+    <script src="https://uxp.iviva.com/packages/recharts/2.15.1/recharts.min.js"></script>
+
+    <script src="https://uxp.iviva.com/font-awesome/dist/main.js"></script>
+    <script src="https://uxp.iviva.com/icons/phosphor/2.1.5/main.js"></script>
+
+    <!-- Main -->
+    <script src="https://uxp.iviva.com/dist/v5.0.0-alpha-1/main.js"></script>
+    <script src="./dist/main.js"></script>
+
+    <script>
+        /**
+         * UXP V5 Development Environment Configuration
+         *
+         * Getting Started:
+         * 1. Update Lucy connection details (fullAccountUrl, lucyUrl, apiKey)
+         * 2. Build your widget: npm run build
+         * 3. Register your widgets using window.registerWidget()
+         * 4. Open index.html in browser with live server
+         *
+         * V5 Configuration Structure:
+         * - routes: Map URL patterns to page configurations (e.g., "/view/mypage/:id")
+         * - configuredPages: Define available page components with moduleId and componentId
+         * - navigationLinks: Hierarchical navigation structure with permissions
+         *
+         * For v5 App component with routing, use renderApp() instead of renderDevDashboard()
+         * See CLAUDE.md for detailed architecture documentation
+         */
+
+        // Widget script files - Add your widget script paths here
+        // Example: { "my-widgets": ["./dist/main.js"] }
+        let scripts = {}
+
+        const userDetails = {
+            LoginID: 'admin',
+            FirstName: 'John',
+            LastName: 'Doe',
+            FullName: 'John Doe',
+            ProfileImageName: '',
+            UserType: 'Administator',
+            Phone: '',
+            Email: 'john@iviva.com',
+            OfficePhone: '',
+            SiteKey: '1',
+            TimeFormat: '',
+            DateFormat: '',
+            CurrencyFormat: '',
+            Language: 'en',
+            UserGroupKey: '1',
+            IsLoginDisabled: '0',
+            IdentificationNumber: '',
+            InheritanceUserKey: '',
+            LegalName: '',
+            LastLoginDate: '',
+            IsHiddenByConversion: '',
+            Hidden: '0',
+            IsBlacklist: '0',
+            IsAnonymous: '0',
+            UserKey: '1',
+            ObjectID: '1',
+            ObjectKey: '',
+            __key__: '',
+            DisplayName: 'John Doe',
+            ObjectID1: '',
+            UserGroupID: '',
+            InheritUserName: '',
+            InheritanceUserDisplayName: '',
+        }
+
+        let contextProviderValue = {
+            // Environment & basics
+            environment: "dev",
+            root: "root",
+
+            // Lucy connection - TODO: Update these with your Lucy instance details
+            fullAccountUrl: 'YOUR_LUCY_URL',  // e.g., 'http://localhost:5000' or 'https://your-account.ivivacloud.com'
+            lucyUrl: localStorage.getItem('lucyUrl'),
+            apiKey: localStorage.getItem('lucyApiKey'),
+            onLogout: () => {
+                console.log('User logged out');
+                // Add logout logic here
+            },
+
+            // User details
+            userKey: "user_001",
+            loginType: "local",
+            appRoles: {},
+            userDetails: userDetails, // Will be fetched via getUserDetails()
+
+            // User preferences
+            userDataFormat: null,
+            userTimeFormat: null,
+            userCurrencyFormat: null,
+            userSiteTimeZoneName: null,
+            userTimezoneCode: null,
+            userSiteTimeZoneOffsetInSeconds: 0,
+            userSiteKey: '',
+            userSiteName: '',
+            userSiteImageKey: '',
+
+            // Localization
+            language: 'en',
+            enabledLanguages: [
+                { "Name": "English", "Code": "en", "Direction": "ltr" },
+                { "Name": "Hungarian", "Code": "hu", "Direction": "ltr" },
+                { "Name": "Arabic - Saudi Arabia", "Code": "ar-sa", "Direction": "rtl" },
+                { "Name": "French", "Code": "fr", "Direction": "ltr" }
+            ],
+
+            // Theme
+            themeName: localStorage.getItem('uxp-theme') || 'Light',
+            customThemes: {},
+            setTheme: (name, config, type) => {
+                localStorage.setItem('uxp-theme', name);
+                console.log('Theme changed to:', name, type);
+            },
+
+            // Widget scripts
+            scriptFiles: scripts,
+
+            // V5 Navigation & Routing Configuration
+            // These are required for renderApp() but not used by renderDevDashboard()
+            // Leave empty for dashboard development, populate for full app routing
+            navigationLinks: [],  // Hierarchical navigation links with permissions
+            routes: {},           // URL pattern to page configuration mapping
+            configuredPages: [],  // Available page components with module/component IDs
+
+            // Loading state
+            isLoading: false,
+            loadingMessage: 'Loading',
+            setLoading: (isLoading, message) => {
+                console.log('Loading:', isLoading, message);
+                // Update loading UI here
+            },
+
+            // Marketplace (optional)
+            marketplaceUrl: "https://marketplace.spaceworx.io",
+            widgetSearchAPI: 'YOUR_LUCY_URL/api/uxp/search2',  // Set to your Lucy instance URL
+
+            // Analytics
+            trackAnalytics: (event, data) => {
+                console.log('Analytics:', event, data);
+                // Add analytics tracking here
+            },
+
+            // Widget lifecycle
+            loaded: (instanceId, uxpFunctions) => {
+                console.log('Widget loaded:', instanceId);
+                // Handle widget loaded event
+            },
+        }
+
+        // Render the development dashboard
+        renderDevDashboard(contextProviderValue, []);
+
+
+    </script>
+
+</body>
+
+</html>

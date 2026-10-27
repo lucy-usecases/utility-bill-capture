@@ -1,0 +1,23 @@
+{
+    "id": "2be8c41a-80e8-4d20-808c-c49797bb6b3f",
+    "author": "",
+    "components": [
+        {
+            "id": "ebr",
+            "name": "Energy Bill Recording",
+            "description": "Upload water and energy bills and review the fields extracted from them",
+            "modes": [
+                "ui"
+            ],
+            "isTemplate": false,
+            "tags": [
+                "ebr",
+                "energy",
+                "water",
+                "bills"
+            ],
+            "vendor": "",
+            "icon": "fas fa-file-invoice"
+        }
+    ]
+}
