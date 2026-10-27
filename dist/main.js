@@ -1,3 +1,8687 @@
-/*! For license information please see main.js.LICENSE.txt */
-(()=>{var e={960(e,t,n){"use strict";n.r(t);var r=n(447),o=n.n(r),i=n(645),a=n.n(i)()(o());a.push([e.id,".ebr_billdetails__container-26ff1432{width:100%;height:100%}.ebr_billdetails__empty-26ff1432{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;padding:3rem 1rem;text-align:center;color:var(--secondaryTextColor)}.ebr_billdetails__empty-title-26ff1432{font-weight:600;color:var(--primaryTextColor)}.ebr_billdetails__empty-text-26ff1432{max-width:32rem;font-size:.875rem;word-break:break-word}","",{version:3,sources:["webpack://./src/components/bill-details/BillDetails.scss"],names:[],mappings:"AACI,qCACI,UAAA,CACA,WAAA,CAGJ,iCACI,YAAA,CACA,qBAAA,CACA,kBAAA,CACA,sBAAA,CACA,SAAA,CACA,iBAAA,CACA,iBAAA,CACA,+BAAA,CAGJ,uCACI,eAAA,CACA,6BAAA,CAGJ,sCACI,eAAA,CACA,iBAAA,CACA,qBAAA",sourcesContent:[".ebr_billdetails {\n    &__container {\n        width: 100%;\n        height: 100%;\n    }\n\n    &__empty {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-content: center;\n        gap: 0.5rem;\n        padding: 3rem 1rem;\n        text-align: center;\n        color: var(--secondaryTextColor);\n    }\n\n    &__empty-title {\n        font-weight: 600;\n        color: var(--primaryTextColor);\n    }\n\n    &__empty-text {\n        max-width: 32rem;\n        font-size: 0.875rem;\n        word-break: break-word;\n    }\n}\n"],sourceRoot:""}]);const s=a;n.d(t,["default",0,s])},461(e,t,n){"use strict";n.r(t);var r=n(447),o=n.n(r),i=n(645),a=n.n(i)()(o());a.push([e.id,".ebr_uploadbill__body-3bfe394b{display:flex;flex-direction:column;gap:1rem;width:28rem;max-width:100%}.ebr_uploadbill__hint-3bfe394b{color:var(--secondaryTextColor);font-size:.875rem}.ebr_uploadbill__actions-3bfe394b{display:flex;justify-content:flex-end;gap:.5rem}","",{version:3,sources:["webpack://./src/forms/upload-bill/UploadBillDialog.scss"],names:[],mappings:"AACI,+BACI,YAAA,CACA,qBAAA,CACA,QAAA,CACA,WAAA,CACA,cAAA,CAGJ,+BACI,+BAAA,CACA,iBAAA,CAGJ,kCACI,YAAA,CACA,wBAAA,CACA,SAAA",sourcesContent:[".ebr_uploadbill {\n    &__body {\n        display: flex;\n        flex-direction: column;\n        gap: 1rem;\n        width: 28rem;\n        max-width: 100%;\n    }\n\n    &__hint {\n        color: var(--secondaryTextColor);\n        font-size: 0.875rem;\n    }\n\n    &__actions {\n        display: flex;\n        justify-content: flex-end;\n        gap: 0.5rem;\n    }\n}\n"],sourceRoot:""}]);const s=a;n.d(t,["default",0,s])},775(e,t,n){"use strict";n.r(t);var r=n(447),o=n.n(r),i=n(645),a=n.n(i)()(o());a.push([e.id,"","",{version:3,sources:[],names:[],mappings:"",sourceRoot:""}]);const s=a;n.d(t,["default",0,s])},34(e,t,n){"use strict";n.r(t);var r=n(447),o=n.n(r),i=n(645),a=n.n(i)()(o());a.push([e.id,".ebr_billsview__container-3a2ac3b5{width:100%;height:100%;border:1px solid var(--borderColor)}.ebr_billsview__name-3a2ac3b5{display:flex;align-items:center;gap:.5rem;min-width:0}.ebr_billsview__name-icon-3a2ac3b5{flex-shrink:0;color:var(--secondaryTextColor)}.ebr_billsview__name-text-3a2ac3b5{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ebr_billsview__field-3a2ac3b5{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ebr_billsview__collapsed-3a2ac3b5{display:flex;flex-direction:column;gap:.375rem;min-width:0}.ebr_billsview__collapsed-meta-3a2ac3b5{display:flex;align-items:center;gap:.5rem;padding-inline-start:1.5rem}.ebr_billsview__collapsed-date-3a2ac3b5{font-size:.8125rem;color:var(--secondaryTextColor)}","",{version:3,sources:["webpack://./src/views/bills/BillsView.scss"],names:[],mappings:"AACI,mCACI,UAAA,CACA,WAAA,CACA,mCAAA,CAGJ,8BACI,YAAA,CACA,kBAAA,CACA,SAAA,CACA,WAAA,CAGJ,mCACI,aAAA,CACA,+BAAA,CAGJ,mCACI,eAAA,CACA,sBAAA,CACA,kBAAA,CAGJ,+BACI,eAAA,CACA,sBAAA,CACA,kBAAA,CAGJ,mCACI,YAAA,CACA,qBAAA,CACA,WAAA,CACA,WAAA,CAGJ,wCACI,YAAA,CACA,kBAAA,CACA,SAAA,CACA,2BAAA,CAGJ,wCACI,kBAAA,CACA,+BAAA",sourcesContent:[".ebr_billsview {\n    &__container {\n        width: 100%;\n        height: 100%;\n        border: 1px solid var(--borderColor);\n    }\n\n    &__name {\n        display: flex;\n        align-items: center;\n        gap: 0.5rem;\n        min-width: 0;\n    }\n\n    &__name-icon {\n        flex-shrink: 0;\n        color: var(--secondaryTextColor);\n    }\n\n    &__name-text {\n        overflow: hidden;\n        text-overflow: ellipsis;\n        white-space: nowrap;\n    }\n\n    &__field {\n        overflow: hidden;\n        text-overflow: ellipsis;\n        white-space: nowrap;\n    }\n\n    &__collapsed {\n        display: flex;\n        flex-direction: column;\n        gap: 0.375rem;\n        min-width: 0;\n    }\n\n    &__collapsed-meta {\n        display: flex;\n        align-items: center;\n        gap: 0.5rem;\n        padding-inline-start: 1.5rem;\n    }\n\n    &__collapsed-date {\n        font-size: 0.8125rem;\n        color: var(--secondaryTextColor);\n    }\n}\n"],sourceRoot:""}]);const s=a;n.d(t,["default",0,s])},645(e){"use strict";e.exports=function(e){var t=[];return t.toString=function(){return this.map(function(t){var n="",r=void 0!==t[5];return t[4]&&(n+="@supports (".concat(t[4],") {")),t[2]&&(n+="@media ".concat(t[2]," {")),r&&(n+="@layer".concat(t[5].length>0?" ".concat(t[5]):""," {")),n+=e(t),r&&(n+="}"),t[2]&&(n+="}"),t[4]&&(n+="}"),n}).join("")},t.i=function(e,n,r,o,i){"string"==typeof e&&(e=[[null,e,void 0]]);var a={};if(r)for(var s=0;s<this.length;s++){var l=this[s][0];null!=l&&(a[l]=!0)}for(var c=0;c<e.length;c++){var u=[].concat(e[c]);r&&a[u[0]]||(void 0!==i&&(void 0===u[5]||(u[1]="@layer".concat(u[5].length>0?" ".concat(u[5]):""," {").concat(u[1],"}")),u[5]=i),n&&(u[2]?(u[1]="@media ".concat(u[2]," {").concat(u[1],"}"),u[2]=n):u[2]=n),o&&(u[4]?(u[1]="@supports (".concat(u[4],") {").concat(u[1],"}"),u[4]=o):u[4]="".concat(o)),t.push(u))}},t}},447(e){"use strict";e.exports=function(e){var t=e[1],n=e[3];if(!n)return t;if("function"==typeof btoa){var r=btoa(unescape(encodeURIComponent(JSON.stringify(n)))),o="sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(r),i="/*# ".concat(o," */");return[t].concat([i]).join("\n")}return[t].join("\n")}},405(e,t,n){"use strict";var r,o=function(){var e={};return function(t){if(void 0===e[t]){var n=document.querySelector(t);if(window.HTMLIFrameElement&&n instanceof window.HTMLIFrameElement)try{n=n.contentDocument.head}catch(e){n=null}e[t]=n}return e[t]}}(),i=[];function a(e){for(var t=-1,n=0;n<i.length;n++)if(i[n].identifier===e){t=n;break}return t}function s(e,t){for(var n={},r=[],o=0;o<e.length;o++){var s=e[o],l=t.base?s[0]+t.base:s[0],c=n[l]||0,u="".concat(l," ").concat(c);n[l]=c+1;var d=a(u),f={css:s[1],media:s[2],sourceMap:s[3]};-1!==d?(i[d].references++,i[d].updater(f)):i.push({identifier:u,updater:b(f,t),references:1}),r.push(u)}return r}function l(e){var t=document.createElement("style"),r=e.attributes||{};if(void 0===r.nonce){var i=n.nc;i&&(r.nonce=i)}if(Object.keys(r).forEach(function(e){t.setAttribute(e,r[e])}),"function"==typeof e.insert)e.insert(t);else{var a=o(e.insert||"head");if(!a)throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");a.appendChild(t)}return t}var c,u=(c=[],function(e,t){return c[e]=t,c.filter(Boolean).join("\n")});function d(e,t,n,r){var o=n?"":r.media?"@media ".concat(r.media," {").concat(r.css,"}"):r.css;if(e.styleSheet)e.styleSheet.cssText=u(t,o);else{var i=document.createTextNode(o),a=e.childNodes;a[t]&&e.removeChild(a[t]),a.length?e.insertBefore(i,a[t]):e.appendChild(i)}}function f(e,t,n){var r=n.css,o=n.media,i=n.sourceMap;if(o?e.setAttribute("media",o):e.removeAttribute("media"),i&&"undefined"!=typeof btoa&&(r+="\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(i))))," */")),e.styleSheet)e.styleSheet.cssText=r;else{for(;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(document.createTextNode(r))}}var p=null,h=0;function b(e,t){var n,r,o;if(t.singleton){var i=h++;n=p||(p=l(t)),r=d.bind(null,n,i,!1),o=d.bind(null,n,i,!0)}else n=l(t),r=f.bind(null,n,t),o=function(){!function(e){if(null===e.parentNode)return!1;e.parentNode.removeChild(e)}(n)};return r(e),function(t){if(t){if(t.css===e.css&&t.media===e.media&&t.sourceMap===e.sourceMap)return;r(e=t)}else o()}}e.exports=function(e,t){(t=t||{}).singleton||"boolean"==typeof t.singleton||(t.singleton=(void 0===r&&(r=Boolean(window&&document&&document.all&&!window.atob)),r));var n=s(e=e||[],t);return function(e){if(e=e||[],"[object Array]"===Object.prototype.toString.call(e)){for(var r=0;r<n.length;r++){var o=a(n[r]);i[o].references--}for(var l=s(e,t),c=0;c<n.length;c++){var u=a(n[c]);0===i[u].references&&(i[u].updater(),i.splice(u,1))}n=l}}}},751(e,t,n){var r=n(405),o=n(960);"string"==typeof(o=o.__esModule?o.default:o)&&(o=[[e.id,o,""]]);r(o,{insert:"head",singleton:!1}),e.exports=o.locals||{}},576(e,t,n){var r=n(405),o=n(461);"string"==typeof(o=o.__esModule?o.default:o)&&(o=[[e.id,o,""]]);r(o,{insert:"head",singleton:!1}),e.exports=o.locals||{}},437(e,t,n){var r=n(405),o=n(775);"string"==typeof(o=o.__esModule?o.default:o)&&(o=[[e.id,o,""]]);r(o,{insert:"head",singleton:!1}),e.exports=o.locals||{}},169(e,t,n){var r=n(405),o=n(34);"string"==typeof(o=o.__esModule?o.default:o)&&(o=[[e.id,o,""]]);r(o,{insert:"head",singleton:!1}),e.exports=o.locals||{}},982(e,t,n){"use strict";var r,o=this&&this.__createBinding||(Object.create?function(e,t,n,r){void 0===r&&(r=n);var o=Object.getOwnPropertyDescriptor(t,n);o&&!("get"in o?!t.__esModule:o.writable||o.configurable)||(o={enumerable:!0,get:function(){return t[n]}}),Object.defineProperty(e,r,o)}:function(e,t,n,r){void 0===r&&(r=n),e[r]=t[n]}),i=this&&this.__setModuleDefault||(Object.create?function(e,t){Object.defineProperty(e,"default",{enumerable:!0,value:t})}:function(e,t){e.default=t}),a=this&&this.__importStar||(r=function(e){return r=Object.getOwnPropertyNames||function(e){var t=[];for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[t.length]=n);return t},r(e)},function(e){if(e&&e.__esModule)return e;var t={};if(null!=e)for(var n=r(e),a=0;a<n.length;a++)"default"!==n[a]&&o(t,e,n[a]);return i(t,e),t}),s=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))(function(o,i){function a(e){try{l(r.next(e))}catch(e){i(e)}}function s(e){try{l(r.throw(e))}catch(e){i(e)}}function l(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n(function(e){e(t)})).then(a,s)}l((r=r.apply(e,t||[])).next())})};Object.defineProperty(t,"__esModule",{value:!0}),t.BillDetails=t.BillStatusChip=void 0;const l=a(n(594)),c=n(842),u=n(463),d=n(5),f=n(94);n(751),t.BillStatusChip=({bill:e})=>{const t=(0,c.useUXPContext)();return(null==e?void 0:e.status)?l.default.createElement(c.Chip,{icon:(0,f.getStatusIcon)(e.status),label:t.$L(`ebr.status.${e.status.toLowerCase()}`),variant:(0,f.getStatusVariant)(e.status),size:"small"}):null},t.BillDetails=(0,l.memo)(({billId:e,onClose:n})=>{const r=(0,c.useUXPContext)(),o=(0,c.useAlert)(),{edit:i}=(0,c.useSearchParams)(),{navigate:a,generateURL:p}=(0,c.useRouterContext)(),h=(0,l.useMemo)(()=>(0,c.generateUUID)(),[]),{counter:b,updateCounter:m}=(0,c.useCounter)(),[g,y]=(0,l.useState)(null),{data:w=[]}=(0,c.useExecuteRequest)(u.BillServices.fieldNames()),v=(0,l.useRef)(null);(0,c.useMultiEventSubscriber)(h,{events:[f.BillUpdatedEvent],sharedCallback:t=>{(null==t?void 0:t.id)===e&&m()}});const A=(0,l.useCallback)(()=>s(void 0,void 0,void 0,function*(){if(!(0,c.hasValue)(e))return null;const{data:t,error:n}=yield(0,c.executeConfig)(r,u.BillServices.details(e));return n||!t?(o.error(r.$L("ebr.message.load-details-failed")),null):(v.current&&(0,f.isInFlight)(v.current)&&!(0,f.isInFlight)(t.status)&&(0,f.triggerBillUpdatedEvent)(e),v.current=t.status,y(t),t)}),[e,b]);(0,l.useEffect)(()=>{if(!g||g.id!==e||!(0,f.isInFlight)(g.status))return;const t=setTimeout(m,1e4);return()=>clearTimeout(t)},[g,e]),(0,l.useEffect)(()=>{v.current=null,y(null)},[e]);const _=(0,l.useCallback)(e=>{const t=(0,u.getFileUrl)(r,null==e?void 0:e.filePath);t?window.open(t,"_blank","noopener"):o.error(r.$L("ebr.message.no-file"))},[]),O=(0,l.useCallback)(e=>({left:[{icon:"fal download",label:r.$L("ebr.action.download"),visible:()=>(0,c.hasValue)(null==e?void 0:e.filePath),onClick:()=>_(e)},{icon:"fal pencil",label:r.$L("ebr.action.edit"),visible:()=>"Done"===(null==e?void 0:e.status),onClick:()=>a(p({searchParams:{edit:"1"}}))}],right:[]}),[_]),C=(0,l.useCallback)((e,t)=>{if(!t&&e&&"Done"!==e.status){const t="Error"===e.status;return l.default.createElement("div",{className:"ebr_billdetails__empty-26ff1432"},l.default.createElement(c.Icon,{icon:t?"fal circle-exclamation":"fal hourglass-half",size:"2x"}),l.default.createElement("div",{className:"ebr_billdetails__empty-title-26ff1432"},r.$L(t?"ebr.details.extraction-failed":"ebr.details.extraction-pending")),t&&(0,c.hasValue)(e.error)&&l.default.createElement("div",{className:"ebr_billdetails__empty-text-26ff1432"},e.error))}const n=Object.entries((0,f.getExtractedFields)(e,w)).map(([e,t])=>({label:(0,f.toFieldLabel)(e),value:(0,f.formatFieldValue)(t)}));return t||0!==n.length?l.default.createElement(c.ObjectInfoCard,{fields:n,columns:2,loading:t}):l.default.createElement("div",{className:"ebr_billdetails__empty-26ff1432"},l.default.createElement(c.Icon,{icon:"fal file-circle-question",size:"2x"}),l.default.createElement("div",{className:"ebr_billdetails__empty-title-26ff1432"},r.$L("ebr.details.no-fields")))},[w]),E=(0,l.useCallback)((e,n)=>l.default.createElement(c.ObjectInfoCard,{columns:1,loading:n,fields:[{label:r.$L("ebr.field.file-name"),value:(0,f.getBillName)(e)},{label:r.$L("ebr.field.status"),value:null==e?void 0:e.status,renderValue:()=>l.default.createElement(t.BillStatusChip,{bill:e})},{label:r.$L("ebr.field.uploaded-at"),value:(0,f.formatDateTime)(null==e?void 0:e.uploadedAt)},{label:r.$L("ebr.field.uploaded-by"),value:(null==e?void 0:e.uploadedBy)||"-"},{label:r.$L("ebr.field.id"),value:null==e?void 0:e.id},...(0,c.hasValue)(null==e?void 0:e.error)?[{label:r.$L("ebr.field.error"),value:e.error}]:[]]}),[]),S=(0,l.useCallback)(()=>{a(p({removeParams:["edit"]}))},[]);return l.default.createElement("div",{className:"ebr_billdetails__container-26ff1432"},l.default.createElement(c.ObjectDetailsPanel,{data:A,objectType:"ebr-bill",objectKey:e,title:{title:e=>(0,f.getBillName)(e),subtitle:e=>(null==e?void 0:e.uploadedAt)?r.$L("ebr.details.uploaded-on",{date:(0,f.formatDateTime)(e.uploadedAt)}):null,status:(e,n)=>n?null:l.default.createElement(t.BillStatusChip,{bill:e})},tabs:[{id:"fields",label:r.$L("ebr.details.tab-fields"),icon:"fal list-check",toolbarItems:O,details:C},{id:"upload",label:r.$L("ebr.details.tab-upload"),icon:"fal file-arrow-up",toolbarItems:O,details:E}],showCloseButton:!!n,onClose:n}),l.default.createElement(d.BillFieldsForm,{isOpen:"1"===i,bill:g,fieldNames:w,onClose:S,afterSave:e=>{S(),(0,f.triggerBillUpdatedEvent)(e)}}))})},5(e,t,n){"use strict";var r,o=this&&this.__createBinding||(Object.create?function(e,t,n,r){void 0===r&&(r=n);var o=Object.getOwnPropertyDescriptor(t,n);o&&!("get"in o?!t.__esModule:o.writable||o.configurable)||(o={enumerable:!0,get:function(){return t[n]}}),Object.defineProperty(e,r,o)}:function(e,t,n,r){void 0===r&&(r=n),e[r]=t[n]}),i=this&&this.__setModuleDefault||(Object.create?function(e,t){Object.defineProperty(e,"default",{enumerable:!0,value:t})}:function(e,t){e.default=t}),a=this&&this.__importStar||(r=function(e){return r=Object.getOwnPropertyNames||function(e){var t=[];for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[t.length]=n);return t},r(e)},function(e){if(e&&e.__esModule)return e;var t={};if(null!=e)for(var n=r(e),a=0;a<n.length;a++)"default"!==n[a]&&o(t,e,n[a]);return i(t,e),t}),s=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))(function(o,i){function a(e){try{l(r.next(e))}catch(e){i(e)}}function s(e){try{l(r.throw(e))}catch(e){i(e)}}function l(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n(function(e){e(t)})).then(a,s)}l((r=r.apply(e,t||[])).next())})};Object.defineProperty(t,"__esModule",{value:!0}),t.BillFieldsForm=void 0;const l=a(n(594)),c=n(842),u=n(463),d=n(94);t.BillFieldsForm=(0,l.memo)(({isOpen:e,bill:t,fieldNames:n,onClose:r,afterSave:o})=>{const i=(0,c.useUXPContext)(),a=(0,c.useAlert)(),f=(0,l.useMemo)(()=>(0,d.getExtractedFields)(t,n),[t,n]),p=(0,l.useMemo)(()=>{const e=Object.entries(f).map(([e,t])=>{if("number"==typeof t)return{name:e,label:(0,d.toFieldLabel)(e),type:"number",value:t,allowZero:!0,allowNegative:!0};const n=null==t?"":"object"==typeof t?JSON.stringify(t):String(t);return{name:e,label:(0,d.toFieldLabel)(e),type:n.length>80?"textarea":"text",value:n}});return[{title:i.$L("ebr.details.extracted-fields"),columns:2,fields:e}]},[f]),h=(0,l.useCallback)(e=>s(void 0,void 0,void 0,function*(){if(!t)return;const{error:n}=yield(0,c.executeConfig)(i,u.BillServices.update(t.id,e));n?a.error(i.$L("ebr.message.update-failed")):o(t.id)}),[t,o]);return l.default.createElement(c.SlideInForm,{formType:"dynamic",title:i.$L("ebr.form.edit-title"),isOpen:e&&!!t,formStructure:p,onSave:h,onCancel:r,direction:"right"})})},239(e,t,n){"use strict";var r,o=this&&this.__createBinding||(Object.create?function(e,t,n,r){void 0===r&&(r=n);var o=Object.getOwnPropertyDescriptor(t,n);o&&!("get"in o?!t.__esModule:o.writable||o.configurable)||(o={enumerable:!0,get:function(){return t[n]}}),Object.defineProperty(e,r,o)}:function(e,t,n,r){void 0===r&&(r=n),e[r]=t[n]}),i=this&&this.__setModuleDefault||(Object.create?function(e,t){Object.defineProperty(e,"default",{enumerable:!0,value:t})}:function(e,t){e.default=t}),a=this&&this.__importStar||(r=function(e){return r=Object.getOwnPropertyNames||function(e){var t=[];for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[t.length]=n);return t},r(e)},function(e){if(e&&e.__esModule)return e;var t={};if(null!=e)for(var n=r(e),a=0;a<n.length;a++)"default"!==n[a]&&o(t,e,n[a]);return i(t,e),t});Object.defineProperty(t,"__esModule",{value:!0}),t.UploadBillDialog=void 0;const s=a(n(594)),l=n(842);n(576);const c=["application/pdf","image/*"];t.UploadBillDialog=(0,s.memo)(({isOpen:e,onClose:t,onUpload:n})=>{const r=(0,l.useUXPContext)(),[o,i]=(0,s.useState)(null),[a,u]=(0,s.useState)(!1);(0,s.useEffect)(()=>{e&&(i(null),u(!1))},[e]);const d=(0,s.useCallback)(()=>{o&&a&&(n(o),t())},[o,a,n,t]);return s.default.createElement(l.Modal,{show:e,onClose:t,title:r.$L("ebr.upload.title"),showCloseButton:!0,className:"ebr_uploadbill-3bfe394b"},s.default.createElement("div",{className:"ebr_uploadbill__body-3bfe394b"},s.default.createElement("div",{className:"ebr_uploadbill__hint-3bfe394b"},r.$L("ebr.upload.hint")),s.default.createElement(l.FileInput,{value:null!=o?o:void 0,onChange:(e,t)=>{i(e),u(t)},allowedTypes:c,preview:{showName:!0,showPreview:!1},dropAreaIcon:"fal file-arrow-up",dropAreaLabel:r.$L("ebr.upload.drop-label")}),s.default.createElement("div",{className:"ebr_uploadbill__actions-3bfe394b"},s.default.createElement(l.ButtonComponent,{title:r.$L("ebr.action.cancel"),variant:"secondary",onClick:t}),s.default.createElement(l.ButtonComponent,{title:r.$L("ebr.action.upload"),leftIcon:"fal cloud-arrow-up",variant:"primary",disabled:!o||!a,onClick:d}))))})},421(e,t,n){"use strict";var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0});const o=r(n(594)),i=n(156),a=n(476);n(437),(0,i.registerComponent)({id:"ebr",component:e=>o.default.createElement(a.BillsView,null),configs:{props:[]},defaultProps:{}}),(0,i.enableLocalization)()},463(e,t,n){"use strict";var r=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))(function(o,i){function a(e){try{l(r.next(e))}catch(e){i(e)}}function s(e){try{l(r.throw(e))}catch(e){i(e)}}function l(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n(function(e){e(t)})).then(a,s)}l((r=r.apply(e,t||[])).next())})},o=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0}),t.getFileUrl=t.BillServices=t.BillSystemFields=t.BillStatuses=t.FieldsCollection=t.BillCollection=t.BillModel=void 0,t.uploadBillFile=function(e,t){return r(this,void 0,void 0,function*(){const n=(0,a.trimSlash)(e.lucyUrl||""),r=(e=>{const t=/\.([A-Za-z0-9]+)$/.exec(e.trim());return t?t[1].toLowerCase():"bin"})(t.name),o=`${(0,a.generateUUID)()}.${r}`,s=new FormData;s.append("file",t),s.append("filename",o);try{return yield i.default.post(`${n}/uploadcontent/${r}`,s),{data:p(`${n}/content/${r}/${o}`)}}catch(e){return{data:null,error:(null==e?void 0:e.message)||"Unable to upload the file"}}})};const i=o(n(425)),a=n(842);t.BillModel="EBR.Bill",t.BillCollection="bills",t.FieldsCollection="fields",t.BillStatuses=["Pending","Processing","Done","Error"],t.BillSystemFields=["id","_id","status","fileName","filePath","uploadedAt","uploadedBy","error","fields","__totalcount__"];const s=e=>"string"==typeof e?JSON.parse(e):e,l=e=>{var t;if(!e||"object"!=typeof e)return e;const n=(0,a.hasValue)(e.id)?e.id:e._id,r=n&&"object"==typeof n?null!==(t=n.$oid)&&void 0!==t?t:String(n):n;return Object.assign(Object.assign({},e),{id:(0,a.hasValue)(r)?String(r):r})},c=e=>{var t;try{const n=s(e),r=s(Array.isArray(n)?null===(t=n[0])||void 0===t?void 0:t.data:null==n?void 0:n.data);return Array.isArray(r)?r:[]}catch(e){return[]}},u=e=>c(e).map(l),d=e=>{const t=c(e).map(e=>"string"==typeof(null==e?void 0:e.name)?e.name.trim():"").filter(Boolean);return Array.from(new Set(t))},f=e=>{const t=Array.isArray(e)?e[0]:e;return t?l(t):null};t.BillServices={upload:(e,n)=>({type:"action",model:t.BillModel,action:"Upload",parameters:{filePath:e,fileName:n},options:{json:!0},defaultValue:null}),list:(e,n,r={})=>({type:"collection",model:t.BillModel,collection:t.BillCollection,parameters:{modelName:t.BillModel,collectionName:t.BillCollection,max:e,last:n,filter:JSON.stringify(r)},options:{},transformData:u,defaultValue:[]}),fieldNames:()=>({type:"collection",model:t.BillModel,collection:t.FieldsCollection,parameters:{modelName:t.BillModel,collectionName:t.FieldsCollection,max:1e3,last:0,filter:JSON.stringify({})},options:{enableCache:!0},transformData:d,defaultValue:[]}),details:e=>({type:"action",model:t.BillModel,action:"Details",parameters:{id:e},options:{json:!0},transformData:f,defaultValue:null}),update:(e,n)=>({type:"action",model:t.BillModel,action:"Update",parameters:{id:e,fields:JSON.stringify(n)},options:{json:!0},defaultValue:null})},t.getFileUrl=(e,t)=>(0,a.hasValue)(t)?/^https?:\/\//i.test(t)?t:`${(0,a.trimSlash)(e.lucyUrl)}/${t.replace(/^\/+/,"")}`:"";const p=e=>{try{const t=new URL(e,window.location.origin);return`${window.location.origin}${t.pathname}${t.search}`}catch(t){return e}}},94(e,t,n){"use strict";t.formatDateTime=t.formatFieldValue=t.toFieldLabel=t.getExtractedFields=t.getFieldValue=t.getFileIcon=t.getBillName=t.getStatusIcon=t.getStatusVariant=t.isInFlight=t.buildListFilter=t.triggerBillUpdatedEvent=t.triggerBillCreatedEvent=t.BillUpdatedEvent=t.BillCreatedEvent=void 0;const r=n(842),o=n(463);t.BillCreatedEvent="EBR:BillCreated",t.BillUpdatedEvent="EBR:BillUpdated",t.triggerBillCreatedEvent=e=>(0,r.eventDispatcher)((0,r.generateUUID)(),t.BillCreatedEvent,{id:e}),t.triggerBillUpdatedEvent=e=>(0,r.eventDispatcher)((0,r.generateUUID)(),t.BillUpdatedEvent,{id:e}),t.buildListFilter=(e,t)=>{const n={};var o;return(null==t?void 0:t.filters)&&Object.entries(t.filters).forEach(([e,t])=>{(0,r.hasValue)(t)&&(n[e]=t)}),(0,r.hasValue)(e)&&(n.fileName={$regex:(o=e,o.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")),$options:"i"}),n},t.isInFlight=e=>"Pending"===e||"Processing"===e,t.getStatusVariant=e=>{switch(e){case"Done":return"success";case"Error":return"danger";case"Processing":return"info";default:return"secondary"}},t.getStatusIcon=e=>{switch(e){case"Done":return"fas circle-check";case"Error":return"fas circle-exclamation";case"Processing":return"fas spinner-third";default:return"fas clock"}},t.getBillName=e=>(0,r.hasValue)(null==e?void 0:e.fileName)?e.fileName:((null==e?void 0:e.filePath)||"").split("?")[0].split("/").filter(Boolean).pop()||(null==e?void 0:e.id)||"",t.getFileIcon=e=>{const n=(0,t.getBillName)(e).toLowerCase();return n.endsWith(".pdf")?"fal file-pdf":/\.(png|jpe?g|gif|bmp|tiff?|webp)$/.test(n)?"fal file-image":"fal file-invoice"};const i=e=>{if(!e)return{};if(e.fields&&"object"==typeof e.fields)return e.fields;const t={};return Object.entries(e).forEach(([e,n])=>{o.BillSystemFields.includes(e)||(t[e]=n)}),t};t.getFieldValue=(e,t)=>{var n;return null!==(n=i(e)[t])&&void 0!==n?n:null},t.getExtractedFields=(e,t=[])=>{const n=i(e);if(0===t.length)return n;const r={};return t.forEach(e=>{var t;r[e]=null!==(t=n[e])&&void 0!==t?t:null}),r},t.toFieldLabel=e=>e.replace(/[_-]+/g," ").replace(/([a-z0-9])([A-Z])/g,"$1 $2").replace(/\s+/g," ").trim().replace(/\b\w/g,e=>e.toUpperCase()),t.formatFieldValue=e=>(0,r.hasValue)(e)&&""!==e?"object"==typeof e?JSON.stringify(e):String(e):"-",t.formatDateTime=e=>{if(!(0,r.hasValue)(e))return"-";const t=new Date(e);return isNaN(t.getTime())?e:t.toLocaleString()}},156(e,t,n){"use strict";var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0}),t.getUrlFriendlyString=void 0,t.registerWidget=function(e){var t;if(!window.registerWidget)return void console.error("This code is not being run within the context of UXP");console.warn("[UXP] registerWidget is deprecated — use registerComponent with modes: ['widget'] (metadata in bundle.json components[]).");const n=(o.default.id+"/widget/"+e.id).toLowerCase(),r=null===(t=o.default.widgets)||void 0===t?void 0:t.find(t=>t.id==e.id);r||console.warn(`[UXP] Widget '${e.id}' has no bundle.json widgets[] entry — declare it in components[] and use registerComponent instead.`),window.registerWidget(Object.assign(Object.assign(Object.assign({},e),r||{}),{id:n}))},t.registerLink=function(e){console.warn("[UXP] registerLink is deprecated and has no effect in V5. Define navigation links in Configuration.yml → navigationLinks.")},t.registerMenuItem=function(e){console.warn("[UXP] registerMenuItem is deprecated and has no effect in V5.")},t.registerUI=function(e){var t;if(!window.registerUI)return void console.error("This code is not being run within the context of UXP");console.warn("[UXP] registerUI is deprecated — use registerComponent with modes: ['ui'] (metadata in bundle.json components[]).");const n=(o.default.id+"/ui/"+e.id).toLowerCase(),r=null===(t=o.default.uis)||void 0===t?void 0:t.find(t=>t.id==e.id);r||console.warn(`[UXP] UI '${e.id}' has no bundle.json uis[] entry — declare it in components[] and use registerComponent instead.`),window.registerUI(Object.assign(Object.assign(Object.assign({},e),r||{}),{id:n}))},t.registerComponent=a,t.registerTabInjection=function(e){var t;if(!window.registerTabInjection)return void console.error("This code is not being run within the context of UXP");const n=null===(t=o.default.objectTabs)||void 0===t?void 0:t.find(t=>t.id===e.id);n||console.warn(`[UXP] Tab '${e.id}' not found in bundle.json objectTabs. Add it so metadata (objectType, name, componentId, roles etc.) is available.`);const r=`${o.default.id}/${e.id}`.toLowerCase(),i=(null==n?void 0:n.componentId)?`${o.default.id}/${n.componentId}`.toLowerCase():e.componentId,a=Object.assign(Object.assign(Object.assign({},n||{}),e),{id:r,componentId:i});window.registerTabInjection(a)},t.enableLocalization=function(){window.registerLocalization(i.default)},t.registerCustomWidgetTemplate=function(e){let n=(0,t.getUrlFriendlyString)(e.id);e.icon||(e.icon=["fad","align-justify"]),window.registerCustomWidgetTemplate(e),a({id:n,component:e.template,modes:["widget"],configs:{layout:e.layout||{w:10,h:10},props:[{name:"uiProps",label:"UI",type:"json"}],preLoader:(null==e?void 0:e.preLoader)||"default",isTemplate:!0,isDefaultTemplate:!1},defaultProps:{uiProps:{}}})};const o=r(n(386)),i=r(n(395));function a(e){var t;if(!window.registerComponent)return void console.error("This code is not being run within the context of UXP");const n=null===(t=o.default.components)||void 0===t?void 0:t.find(t=>t.id===e.id);n||console.warn(`[UXP] Component '${e.id}' not found in bundle.json. Add it so metadata (name, modes, tags, layout etc.) is available when the module is uploaded.`);const r=`${o.default.id}/${e.id}`.toLowerCase(),i=Object.assign(Object.assign(Object.assign({},n||{}),e),{id:r});window.registerComponent(i)}t.getUrlFriendlyString=(e,t)=>e.split("").map((e,t)=>e.replace(new RegExp("ãàáäâẽèéëêìíïîõòóöôùúüûñç·/_,:;".charAt(t),"g"),"aaaaaeeeeeiiiiooooouuuunc------".charAt(t))).toString().toLowerCase().trim().replace(/\s+/g,"-").replace(/'/g,"-e").replace(/&/g,"-and-").replace(/[^\w\-]+/g,"").replace(/\-\-+/g,"-")},476(e,t,n){"use strict";var r,o=this&&this.__createBinding||(Object.create?function(e,t,n,r){void 0===r&&(r=n);var o=Object.getOwnPropertyDescriptor(t,n);o&&!("get"in o?!t.__esModule:o.writable||o.configurable)||(o={enumerable:!0,get:function(){return t[n]}}),Object.defineProperty(e,r,o)}:function(e,t,n,r){void 0===r&&(r=n),e[r]=t[n]}),i=this&&this.__setModuleDefault||(Object.create?function(e,t){Object.defineProperty(e,"default",{enumerable:!0,value:t})}:function(e,t){e.default=t}),a=this&&this.__importStar||(r=function(e){return r=Object.getOwnPropertyNames||function(e){var t=[];for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[t.length]=n);return t},r(e)},function(e){if(e&&e.__esModule)return e;var t={};if(null!=e)for(var n=r(e),a=0;a<n.length;a++)"default"!==n[a]&&o(t,e,n[a]);return i(t,e),t}),s=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))(function(o,i){function a(e){try{l(r.next(e))}catch(e){i(e)}}function s(e){try{l(r.throw(e))}catch(e){i(e)}}function l(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n(function(e){e(t)})).then(a,s)}l((r=r.apply(e,t||[])).next())})};Object.defineProperty(t,"__esModule",{value:!0}),t.BillsView=void 0;const l=a(n(594)),c=n(842),u=n(463),d=n(982),f=n(239),p=n(94);n(169);const h=["fileName","status","uploadedAt","uploadedBy"];t.BillsView=(0,l.memo)(()=>{const e=(0,c.useUXPContext)(),t=(0,c.useToast)(),{upload:n}=(0,c.useSearchParams)(),{navigate:r,generateURL:o}=(0,c.useRouterContext)(),i=(0,l.useRef)(null),{data:a=[]}=(0,c.useExecuteRequest)(u.BillServices.fieldNames()),b=(0,l.useRef)(!1),m=(0,l.useRef)(!1);(0,c.useMultiEventSubscriber)("ebr_bills",{events:[p.BillCreatedEvent,p.BillUpdatedEvent],sharedCallback:()=>{var e,t;return null===(t=null===(e=i.current)||void 0===e?void 0:e.refreshCurrentPage)||void 0===t?void 0:t.call(e)}}),(0,l.useEffect)(()=>{const e=setInterval(()=>{var e,t;b.current&&!m.current&&(null===(t=null===(e=i.current)||void 0===e?void 0:e.refreshCurrentPage)||void 0===t||t.call(e))},15e3);return()=>clearInterval(e)},[]);const g=(0,l.useCallback)((n,r,o,i,a)=>s(void 0,void 0,void 0,function*(){const a=(0,p.buildListFilter)(o,i),{data:s,error:l}=yield(0,c.executeConfig)(e,u.BillServices.list(r,(n-1)*r,a));if(l)return t.error(e.$L("ebr.message.load-failed")),{items:[]};const d=null!=s?s:[];return b.current=d.some(e=>(0,p.isInFlight)(e.status)),{items:d}}),[]),y=(0,l.useCallback)(n=>s(void 0,void 0,void 0,function*(){t.info(e.$L("ebr.message.uploading",{name:n.name}));const{data:r,error:o}=yield(0,u.uploadBillFile)(e,n);if(o||!(0,c.hasValue)(r))return void t.error(e.$L("ebr.message.upload-failed",{name:n.name}));const{data:i,error:a}=yield(0,c.executeConfig)(e,u.BillServices.upload(r,n.name));a?t.error(e.$L("ebr.message.upload-failed",{name:n.name})):(t.success(e.$L("ebr.message.uploaded",{name:n.name})),(0,p.triggerBillCreatedEvent)((e=>{var t;if("string"==typeof e||"number"==typeof e)return String(e);const n=Array.isArray(e)?e[0]:e;return null!==(t=(null==n?void 0:n._id)||(null==n?void 0:n.id))&&void 0!==t?t:""})(i)))}),[]),w=(0,l.useCallback)(n=>{const r=(0,u.getFileUrl)(e,null==n?void 0:n.filePath);r?window.open(r,"_blank","noopener"):t.error(e.$L("ebr.message.no-file"))},[]),v=(0,l.useCallback)(e=>l.default.createElement("div",{className:"ebr_billsview__name-3a2ac3b5",title:(0,p.getBillName)(e)},l.default.createElement(c.Icon,{icon:(0,p.getFileIcon)(e),className:"ebr_billsview__name-icon-3a2ac3b5"}),l.default.createElement("span",{className:"ebr_billsview__name-text-3a2ac3b5"},(0,p.getBillName)(e))),[]),A=(0,l.useMemo)(()=>[{id:"fileName",label:e.$L("ebr.field.file-name"),isResizable:!0,renderColumn:e=>v(e),formatter:(e,t)=>(0,p.getBillName)(t)},{id:"status",label:e.$L("ebr.field.status"),isResizable:!0,renderColumn:e=>l.default.createElement(d.BillStatusChip,{bill:e})},{id:"uploadedAt",label:e.$L("ebr.field.uploaded-at"),isResizable:!0,renderColumn:e=>(0,p.formatDateTime)(e.uploadedAt),formatter:e=>(0,p.formatDateTime)(e)},{id:"uploadedBy",label:e.$L("ebr.field.uploaded-by"),isResizable:!0},...(a||[]).map(e=>({id:`field:${e}`,label:(0,p.toFieldLabel)(e),isResizable:!0,renderColumn:t=>l.default.createElement("div",{className:"ebr_billsview__field-3a2ac3b5",title:(0,p.formatFieldValue)((0,p.getFieldValue)(t,e))},(0,p.formatFieldValue)((0,p.getFieldValue)(t,e))),formatter:(t,n)=>(0,p.formatFieldValue)((0,p.getFieldValue)(n,e))}))],[v,a]),_=(0,l.useMemo)(()=>l.default.createElement(c.ButtonComponent,{title:e.$L("ebr.action.upload-bill"),leftIcon:"fal cloud-arrow-up",variant:"primary",onClick:()=>r(o({searchParams:{upload:"1"}}))}),[]),O=(0,l.useMemo)(()=>({formFields:[{title:"",columns:1,fields:[{name:"status",label:e.$L("ebr.field.status"),type:"select",options:[{label:e.$L("ebr.filter.all"),value:""},...u.BillStatuses.map(t=>({label:e.$L(`ebr.status.${t.toLowerCase()}`),value:t}))]}]}]}),[]),C=(0,l.useMemo)(()=>({listId:"ebr-bill-search",defaultViews:[{id:"all-bills",name:e.$L("ebr.view.all"),group:e.$L("ebr.view.group"),configurations:{filters:{filters:{}},sort:{uploadedAt:-1},columns:h}},...u.BillStatuses.map(t=>({id:`${t.toLowerCase()}-bills`,name:e.$L(`ebr.view.${t.toLowerCase()}`),group:e.$L("ebr.view.group"),configurations:{filters:{filters:{status:t}},sort:{uploadedAt:-1},columns:h}}))],allowToMangeCustomViews:!0,defaultviewId:"all-bills"}),[]),E=(0,l.useMemo)(()=>({actionsColumn:{enable:!0,headerActions:{sort:!1,multiColumnSort:!1,customiseColumns:!0},rowActions:t=>{const n=[];return(0,c.hasValue)(t.filePath)&&n.push({icon:"fal download",label:e.$L("ebr.action.download"),onClick:()=>s(void 0,void 0,void 0,function*(){return w(t)})}),"Done"===t.status&&n.push({icon:"fal pencil",label:e.$L("ebr.action.edit"),onClick:()=>s(void 0,void 0,void 0,function*(){return r(o({searchParams:{objectKey:t.id,edit:"1"}}))})}),n}}}),[w]),S=(0,l.useMemo)(()=>({columns:[{id:"details",label:e.$L("ebr.field.bill"),renderColumn:e=>l.default.createElement("div",{className:"ebr_billsview__collapsed-3a2ac3b5"},v(e),l.default.createElement("div",{className:"ebr_billsview__collapsed-meta-3a2ac3b5"},l.default.createElement(d.BillStatusChip,{bill:e}),l.default.createElement("span",{className:"ebr_billsview__collapsed-date-3a2ac3b5"},(0,p.formatDateTime)(e.uploadedAt))))}],renderDetails:(e,t)=>l.default.createElement(d.BillDetails,{billId:e,onClose:t})}),[v]),R=(0,l.useMemo)(()=>({enable:!0}),[]),P=(0,l.useCallback)(()=>{r(o({removeParams:["upload"]}))},[]);return l.default.createElement("div",{className:"ebr_billsview__container-3a2ac3b5"},l.default.createElement(c.ObjectSearchComponent,{ref:i,title:e.$L("ebr.text.title"),data:g,idField:"id",columns:A,pageSize:50,total:0,actionButtons:_,filters:O,views:C,defaultActionColumns:E,search:R,detailsPanel:S,collapsedWidth:"25rem",appendToURL:!0,clearParamsOnSelect:["edit"],noItemsMessage:e.$L("ebr.text.no-bills"),onFilterPanelToggle:e=>m.current=e}),l.default.createElement(f.UploadBillDialog,{isOpen:"1"===n,onClose:P,onUpload:y}))})},594(e){"use strict";e.exports=React},842(e){"use strict";e.exports=UXPComponents},425(e,t,n){"use strict";function r(e,t){return function(){return e.apply(t,arguments)}}const{toString:o}=Object.prototype,{getPrototypeOf:i}=Object,{iterator:a,toStringTag:s}=Symbol,l=(({hasOwnProperty:e})=>(t,n)=>e.call(t,n))(Object.prototype),c=e=>"string"==typeof e&&("__proto__"===e||"constructor"===e||"prototype"===e),u=(e,t,n)=>e===Object.prototype||!n&&null===t,d=(e,t)=>{let n=e;const r=[];for(;null!=n;){if(-1!==r.indexOf(n))return!1;r.push(n);const o=i(n);if(u(n,o,n===e))return!1;if(l(n,t))return!0;n=o}return!1},f=(p=Object.create(null),e=>{const t=o.call(e);return p[t]||(p[t]=t.slice(8,-1).toLowerCase())});var p;const h=e=>(e=e.toLowerCase(),t=>f(t)===e),b=e=>t=>typeof t===e,{isArray:m}=Array,g=b("undefined");function y(e){return null!==e&&!g(e)&&null!==e.constructor&&!g(e.constructor)&&A(e.constructor.isBuffer)&&e.constructor.isBuffer(e)}const w=h("ArrayBuffer"),v=b("string"),A=b("function"),_=b("number"),O=e=>null!==e&&"object"==typeof e,C=e=>{if(!O(e))return!1;const t=i(e);return(null===t||t===Object.prototype||null===i(t))&&(u(e,t,!0)||!l(e,s)&&!l(e,a))},E=h("Date"),S=h("File"),R=h("Blob"),P=h("FileList"),j=h("Set"),x="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:void 0!==n.g?n.g:{},B=void 0!==x.FormData?x.FormData:void 0,T=h("URLSearchParams"),[U,N,L,F]=["ReadableStream","Request","Response","Headers"].map(h);function D(e,t,{allOwnKeys:n=!1}={}){if(null==e)return;let r,o;if("object"!=typeof e&&(e=[e]),m(e))for(r=0,o=e.length;r<o;r++)t.call(null,e[r],r,e);else{if(y(e))return;const o=n?Object.getOwnPropertyNames(e):Object.keys(e),i=o.length;let a;for(r=0;r<i;r++)a=o[r],t.call(null,e[a],a,e)}}const k="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:n.g,I=e=>!g(e)&&e!==k,$=(M="undefined"!=typeof Uint8Array&&i(Uint8Array),e=>M&&e instanceof M);var M;const q=h("HTMLFormElement"),{propertyIsEnumerable:z}=Object.prototype,V=h("RegExp"),J=(e,t)=>{const n=Object.getOwnPropertyDescriptors(e),r={};D(n,(n,o)=>{let i;!1!==(i=t(n,o,e))&&(r[o]=i||n)}),Object.defineProperties(e,r)},W=h("AsyncFunction"),H=(X="function"==typeof setImmediate,K=A(k.postMessage),X?setImmediate:K?(G=`axios@${Math.random()}`,Z=[],k.addEventListener("message",({source:e,data:t})=>{e===k&&t===G&&Z.length&&Z.shift()()},!1),e=>{Z.push(e),k.postMessage(G,"*")}):e=>setTimeout(e));var X,K,G,Z;const Y="undefined"!=typeof queueMicrotask?queueMicrotask.bind(k):"undefined"!=typeof process&&process.nextTick||H,Q=e=>null!=e&&A(e[a]);var ee={isArray:m,isArrayBuffer:w,isBuffer:y,isFormData:e=>{if(!e)return!1;if(B&&e instanceof B)return!0;const t=i(e);if(!t||t===Object.prototype)return!1;if(!A(e.append))return!1;const n=f(e);return"formdata"===n||"object"===n&&A(e.toString)&&"[object FormData]"===e.toString()},isArrayBufferView:function(e){let t;return t="undefined"!=typeof ArrayBuffer&&ArrayBuffer.isView?ArrayBuffer.isView(e):e&&e.buffer&&w(e.buffer),t},isString:v,isNumber:_,isBoolean:e=>!0===e||!1===e,isObject:O,isPlainObject:C,isEmptyObject:e=>{if(!O(e)||y(e))return!1;try{return 0===Object.keys(e).length&&Object.getPrototypeOf(e)===Object.prototype}catch(e){return!1}},isReadableStream:U,isRequest:N,isResponse:L,isHeaders:F,isUndefined:g,isDate:E,isFile:S,isReactNativeBlob:e=>!(!e||void 0===e.uri),isReactNative:e=>e&&void 0!==e.getParts,isBlob:R,isRegExp:V,isFunction:A,isStream:e=>O(e)&&A(e.pipe),isURLSearchParams:T,isTypedArray:$,isFileList:P,forEach:D,merge:function e(...t){const{caseless:n,skipUndefined:r}=I(this)&&this||{},o={},i=n?Object.create(null):null,a=(t,n)=>{if("__proto__"===n||"constructor"===n||"prototype"===n)return;let a=n;if(i&&"string"==typeof n){const e=n.toLowerCase(),t=i[e];void 0!==t&&l(o,t)?a=t:i[e]=n}const s=l(o,a)?o[a]:void 0;C(s)&&C(t)?o[a]=e(s,t):C(t)?o[a]=e({},t):m(t)?o[a]=t.slice():r&&g(t)||(o[a]=t)};for(let e=0,n=t.length;e<n;e++){const n=t[e];if(!n||y(n))continue;if(D(n,a),"object"!=typeof n||m(n)||!Object.getOwnPropertySymbols)continue;const r=Object.getOwnPropertySymbols(n);for(let e=0;e<r.length;e++){const t=r[e];z.call(n,t)&&a(n[t],t)}}return o},extend:(e,t,n,{allOwnKeys:o}={})=>(D(t,(t,o)=>{n&&A(t)?Object.defineProperty(e,o,{__proto__:null,value:r(t,n),writable:!0,enumerable:!0,configurable:!0}):Object.defineProperty(e,o,{__proto__:null,value:t,writable:!0,enumerable:!0,configurable:!0})},{allOwnKeys:o}),e),trim:e=>e.trim?e.trim():e.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,""),stripBOM:e=>(65279===e.charCodeAt(0)&&(e=e.slice(1)),e),inherits:(e,t,n,r)=>{e.prototype=Object.create(t.prototype,r),Object.defineProperty(e.prototype,"constructor",{__proto__:null,value:e,writable:!0,enumerable:!1,configurable:!0}),Object.defineProperty(e,"super",{__proto__:null,value:t.prototype}),n&&Object.assign(e.prototype,n)},toFlatObject:(e,t,n,r)=>{let o,a,s;const l={};if(t=t||{},null==e)return t;do{for(o=Object.getOwnPropertyNames(e),a=o.length;a-- >0;)s=o[a],r&&!r(s,e,t)||l[s]||(t[s]=e[s],l[s]=!0);e=!1!==n&&i(e)}while(e&&(!n||n(e,t))&&e!==Object.prototype);return t},kindOf:f,kindOfTest:h,endsWith:(e,t,n)=>{e=String(e),(void 0===n||n>e.length)&&(n=e.length),n-=t.length;const r=e.indexOf(t,n);return-1!==r&&r===n},toArray:e=>{if(!e)return null;if(m(e))return e;let t=e.length;if(!Number.isSafeInteger(t)||t<0||t>4294967295)return null;const n=new Set,r=new Set;let o=e;for(;null!=o&&n.size<t;){if(r.has(o))return null;r.add(o);const a=i(o);if(u(o,a,o===e))break;Object.getOwnPropertyNames(o).forEach(e=>{const r=+e;Number.isInteger(r)&&r>=0&&r<t&&String(r)===e&&l(o,e)&&n.add(r)}),o=a}if(n.size!==t)return null;const a=new Array(t);for(;t-- >0;)a[t]=e[t];return a},forEachEntry:(e,t)=>{const n=(e&&e[a]).call(e);let r;for(;(r=n.next())&&!r.done;){const n=r.value;t.call(e,n[0],n[1])}},matchAll:(e,t)=>{let n;const r=[];for(;null!==(n=e.exec(t));)r.push(n);return r},isHTMLForm:q,hasOwnProperty:l,hasOwnProp:l,hasOwnInPrototypeChain:d,getSafeProp:(e,t)=>null!=e&&d(e,t)?e[t]:void 0,toSafeFlatObject:e=>{if(null==e||"object"!=typeof e&&"function"!=typeof e)return e;const t=i(e);if(null===t&&(e=>{if(!Object.isExtensible(e))return!1;const t=Object.getOwnPropertyNames(e);return Object.getOwnPropertySymbols&&t.push(...Object.getOwnPropertySymbols(e)),t.every(t=>{if(c(t))return!1;const n=Object.getOwnPropertyDescriptor(e,t);return!!n&&n.configurable&&!0===n.writable})})(e))return e;const n=Object.create(null),r=Object.create(null),o=[];let a=e;for(;null!=a&&-1===o.indexOf(a);){o.push(a);const s=a===e?t:i(a);if(u(a,s,a===e))break;const d=Object.getOwnPropertyNames(a);Object.getOwnPropertySymbols&&d.push(...Object.getOwnPropertySymbols(a));for(const t of d)c(t)||l(r,t)||(n[t]=e[t],r[t]=!0);a=s}return n},reduceDescriptors:J,freezeMethods:e=>{J(e,(t,n)=>{if(A(e)&&["arguments","caller","callee"].includes(n))return!1;const r=e[n];A(r)&&(t.enumerable=!1,"writable"in t?t.writable=!1:t.set||(t.set=()=>{throw Error("Can not rewrite read-only method '"+n+"'")}))})},toObjectSet:(e,t)=>{const n={},r=e=>{e.forEach(e=>{n[e]=!0})};return m(e)?r(e):r(String(e).split(t)),n},toCamelCase:e=>e.toLowerCase().replace(/[-_\s]([a-z\d])(\w*)/g,function(e,t,n){return t.toUpperCase()+n}),noop:()=>{},toFiniteNumber:(e,t)=>null!=e&&Number.isFinite(e=+e)?e:t,findKey:function(e,t){if(y(e))return null;t=t.toLowerCase();const n=Object.keys(e);let r,o=n.length;for(;o-- >0;)if(r=n[o],t===r.toLowerCase())return r;return null},global:k,isContextDefined:I,isSpecCompliantForm:function(e){return!!(e&&A(e.append)&&"FormData"===e[s]&&e[a])},toJSONObject:e=>{const t=new WeakSet,n=e=>{if(O(e)){if(t.has(e))return;if(y(e))return e;if(!("toJSON"in e)){let r;if(t.add(e),j(e)){r=[];for(const t of e){const e=n(t);!g(e)&&r.push(e)}}else r=m(e)?[]:{},D(e,(e,t)=>{const o=n(e);!g(o)&&(r[t]=o)});return t.delete(e),r}}return e};return n(e)},isAsyncFn:W,isThenable:e=>e&&(O(e)||A(e))&&A(e.then)&&A(e.catch),setImmediate:H,asap:Y,isIterable:Q,isSafeIterable:e=>null!=e&&d(e,a)&&Q(e)};const te=ee.toObjectSet(["age","authorization","content-length","content-type","etag","expires","from","host","if-modified-since","if-unmodified-since","last-modified","location","max-forwards","proxy-authorization","referer","retry-after","user-agent"]),ne=new RegExp("[\\u0000-\\u0008\\u000a-\\u001f\\u007f]+","g"),re=new RegExp("[^\\u0009\\u0020-\\u007e\\u0080-\\u00ff]+","g");function oe(e,t){return ee.isArray(e)?e.map(e=>oe(e,t)):function(e){let t=0,n=e.length;for(;t<n;){const n=e.charCodeAt(t);if(9!==n&&32!==n)break;t+=1}for(;n>t;){const t=e.charCodeAt(n-1);if(9!==t&&32!==t)break;n-=1}return 0===t&&n===e.length?e:e.slice(t,n)}(String(e).replace(t,""))}function ie(e){const t=Object.create(null);return ee.forEach(e.toJSON(),(e,n)=>{t[n]=(e=>oe(e,re))(e)}),t}const ae=Symbol("internals");function se(e){return e&&String(e).trim().toLowerCase()}function le(e){return!1===e||null==e?e:ee.isArray(e)?e.map(le):(e=>oe(e,ne))(String(e))}const ce=/^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$/;function ue(e){let t=0,n=e.length;for(;t<n;){const n=e.charCodeAt(t);if(9!==n&&32!==n)break;t+=1}for(;n>t;){const t=e.charCodeAt(n-1);if(9!==t&&32!==t)break;n-=1}return 0===t&&n===e.length?e:e.slice(t,n)}const de=e=>"__proto__"===e?"__Proto__":e;function fe(e,t,n,r,o){return ee.isFunction(r)?r.call(e,t,n):(o&&(t=n),ee.isString(t)?ee.isString(r)?-1!==t.indexOf(r):ee.isRegExp(r)?r.test(t):void 0:void 0)}class pe{constructor(e){e&&this.set(e)}set(e,t,n){const r=this;function o(e,t,n){const o=se(t);if(!o)return;const i=ee.findKey(r,o);(!i||void 0===r[i]||!0===n||void 0===n&&!1!==r[i])&&(r[de(i||t)]=le(e))}const i=(e,t)=>ee.forEach(e,(e,n)=>o(e,n,t));if(ee.isPlainObject(e)||e instanceof this.constructor)i(e,t);else if(ee.isString(e)&&(e=e.trim())&&!/^[-_a-zA-Z0-9^`|~,!#$%&'*+.]+$/.test(e.trim()))i((e=>{const t=Object.create(null);let n,r,o;return e&&e.split("\n").forEach(function(e){o=e.indexOf(":"),n=e.substring(0,o).trim().toLowerCase(),r=e.substring(o+1).trim();const i=ee.hasOwnProp(t,n);!n||i&&ee.hasOwnProp(te,n)||("set-cookie"===n?i?t[n].push(r):t[n]=[r]:t[n]=i?t[n]+", "+r:r)}),t})(e),t);else if(ee.isObject(e)&&ee.isSafeIterable(e)){let n,r,o=Object.create(null);for(const t of e){if(!ee.isArray(t))throw new TypeError("Object iterator must return a key-value pair");r=t[0],ee.hasOwnProp(o,r)?(n=o[r],o[r]=ee.isArray(n)?[...n,t[1]]:[n,t[1]]):o[r]=t[1]}i(o,t)}else null!=e&&o(t,e,n);return this}get(e,t){if(e=se(e)){const n=ee.findKey(this,e);if(n){const e=this[n];if(!t)return e;if(!0===t)return function(e){const t=Object.create(null),n=/([^\s,;=]+)\s*(?:=\s*([^,;]+))?/g;let r;for(;r=n.exec(e);)t[r[1]]=r[2];return t}(e);if(ee.isFunction(t))return t.call(this,e,n);if(ee.isRegExp(t))return t.exec(e);throw new TypeError("parser must be boolean|regexp|function")}}}has(e,t){if(e=se(e)){const n=ee.findKey(this,e);return!(!n||void 0===this[n]||t&&!fe(this,this[n],n,t))}return!1}delete(e,t){const n=this;let r=!1;function o(e){if(e=se(e)){const o=ee.findKey(n,e);!o||t&&!fe(n,n[o],o,t)||(delete n[o],r=!0)}}return ee.isArray(e)?e.forEach(o):o(e),r}clear(e){const t=Object.keys(this);let n=t.length,r=!1;for(;n--;){const o=t[n];e&&!fe(this,this[o],o,e,!0)||(delete this[o],r=!0)}return r}normalize(e){const t=this,n=Object.create(null);return ee.forEach(this,(r,o)=>{const i=ee.findKey(n,o);if(i)return t[i]=le(r),void delete t[o];const a=de(e?function(e){return e.trim().toLowerCase().replace(/([a-z\d])(\w*)/g,(e,t,n)=>t.toUpperCase()+n)}(o):String(o).trim());a!==o&&delete t[o],t[a]=le(r),n[a]=!0}),this}concat(...e){return this.constructor.concat(this,...e)}toJSON(e){const t=Object.create(null);return ee.forEach(this,(n,r)=>{null!=n&&!1!==n&&(t[r]=e&&ee.isArray(n)?n.join(", "):n)}),t}[Symbol.iterator](){return Object.entries(this.toJSON())[Symbol.iterator]()}toString(){return Object.entries(this.toJSON()).map(([e,t])=>e+": "+t).join("\n")}getSetCookie(){const e=this.get("set-cookie");return ee.isArray(e)?e:null==e||!1===e?[]:[e]}get[Symbol.toStringTag](){return"AxiosHeaders"}static from(e){return e instanceof this?e:new this(e)}static parseParameters(e){return function(e){const t=Object.create(null),n=String(e);let r=0,o=!1,i=!1;function a(e){const o=ue(n.slice(r,e)),i=o.indexOf("=");if(i<1)return;const a=ue(o.slice(0,i));if(!ce.test(a))return;const s=a.toLowerCase();if("__proto__"===s||"constructor"===s||"prototype"===s)return;const l=ue(o.slice(i+1));t[s]=function(e){const t=e.length-1;if(t<1||34!==e.charCodeAt(0)||34!==e.charCodeAt(t))return e;let n="";for(let r=1;r<t;r++){const o=e.charCodeAt(r);if(34===o)return e;if(92===o&&(r+=1,r>=t))return e;n+=e[r]}return n}(l)}for(let e=0;e<n.length;e++){const t=n.charCodeAt(e);o?i?i=!1:92===t?i=!0:34===t&&(o=!1):34===t?o=!0:44!==t&&59!==t||(a(e),r=e+1)}return a(n.length),t}(e)}static concat(e,...t){const n=new this(e);return t.forEach(e=>n.set(e)),n}static accessor(e){const t=(this[ae]=this[ae]={accessors:{}}).accessors,n=this.prototype;function r(e){const r=se(e);t[r]||(function(e,t){const n=ee.toCamelCase(" "+t);["get","set","has"].forEach(r=>{Object.defineProperty(e,r+n,{__proto__:null,value:function(e,n,o){return this[r].call(this,t,e,n,o)},configurable:!0})})}(n,e),t[r]=!0)}return ee.isArray(e)?e.forEach(r):r(e),this}}pe.accessor(["Content-Type","Content-Length","Accept","Accept-Encoding","User-Agent","Authorization"]),ee.reduceDescriptors(pe.prototype,({value:e},t)=>{let n=t[0].toUpperCase()+t.slice(1);return{get:()=>e,set(e){this[n]=e}}}),ee.freezeMethods(pe);const he="[REDACTED ****]";function be(e){try{return String(e)}catch(e){return""}}const me=Symbol("causeStack");class ge extends Error{static from(e,t,n,r,o,i){let a=e.message;!a&&ee.isArray(e.errors)&&e.errors.length&&(a=function(e){return e.errors.map(e=>{try{return e&&e.message?be(e.message):be(e)}catch(e){return""}}).filter(Boolean).join("; ")||e.name||"AggregateError"}(e));const s=new ge(a,t||e.code,n,r,o);return Object.defineProperty(s,"cause",{__proto__:null,value:e,writable:!0,enumerable:!1,configurable:!0}),s.name=e.name,function(e,t){try{const n=t&&t.stack;if("string"!=typeof n||!n)return;const r=e.stack;if("string"!=typeof r||!r)return;const o="\nCaused by: "+n;e.stack=r+o,Object.defineProperty(e,me,{__proto__:null,value:o})}catch(e){}}(s,e),null!=e.status&&null==s.status&&(s.status=e.status),i&&Object.assign(s,i),s}constructor(e,t,n,r,o){super(e),Object.defineProperty(this,"message",{__proto__:null,value:e,enumerable:!0,writable:!0,configurable:!0}),this.name="AxiosError",this.isAxiosError=!0,t&&(this.code=t),n&&(this.config=n),r&&(this.request=r),o&&(this.response=o,this.status=o.status)}toJSON(){const e=this.config,t=e&&ee.hasOwnProp(e,"redact")?e.redact:void 0,n=ee.isArray(t)&&t.length>0?function(e,t){const n=new Set(t.map(e=>String(e).toLowerCase())),r=[],o=e=>{if(null===e||"object"!=typeof e)return e;if(ee.isBuffer(e))return e;if(-1!==r.indexOf(e))return;let t;if(e instanceof pe&&(e=e.toJSON()),r.push(e),ee.isArray(e))t=[],e.forEach((e,n)=>{const r=o(e);ee.isUndefined(r)||(t[n]=r)});else{if(!ee.isPlainObject(e)&&function(e){if(ee.hasOwnProp(e,"toJSON"))return!0;let t=Object.getPrototypeOf(e);for(;t&&t!==Object.prototype;){if(ee.hasOwnProp(t,"toJSON"))return!0;t=Object.getPrototypeOf(t)}return!1}(e))return r.pop(),e;t=Object.create(null);for(const[r,i]of Object.entries(e)){const e=n.has(r.toLowerCase())?he:o(i);ee.isUndefined(e)||(t[r]=e)}}return r.pop(),t};return o(e)}(e,t):ee.toJSONObject(e);return{message:this.message,name:this.name,description:this.description,number:this.number,fileName:this.fileName,lineNumber:this.lineNumber,columnNumber:this.columnNumber,stack:this.stack,config:n,code:this.code,status:this.status}}}function ye(e){return ee.isPlainObject(e)||ee.isArray(e)}function we(e){return ee.endsWith(e,"[]")?e.slice(0,-2):e}function ve(e,t,n){return e?e.concat(t).map(function(e,t){return e=we(e),!n&&t?"["+e+"]":e}).join(n?".":""):t}ge.ERR_BAD_OPTION_VALUE="ERR_BAD_OPTION_VALUE",ge.ERR_BAD_OPTION="ERR_BAD_OPTION",ge.ECONNABORTED="ECONNABORTED",ge.ETIMEDOUT="ETIMEDOUT",ge.ECONNREFUSED="ECONNREFUSED",ge.ERR_NETWORK="ERR_NETWORK",ge.ERR_FR_TOO_MANY_REDIRECTS="ERR_FR_TOO_MANY_REDIRECTS",ge.ERR_DEPRECATED="ERR_DEPRECATED",ge.ERR_BAD_RESPONSE="ERR_BAD_RESPONSE",ge.ERR_BAD_REQUEST="ERR_BAD_REQUEST",ge.ERR_CANCELED="ERR_CANCELED",ge.ERR_NOT_SUPPORT="ERR_NOT_SUPPORT",ge.ERR_INVALID_URL="ERR_INVALID_URL",ge.ERR_FORM_DATA_DEPTH_EXCEEDED="ERR_FORM_DATA_DEPTH_EXCEEDED";const Ae=ee.toFlatObject(ee,{},null,function(e){return/^is[A-Z]/.test(e)});function _e(e,t,n){if(!ee.isObject(e))throw new TypeError("target must be an object");t=t||new FormData;const r=(e,t)=>{const r=ee.getSafeProp(n,e);return ee.isUndefined(r)?t:r},o=r("metaTokens",!0),i=r("visitor")||h,a=r("dots",!1),s=r("indexes",!1),l=r("Blob")||"undefined"!=typeof Blob&&Blob,c=r("maxDepth",100),u=l&&ee.isSpecCompliantForm(t),d=[];if(!ee.isFunction(i))throw new TypeError("visitor must be a function");function f(e){if(null===e)return"";if(ee.isDate(e))return e.toISOString();if(ee.isBoolean(e))return e.toString();if(!u&&ee.isBlob(e))throw new ge("Blob is not supported. Use a Buffer instead.");if(ee.isArrayBuffer(e)||ee.isTypedArray(e)){if(u&&"function"==typeof l)return new l([e]);throw new ge("Blob is not supported. Use a Buffer instead.",ge.ERR_NOT_SUPPORT)}return e}function p(e){if(e>c)throw new ge("Object is too deeply nested ("+e+" levels). Max depth: "+c,ge.ERR_FORM_DATA_DEPTH_EXCEEDED)}function h(e,n,r){let i=e;if(ee.isReactNative(t)&&ee.isReactNativeBlob(e))return t.append(ve(r,n,a),f(e)),!1;if(e&&!r&&"object"==typeof e)if(ee.endsWith(n,"{}"))n=o?n:n.slice(0,-2),e=function(e){if(c===1/0)return JSON.stringify(e);const t=[];return JSON.stringify(e,function(e,n){if(!ee.isObject(n))return n;for(;t.length&&t[t.length-1]!==this;)t.pop();return t.push(n),p(1+t.length-1),n})}(e);else if(ee.isArray(e)&&function(e){return ee.isArray(e)&&!e.some(ye)}(e)||(ee.isFileList(e)||ee.endsWith(n,"[]"))&&(i=ee.toArray(e)))return n=we(n),i.forEach(function(e,r){!ee.isUndefined(e)&&null!==e&&t.append(!0===s?ve([n],r,a):null===s?n:n+"[]",f(e))}),!1;return!!ye(e)||(t.append(ve(r,n,a),f(e)),!1)}const b=Object.assign(Ae,{defaultVisitor:h,convertValue:f,isVisitable:ye});if(!ee.isObject(e))throw new TypeError("data must be an object");return function e(n,r,o=0){if(!ee.isUndefined(n)){if(p(o),-1!==d.indexOf(n))throw new Error("Circular reference detected in "+r.join("."));d.push(n),ee.forEach(n,function(n,a){!0===(!(ee.isUndefined(n)||null===n)&&i.call(t,n,ee.isString(a)?a.trim():a,r,b))&&e(n,r?r.concat(a):[a],o+1)}),d.pop()}}(e),t}function Oe(e){const t={"!":"%21","'":"%27","(":"%28",")":"%29","~":"%7E","%20":"+"};return encodeURIComponent(e).replace(/[!'()~]|%20/g,function(e){return t[e]})}function Ce(e,t){this._pairs=[],e&&_e(e,this,t)}const Ee=Ce.prototype;function Se(e){return encodeURIComponent(e).replace(/%3A/gi,":").replace(/%24/g,"$").replace(/%2C/gi,",").replace(/%20/g,"+")}function Re(e,t,n){if(!t)return e;e=e||"";const r=ee.isFunction(n)?{serialize:n}:n,o=ee.getSafeProp(r,"encode")||Se,i=ee.getSafeProp(r,"serialize");let a;if(a=i?i(t,r):ee.isURLSearchParams(t)?t.toString():new Ce(t,r).toString(o),a){const t=e.indexOf("#");-1!==t&&(e=e.slice(0,t)),e+=(-1===e.indexOf("?")?"?":"&")+a}return e}Ee.append=function(e,t){this._pairs.push([e,t])},Ee.toString=function(e){const t=e?t=>e.call(this,t,Oe):Oe;return this._pairs.map(function(e){return t(e[0])+"="+t(e[1])},"").join("&")};const Pe=Symbol("internals");function je(e){return e?e.length:0}function xe(e){if(e)for(;e.length&&null===e[e.length-1];)e.pop()}function Be(e,t){const n=e.handlers,r=je(n);n!==t.handlersRef?(t.handlersRef=n,t.handlerEntries.clear()):r!==t.handlersLength&&(r?t.handlerEntries.forEach(function(e,r){n[e.index]!==e.handler&&t.handlerEntries.delete(r)}):t.handlerEntries.clear()),t.handlersLength=r}class Te{constructor(){this.handlers=[],this[Pe]={handlersRef:this.handlers,handlersLength:this.handlers.length,handlerEntries:new Map,iterationDepth:0,nextId:0}}use(e,t,n){const r={fulfilled:e,rejected:t,synchronous:!!n&&n.synchronous,runWhen:n?n.runWhen:null},o=this[Pe];null==this.handlers&&(this.handlers=[]),Be(this,o);const i=o.nextId++;return this.handlers.push(r),o.handlerEntries.set(i,{handler:r,index:this.handlers.length-1}),o.handlersLength=this.handlers.length,i}eject(e){const t=this[Pe];Be(this,t);const n=function(e){return"string"==typeof e&&""!==e&&String(Number(e))===e?Number(e):e}(e),r=t.handlerEntries.get(n);if(r){if(t.handlerEntries.delete(n),this.handlers[r.index]!==r.handler)return;this.handlers[r.index]=null,t.iterationDepth||(xe(this.handlers),t.handlersLength=this.handlers.length)}}clear(){this.handlers&&(this.handlers=[],Be(this,this[Pe]))}forEach(e){const t=this[Pe];Be(this,t),t.iterationDepth++;try{ee.forEach(this.handlers,function(t){null!==t&&e(t)})}finally{--t.iterationDepth||(Be(this,t),xe(this.handlers),t.handlersLength=je(this.handlers))}}}var Ue={silentJSONParsing:!0,forcedJSONParsing:!0,clarifyTimeoutError:!1,legacyInterceptorReqResOrdering:!0,advertiseZstdAcceptEncoding:!1,validateStatusUndefinedResolves:!0,encodeBasicAuthUsername:!1},Ne={isBrowser:!0,classes:{URLSearchParams:"undefined"!=typeof URLSearchParams?URLSearchParams:Ce,FormData:"undefined"!=typeof FormData?FormData:null,Blob:"undefined"!=typeof Blob?Blob:null},protocols:["http","https","file","blob","url","data"]};const Le="undefined"!=typeof window&&"undefined"!=typeof document,Fe="object"==typeof navigator&&navigator||void 0,De=Le&&(!Fe||["ReactNative","NativeScript","NS"].indexOf(Fe.product)<0),ke="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope&&"function"==typeof self.importScripts,Ie=Le&&window.location.href||"http://localhost";var $e={...Object.freeze({__proto__:null,hasBrowserEnv:Le,hasStandardBrowserEnv:De,hasStandardBrowserWebWorkerEnv:ke,navigator:Fe,origin:Ie}),...Ne};function Me(e){if(e>100)throw new ge("FormData field is too deeply nested ("+e+" levels). Max depth: 100",ge.ERR_FORM_DATA_DEPTH_EXCEEDED)}function qe(e){const t={},n=Object.keys(e);let r;const o=n.length;let i;for(r=0;r<o;r++)i=n[r],t[i]=e[i];return t}function ze(e){if(!ee.isArray(e))return e;const t=Object.keys(e);return t.length!==e.length||t.some((e,t)=>e!==String(t))?qe(e):e}function Ve(e){function t(e,n,r,o){Me(o);let i=e[o++];if("__proto__"===i)return!0;const a=Number.isFinite(+i),s=o>=e.length;return i=!i&&ee.isArray(r)?r.length:i,s?(ee.hasOwnProp(r,i)?(r[i]=ze(r[i]),r[i]=ee.isArray(r[i])?r[i].concat(n):[r[i],n]):r[i]=n,!a):(ee.hasOwnProp(r,i)&&ee.isObject(r[i])||(r[i]=[]),t(e,n,r[i],o)&&ee.isArray(r[i])&&(r[i]=qe(r[i])),!a)}if(ee.isFormData(e)&&ee.isFunction(e.entries)){const n={};return ee.forEachEntry(e,(e,r)=>{t(function(e){const t=[],n=/[^.[\]]+|\[([^.[\]]*)]/g;let r;for(;null!==(r=n.exec(e));)Me(t.length),t.push("[]"===r[0]?"":r[1]||r[0]);return t}(e),r,n,0)}),function(e){const t=[e];for(;t.length;){const e=t.pop();Object.keys(e).forEach(n=>{const r=e[n]=ze(e[n]);(ee.isArray(r)||ee.isPlainObject(r))&&t.push(r)})}return e}(n)}return null}const Je=Object.freeze(["get","delete","head","options","post","put","patch","purge","link","unlink","query"]),We=(e,t)=>null!=e&&ee.hasOwnProp(e,t)?e[t]:void 0,He={transitional:Ue,adapter:["xhr","http","fetch"],transformRequest:[function(e,t){const n=t.getContentType()||"",r=n.indexOf("application/json")>-1,o=ee.isObject(e);if(o&&ee.isHTMLForm(e)&&(e=new FormData(e)),ee.isFormData(e))return r?JSON.stringify(Ve(e)):e;if(ee.isArrayBuffer(e)||ee.isBuffer(e)||ee.isStream(e)||ee.isFile(e)||ee.isBlob(e)||ee.isReadableStream(e))return e;if(ee.isArrayBufferView(e))return e.buffer;if(ee.isURLSearchParams(e))return t.setContentType("application/x-www-form-urlencoded;charset=utf-8",!1),e.toString();let i;if(o){const t=We(this,"formSerializer");if(n.indexOf("application/x-www-form-urlencoded")>-1)return function(e,t){return _e(e,new $e.classes.URLSearchParams,{visitor:function(e,t,n,r){return $e.isNode&&ee.isBuffer(e)?(this.append(t,e.toString("base64")),!1):r.defaultVisitor.apply(this,arguments)},...t})}(e,t).toString();if((i=ee.isFileList(e))||n.indexOf("multipart/form-data")>-1){const n=We(this,"env"),r=n&&n.FormData;return _e(i?{"files[]":e}:e,r&&new r,t)}}return o||r?(t.setContentType("application/json",!1),function(e){if(ee.isString(e))try{return(0,JSON.parse)(e),ee.trim(e)}catch(e){if("SyntaxError"!==e.name)throw e}return(0,JSON.stringify)(e)}(e)):e}],transformResponse:[function(e){const t=We(this,"transitional")||He.transitional,n=t&&t.forcedJSONParsing,r=We(this,"responseType"),o="json"===r;if(ee.isResponse(e)||ee.isReadableStream(e))return e;if(e&&ee.isString(e)&&(n&&!r||o)){const n=!(t&&t.silentJSONParsing)&&o;try{return JSON.parse(e,We(this,"parseReviver"))}catch(e){if(n){if("SyntaxError"===e.name)throw ge.from(e,ge.ERR_BAD_RESPONSE,this,null,We(this,"response"));throw e}}}return e}],timeout:0,xsrfCookieName:"XSRF-TOKEN",xsrfHeaderName:"X-XSRF-TOKEN",maxContentLength:-1,maxBodyLength:-1,env:{FormData:$e.classes.FormData,Blob:$e.classes.Blob},validateStatus:function(e){return e>=200&&e<300},headers:{common:{Accept:"application/json, text/plain, */*","Content-Type":void 0}}};function Xe(e,t){const n=this||He,r=t||n,o=pe.from(r.headers);let i=r.data;return ee.forEach(e,function(e){i=e.call(n,i,o.normalize(),t?t.status:void 0)}),o.normalize(),i}function Ke(e){return!(!e||!e.__CANCEL__)}ee.forEach(Je,e=>{He.headers[e]={}});class Ge extends ge{constructor(e,t,n){super(e??"canceled",ge.ERR_CANCELED,t,n),this.name="CanceledError",this.__CANCEL__=!0}}function Ze(e,t,n){const r=n.config.validateStatus;n.status&&r&&!r(n.status)?t(new ge("Request failed with status code "+n.status,n.status>=400&&n.status<500?ge.ERR_BAD_REQUEST:ge.ERR_BAD_RESPONSE,n.config,n.request,n)):e(n)}const Ye=/[\t\n\r]/g;function Qe(e){if("string"!=typeof e)return e;let t=0;for(;t<e.length&&e.charCodeAt(t)<=32;)t++;return e.slice(t).replace(Ye,"")}function et(e){const t=/^([-+\w]{1,25}):(?:\/\/)?/.exec(e);return t&&t[1].toLowerCase()||""}const tt=e=>{try{return decodeURIComponent(e)}catch(t){return e}};var nt=$e.hasStandardBrowserEnv?{write(e,t,n,r,o,i,a){if("undefined"==typeof document)return;const s=[`${e}=${encodeURIComponent(t)}`];ee.isNumber(n)&&s.push(`expires=${new Date(n).toUTCString()}`),ee.isString(r)&&s.push(`path=${r}`),ee.isString(o)&&s.push(`domain=${o}`),!0===i&&s.push("secure"),ee.isString(a)&&s.push(`SameSite=${a}`),document.cookie=s.join("; ")},read(e){if("undefined"==typeof document)return null;const t=document.cookie;if(!t)return null;const n=t.split(";");for(let t=0;t<n.length;t++){const r=n[t].replace(/^\s+/,""),o=r.indexOf("=");if(-1!==o&&r.slice(0,o)===e)return tt(r.slice(o+1))}return null},async readAsync(e){try{const t="undefined"!=typeof window&&window.cookieStore;if(t&&ee.isFunction(t.get)){const n=await t.get(e);return n?tt(n.value):null}}catch(e){}return this.read(e)},remove(e){this.write(e,"",Date.now()-864e5,"/")}}:{write(){},read:()=>null,readAsync:async()=>null,remove(){}};const rt=(e,t,n=3)=>{let r=0;const o=function(e,t){e=e||10;const n=new Array(e),r=new Array(e);let o,i=0,a=0;return t=void 0!==t?t:1e3,function(s){const l=Date.now(),c=r[a];o||(o=l),n[i]=s,r[i]=l;let u=a,d=0;for(;u!==i;)d+=n[u++],u%=e;if(i=(i+1)%e,i===a&&(a=(a+1)%e),l-o<t)return;const f=c&&l-c;return f?Math.round(1e3*d/f):void 0}}(50,250);return function(n,i){let a,s,l=0,c=1e3/i;const u=(n,i=Date.now())=>{l=i,a=null,s&&(clearTimeout(s),s=null),(n=>{if(!n||!ee.isNumber(n.loaded))return;const i=n.loaded,a=n.lengthComputable?n.total:void 0,s=Math.max(0,null!=a?Math.min(i,a):i),l=Math.max(0,s-r),c=o(l);r=Math.max(r,s),e({loaded:s,total:a,progress:a?s/a:void 0,bytes:l,rate:c||void 0,estimated:c&&a?(a-s)/c:void 0,event:n,lengthComputable:null!=a,[t?"download":"upload"]:!0})})(...n)};return[(...e)=>{const t=Date.now(),n=t-l;n>=c?u(e,t):(a=e,s||(s=setTimeout(()=>{s=null,u(a)},c-n)))},()=>a&&u(a),(...e)=>u(e)]}(0,n)},ot=(e,t)=>{const n=null!=e;return[r=>t[0]({lengthComputable:n,total:e,loaded:r}),t[1]]},it=(e,t=ee.asap)=>(...n)=>t(()=>e(...n));var at=$e.hasStandardBrowserEnv?(e=>t=>(t=new URL(t,document.baseURI||$e.origin),e.protocol===t.protocol&&e.host===t.host&&e.port===t.port))(new URL($e.origin)):()=>!0;const st=/^https?:(?!\/\/)/i;function lt(e,t){if("string"==typeof e){const n=Qe(e);if(st.test(n))throw new ge(`Invalid URL ${JSON.stringify(function(e){const t=e.replace(/^(https?:\/{0,2})[^/?#]*@/i,`$1${he}@`),n=t.indexOf("#"),r=(-1===n?t:t.slice(0,n)).replace(/([?&][^=&#]*=)[^&#]*/g,`$1${he}`);return-1===n?r:`${r}#${o=t.slice(n+1),o?o.replace(/(^|&)([^=&]*=)?[^&]+/g,(e,t,n="")=>`${t}${n}${he}`):o}`;var o}(n))}: missing "//" after protocol`,ge.ERR_INVALID_URL,t)}}function ct(e,t,n,r){lt(t,r);let o=!("string"==typeof(i=t)&&/^([a-z][a-z\d+\-.]*:)?\/\//i.test(i));var i;return e&&(o||!1===n)?(lt(e,r),function(e,t){if(!t)return e;let n=e.length;for(;n>0&&47===e.charCodeAt(n-1);)n--;return e.slice(0,n)+"/"+t.replace(/^\/+/,"")}(e,t)):t}const ut=e=>e instanceof pe?{...e}:e,dt=e=>Object.getOwnPropertySymbols&&Object.getOwnPropertyDescriptor?Object.keys(e).concat(Object.getOwnPropertySymbols(e).filter(t=>{const n=Object.getOwnPropertyDescriptor(e,t);return n&&n.enumerable})):Object.keys(e);function ft(e,t,n,r){return ee.isPlainObject(e)&&ee.isPlainObject(t)?ee.merge.call({caseless:r},e,t):ee.isPlainObject(t)?ee.merge({},t):ee.isArray(t)?t.slice():t}function pt(e,t,n,r){return ee.isUndefined(t)?ee.isUndefined(e)?void 0:ft(void 0,e,0,r):ft(e,t,0,r)}function ht(e,t){if(!ee.isUndefined(t))return ft(void 0,t)}function bt(e,t){return ee.isUndefined(t)?ee.isUndefined(e)?void 0:ft(void 0,e):ft(void 0,t)}function mt(e,t,n,r,o){return ee.hasOwnProp(o,n)?ft(e,t):ee.hasOwnProp(r,n)?ft(void 0,e):void 0}const gt=Object.freeze({__proto__:null,value:Object.prototype.hasOwnProperty,enumerable:!1,writable:!0,configurable:!0}),yt={url:ht,method:ht,data:ht,baseURL:bt,transformRequest:bt,transformResponse:bt,params:function(e,t){const n=[],r=new WeakMap,o={};function i(e,t){if(!ee.isPlainObject(t))return ee.isArray(t)?t.slice():t;const i=ee.isPlainObject(e)?e:o;let a=r.get(t);if(a||(a=new WeakMap,r.set(t,a)),a.has(i))return a.get(i);const s={};return a.set(i,s),n.push({base:i,source:t,result:s}),s}const a=ee.isUndefined(t)?i(void 0,e):i(e,t);for(;n.length;){const{base:e,source:t,result:r}=n.pop(),o=new Set(dt(e)),a=new Set(dt(t));new Set([...o,...a]).forEach(n=>{if("__proto__"===n||"constructor"===n||"prototype"===n)return;const s=a.has(n),l=s?t[n]:void 0,c=s&&!ee.isPlainObject(l)||!o.has(n)?void 0:e[n];r[n]=s?i(c,l):i(void 0,c)})}return function(e){const t=[{value:e}],n=new WeakSet,r=new WeakSet;for(;t.length;){const{value:e,done:o}=t.pop();if(!ee.isPlainObject(e)&&!ee.isArray(e))continue;if(o){n.delete(e);continue}if(n.has(e))throw new ge("Circular reference detected in params",ge.ERR_BAD_OPTION_VALUE);if(r.has(e))continue;r.add(e),n.add(e),t.push({value:e,done:!0});const i=Object.keys(e);Object.getOwnPropertySymbols&&Object.getOwnPropertyDescriptor&&Object.getOwnPropertySymbols(e).forEach(t=>{const n=Object.getOwnPropertyDescriptor(e,t);n&&n.enumerable&&i.push(t)}),i.forEach(n=>{if("__proto__"===n||"constructor"===n||"prototype"===n){const r=Object.getOwnPropertyDescriptor(e,n);r&&ee.hasOwnProp(r,"value")&&t.push({value:r.value})}else t.push({value:e[n]})})}}(a),a},paramsSerializer:bt,timeout:bt,timeoutErrorMessage:bt,withCredentials:bt,withXSRFToken:bt,adapter:bt,responseType:bt,xsrfCookieName:bt,xsrfHeaderName:bt,onUploadProgress:bt,onDownloadProgress:bt,decompress:bt,maxContentLength:bt,maxBodyLength:bt,beforeRedirect:bt,transport:bt,httpAgent:bt,httpsAgent:bt,cancelToken:bt,socketPath:bt,allowedSocketPaths:bt,responseEncoding:bt,validateStatus:mt,headers:function(e,t,n){return pt(ut(e),ut(t),0,!0)}};function wt(e,t){e=e||{},t=t||{};const n=Object.create(null);Object.defineProperty(n,"hasOwnProperty",gt);const r=dt({...e,...t});for(let o=0,i=r.length;o<i;o++){const i=r[o];if("__proto__"===i||"constructor"===i||"prototype"===i)continue;const a=ee.hasOwnProp(yt,i)?yt[i]:pt,s=ee.hasOwnProp(e,i)?e[i]:void 0,l=ee.hasOwnProp(t,i)?t[i]:void 0,c=a===mt?a(s,l,i,e,t):a(s,l,i);ee.isUndefined(c)&&a!==mt||(n[i]=c)}return ee.hasOwnProp(t,"validateStatus")&&ee.isUndefined(t.validateStatus)&&!1===function(e,t,n){const r=ee.hasOwnProp(t,"transitional")?t.transitional:void 0;if(!ee.isUndefined(r)){if(!ee.isPlainObject(r))return;if(ee.hasOwnProp(r,n))return r[n]}const o=ee.hasOwnProp(e,"transitional")?e.transitional:void 0;if(ee.isPlainObject(o)&&ee.hasOwnProp(o,n))return o[n]}(e,t,"validateStatusUndefinedResolves")&&(ee.hasOwnProp(e,"validateStatus")?n.validateStatus=ft(void 0,e.validateStatus):delete n.validateStatus),n}const vt=["content-type","content-length"],At=e=>encodeURIComponent(e).replace(/%([0-9A-F]{2})/gi,(e,t)=>String.fromCharCode(parseInt(t,16))),_t=e=>nt.read(e);function Ot(e,t=_t){const n=wt({},e),r=e=>ee.hasOwnProp(n,e)?n[e]:void 0,o=r("data");let i=r("withXSRFToken");const a=r("xsrfHeaderName"),s=r("xsrfCookieName");let l=r("headers");const c=r("auth"),u=r("baseURL"),d=r("allowAbsoluteUrls"),f=r("url");if(n.headers=l=pe.from(l),n.url=Re(ct(u,f,d,n),r("params"),r("paramsSerializer")),c){const t=ee.getSafeProp(c,"username")||"",n=ee.getSafeProp(c,"password")||"",o=r("transitional"),i=o&&ee.hasOwnProp(o,"encodeBasicAuthUsername")&&!0===o.encodeBasicAuthUsername;try{l.set("Authorization","Basic "+btoa((i?At(t):t)+":"+(n?At(n):"")))}catch(t){throw ge.from(t,ge.ERR_BAD_OPTION_VALUE,e)}}if(ee.isFormData(o)){const e=ee.getSafeProp(o,"getHeaders");$e.hasStandardBrowserEnv||$e.hasStandardBrowserWebWorkerEnv||ee.isReactNative(o)?l.setContentType(void 0):ee.isFunction(e)&&function(e,t,n){"content-only"===n?Object.entries(t||{}).forEach(([t,n])=>{vt.includes(t.toLowerCase())&&e.set(t,n)}):e.set(t)}(l,e.call(o),r("formDataHeaderPolicy"))}if($e.hasStandardBrowserEnv&&(ee.isFunction(i)&&(i=i(n)),!0===i||null==i&&at(n.url))){const e=a&&s&&t(s);e&&l.set(a,e)}return n}var Ct="undefined"!=typeof XMLHttpRequest&&function(e){return new Promise(function(t,n){let r,o;try{const e=$e.hasStandardBrowserEnv&&"undefined"!=typeof window&&window.cookieStore;r=e&&ee.isFunction(e.get)}catch(e){}const i=Ot(e,r?e=>(o=e,null):void 0);let a=i.data;const s=pe.from(i.headers).normalize();let l,c,u,d,f,p,h,{responseType:b,onUploadProgress:m,onDownloadProgress:g}=i;function y(){clearTimeout(c);try{f&&f()}catch(e){setTimeout(()=>{throw e})}try{p&&p()}catch(e){setTimeout(()=>{throw e})}w&&(d&&w.removeEventListener("progress",d),w.upload&&(u&&w.upload.removeEventListener("progress",u),f&&w.upload.removeEventListener("loadend",f))),i.cancelToken&&i.cancelToken.unsubscribe(l),i.signal&&i.signal.removeEventListener("abort",l)}let w=new XMLHttpRequest;function v(r){if(!w)return;if(!(0!==w.status||"file"===(et(Qe(i.url))||et($e.origin))||w.responseURL&&w.responseURL.startsWith("file:")))return n(new ge("Request aborted",ge.ECONNABORTED,e,w)),y(),void(w=null);try{r?h&&h(r):p&&p()}catch(e){setTimeout(()=>{throw e})}if(!w)return;const o=pe.from("getAllResponseHeaders"in w&&w.getAllResponseHeaders());Ze(function(e){t(e),y()},function(e){n(e),y()},{data:b&&"text"!==b&&"json"!==b?w.response:w.responseText,status:w.status,statusText:w.statusText,headers:o,config:e,request:w}),w=null}if(w.open(i.method.toUpperCase(),i.url,!0),w.timeout=i.timeout,"onloadend"in w?w.onloadend=v:w.onreadystatechange=function(){w&&4===w.readyState&&(0!==w.status||w.responseURL&&w.responseURL.startsWith("file:"))&&setTimeout(v)},w.onabort=function(){w&&(n(new ge("Request aborted",ge.ECONNABORTED,e,w)),y(),w=null)},w.onerror=function(t){const r=t&&t.message?t.message:"Network Error",o=new ge(r,ge.ERR_NETWORK,e,w);o.event=t||null,n(o),y(),w=null},w.ontimeout=function(){if(!w)return;let t=i.timeout?"timeout of "+i.timeout+"ms exceeded":"timeout exceeded";const r=i.transitional||Ue;i.timeoutErrorMessage&&(t=i.timeoutErrorMessage),n(new ge(t,r.clarifyTimeoutError?ge.ETIMEDOUT:ge.ECONNABORTED,e,w)),y(),w=null},void 0===a&&s.setContentType(null),ee.isUndefined(i.withCredentials)||(w.withCredentials=!!i.withCredentials),b&&"json"!==b&&(w.responseType=i.responseType),g&&([d,p,h]=rt(g,!0),w.addEventListener("progress",d)),m&&w.upload&&([u,f]=rt(m),w.upload.addEventListener("progress",u),w.upload.addEventListener("loadend",f)),i.cancelToken||i.signal){if(l=t=>{if(!w)return;n(!t||t.type?new Ge(null,e,w):t);const r=w;y(),w=null,r.abort()},i.cancelToken&&i.cancelToken.subscribe(l),!w)return;i.signal&&(i.signal.aborted?l():i.signal.addEventListener("abort",l))}if(!w)return;const A=et(i.url);if(A&&!$e.protocols.includes(A))return n(new ge("Unsupported protocol "+A+":",ge.ERR_BAD_REQUEST,e)),void y();const _=()=>{w&&("setRequestHeader"in w&&ee.forEach(ie(s),function(e,t){w.setRequestHeader(t,e)}),w.send(a||null))};if(o){const t="undefined"!=typeof performance&&ee.isFunction(performance.now)?()=>performance.now():Date.now,r=w.timeout>0?t()+Number(w.timeout):void 0,a=()=>{if(!w)return;const e=w;e.ontimeout(),e.abort()};if(void 0!==r){const e=()=>{const n=r-t();n>0?c=setTimeout(e,Math.min(n,2147483647)):a()};e()}nt.readAsync(o).then(e=>{if(w)if(void 0!==r&&t()>=r)a();else{if(e){const t=ee.hasOwnProp(i,"xsrfHeaderName")&&i.xsrfHeaderName;s.set(t,e)}_()}}).catch(t=>{w&&(n(ge.from(t,null,e,w)),y(),w=null)})}else _()})};const Et=(e,t)=>{if(e=e?e.filter(Boolean):[],!t&&!e.length)return;const n=new AbortController;let r=!1;const o=function(e){if(!r){r=!0,a();const t=e instanceof Error?e:this.reason;n.abort(t instanceof ge?t:new Ge(t instanceof Error?t.message:t))}};let i=t&&setTimeout(()=>{i=null,o(new ge(`timeout of ${t}ms exceeded`,ge.ETIMEDOUT))},t);const a=()=>{e&&(i&&clearTimeout(i),i=null,e.forEach(e=>{const t=ee.getSafeProp(e,"unsubscribe");ee.isFunction(t)?t.call(e,o):e.removeEventListener("abort",o)}),e=null)};e.forEach(e=>{r||(e.aborted?o.call(e):e.addEventListener("abort",o,{once:!0}))});const{signal:s}=n;return s.unsubscribe=()=>ee.asap(a),s},St=function*(e,t){let n=e.byteLength;if(n<t)return void(yield e);let r,o=0;for(;o<n;)r=o+t,yield e.slice(o,r),o=r},Rt=(e,t,n,r)=>{const o=async function*(e,t){for await(const n of async function*(e){if(e[Symbol.asyncIterator])return void(yield*e);const t=e.getReader();try{for(;;){const{done:e,value:n}=await t.read();if(e)break;yield n}}finally{await t.cancel()}}(e))yield*St(n,t)}(e,t);let i,a=0,s=e=>{i||(i=!0,r&&r(e))};return new ReadableStream({async pull(e){try{const{done:t,value:r}=await o.next();if(t)return s(),void e.close();let i=r.byteLength;if(n){let e=a+=i;n(e)}e.enqueue(new Uint8Array(r))}catch(e){throw s(e),e}},cancel:e=>(s(e),o.return())},{highWaterMark:2})},Pt="\r\n",jt=e=>String(e).replace(/\r\n|\r|\n/g,Pt),xt=e=>String(e).replace(/[\r\n"]/g,e=>"\r"===e?"%0D":"\n"===e?"%0A":"%22"),Bt=(e,t)=>{let n=0;for(let r=0;r<e.length;r++){const o=e.charCodeAt(r);!t||13!==o&&10!==o?o<128?n++:o<2048?n+=2:o>=55296&&o<=56319&&e.charCodeAt(r+1)>=56320&&e.charCodeAt(r+1)<=57343?(n+=4,r++):n+=3:(13===o&&10===e.charCodeAt(r+1)&&r++,n+=2)}return n};class Tt extends TypeError{constructor(e,t){super(e),this.name="FormDataError",this.reason=t}}const Ut=e=>e>=48&&e<=57||e>=65&&e<=70||e>=97&&e<=102,Nt=(e,t,n)=>t+2<n&&Ut(e.charCodeAt(t+1))&&Ut(e.charCodeAt(t+2)),Lt=e=>e<=57?e-48:(223&e)-55,Ft=e=>e>=65&&e<=90||e>=97&&e<=122||e>=48&&e<=57||43===e||47===e||45===e||95===e,Dt=e=>9===e||10===e||12===e||13===e||32===e,kt=e=>{const t=e.length;let n=0,r=0,o=!1;for(let i=0;i<t;i++){let a=e.charCodeAt(i);37===a&&Nt(e,i,t)&&(a=16*Lt(e.charCodeAt(i+1))+Lt(e.charCodeAt(i+2)),i+=2),Dt(a)||(61!==a?!Ft(a)||r>0?o=!0:n++:r++)}return o||r>2||r>0&&(n+r)%4!=0||n%4==1?(e=>{const t=e.length;let n=0;return t>0&&61===e.charCodeAt(t-1)&&(n++,t>1&&61===e.charCodeAt(t-2)&&n++),Math.floor(3*(t-n)/4)})(e):(e=>{const t=e%4;return 3*Math.floor(e/4)+(2===t?1:3===t?2:0)})(n)};const It="1.21.0",$t={cache:"default",redirect:"follow",referrer:"about:client",referrerPolicy:"",mode:"cors",integrity:"",keepalive:!1,priority:"auto",window:null},{isFunction:Mt}=ee,qt=e=>{if(!ee.isString(e))return e;try{return decodeURIComponent(e)}catch(t){return e}},zt=(e,...t)=>{try{return!!e(...t)}catch(e){return!1}},Vt=e=>{const t=void 0!==ee.global&&null!==ee.global?ee.global:globalThis,{ReadableStream:n,TextEncoder:r}=t;e=ee.merge.call({skipUndefined:!0},{Request:t.Request,Response:t.Response,Blob:t.Blob},e);const o=ee.hasOwnProp(e,"fetch")?e.fetch:void 0,{Request:i,Response:a,Blob:s}=e,l=o?Mt(o):"function"==typeof fetch,c=Mt(i),u=Mt(a);if(!l)return!1;const d=l&&Mt(n),f=l&&("function"==typeof r?(p=new r,e=>p.encode(e)):async e=>new Uint8Array(await new i(e).arrayBuffer()));var p;const h=c&&d&&zt(()=>{let e=!1;const t=new i($e.origin,{body:new n,method:"POST",get duplex(){return e=!0,"half"}}),r=t.headers.has("Content-Type");return null!=t.body&&t.body.cancel(),e&&!r}),b=u&&d&&zt(()=>ee.isReadableStream(new a("").body)),m=Object.assign(Object.create(null),$t);c&&!zt(()=>new i($e.origin,m))&&(delete m.cache,zt(()=>new i($e.origin,m))||(m.cache=$t.cache));const g={stream:b&&(e=>e.body)};l&&["text","arrayBuffer","blob","formData","stream"].forEach(e=>{!g[e]&&(g[e]=(t,n)=>{let r=t&&t[e];if(r)return r.call(t);throw new ge(`Response type '${e}' is not supported`,ge.ERR_NOT_SUPPORT,n)})});const y=async e=>null==e?0:ee.isBlob(e)?e.size:ee.isArrayBufferView(e)||ee.isArrayBuffer(e)?e.byteLength:(ee.isURLSearchParams(e)&&(e+=""),ee.isString(e)?(await f(e)).byteLength:void 0);return async e=>{let{url:t,method:n,data:l,signal:u,cancelToken:f,timeout:p,onDownloadProgress:w,onUploadProgress:v,responseType:A,headers:_,withCredentials:O="same-origin",fetchOptions:C,maxContentLength:E,maxBodyLength:S,maxRedirects:R}=Ot(e);const P=ee.isNumber(E)&&E>-1,j=ee.isNumber(S)&&S>-1,x=t=>ee.hasOwnProp(e,t)?e[t]:void 0;let B=o||fetch;A=A?(A+"").toLowerCase():"text";let T=Et([u,f&&f.toAbortSignal()],p),U=null;const N=T&&T.unsubscribe&&(()=>{T.unsubscribe()});let L,F=null,D=null;const k=()=>new ge("Request body larger than maxBodyLength limit",ge.ERR_BAD_REQUEST,e,U);try{let o;const u=x("auth");if(u){o={username:ee.getSafeProp(u,"username")||"",password:ee.getSafeProp(u,"password")||""}}let f;if((e=>{const t=e.indexOf("://");let n=e;return-1!==t&&(n=n.slice(t+3)),n.includes("@")||n.includes(":")})(t)){if(f=new URL(t,$e.origin),!o&&(f.username||f.password)){o={username:qt(f.username),password:qt(f.password)}}(f.username||f.password)&&(f.username="",f.password="",t=f.href)}if(o&&(_.delete("authorization"),_.set("Authorization","Basic "+btoa((I=(o.username||"")+":"+(o.password||""),encodeURIComponent(I).replace(/%([0-9A-F]{2})/gi,(e,t)=>String.fromCharCode(parseInt(t,16))))))),P&&f&&"data:"===f.protocol&&function(e){const t="string"==typeof e?e.indexOf("#"):-1;return((e,t)=>{if(!e||"string"!=typeof e)return 0;if(!/^data:/i.test(e))return 0;const n=e.indexOf(",");if(n<0)return 0;const r=e.slice(5,n),o=e.slice(n+1);if(/; *base64[\t\n\f\r ]*$/i.test(r))return t(o);let i=0;for(let e=0,t=o.length;e<t;e++){const n=o.charCodeAt(e);if(37===n&&Nt(o,e,t))i+=1,e+=2;else if(n<128)i+=1;else if(n<2048)i+=2;else if(n>=55296&&n<=56319&&e+1<t){const t=o.charCodeAt(e+1);t>=56320&&t<=57343?(i+=4,e++):i+=3}else i+=3}return i})(-1===t?e:e.slice(0,t),kt)}(f.href)>E)throw new ge("maxContentLength size of "+E+" exceeded",ge.ERR_BAD_RESPONSE,e,U);const p=ee.isSpecCompliantForm(l)&&pe.from(x("headers")).getContentType();let $;if(ee.isString(p)&&/^multipart\/form-data(?:\s*;|$)/i.test(p.trim())){const e=pe.parseParameters(p);ee.hasOwnProp(e,"boundary")&&($=e.boundary)}if(ee.isSpecCompliantForm(l)&&"get"!==n&&"head"!==n&&(j||v&&h||void 0!==$)&&(l=function(e,t,n,r,o){if(!ee.isFunction(t))throw new ge("Blob is not supported",ge.ERR_NOT_SUPPORT);if(void 0===o)if(ee.isFunction($e.generateString))o="axios-"+$e.generateString(36,"0123456789abcdef");else{const e=ee.global.crypto;if(!e||!ee.isFunction(e.getRandomValues))throw new ge("Random byte generation is not supported",ge.ERR_NOT_SUPPORT);const t=new Uint8Array(18);e.getRandomValues(t),o="axios-"+Array.from(t,e=>("0"+e.toString(16)).slice(-2)).join("")}try{return function(e,t,n,r,o){if(!ee.isFunction(t))throw new Tt("Blob is not supported","blob");if(!ee.isString(o)||!/^[A-Za-z0-9'()+_,./:=? -]{1,70}$/.test(o)||/ $/.test(o))throw new Tt("Invalid multipart boundary","boundary");const i="--"+o+"--"+Pt;let a=i.length;const s=[],l=e=>{if(a+e>n)throw r()};l(0);for(const[t,n]of e){const e=ee.isString(n),r=e?Bt(n,!0):n.size;if(!Number.isFinite(r)||r<0)throw new Tt("Unsupported FormData part size","part");l(r+Bt(t,!0)+(!e&&n.name?Bt(n.name,!1):0)+(!e&&n.type?Bt(n.type,!1):0));let i="--"+o+'\r\nContent-Disposition: form-data; name="'+xt(jt(t))+'"';e||(i+='; filename="'+xt(ee.isString(n.name)?n.name:"blob")+'"\r\nContent-Type: '+String(n.type||"application/octet-stream").replace(/[\r\n]/g,"")),i+=Pt+Pt;const c=Bt(i,!1)+r+2;l(c),a+=c,s.push({header:i,value:n,isString:e})}const c=[];for(const e of s)c.push(e.header,e.isString?jt(e.value):e.value,Pt);return c.push(i),new t(c,{type:"multipart/form-data; boundary="+o})}(e,t,n,r,o)}catch(e){if(e instanceof Tt){const t="boundary"===e.reason?ge.ERR_BAD_OPTION_VALUE:ge.ERR_BAD_REQUEST;throw new ge(e.message,t)}throw e}}(l,s,j?S:1/0,k,$),_.setContentType(void 0===$?l.type:p),L=l.size),j&&"get"!==n&&"head"!==n){const e=await y(l);if("number"==typeof e&&isFinite(e)&&(L=e,e>S))throw k()}const M=j&&(ee.isReadableStream(l)||ee.isStream(l)),q=(e,t,n)=>Rt(e,65536,e=>{if(j&&e>S)throw F=k();t&&t(e)},n);if(h&&"get"!==n&&"head"!==n&&(v||M)){if(L=L??await(async(e,t)=>ee.toFiniteNumber(e.getContentLength())??y(t))(_,l),0!==L||M){let e,n=new i(t,{method:"POST",body:l,duplex:"half"});if(ee.isFormData(l)&&(e=n.headers.get("content-type"))&&_.setContentType(e),n.body){const[e,t]=v&&ot(L,rt(it(v)))||[];l=q(n.body,e,t)}}}else if(M&&!c&&d&&"get"!==n&&"head"!==n)l=q(l);else if(M&&c&&!h&&"get"!==n&&"head"!==n)throw new ge("Stream request bodies are not supported by the current fetch implementation",ge.ERR_NOT_SUPPORT,e,U);ee.isString(O)||(O=O?"include":"omit");const z=c&&"credentials"in i.prototype;if(ee.isFormData(l)){const e=_.getContentType();e&&/^multipart\/form-data/i.test(e)&&!/boundary=/i.test(e)&&_.delete("content-type")}_.set("User-Agent","axios/"+It,!1);const V=null==C?C:Object.assign(Object.create(null),C);V&&(delete V.body,delete V.headers,delete V.method,delete V.signal,delete V.duplex,delete V.credentials);const J=Object.assign(Object.create(null),V,{signal:T,method:n.toUpperCase(),headers:ie(_.normalize()),body:l,duplex:"half",credentials:z?O:void 0});c&&(ee.forEach(m,(e,t)=>{void 0===J[t]&&(J[t]=e)}),void 0===J.signal&&(J.signal=null),void 0===J.body&&(J.body=null)),0===R&&(J.redirect="manual",V&&(V.redirect="manual")),U=c&&new i(t,J);let W=await(c?B(U,V):B(t,J));const H=pe.from(W.headers);if(P){const t=ee.toFiniteNumber(H.getContentLength());if(null!=t&&t>E)throw new ge("maxContentLength size of "+E+" exceeded",ge.ERR_BAD_RESPONSE,e,U)}const X=b&&("stream"===A||"response"===A);if(b&&W.body&&(w||P||X&&N)){const t={};["status","statusText","headers"].forEach(e=>{t[e]=W[e]});const n=ee.toFiniteNumber(H.getContentLength()),[r,o]=w&&ot(n,rt(it(w),!0))||[];let i=0;const s=t=>{if(P&&(i=t,i>E))throw D=new ge("maxContentLength size of "+E+" exceeded",ge.ERR_BAD_RESPONSE,e,U);r&&r(t)};W=new a(Rt(W.body,65536,s,()=>{o&&o(),N&&N()}),t)}A=A||"text";let K=await g[ee.findKey(g,A)||"text"](W,e);if(P&&!b&&!X){let t;if(null!=K&&("number"==typeof K.byteLength?t=K.byteLength:"number"==typeof K.size?t=K.size:"string"==typeof K&&(t="function"==typeof r?(new r).encode(K).byteLength:K.length)),"number"==typeof t&&t>E)throw new ge("maxContentLength size of "+E+" exceeded",ge.ERR_BAD_RESPONSE,e,U)}return!X&&N&&N(),await new Promise((t,n)=>{Ze(t,n,{data:K,headers:pe.from(W.headers),status:W.status,statusText:W.statusText,config:e,request:U})})}catch(t){if(N&&N(),T&&T.aborted&&T.reason instanceof ge){const n=T.reason;throw n.config=e,U&&(n.request=U),t!==n&&Object.defineProperty(n,"cause",{__proto__:null,value:t,writable:!0,enumerable:!1,configurable:!0}),n}if(F)throw U&&!F.request&&(F.request=U),F;if(D)throw D;if(t instanceof ge)throw U&&!t.request&&(t.request=U),t;if(t&&"TypeError"===t.name&&/Load failed|fetch/i.test(t.message)){const n=new ge("Network Error",ge.ERR_NETWORK,e,U,t&&t.response);throw Object.defineProperty(n,"cause",{__proto__:null,value:t.cause||t,writable:!0,enumerable:!1,configurable:!0}),n}throw ge.from(t,t&&t.code,e,U,t&&t.response)}var I}},Jt=new Map,Wt=e=>{const t=Object.create(null),n=e&&ee.hasOwnProp(e,"env")&&e.env;["fetch","Request","Response","Blob"].forEach(e=>{n&&ee.hasOwnProp(n,e)&&(t[e]=n[e])});const{fetch:r,Request:o,Response:i,Blob:a}=t,s=[o,i,r,a];let l,c,u=s.length,d=Jt;for(;u--;)l=s[u],c=d.get(l),void 0===c&&d.set(l,c=u?new Map:Vt(t)),d=c;return c};Wt();const Ht={http:null,xhr:Ct,fetch:{get:Wt}};ee.forEach(Ht,(e,t)=>{if(e){try{Object.defineProperty(e,"name",{__proto__:null,value:t})}catch(e){}Object.defineProperty(e,"adapterName",{__proto__:null,value:t})}});const Xt=e=>`- ${e}`,Kt=e=>ee.isFunction(e)||null===e||!1===e;var Gt=function(e,t){e=ee.isArray(e)?e:[e];const{length:n}=e;let r,o;const i={};for(let a=0;a<n;a++){let n;if(r=e[a],o=r,!Kt(r)&&(o=Ht[(n=String(r)).toLowerCase()],void 0===o))throw new ge(`Unknown adapter '${n}'`);if(o&&(ee.isFunction(o)||(o=o.get(t))))break;i[n||"#"+a]=o}if(!o){const e=Object.entries(i).map(([e,t])=>`adapter ${e} `+(!1===t?"is not supported by the environment":"is not available in the build"));let t=n?e.length>1?"since :\n"+e.map(Xt).join("\n"):" "+Xt(e[0]):"as no adapter specified";throw new ge("There is no suitable adapter to dispatch the request "+t,ge.ERR_NOT_SUPPORT)}return o};function Zt(e){if(e.cancelToken&&e.cancelToken.throwIfRequested(),e.signal&&e.signal.aborted)throw new Ge(null,e)}function Yt(e){return Math.max(0,Date.now()-e)}function Qt(e){const t=ee.toSafeFlatObject(e);Zt(t),t.headers=pe.from(ee.getSafeProp(t,"headers")),t.data=Xe.call(t,t.transformRequest),-1!==["post","put","patch"].indexOf(t.method)&&t.headers.setContentType("application/x-www-form-urlencoded",!1);const n=Gt(t.adapter||He.adapter,t),r=Date.now();return n(t).then(function(e){Zt(t),e.duration=Yt(r),t.response=e;try{e.data=Xe.call(t,t.transformResponse,e)}finally{delete t.response}return e.headers=pe.from(e.headers),e},function(e){if(!Ke(e)&&(Zt(t),e&&e.response)){e.response.duration=Yt(r),t.response=e.response;try{e.response.data=Xe.call(t,t.transformResponse,e.response)}finally{delete t.response}e.response.headers=pe.from(e.response.headers)}return Promise.reject(e)})}const en={};["object","boolean","number","function","string","symbol"].forEach((e,t)=>{en[e]=function(n){return typeof n===e||"a"+(t<1?"n ":" ")+e}});const tn={};en.transitional=function(e,t,n){function r(e,t){return"[Axios v"+It+"] Transitional option '"+e+"'"+t+(n?". "+n:"")}return(n,o,i)=>{if(!1===e)throw new ge(r(o," has been removed"+(t?" in "+t:"")),ge.ERR_DEPRECATED);return t&&!tn[o]&&(tn[o]=!0,console.warn(r(o," has been deprecated since v"+t+" and will be removed in the near future"))),!e||e(n,o,i)}},en.spelling=function(e){return(t,n)=>(console.warn(`${n} is likely a misspelling of ${e}`),!0)};var nn={assertOptions:function(e,t,n){if("object"!=typeof e||null===e)throw new ge("options must be an object",ge.ERR_BAD_OPTION_VALUE);const r=Object.keys(e);let o=r.length;for(;o-- >0;){const i=r[o],a=Object.prototype.hasOwnProperty.call(t,i)?t[i]:void 0;if(a){const t=e[i],n=void 0===t||a(t,i,e);if(!0!==n)throw new ge("option "+i+" must be "+n,ge.ERR_BAD_OPTION_VALUE);continue}if(!0!==n)throw new ge("Unknown option "+i,ge.ERR_BAD_OPTION)}},validators:en};const rn=nn.validators,on=e=>{if(null==e||ee.isPlainObject(e)||e instanceof pe)return!0;try{return ee.isObject(e)&&"AxiosHeaders"===ee.getSafeProp(e,Symbol.toStringTag)&&["toJSON","set","get","has","delete","clear","normalize","concat","toString",Symbol.iterator].every(t=>ee.isFunction(ee.getSafeProp(e,t)))}catch(e){return!1}};class an{constructor(e){this.defaults=e||{},this.interceptors={request:new Te,response:new Te}}async request(e,t){try{return await this._request(e,t)}catch(e){if(e instanceof Error)try{let t={};Error.captureStackTrace?Error.captureStackTrace(t):t=new Error;const n=t.stack;let r="";if("string"==typeof n){const e=n.indexOf("\n");r=-1===e?"":n.slice(e+1)}if(e.stack){if(r){const t=r.indexOf("\n"),n=-1===t?-1:r.indexOf("\n",t+1),o=-1===n?r:r.slice(n+1),i=String(e.stack),a=function(e,t){const n=ee.hasOwnProp(e,me)&&e[me];return n&&t.endsWith(n)?t.length-n.length:-1}(e,i),s=-1===a?i:i.slice(0,a),l=-1===a?"":i.slice(a);s.endsWith(o)||(e.stack=s+"\n"+r+l)}}else e.stack=r}catch(e){}throw e}}_request(e,t){"string"==typeof e?(t=t||{}).url=e:t=e||{},t=wt(this.defaults,t);const{transitional:n,paramsSerializer:r,headers:o}=t;void 0!==n&&nn.assertOptions(n,{silentJSONParsing:rn.transitional(rn.boolean),forcedJSONParsing:rn.transitional(rn.boolean),clarifyTimeoutError:rn.transitional(rn.boolean),legacyInterceptorReqResOrdering:rn.transitional(rn.boolean),advertiseZstdAcceptEncoding:rn.transitional(rn.boolean),validateStatusUndefinedResolves:rn.transitional(rn.boolean),encodeBasicAuthUsername:rn.transitional(rn.boolean)},!1),null!=r&&(ee.isFunction(r)?t.paramsSerializer={serialize:r}:nn.assertOptions(r,{encode:rn.function,serialize:rn.function},!0)),void 0!==t.allowAbsoluteUrls||(ee.hasOwnProp(this.defaults,"allowAbsoluteUrls")&&void 0!==this.defaults.allowAbsoluteUrls?t.allowAbsoluteUrls=this.defaults.allowAbsoluteUrls:t.allowAbsoluteUrls=!0),nn.assertOptions(t,{baseUrl:rn.spelling("baseURL"),withXsrfToken:rn.spelling("withXSRFToken")},!0),t.method=(ee.getSafeProp(t,"method")||ee.getSafeProp(this.defaults,"method")||"get").toLowerCase();const i=ee.getSafeProp(o,"common"),a=ee.getSafeProp(o,t.method),s=o&&ee.merge(on(i)?i:void 0,on(a)?a:void 0);o&&ee.forEach(Je.concat("common"),e=>{on(ee.getSafeProp(o,e))&&delete o[e]}),t.headers=pe.concat(s,o);const l=[];let c=!0;this.interceptors.request.forEach(function(e){if("function"==typeof e.runWhen&&!1===e.runWhen(t))return;c=c&&e.synchronous;const n=t.transitional||Ue;n&&n.legacyInterceptorReqResOrdering?l.unshift(e.fulfilled,e.rejected):l.push(e.fulfilled,e.rejected)});const u=[];let d;this.interceptors.response.forEach(function(e){u.push(e.fulfilled,e.rejected)});let f,p=0;if(!c){const e=[Qt.bind(this),void 0];for(e.unshift(...l),e.push(...u),f=e.length,d=Promise.resolve(t);p<f;)d=d.then(e[p++],e[p++]);return d}f=l.length;let h=t;for(;p<f;){const e=l[p++],t=l[p++];try{h=e?e(h):h}catch(e){if(!t){d=Promise.reject(e);break}try{const n=t.call(this,e);ee.isThenable(n)&&(d=Promise.resolve(n).then(()=>Qt.call(this,h)))}catch(e){d=Promise.reject(e)}break}}if(!d)try{d=Qt.call(this,h)}catch(e){d=Promise.reject(e)}for(p=0,f=u.length;p<f;)d=d.then(u[p++],u[p++]);return d}getUri(e){return Re(ct((e=wt(this.defaults,e)).baseURL,e.url,e.allowAbsoluteUrls,e),e.params,e.paramsSerializer)}}ee.forEach(["delete","get","head","options"],function(e){an.prototype[e]=async function(t,n){return this.request(wt(n||{},{method:e,url:t,data:n&&ee.hasOwnProp(n,"data")?n.data:void 0}))}}),ee.forEach(["post","put","patch","query"],function(e){function t(t){return async function(n,r,o){return this.request(wt(o||{},{method:e,headers:t?{"Content-Type":"multipart/form-data"}:{},url:n,data:r}))}}an.prototype[e]=t(),"query"!==e&&(an.prototype[e+"Form"]=t(!0))});class sn{constructor(e){if("function"!=typeof e)throw new TypeError("executor must be a function.");let t;this.promise=new Promise(function(e){t=e});const n=this;this.promise.then(e=>{if(!n._listeners)return;let t=n._listeners.length;for(;t-- >0;)n._listeners[t](e);n._listeners=null}),this.promise.then=e=>{let t;const r=new Promise(e=>{n.subscribe(e),t=e}).then(e);return r.cancel=function(){n.unsubscribe(t)},r},e(function(e,r,o){n.reason||(n.reason=new Ge(e,r,o),t(n.reason))})}throwIfRequested(){if(this.reason)throw this.reason}subscribe(e){this.reason?e(this.reason):this._listeners?this._listeners.push(e):this._listeners=[e]}unsubscribe(e){if(!this._listeners)return;const t=this._listeners.indexOf(e);-1!==t&&this._listeners.splice(t,1)}toAbortSignal(){const e=new AbortController,t=t=>{e.abort(t)};return this.subscribe(t),e.signal.unsubscribe=()=>this.unsubscribe(t),e.signal}static source(){let e;return{token:new sn(function(t){e=t}),cancel:e}}}const ln={Continue:100,SwitchingProtocols:101,Processing:102,EarlyHints:103,Ok:200,Created:201,Accepted:202,NonAuthoritativeInformation:203,NoContent:204,ResetContent:205,PartialContent:206,MultiStatus:207,AlreadyReported:208,ImUsed:226,MultipleChoices:300,MovedPermanently:301,Found:302,SeeOther:303,NotModified:304,UseProxy:305,Unused:306,TemporaryRedirect:307,PermanentRedirect:308,BadRequest:400,Unauthorized:401,PaymentRequired:402,Forbidden:403,NotFound:404,MethodNotAllowed:405,NotAcceptable:406,ProxyAuthenticationRequired:407,RequestTimeout:408,Conflict:409,Gone:410,LengthRequired:411,PreconditionFailed:412,PayloadTooLarge:413,ContentTooLarge:413,UriTooLong:414,UnsupportedMediaType:415,RangeNotSatisfiable:416,ExpectationFailed:417,ImATeapot:418,MisdirectedRequest:421,UnprocessableEntity:422,UnprocessableContent:422,Locked:423,FailedDependency:424,TooEarly:425,UpgradeRequired:426,PreconditionRequired:428,TooManyRequests:429,RequestHeaderFieldsTooLarge:431,UnavailableForLegalReasons:451,InternalServerError:500,NotImplemented:501,BadGateway:502,ServiceUnavailable:503,GatewayTimeout:504,HttpVersionNotSupported:505,VariantAlsoNegotiates:506,InsufficientStorage:507,LoopDetected:508,NotExtended:510,NetworkAuthenticationRequired:511,WebServerReturnsAnUnknownError:520,WebServerIsDown:521,ConnectionTimedOut:522,OriginIsUnreachable:523,TimeoutOccurred:524,SslHandshakeFailed:525,InvalidSslCertificate:526};Object.entries(ln).forEach(([e,t])=>{void 0===ln[t]&&(ln[t]=e)});const cn=function e(t){const n=new an(t),o=r(an.prototype.request,n);return ee.extend(o,an.prototype,n,{allOwnKeys:!0}),ee.extend(o,n,null,{allOwnKeys:!0}),o.create=function(n){return e(wt(t,n))},o}(He);cn.Axios=an,cn.CanceledError=Ge,cn.CancelToken=sn,cn.isCancel=Ke,cn.VERSION=It,cn.toFormData=_e,cn.AxiosError=ge,cn.Cancel=cn.CanceledError,cn.all=function(e){return Promise.all(e)},cn.spread=function(e){return function(t){return e.apply(null,t)}},cn.isAxiosError=function(e){return ee.isObject(e)&&!0===e.isAxiosError},cn.mergeConfig=wt,cn.AxiosHeaders=pe,cn.formToJSON=e=>Ve(ee.isHTMLForm(e)?new FormData(e):e),cn.getAdapter=Gt,cn.HttpStatusCode=ln,cn.default=cn,e.exports=cn},386(e){"use strict";e.exports=JSON.parse('{"id":"2be8c41a-80e8-4d20-808c-c49797bb6b3f","author":"","components":[{"id":"ebr","name":"Energy Bill Recording","description":"Upload water and energy bills and review the fields extracted from them","modes":["ui"],"isTemplate":false,"tags":["ebr","energy","water","bills"],"vendor":"","icon":"fas fa-file-invoice"}]}')},395(e){"use strict";e.exports=JSON.parse('{"ebr.text.title":{"en":"Utility Bills"},"ebr.text.no-bills":{"en":"No bills uploaded yet. Use Upload Bill to add one."},"ebr.field.bill":{"en":"Bill"},"ebr.field.file-name":{"en":"File"},"ebr.field.status":{"en":"Status"},"ebr.field.uploaded-at":{"en":"Uploaded At"},"ebr.field.uploaded-by":{"en":"Uploaded By"},"ebr.field.id":{"en":"Upload ID"},"ebr.field.error":{"en":"Error"},"ebr.status.pending":{"en":"Pending"},"ebr.status.processing":{"en":"Processing"},"ebr.status.done":{"en":"Done"},"ebr.status.error":{"en":"Error"},"ebr.filter.all":{"en":"All"},"ebr.view.group":{"en":"Bills"},"ebr.view.all":{"en":"All Bills"},"ebr.view.pending":{"en":"Pending Bills"},"ebr.view.processing":{"en":"Processing Bills"},"ebr.view.done":{"en":"Completed Bills"},"ebr.view.error":{"en":"Failed Bills"},"ebr.action.upload-bill":{"en":"Upload Bill"},"ebr.action.upload":{"en":"Upload"},"ebr.action.cancel":{"en":"Cancel"},"ebr.action.download":{"en":"Download"},"ebr.action.edit":{"en":"Edit Fields"},"ebr.upload.title":{"en":"Upload Bill"},"ebr.upload.hint":{"en":"Upload a water or energy bill (PDF or image). Fields will be extracted automatically once the upload completes."},"ebr.upload.drop-label":{"en":"Drop a bill here or click to browse"},"ebr.details.tab-fields":{"en":"Extracted Fields"},"ebr.details.tab-upload":{"en":"Upload Info"},"ebr.details.extracted-fields":{"en":"Extracted Fields"},"ebr.details.uploaded-on":{"en":"Uploaded $date"},"ebr.details.extraction-pending":{"en":"Fields are still being extracted from this bill."},"ebr.details.extraction-failed":{"en":"Field extraction failed for this bill."},"ebr.details.no-fields":{"en":"No fields were extracted from this bill."},"ebr.form.edit-title":{"en":"Edit Extracted Fields"},"ebr.message.uploading":{"en":"Uploading $name…"},"ebr.message.uploaded":{"en":"$name uploaded. Extraction has started."},"ebr.message.upload-failed":{"en":"Failed to upload $name"},"ebr.message.load-failed":{"en":"Failed to load bills"},"ebr.message.load-details-failed":{"en":"Failed to load bill details"},"ebr.message.update-failed":{"en":"Failed to save the extracted fields"},"ebr.message.no-file":{"en":"The original file is not available for this bill"}}')}};const t={};function n(r){const o=t[r];if(void 0!==o)return o.exports;const i=t[r]={id:r,exports:{}};return e[r].call(i.exports,i,i.exports,n),i.exports}n.n=e=>{const t=e&&e.__esModule?()=>e.default:()=>e;return n.d(t,{a:t}),t},n.d=(e,t)=>{if(Array.isArray(t))for(var r=0;r<t.length;){var o=t[r++],i=t[r++],a=0===i?{enumerable:!0,value:t[r++]}:{enumerable:!0,get:i};n.o(e,o)||Object.defineProperty(e,o,a)}else for(var o in t)n.o(t,o)&&!n.o(e,o)&&Object.defineProperty(e,o,{enumerable:!0,get:t[o]})},n.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(e){if("object"==typeof window)return window}}(),n.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),n.r=e=>{Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.nc=void 0,n(421)})();
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/components/bill-details/BillDetails.scss"
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/components/bill-details/BillDetails.scss ***!
+  \*********************************************************************************************************************************************************************************************************/
+(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.ebr_billdetails__container-26ff1432 {
+  width: 100%;
+  height: 100%;
+}
+.ebr_billdetails__empty-26ff1432 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 3rem 1rem;
+  text-align: center;
+  color: var(--secondaryTextColor);
+}
+.ebr_billdetails__empty-title-26ff1432 {
+  font-weight: 600;
+  color: var(--primaryTextColor);
+}
+.ebr_billdetails__empty-text-26ff1432 {
+  max-width: 32rem;
+  font-size: 0.875rem;
+  word-break: break-word;
+}`, "",{"version":3,"sources":["webpack://./src/components/bill-details/BillDetails.scss"],"names":[],"mappings":"AACI;EACI,WAAA;EACA,YAAA;AAAR;AAGI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,WAAA;EACA,kBAAA;EACA,kBAAA;EACA,gCAAA;AADR;AAII;EACI,gBAAA;EACA,8BAAA;AAFR;AAKI;EACI,gBAAA;EACA,mBAAA;EACA,sBAAA;AAHR","sourcesContent":[".ebr_billdetails {\n    &__container {\n        width: 100%;\n        height: 100%;\n    }\n\n    &__empty {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-content: center;\n        gap: 0.5rem;\n        padding: 3rem 1rem;\n        text-align: center;\n        color: var(--secondaryTextColor);\n    }\n\n    &__empty-title {\n        font-weight: 600;\n        color: var(--primaryTextColor);\n    }\n\n    &__empty-text {\n        max-width: 32rem;\n        font-size: 0.875rem;\n        word-break: break-word;\n    }\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ },
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/forms/upload-bill/UploadBillDialog.scss"
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/forms/upload-bill/UploadBillDialog.scss ***!
+  \********************************************************************************************************************************************************************************************************/
+(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.ebr_uploadbill__body-3bfe394b {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 28rem;
+  max-width: 100%;
+}
+.ebr_uploadbill__hint-3bfe394b {
+  color: var(--secondaryTextColor);
+  font-size: 0.875rem;
+}
+.ebr_uploadbill__actions-3bfe394b {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}`, "",{"version":3,"sources":["webpack://./src/forms/upload-bill/UploadBillDialog.scss"],"names":[],"mappings":"AACI;EACI,aAAA;EACA,sBAAA;EACA,SAAA;EACA,YAAA;EACA,eAAA;AAAR;AAGI;EACI,gCAAA;EACA,mBAAA;AADR;AAII;EACI,aAAA;EACA,yBAAA;EACA,WAAA;AAFR","sourcesContent":[".ebr_uploadbill {\n    &__body {\n        display: flex;\n        flex-direction: column;\n        gap: 1rem;\n        width: 28rem;\n        max-width: 100%;\n    }\n\n    &__hint {\n        color: var(--secondaryTextColor);\n        font-size: 0.875rem;\n    }\n\n    &__actions {\n        display: flex;\n        justify-content: flex-end;\n        gap: 0.5rem;\n    }\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ },
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/global.scss"
+/*!****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/global.scss ***!
+  \****************************************************************************************************************************************************************************/
+(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ },
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/views/bills/BillsView.scss"
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/views/bills/BillsView.scss ***!
+  \*******************************************************************************************************************************************************************************************/
+(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.ebr_billsview__container-3a2ac3b5 {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--borderColor);
+}
+.ebr_billsview__name-3a2ac3b5 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+.ebr_billsview__name-icon-3a2ac3b5 {
+  flex-shrink: 0;
+  color: var(--secondaryTextColor);
+}
+.ebr_billsview__name-text-3a2ac3b5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ebr_billsview__field-3a2ac3b5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ebr_billsview__collapsed-3a2ac3b5 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  min-width: 0;
+}
+.ebr_billsview__collapsed-meta-3a2ac3b5 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-inline-start: 1.5rem;
+}
+.ebr_billsview__collapsed-date-3a2ac3b5 {
+  font-size: 0.8125rem;
+  color: var(--secondaryTextColor);
+}`, "",{"version":3,"sources":["webpack://./src/views/bills/BillsView.scss"],"names":[],"mappings":"AACI;EACI,WAAA;EACA,YAAA;EACA,oCAAA;AAAR;AAGI;EACI,aAAA;EACA,mBAAA;EACA,WAAA;EACA,YAAA;AADR;AAII;EACI,cAAA;EACA,gCAAA;AAFR;AAKI;EACI,gBAAA;EACA,uBAAA;EACA,mBAAA;AAHR;AAMI;EACI,gBAAA;EACA,uBAAA;EACA,mBAAA;AAJR;AAOI;EACI,aAAA;EACA,sBAAA;EACA,aAAA;EACA,YAAA;AALR;AAQI;EACI,aAAA;EACA,mBAAA;EACA,WAAA;EACA,4BAAA;AANR;AASI;EACI,oBAAA;EACA,gCAAA;AAPR","sourcesContent":[".ebr_billsview {\n    &__container {\n        width: 100%;\n        height: 100%;\n        border: 1px solid var(--borderColor);\n    }\n\n    &__name {\n        display: flex;\n        align-items: center;\n        gap: 0.5rem;\n        min-width: 0;\n    }\n\n    &__name-icon {\n        flex-shrink: 0;\n        color: var(--secondaryTextColor);\n    }\n\n    &__name-text {\n        overflow: hidden;\n        text-overflow: ellipsis;\n        white-space: nowrap;\n    }\n\n    &__field {\n        overflow: hidden;\n        text-overflow: ellipsis;\n        white-space: nowrap;\n    }\n\n    &__collapsed {\n        display: flex;\n        flex-direction: column;\n        gap: 0.375rem;\n        min-width: 0;\n    }\n\n    &__collapsed-meta {\n        display: flex;\n        align-items: center;\n        gap: 0.5rem;\n        padding-inline-start: 1.5rem;\n    }\n\n    &__collapsed-date {\n        font-size: 0.8125rem;\n        color: var(--secondaryTextColor);\n    }\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ },
+
+/***/ "./node_modules/css-loader/dist/runtime/api.js"
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+(module) {
+
+"use strict";
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+module.exports = function (cssWithMappingToString) {
+  var list = [];
+
+  // return the list of modules as css string
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = "";
+      var needLayer = typeof item[5] !== "undefined";
+      if (item[4]) {
+        content += "@supports (".concat(item[4], ") {");
+      }
+      if (item[2]) {
+        content += "@media ".concat(item[2], " {");
+      }
+      if (needLayer) {
+        content += "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {");
+      }
+      content += cssWithMappingToString(item);
+      if (needLayer) {
+        content += "}";
+      }
+      if (item[2]) {
+        content += "}";
+      }
+      if (item[4]) {
+        content += "}";
+      }
+      return content;
+    }).join("");
+  };
+
+  // import a list of modules into the list
+  list.i = function i(modules, media, dedupe, supports, layer) {
+    if (typeof modules === "string") {
+      modules = [[null, modules, undefined]];
+    }
+    var alreadyImportedModules = {};
+    if (dedupe) {
+      for (var k = 0; k < this.length; k++) {
+        var id = this[k][0];
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+    for (var _k = 0; _k < modules.length; _k++) {
+      var item = [].concat(modules[_k]);
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        continue;
+      }
+      if (typeof layer !== "undefined") {
+        if (typeof item[5] === "undefined") {
+          item[5] = layer;
+        } else {
+          item[1] = "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {").concat(item[1], "}");
+          item[5] = layer;
+        }
+      }
+      if (media) {
+        if (!item[2]) {
+          item[2] = media;
+        } else {
+          item[1] = "@media ".concat(item[2], " {").concat(item[1], "}");
+          item[2] = media;
+        }
+      }
+      if (supports) {
+        if (!item[4]) {
+          item[4] = "".concat(supports);
+        } else {
+          item[1] = "@supports (".concat(item[4], ") {").concat(item[1], "}");
+          item[4] = supports;
+        }
+      }
+      list.push(item);
+    }
+  };
+  return list;
+};
+
+/***/ },
+
+/***/ "./node_modules/css-loader/dist/runtime/sourceMaps.js"
+/*!************************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/sourceMaps.js ***!
+  \************************************************************/
+(module) {
+
+"use strict";
+
+
+module.exports = function (item) {
+  var content = item[1];
+  var cssMapping = item[3];
+  if (!cssMapping) {
+    return content;
+  }
+  if (typeof btoa === "function") {
+    var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(cssMapping))));
+    var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
+    var sourceMapping = "/*# ".concat(data, " */");
+    return [content].concat([sourceMapping]).join("\n");
+  }
+  return [content].join("\n");
+};
+
+/***/ },
+
+/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js"
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+
+
+var isOldIE = function isOldIE() {
+  var memo;
+  return function memorize() {
+    if (typeof memo === 'undefined') {
+      // Test for IE <= 9 as proposed by Browserhacks
+      // @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+      // Tests for existence of standard globals is to allow style-loader
+      // to operate correctly into non-standard environments
+      // @see https://github.com/webpack-contrib/style-loader/issues/177
+      memo = Boolean(window && document && document.all && !window.atob);
+    }
+
+    return memo;
+  };
+}();
+
+var getTarget = function getTarget() {
+  var memo = {};
+  return function memorize(target) {
+    if (typeof memo[target] === 'undefined') {
+      var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
+
+      if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+        try {
+          // This will throw an exception if access to iframe is blocked
+          // due to cross-origin restrictions
+          styleTarget = styleTarget.contentDocument.head;
+        } catch (e) {
+          // istanbul ignore next
+          styleTarget = null;
+        }
+      }
+
+      memo[target] = styleTarget;
+    }
+
+    return memo[target];
+  };
+}();
+
+var stylesInDom = [];
+
+function getIndexByIdentifier(identifier) {
+  var result = -1;
+
+  for (var i = 0; i < stylesInDom.length; i++) {
+    if (stylesInDom[i].identifier === identifier) {
+      result = i;
+      break;
+    }
+  }
+
+  return result;
+}
+
+function modulesToDom(list, options) {
+  var idCountMap = {};
+  var identifiers = [];
+
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = options.base ? item[0] + options.base : item[0];
+    var count = idCountMap[id] || 0;
+    var identifier = "".concat(id, " ").concat(count);
+    idCountMap[id] = count + 1;
+    var index = getIndexByIdentifier(identifier);
+    var obj = {
+      css: item[1],
+      media: item[2],
+      sourceMap: item[3]
+    };
+
+    if (index !== -1) {
+      stylesInDom[index].references++;
+      stylesInDom[index].updater(obj);
+    } else {
+      stylesInDom.push({
+        identifier: identifier,
+        updater: addStyle(obj, options),
+        references: 1
+      });
+    }
+
+    identifiers.push(identifier);
+  }
+
+  return identifiers;
+}
+
+function insertStyleElement(options) {
+  var style = document.createElement('style');
+  var attributes = options.attributes || {};
+
+  if (typeof attributes.nonce === 'undefined') {
+    var nonce =  true ? __webpack_require__.nc : 0;
+
+    if (nonce) {
+      attributes.nonce = nonce;
+    }
+  }
+
+  Object.keys(attributes).forEach(function (key) {
+    style.setAttribute(key, attributes[key]);
+  });
+
+  if (typeof options.insert === 'function') {
+    options.insert(style);
+  } else {
+    var target = getTarget(options.insert || 'head');
+
+    if (!target) {
+      throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
+    }
+
+    target.appendChild(style);
+  }
+
+  return style;
+}
+
+function removeStyleElement(style) {
+  // istanbul ignore if
+  if (style.parentNode === null) {
+    return false;
+  }
+
+  style.parentNode.removeChild(style);
+}
+/* istanbul ignore next  */
+
+
+var replaceText = function replaceText() {
+  var textStore = [];
+  return function replace(index, replacement) {
+    textStore[index] = replacement;
+    return textStore.filter(Boolean).join('\n');
+  };
+}();
+
+function applyToSingletonTag(style, index, remove, obj) {
+  var css = remove ? '' : obj.media ? "@media ".concat(obj.media, " {").concat(obj.css, "}") : obj.css; // For old IE
+
+  /* istanbul ignore if  */
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = replaceText(index, css);
+  } else {
+    var cssNode = document.createTextNode(css);
+    var childNodes = style.childNodes;
+
+    if (childNodes[index]) {
+      style.removeChild(childNodes[index]);
+    }
+
+    if (childNodes.length) {
+      style.insertBefore(cssNode, childNodes[index]);
+    } else {
+      style.appendChild(cssNode);
+    }
+  }
+}
+
+function applyToTag(style, options, obj) {
+  var css = obj.css;
+  var media = obj.media;
+  var sourceMap = obj.sourceMap;
+
+  if (media) {
+    style.setAttribute('media', media);
+  } else {
+    style.removeAttribute('media');
+  }
+
+  if (sourceMap && typeof btoa !== 'undefined') {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  } // For old IE
+
+  /* istanbul ignore if  */
+
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+  } else {
+    while (style.firstChild) {
+      style.removeChild(style.firstChild);
+    }
+
+    style.appendChild(document.createTextNode(css));
+  }
+}
+
+var singleton = null;
+var singletonCounter = 0;
+
+function addStyle(obj, options) {
+  var style;
+  var update;
+  var remove;
+
+  if (options.singleton) {
+    var styleIndex = singletonCounter++;
+    style = singleton || (singleton = insertStyleElement(options));
+    update = applyToSingletonTag.bind(null, style, styleIndex, false);
+    remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+  } else {
+    style = insertStyleElement(options);
+    update = applyToTag.bind(null, style, options);
+
+    remove = function remove() {
+      removeStyleElement(style);
+    };
+  }
+
+  update(obj);
+  return function updateStyle(newObj) {
+    if (newObj) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {
+        return;
+      }
+
+      update(obj = newObj);
+    } else {
+      remove();
+    }
+  };
+}
+
+module.exports = function (list, options) {
+  options = options || {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+  // tags it will allow on a page
+
+  if (!options.singleton && typeof options.singleton !== 'boolean') {
+    options.singleton = isOldIE();
+  }
+
+  list = list || [];
+  var lastIdentifiers = modulesToDom(list, options);
+  return function update(newList) {
+    newList = newList || [];
+
+    if (Object.prototype.toString.call(newList) !== '[object Array]') {
+      return;
+    }
+
+    for (var i = 0; i < lastIdentifiers.length; i++) {
+      var identifier = lastIdentifiers[i];
+      var index = getIndexByIdentifier(identifier);
+      stylesInDom[index].references--;
+    }
+
+    var newLastIdentifiers = modulesToDom(newList, options);
+
+    for (var _i = 0; _i < lastIdentifiers.length; _i++) {
+      var _identifier = lastIdentifiers[_i];
+
+      var _index = getIndexByIdentifier(_identifier);
+
+      if (stylesInDom[_index].references === 0) {
+        stylesInDom[_index].updater();
+
+        stylesInDom.splice(_index, 1);
+      }
+    }
+
+    lastIdentifiers = newLastIdentifiers;
+  };
+};
+
+/***/ },
+
+/***/ "./src/components/bill-details/BillDetails.scss"
+/*!******************************************************!*\
+  !*** ./src/components/bill-details/BillDetails.scss ***!
+  \******************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../../../node_modules/sass-loader/dist/cjs.js!./BillDetails.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/components/bill-details/BillDetails.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.id, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ },
+
+/***/ "./src/forms/upload-bill/UploadBillDialog.scss"
+/*!*****************************************************!*\
+  !*** ./src/forms/upload-bill/UploadBillDialog.scss ***!
+  \*****************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../../../node_modules/sass-loader/dist/cjs.js!./UploadBillDialog.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/forms/upload-bill/UploadBillDialog.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.id, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ },
+
+/***/ "./src/global.scss"
+/*!*************************!*\
+  !*** ./src/global.scss ***!
+  \*************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./global.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/global.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.id, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ },
+
+/***/ "./src/views/bills/BillsView.scss"
+/*!****************************************!*\
+  !*** ./src/views/bills/BillsView.scss ***!
+  \****************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../../../node_modules/sass-loader/dist/cjs.js!./BillsView.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/views/bills/BillsView.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.id, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ },
+
+/***/ "./src/components/bill-details/BillDetails.tsx"
+/*!*****************************************************!*\
+  !*** ./src/components/bill-details/BillDetails.tsx ***!
+  \*****************************************************/
+(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.BillDetails = exports.BillStatusChip = void 0;
+const react_1 = __importStar(__webpack_require__(/*! react */ "react"));
+const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
+const services_1 = __webpack_require__(/*! ../../services */ "./src/services.ts");
+const BillFieldsForm_1 = __webpack_require__(/*! ../../forms/bill-fields-form/BillFieldsForm */ "./src/forms/bill-fields-form/BillFieldsForm.tsx");
+const utils_1 = __webpack_require__(/*! ../../utils */ "./src/utils.ts");
+__webpack_require__(/*! ./BillDetails.scss */ "./src/components/bill-details/BillDetails.scss");
+// How often to re-check a bill that is still being extracted
+const PollInterval = 10000;
+const BillStatusChip = ({ bill }) => {
+    const uxpContext = (0, components_1.useUXPContext)();
+    if (!(bill === null || bill === void 0 ? void 0 : bill.status))
+        return null;
+    return react_1.default.createElement(components_1.Chip, { icon: (0, utils_1.getStatusIcon)(bill.status), label: uxpContext.$L(`ebr.status.${bill.status.toLowerCase()}`), variant: (0, utils_1.getStatusVariant)(bill.status), size: "small" });
+};
+exports.BillStatusChip = BillStatusChip;
+const BillDetailsBase = ({ billId, onClose }) => {
+    const uxpContext = (0, components_1.useUXPContext)();
+    const alerts = (0, components_1.useAlert)();
+    const { edit } = (0, components_1.useSearchParams)();
+    const { navigate, generateURL } = (0, components_1.useRouterContext)();
+    const instanceId = (0, react_1.useMemo)(() => (0, components_1.generateUUID)(), []);
+    const { counter, updateCounter } = (0, components_1.useCounter)();
+    const [bill, setBill] = (0, react_1.useState)(null);
+    // master list of extracted fields — drives both the details view and the edit form
+    const { data: fieldNames = [] } = (0, components_1.useExecuteRequest)(services_1.BillServices.fieldNames());
+    const lastStatusRef = (0, react_1.useRef)(null);
+    (0, components_1.useMultiEventSubscriber)(instanceId, {
+        events: [utils_1.BillUpdatedEvent],
+        sharedCallback: payload => {
+            if ((payload === null || payload === void 0 ? void 0 : payload.id) === billId)
+                updateCounter();
+        }
+    });
+    const getDetails = (0, react_1.useCallback)(() => __awaiter(void 0, void 0, void 0, function* () {
+        if (!(0, components_1.hasValue)(billId))
+            return null;
+        const { data, error } = yield (0, components_1.executeConfig)(uxpContext, services_1.BillServices.details(billId));
+        if (error || !data) {
+            alerts.error(uxpContext.$L('ebr.message.load-details-failed'));
+            return null;
+        }
+        // extraction finished while we were watching — let the list pick up the new status
+        if (lastStatusRef.current && (0, utils_1.isInFlight)(lastStatusRef.current) && !(0, utils_1.isInFlight)(data.status)) {
+            (0, utils_1.triggerBillUpdatedEvent)(billId);
+        }
+        lastStatusRef.current = data.status;
+        setBill(data);
+        return data;
+    }), [billId, counter]);
+    // keep polling while the bill is still pending / processing
+    (0, react_1.useEffect)(() => {
+        if (!bill || bill.id !== billId || !(0, utils_1.isInFlight)(bill.status))
+            return;
+        const timer = setTimeout(updateCounter, PollInterval);
+        return () => clearTimeout(timer);
+    }, [bill, billId]);
+    // reset when switching to another bill
+    (0, react_1.useEffect)(() => {
+        lastStatusRef.current = null;
+        setBill(null);
+    }, [billId]);
+    const download = (0, react_1.useCallback)((item) => {
+        const url = (0, services_1.getFileUrl)(uxpContext, item === null || item === void 0 ? void 0 : item.filePath);
+        if (!url) {
+            alerts.error(uxpContext.$L('ebr.message.no-file'));
+            return;
+        }
+        window.open(url, '_blank', 'noopener');
+    }, []);
+    const deleteBill = (0, react_1.useCallback)((item) => __awaiter(void 0, void 0, void 0, function* () {
+        const confirmed = yield alerts.confirm({
+            title: uxpContext.$L('ebr.delete.title'),
+            content: uxpContext.$L('ebr.delete.confirm', {
+                name: (0, utils_1.getBillName)(item)
+            }),
+            confirmButtonTitle: uxpContext.$L('ebr.action.delete'),
+            cancelButtonTitle: uxpContext.$L('ebr.action.cancel')
+        });
+        if (!confirmed)
+            return;
+        const { error } = yield (0, components_1.executeConfig)(uxpContext, services_1.BillServices.delete(item.id));
+        if (error) {
+            alerts.error(uxpContext.$L('ebr.message.delete-failed'));
+            return;
+        }
+        (0, utils_1.triggerBillDeletedEvent)(item.id);
+        onClose === null || onClose === void 0 ? void 0 : onClose();
+    }), [onClose]);
+    const toolbarItems = (0, react_1.useCallback)((item) => ({
+        left: [{
+                icon: 'fal download',
+                label: uxpContext.$L('ebr.action.download'),
+                visible: () => (0, components_1.hasValue)(item === null || item === void 0 ? void 0 : item.filePath),
+                onClick: () => download(item)
+            }, {
+                icon: 'fal pencil',
+                label: uxpContext.$L('ebr.action.edit'),
+                visible: () => (item === null || item === void 0 ? void 0 : item.status) === 'Done',
+                onClick: () => navigate(generateURL({
+                    searchParams: {
+                        edit: '1'
+                    }
+                }))
+            }, {
+                icon: 'fal trash',
+                label: uxpContext.$L('ebr.action.delete'),
+                visible: () => (0, components_1.hasValue)(item === null || item === void 0 ? void 0 : item.id),
+                onClick: () => deleteBill(item)
+            }],
+        right: []
+    }), [download, deleteBill]);
+    const renderExtractedFields = (0, react_1.useCallback)((item, loading) => {
+        if (!loading && item && item.status !== 'Done') {
+            const isError = item.status === 'Error';
+            return react_1.default.createElement("div", { className: "ebr_billdetails__empty-26ff1432" },
+                react_1.default.createElement(components_1.Icon, { icon: isError ? 'fal circle-exclamation' : 'fal hourglass-half', size: "2x" }),
+                react_1.default.createElement("div", { className: "ebr_billdetails__empty-title-26ff1432" }, uxpContext.$L(isError ? 'ebr.details.extraction-failed' : 'ebr.details.extraction-pending')),
+                isError && (0, components_1.hasValue)(item.error) && react_1.default.createElement("div", { className: "ebr_billdetails__empty-text-26ff1432" }, item.error));
+        }
+        const fields = Object.entries((0, utils_1.getExtractedFields)(item, fieldNames)).map(([key, value]) => ({
+            label: (0, utils_1.toFieldLabel)(key),
+            value: (0, utils_1.formatFieldValue)(value)
+        }));
+        if (!loading && fields.length === 0) {
+            return react_1.default.createElement("div", { className: "ebr_billdetails__empty-26ff1432" },
+                react_1.default.createElement(components_1.Icon, { icon: "fal file-circle-question", size: "2x" }),
+                react_1.default.createElement("div", { className: "ebr_billdetails__empty-title-26ff1432" }, uxpContext.$L('ebr.details.no-fields')));
+        }
+        return react_1.default.createElement(components_1.ObjectInfoCard, { fields: fields, columns: 2, loading: loading });
+    }, [fieldNames]);
+    const renderUploadInfo = (0, react_1.useCallback)((item, loading) => react_1.default.createElement(components_1.ObjectInfoCard, { columns: 1, loading: loading, fields: [{
+                label: uxpContext.$L('ebr.field.file-name'),
+                value: (0, utils_1.getBillName)(item)
+            }, {
+                label: uxpContext.$L('ebr.field.status'),
+                value: item === null || item === void 0 ? void 0 : item.status,
+                renderValue: () => react_1.default.createElement(exports.BillStatusChip, { bill: item })
+            }, {
+                label: uxpContext.$L('ebr.field.uploaded-at'),
+                value: (0, utils_1.formatDateTime)(item === null || item === void 0 ? void 0 : item.uploadedAt)
+            }, {
+                label: uxpContext.$L('ebr.field.uploaded-by'),
+                value: (item === null || item === void 0 ? void 0 : item.uploadedBy) || '-'
+            }, {
+                label: uxpContext.$L('ebr.field.id'),
+                value: item === null || item === void 0 ? void 0 : item.id
+            }, ...((0, components_1.hasValue)(item === null || item === void 0 ? void 0 : item.error) ? [{
+                    label: uxpContext.$L('ebr.field.error'),
+                    value: item.error
+                }] : [])] }), []);
+    const closeForm = (0, react_1.useCallback)(() => {
+        navigate(generateURL({
+            removeParams: ['edit']
+        }));
+    }, []);
+    return react_1.default.createElement("div", { className: "ebr_billdetails__container-26ff1432" },
+        react_1.default.createElement(components_1.ObjectDetailsPanel, { data: getDetails, objectType: "ebr-bill", objectKey: billId, title: {
+                title: (item) => (0, utils_1.getBillName)(item),
+                subtitle: (item) => (item === null || item === void 0 ? void 0 : item.uploadedAt) ? uxpContext.$L('ebr.details.uploaded-on', {
+                    date: (0, utils_1.formatDateTime)(item.uploadedAt)
+                }) : null,
+                status: (item, loading) => loading ? null : react_1.default.createElement(exports.BillStatusChip, { bill: item })
+            }, tabs: [{
+                    id: 'fields',
+                    label: uxpContext.$L('ebr.details.tab-fields'),
+                    icon: 'fal list-check',
+                    toolbarItems,
+                    details: renderExtractedFields
+                }, {
+                    id: 'upload',
+                    label: uxpContext.$L('ebr.details.tab-upload'),
+                    icon: 'fal file-arrow-up',
+                    toolbarItems,
+                    details: renderUploadInfo
+                }], showCloseButton: !!onClose, onClose: onClose }),
+        react_1.default.createElement(BillFieldsForm_1.BillFieldsForm, { isOpen: edit === '1', bill: bill, fieldNames: fieldNames, onClose: closeForm, afterSave: id => {
+                closeForm();
+                (0, utils_1.triggerBillUpdatedEvent)(id);
+            } }));
+};
+exports.BillDetails = (0, react_1.memo)(BillDetailsBase);
+
+
+/***/ },
+
+/***/ "./src/forms/bill-fields-form/BillFieldsForm.tsx"
+/*!*******************************************************!*\
+  !*** ./src/forms/bill-fields-form/BillFieldsForm.tsx ***!
+  \*******************************************************/
+(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.BillFieldsForm = void 0;
+const react_1 = __importStar(__webpack_require__(/*! react */ "react"));
+const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
+const services_1 = __webpack_require__(/*! ../../services */ "./src/services.ts");
+const utils_1 = __webpack_require__(/*! ../../utils */ "./src/utils.ts");
+const BillFieldsFormBase = ({ isOpen, bill, fieldNames, onClose, afterSave }) => {
+    const uxpContext = (0, components_1.useUXPContext)();
+    const alerts = (0, components_1.useAlert)();
+    const extractedFields = (0, react_1.useMemo)(() => (0, utils_1.getExtractedFields)(bill, fieldNames), [bill, fieldNames]);
+    const formStructure = (0, react_1.useMemo)(() => {
+        const fields = Object.entries(extractedFields).map(([key, value]) => {
+            if (typeof value === 'number') {
+                return {
+                    name: key,
+                    label: (0, utils_1.toFieldLabel)(key),
+                    type: 'number',
+                    value,
+                    allowZero: true,
+                    allowNegative: true
+                };
+            }
+            const text = value === null || value === undefined ? '' : typeof value === 'object' ? JSON.stringify(value) : String(value);
+            return {
+                name: key,
+                label: (0, utils_1.toFieldLabel)(key),
+                type: text.length > 80 ? 'textarea' : 'text',
+                value: text
+            };
+        });
+        return [{
+                title: uxpContext.$L('ebr.details.extracted-fields'),
+                columns: 2,
+                fields
+            }];
+    }, [extractedFields]);
+    const handleSave = (0, react_1.useCallback)((data) => __awaiter(void 0, void 0, void 0, function* () {
+        if (!bill)
+            return;
+        const { error } = yield (0, components_1.executeConfig)(uxpContext, services_1.BillServices.update(bill.id, data));
+        if (error) {
+            alerts.error(uxpContext.$L('ebr.message.update-failed'));
+            return;
+        }
+        afterSave(bill.id);
+    }), [bill, afterSave]);
+    return react_1.default.createElement(components_1.SlideInForm, { formType: "dynamic", title: uxpContext.$L('ebr.form.edit-title'), isOpen: isOpen && !!bill, formStructure: formStructure, onSave: handleSave, onCancel: onClose, direction: "right" });
+};
+exports.BillFieldsForm = (0, react_1.memo)(BillFieldsFormBase);
+
+
+/***/ },
+
+/***/ "./src/forms/upload-bill/UploadBillDialog.tsx"
+/*!****************************************************!*\
+  !*** ./src/forms/upload-bill/UploadBillDialog.tsx ***!
+  \****************************************************/
+(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.UploadBillDialog = void 0;
+const react_1 = __importStar(__webpack_require__(/*! react */ "react"));
+const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
+__webpack_require__(/*! ./UploadBillDialog.scss */ "./src/forms/upload-bill/UploadBillDialog.scss");
+const AllowedTypes = ['application/pdf', 'image/*'];
+const UploadBillDialogBase = ({ isOpen, onClose, onUpload }) => {
+    const uxpContext = (0, components_1.useUXPContext)();
+    const [file, setFile] = (0, react_1.useState)(null);
+    const [isValid, setIsValid] = (0, react_1.useState)(false);
+    // start fresh every time the dialog opens
+    (0, react_1.useEffect)(() => {
+        if (!isOpen)
+            return;
+        setFile(null);
+        setIsValid(false);
+    }, [isOpen]);
+    const handleUpload = (0, react_1.useCallback)(() => {
+        if (!file || !isValid)
+            return;
+        onUpload(file);
+        onClose();
+    }, [file, isValid, onUpload, onClose]);
+    return react_1.default.createElement(components_1.Modal, { show: isOpen, onClose: onClose, title: uxpContext.$L('ebr.upload.title'), showCloseButton: true, className: "ebr_uploadbill-3bfe394b" },
+        react_1.default.createElement("div", { className: "ebr_uploadbill__body-3bfe394b" },
+            react_1.default.createElement("div", { className: "ebr_uploadbill__hint-3bfe394b" }, uxpContext.$L('ebr.upload.hint')),
+            react_1.default.createElement(components_1.FileInput, { value: file !== null && file !== void 0 ? file : undefined, onChange: (f, valid) => {
+                    setFile(f);
+                    setIsValid(valid);
+                }, allowedTypes: AllowedTypes, preview: {
+                    showName: true,
+                    showPreview: false
+                }, dropAreaIcon: "fal file-arrow-up", dropAreaLabel: uxpContext.$L('ebr.upload.drop-label') }),
+            react_1.default.createElement("div", { className: "ebr_uploadbill__actions-3bfe394b" },
+                react_1.default.createElement(components_1.ButtonComponent, { title: uxpContext.$L('ebr.action.cancel'), variant: "secondary", onClick: onClose }),
+                react_1.default.createElement(components_1.ButtonComponent, { title: uxpContext.$L('ebr.action.upload'), leftIcon: "fal cloud-arrow-up", variant: "primary", disabled: !file || !isValid, onClick: handleUpload }))));
+};
+exports.UploadBillDialog = (0, react_1.memo)(UploadBillDialogBase);
+
+
+/***/ },
+
+/***/ "./src/index.tsx"
+/*!***********************!*\
+  !*** ./src/index.tsx ***!
+  \***********************/
+(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const react_1 = __importDefault(__webpack_require__(/*! react */ "react"));
+const uxp_1 = __webpack_require__(/*! ./uxp */ "./src/uxp.ts");
+const BillsView_1 = __webpack_require__(/*! ./views/bills/BillsView */ "./src/views/bills/BillsView.tsx");
+__webpack_require__(/*! ./global.scss */ "./src/global.scss");
+/**
+ * Energy Bill Recording — object search of uploaded bills.
+ * Upload dialog, details panel and the edit form are all driven from this view via URL params.
+ */
+const Ebr = (_props) => {
+    return react_1.default.createElement(BillsView_1.BillsView, null);
+};
+(0, uxp_1.registerComponent)({
+    id: "ebr",
+    component: Ebr,
+    configs: {
+        props: []
+    },
+    defaultProps: {}
+});
+(0, uxp_1.enableLocalization)();
+
+
+/***/ },
+
+/***/ "./src/services.ts"
+/*!*************************!*\
+  !*** ./src/services.ts ***!
+  \*************************/
+(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getFileUrl = exports.BillServices = exports.BillSystemFields = exports.BillStatuses = exports.FieldsCollection = exports.BillCollection = exports.BillModel = void 0;
+exports.uploadBillFile = uploadBillFile;
+const axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/dist/browser/axios.cjs"));
+const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
+// Lucy model that stores uploaded bills and runs the extraction
+exports.BillModel = 'EBR.Bill';
+// Data collection on the model that holds the bill records
+exports.BillCollection = 'bills';
+// Data collection holding the master list of extracted fields — one `name` column per field
+exports.FieldsCollection = 'fields';
+const MaxFields = 1000;
+exports.BillStatuses = ['Pending', 'Processing', 'Done', 'Error'];
+// Properties that describe the upload itself — everything else is treated as an extracted field
+exports.BillSystemFields = ['id', '_id', 'status', 'fileName', 'filePath', 'uploadedAt', 'uploadedBy', 'error', 'fields', '__totalcount__'];
+const parseJSON = (value) => typeof value === 'string' ? JSON.parse(value) : value;
+// Records may be keyed by `id` or `_id` (a plain value or a Mongo-style { $oid } object) — expose it as `id`
+const withId = (bill) => {
+    var _a;
+    if (!bill || typeof bill !== 'object')
+        return bill;
+    const rawId = (0, components_1.hasValue)(bill.id) ? bill.id : bill._id;
+    const id = rawId && typeof rawId === 'object' ? (_a = rawId.$oid) !== null && _a !== void 0 ? _a : String(rawId) : rawId;
+    return Object.assign(Object.assign({}, bill), { id: (0, components_1.hasValue)(id) ? String(id) : id });
+};
+// Collection queries return [{ data: '<json array of documents>' }] (possibly as a JSON string)
+const parseCollectionDocs = (data) => {
+    var _a;
+    try {
+        const rows = parseJSON(data);
+        const docs = parseJSON(Array.isArray(rows) ? (_a = rows[0]) === null || _a === void 0 ? void 0 : _a.data : rows === null || rows === void 0 ? void 0 : rows.data);
+        return Array.isArray(docs) ? docs : [];
+    }
+    catch (_b) {
+        return [];
+    }
+};
+const normalizeList = (data) => parseCollectionDocs(data).map(withId);
+// Unique, non-empty field names in collection order
+const normalizeFieldNames = (data) => {
+    const names = parseCollectionDocs(data).map(doc => typeof (doc === null || doc === void 0 ? void 0 : doc.name) === 'string' ? doc.name.trim() : '').filter(Boolean);
+    return Array.from(new Set(names));
+};
+// Details may return a single object or a one-item array
+const normalizeDetails = (data) => {
+    const bill = Array.isArray(data) ? data[0] : data;
+    return bill ? withId(bill) : null;
+};
+exports.BillServices = {
+    upload: (filePath, fileName) => ({
+        type: 'action',
+        model: exports.BillModel,
+        action: 'Upload',
+        parameters: {
+            filePath,
+            fileName
+        },
+        options: {
+            json: true
+        },
+        defaultValue: null
+    }),
+    /** Query the `bills` data collection. `filter` is the collection query object. */
+    list: (max, last, filter = {}) => ({
+        type: 'collection',
+        model: exports.BillModel,
+        collection: exports.BillCollection,
+        parameters: {
+            modelName: exports.BillModel,
+            collectionName: exports.BillCollection,
+            max,
+            last,
+            filter: JSON.stringify(filter)
+        },
+        options: {},
+        transformData: normalizeList,
+        defaultValue: []
+    }),
+    /** Master list of extracted field names from the `fields` data collection */
+    fieldNames: () => ({
+        type: 'collection',
+        model: exports.BillModel,
+        collection: exports.FieldsCollection,
+        parameters: {
+            modelName: exports.BillModel,
+            collectionName: exports.FieldsCollection,
+            max: MaxFields,
+            last: 0,
+            filter: JSON.stringify({})
+        },
+        options: {
+            enableCache: true
+        },
+        transformData: normalizeFieldNames,
+        defaultValue: []
+    }),
+    details: (id) => ({
+        type: 'action',
+        model: exports.BillModel,
+        action: 'Details',
+        parameters: {
+            id
+        },
+        options: {
+            json: true
+        },
+        transformData: normalizeDetails,
+        defaultValue: null
+    }),
+    delete: (id) => ({
+        type: 'action',
+        model: exports.BillModel,
+        action: 'Delete',
+        parameters: {
+            id
+        },
+        options: {}
+    }),
+    // TODO: not part of the agreed action list yet — needed to save edited extracted fields
+    update: (id, fields) => ({
+        type: 'action',
+        model: exports.BillModel,
+        action: 'Update',
+        parameters: {
+            id,
+            fields: JSON.stringify(fields)
+        },
+        options: {
+            json: true
+        },
+        defaultValue: null
+    })
+};
+/** Absolute URL for a path returned by the API (paths may be relative to the Lucy root) */
+const getFileUrl = (uxpContext, path) => {
+    if (!(0, components_1.hasValue)(path))
+        return '';
+    if (/^https?:\/\//i.test(path))
+        return path;
+    return `${(0, components_1.trimSlash)(uxpContext.lucyUrl)}/${path.replace(/^\/+/, '')}`;
+};
+exports.getFileUrl = getFileUrl;
+/** Lowercased file extension (bucket + stored suffix). Falls back to `bin`. */
+const extOf = (name) => {
+    const m = /\.([A-Za-z0-9]+)$/.exec(name.trim());
+    return m ? m[1].toLowerCase() : 'bin';
+};
+/**
+ * Rebuild the retrieval URL against the current page's origin (scheme+host+port),
+ * keeping only the path (+query) of the content URL.
+ */
+const toContentUrl = (returnedUrl) => {
+    try {
+        const u = new URL(returnedUrl, window.location.origin);
+        return `${window.location.origin}${u.pathname}${u.search}`;
+    }
+    catch (_a) {
+        return returnedUrl;
+    }
+};
+/**
+ * Upload the bill file to the Lucy content store and return the URL it is served from
+ * (/content/<ext>/<filename>). Same mechanism as the AgenticAI attachment uploader.
+ */
+function uploadBillFile(uxpContext, file) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const base = (0, components_1.trimSlash)(uxpContext.lucyUrl || '');
+        const ext = extOf(file.name);
+        const filename = `${(0, components_1.generateUUID)()}.${ext}`;
+        const formData = new FormData();
+        formData.append('file', file);
+        formData.append('filename', filename);
+        try {
+            yield axios_1.default.post(`${base}/uploadcontent/${ext}`, formData);
+            return {
+                data: toContentUrl(`${base}/content/${ext}/${filename}`)
+            };
+        }
+        catch (e) {
+            return {
+                data: null,
+                error: (e === null || e === void 0 ? void 0 : e.message) || 'Unable to upload the file'
+            };
+        }
+    });
+}
+
+
+/***/ },
+
+/***/ "./src/utils.ts"
+/*!**********************!*\
+  !*** ./src/utils.ts ***!
+  \**********************/
+(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.formatDateTime = exports.formatFieldValue = exports.toFieldLabel = exports.getExtractedFields = exports.getFieldValue = exports.getFileIcon = exports.getBillName = exports.getStatusIcon = exports.getStatusVariant = exports.isInFlight = exports.buildListFilter = exports.triggerBillDeletedEvent = exports.triggerBillUpdatedEvent = exports.triggerBillCreatedEvent = exports.BillDeletedEvent = exports.BillUpdatedEvent = exports.BillCreatedEvent = void 0;
+const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
+const services_1 = __webpack_require__(/*! ./services */ "./src/services.ts");
+// ── Events ──
+exports.BillCreatedEvent = 'EBR:BillCreated';
+exports.BillUpdatedEvent = 'EBR:BillUpdated';
+exports.BillDeletedEvent = 'EBR:BillDeleted';
+const triggerBillCreatedEvent = (id) => (0, components_1.eventDispatcher)((0, components_1.generateUUID)(), exports.BillCreatedEvent, {
+    id
+});
+exports.triggerBillCreatedEvent = triggerBillCreatedEvent;
+const triggerBillUpdatedEvent = (id) => (0, components_1.eventDispatcher)((0, components_1.generateUUID)(), exports.BillUpdatedEvent, {
+    id
+});
+exports.triggerBillUpdatedEvent = triggerBillUpdatedEvent;
+const triggerBillDeletedEvent = (id) => (0, components_1.eventDispatcher)((0, components_1.generateUUID)(), exports.BillDeletedEvent, {
+    id
+});
+exports.triggerBillDeletedEvent = triggerBillDeletedEvent;
+// ── List query ──
+const escapeRegExp = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+/** Collection query for the `bills` collection from the search box + filter panel values */
+const buildListFilter = (query, filters) => {
+    const filter = {};
+    if (filters === null || filters === void 0 ? void 0 : filters.filters) {
+        Object.entries(filters.filters).forEach(([key, value]) => {
+            if (!(0, components_1.hasValue)(value))
+                return;
+            filter[key] = value;
+        });
+    }
+    if ((0, components_1.hasValue)(query))
+        filter.fileName = {
+            $regex: escapeRegExp(query),
+            $options: 'i'
+        };
+    return filter;
+};
+exports.buildListFilter = buildListFilter;
+// ── Status ──
+const isInFlight = (status) => status === 'Pending' || status === 'Processing';
+exports.isInFlight = isInFlight;
+const getStatusVariant = (status) => {
+    switch (status) {
+        case 'Done':
+            return 'success';
+        case 'Error':
+            return 'danger';
+        case 'Processing':
+            return 'info';
+        default:
+            return 'secondary';
+    }
+};
+exports.getStatusVariant = getStatusVariant;
+const getStatusIcon = (status) => {
+    switch (status) {
+        case 'Done':
+            return 'fas circle-check';
+        case 'Error':
+            return 'fas circle-exclamation';
+        case 'Processing':
+            return 'fas spinner-third';
+        default:
+            return 'fas clock';
+    }
+};
+exports.getStatusIcon = getStatusIcon;
+// ── Display helpers ──
+const getBillName = (bill) => {
+    if ((0, components_1.hasValue)(bill === null || bill === void 0 ? void 0 : bill.fileName))
+        return bill.fileName;
+    // fall back to the last segment of the stored path (without any query string)
+    const lastSegment = ((bill === null || bill === void 0 ? void 0 : bill.filePath) || '').split('?')[0].split('/').filter(Boolean).pop();
+    return lastSegment || (bill === null || bill === void 0 ? void 0 : bill.id) || '';
+};
+exports.getBillName = getBillName;
+const getFileIcon = (bill) => {
+    const name = (0, exports.getBillName)(bill).toLowerCase();
+    if (name.endsWith('.pdf'))
+        return 'fal file-pdf';
+    if (/\.(png|jpe?g|gif|bmp|tiff?|webp)$/.test(name))
+        return 'fal file-image';
+    return 'fal file-invoice';
+};
+exports.getFileIcon = getFileIcon;
+/** Raw extracted values of a bill — nested `fields` wins, otherwise every non-system property */
+const getRawFields = (bill) => {
+    if (!bill)
+        return {};
+    if (bill.fields && typeof bill.fields === 'object')
+        return bill.fields;
+    const fields = {};
+    Object.entries(bill).forEach(([key, value]) => {
+        if (services_1.BillSystemFields.includes(key))
+            return;
+        fields[key] = value;
+    });
+    return fields;
+};
+/** Value of a single extracted field (null when the bill has none) */
+const getFieldValue = (bill, name) => { var _a; return (_a = getRawFields(bill)[name]) !== null && _a !== void 0 ? _a : null; };
+exports.getFieldValue = getFieldValue;
+/**
+ * Extracted fields of a bill, in display order.
+ * With a master field list, exactly those fields are returned (null when the bill has no value);
+ * without one (not loaded / empty), whatever the bill carries is returned.
+ */
+const getExtractedFields = (bill, fieldNames = []) => {
+    const raw = getRawFields(bill);
+    if (fieldNames.length === 0)
+        return raw;
+    const fields = {};
+    fieldNames.forEach(name => {
+        var _a;
+        fields[name] = (_a = raw[name]) !== null && _a !== void 0 ? _a : null;
+    });
+    return fields;
+};
+exports.getExtractedFields = getExtractedFields;
+/** 'totalAmount' / 'total_amount' → 'Total Amount' */
+const toFieldLabel = (key) => key.replace(/[_-]+/g, ' ').replace(/([a-z0-9])([A-Z])/g, '$1 $2').replace(/\s+/g, ' ').trim().replace(/\b\w/g, c => c.toUpperCase());
+exports.toFieldLabel = toFieldLabel;
+const formatFieldValue = (value) => {
+    if (!(0, components_1.hasValue)(value) || value === '')
+        return '-';
+    if (typeof value === 'object')
+        return JSON.stringify(value);
+    return String(value);
+};
+exports.formatFieldValue = formatFieldValue;
+const formatDateTime = (value) => {
+    if (!(0, components_1.hasValue)(value))
+        return '-';
+    const date = new Date(value);
+    if (isNaN(date.getTime()))
+        return value;
+    return date.toLocaleString();
+};
+exports.formatDateTime = formatDateTime;
+
+
+/***/ },
+
+/***/ "./src/uxp.ts"
+/*!********************!*\
+  !*** ./src/uxp.ts ***!
+  \********************/
+(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getUrlFriendlyString = void 0;
+exports.registerWidget = registerWidget;
+exports.registerLink = registerLink;
+exports.registerMenuItem = registerMenuItem;
+exports.registerUI = registerUI;
+exports.registerComponent = registerComponent;
+exports.registerTabInjection = registerTabInjection;
+exports.enableLocalization = enableLocalization;
+exports.registerCustomWidgetTemplate = registerCustomWidgetTemplate;
+const bundle_json_1 = __importDefault(__webpack_require__(/*! ../bundle.json */ "./bundle.json"));
+const localization_json_1 = __importDefault(__webpack_require__(/*! ../localization.json */ "./localization.json"));
+/* ────────────────────────────────────────────────────────────────────────────
+ * V5 registration API
+ *
+ * `registerComponent` and `registerTabInjection` are the primary registration
+ * functions — use them for all new code. Metadata lives in bundle.json
+ * (`components[]` / `objectTabs[]`); code registers only the partial id plus
+ * anything JSON can't hold (component references, configs).
+ *
+ * `registerWidget`, `registerUI`, `registerLink`, `registerMenuItem` below are
+ * deprecated V4 adapters kept only so migrated code keeps compiling. Their
+ * bundle.json arrays (`widgets`, `uis`, `sidebarLinks`, `menuItems`) no longer
+ * exist in V5 scaffolds.
+ * ──────────────────────────────────────────────────────────────────────────── */
+/**
+ * @deprecated V4 adapter. Use `registerComponent` with `modes: ['widget']` instead —
+ * metadata lives in bundle.json `components[]` (the legacy `widgets[]` array no longer
+ * exists in V5 scaffolds).
+ *
+ * @example
+ * // bundle.json — add the component entry with metadata
+ * // { "id": "my-widget", "name": "My Widget", "description": "...", "modes": ["widget"] }
+ *
+ * registerComponent({
+ *     id: 'my-widget',   // must match the id in bundle.json
+ *     component: MyWidget,
+ *     configs: {
+ *         layout: { w: 12, h: 8 },
+ *         props: []
+ *     }
+ * });
+ */
+function registerWidget(_widget) {
+    var _a;
+    if (!window.registerWidget) {
+        console.error('This code is not being run within the context of UXP');
+        return;
+    }
+    console.warn(`[UXP] registerWidget is deprecated — use registerComponent with modes: ['widget'] (metadata in bundle.json components[]).`);
+    const id = (bundle_json_1.default.id + '/widget/' + _widget.id).toLowerCase();
+    // Legacy widgets[] array — absent in V5 scaffolds; merge it only if present.
+    const _widgetDetails = (_a = bundle_json_1.default.widgets) === null || _a === void 0 ? void 0 : _a.find((w) => w.id == _widget.id);
+    if (!_widgetDetails) {
+        console.warn(`[UXP] Widget '${_widget.id}' has no bundle.json widgets[] entry — declare it in components[] and use registerComponent instead.`);
+    }
+    window.registerWidget(Object.assign(Object.assign(Object.assign({}, _widget), (_widgetDetails || {})), {
+        id
+    }));
+}
+/**
+ * @deprecated Removed in V5 — navigation is config-driven. Define links in
+ * `Configuration.yml` → `navigationLinks` instead. This function is a no-op.
+ */
+function registerLink(_link) {
+    console.warn('[UXP] registerLink is deprecated and has no effect in V5. Define navigation links in Configuration.yml → navigationLinks.');
+}
+/**
+ * @deprecated Removed in V5 — menu items are not supported. This function is a no-op.
+ */
+function registerMenuItem(_menuItem) {
+    console.warn('[UXP] registerMenuItem is deprecated and has no effect in V5.');
+}
+/**
+ * @deprecated V4 adapter. Use `registerComponent` with `modes: ['ui']` instead —
+ * metadata lives in bundle.json `components[]` (the legacy `uis[]` array no longer
+ * exists in V5 scaffolds).
+ *
+ * @example
+ * // bundle.json — add the component entry with metadata
+ * // { "id": "my-view", "name": "My View", "description": "...", "modes": ["ui"] }
+ *
+ * registerComponent({
+ *     id: 'my-view',   // must match the id in bundle.json
+ *     component: MyView,
+ *     configs: { props: [] }
+ * });
+ */
+function registerUI(_ui) {
+    var _a;
+    if (!window.registerUI) {
+        console.error('This code is not being run within the context of UXP');
+        return;
+    }
+    console.warn(`[UXP] registerUI is deprecated — use registerComponent with modes: ['ui'] (metadata in bundle.json components[]).`);
+    const id = (bundle_json_1.default.id + '/ui/' + _ui.id).toLowerCase();
+    // Legacy uis[] array — absent in V5 scaffolds; merge it only if present.
+    const _uiDetails = (_a = bundle_json_1.default.uis) === null || _a === void 0 ? void 0 : _a.find((s) => s.id == _ui.id);
+    if (!_uiDetails) {
+        console.warn(`[UXP] UI '${_ui.id}' has no bundle.json uis[] entry — declare it in components[] and use registerComponent instead.`);
+    }
+    window.registerUI(Object.assign(Object.assign(Object.assign({}, _ui), (_uiDetails || {})), {
+        id
+    }));
+}
+function registerComponent(_component) {
+    var _a;
+    if (!window.registerComponent) {
+        console.error('This code is not being run within the context of UXP');
+        return;
+    }
+    // Look up serializable metadata from bundle.json.
+    // bundle.json owns: name, description, modes, isTemplate, layout, tags, vendor, icon.
+    // Code owns: component, configs.props/configPanel, defaultProps.
+    const bundleEntry = (_a = bundle_json_1.default.components) === null || _a === void 0 ? void 0 : _a.find(c => c.id === _component.id);
+    if (!bundleEntry) {
+        console.warn(`[UXP] Component '${_component.id}' not found in bundle.json. ` + `Add it so metadata (name, modes, tags, layout etc.) is available when the module is uploaded.`);
+    }
+    // Fully-qualified id: bundleId/componentId
+    const id = `${bundle_json_1.default.id}/${_component.id}`.toLowerCase();
+    // Merge: bundle.json is the base, code spreads on top (code wins on conflicts).
+    // Qualified id always wins last.
+    const merged = Object.assign(Object.assign(Object.assign({}, (bundleEntry || {})), _component), { id });
+    window.registerComponent(merged);
+}
+/**
+ * Register an injected object-detail tab (a tab your app contributes to another object
+ * type's details page). Same pattern as registerComponent:
+ * bundle.json `objectTabs` owns the metadata (objectType, name, icon, componentId, roles,
+ * priority, showUnauthorizedError); pass only the partial id here — the composite
+ * `bundleId/tabId` id and the namespaced componentId are generated in this wrapper.
+ *
+ * Example:
+ *   registerTabInjection({ id: 'my-asset-tab' });
+ */
+function registerTabInjection(_tab) {
+    var _a;
+    if (!window.registerTabInjection) {
+        console.error('This code is not being run within the context of UXP');
+        return;
+    }
+    const entry = (_a = bundle_json_1.default.objectTabs) === null || _a === void 0 ? void 0 : _a.find((t) => t.id === _tab.id);
+    if (!entry) {
+        console.warn(`[UXP] Tab '${_tab.id}' not found in bundle.json objectTabs. ` + `Add it so metadata (objectType, name, componentId, roles etc.) is available.`);
+    }
+    // Fully-qualified ids: bundleId/tabId and bundleId/componentId
+    const id = `${bundle_json_1.default.id}/${_tab.id}`.toLowerCase();
+    const componentId = (entry === null || entry === void 0 ? void 0 : entry.componentId) ? `${bundle_json_1.default.id}/${entry.componentId}`.toLowerCase() : _tab.componentId;
+    // Merge: bundle.json is the base, code spreads on top, qualified ids win last.
+    const merged = Object.assign(Object.assign(Object.assign({}, (entry || {})), _tab), { id,
+        componentId });
+    window.registerTabInjection(merged);
+}
+function enableLocalization() {
+    window.registerLocalization(localization_json_1.default);
+}
+const getUrlFriendlyString = (string, removeSlashes) => {
+    const from = "ãàáäâẽèéëêìíïîõòóöôùúüûñç·/_,:;";
+    const to = "aaaaaeeeeeiiiiooooouuuunc------";
+    const newText = string.split('').map((letter, i) => letter.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i)));
+    return newText.toString() // Cast to string
+        .toLowerCase() // Convert the string to lowercase letters
+        .trim() // Remove whitespace from both sides of a string
+        .replace(/\s+/g, '-') // Replace spaces with -
+        .replace(/'/g, '-e') // Replace single quates with -
+        .replace(/&/g, '-and-') // Replace & with 'and'
+        .replace(/[^\w\-]+/g, '') // Remove all non-word chars
+        .replace(/\-\-+/g, '-'); // Replace multiple - with single -
+};
+exports.getUrlFriendlyString = getUrlFriendlyString;
+function registerCustomWidgetTemplate(template) {
+    let id = (0, exports.getUrlFriendlyString)(template.id);
+    if (!template.icon)
+        template.icon = ['fad', 'align-justify'];
+    window.registerCustomWidgetTemplate(template);
+    // Also register in the unified component registry so it appears in the widget drawer
+    registerComponent({
+        id,
+        component: template.template,
+        modes: ['widget'],
+        configs: {
+            layout: template.layout || {
+                w: 10,
+                h: 10
+            },
+            props: [{
+                    name: 'uiProps',
+                    label: 'UI',
+                    type: 'json'
+                }],
+            preLoader: (template === null || template === void 0 ? void 0 : template.preLoader) || 'default',
+            isTemplate: true,
+            isDefaultTemplate: false
+        },
+        defaultProps: {
+            uiProps: {}
+        }
+    });
+}
+
+
+/***/ },
+
+/***/ "./src/views/bills/BillsView.tsx"
+/*!***************************************!*\
+  !*** ./src/views/bills/BillsView.tsx ***!
+  \***************************************/
+(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.BillsView = void 0;
+const react_1 = __importStar(__webpack_require__(/*! react */ "react"));
+const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
+const services_1 = __webpack_require__(/*! ../../services */ "./src/services.ts");
+const BillDetails_1 = __webpack_require__(/*! ../../components/bill-details/BillDetails */ "./src/components/bill-details/BillDetails.tsx");
+const UploadBillDialog_1 = __webpack_require__(/*! ../../forms/upload-bill/UploadBillDialog */ "./src/forms/upload-bill/UploadBillDialog.tsx");
+const utils_1 = __webpack_require__(/*! ../../utils */ "./src/utils.ts");
+__webpack_require__(/*! ./BillsView.scss */ "./src/views/bills/BillsView.scss");
+// How often to refresh the list while any visible bill is still being extracted
+const RefreshInterval = 15000;
+// Columns shown by default; extracted-field columns are opt-in through the column picker
+const DefaultColumns = ['fileName', 'status', 'uploadedAt', 'uploadedBy'];
+// Column ids for extracted fields are prefixed so they can't clash with the bill's own properties
+const FieldColumnPrefix = 'field:';
+// The Upload action returns the new bill id — as a string, an object or a one-item array
+const getNewBillId = (data) => {
+    var _a;
+    if (typeof data === 'string' || typeof data === 'number')
+        return String(data);
+    const row = Array.isArray(data) ? data[0] : data;
+    return (_a = ((row === null || row === void 0 ? void 0 : row._id) || (row === null || row === void 0 ? void 0 : row.id))) !== null && _a !== void 0 ? _a : '';
+};
+const BillsViewBase = () => {
+    const uxpContext = (0, components_1.useUXPContext)();
+    const toast = (0, components_1.useToast)();
+    const { upload } = (0, components_1.useSearchParams)();
+    const { navigate, generateURL } = (0, components_1.useRouterContext)();
+    const objectSearchRef = (0, react_1.useRef)(null);
+    // master list of extracted fields — each one is offered as an optional column
+    const { data: fieldNames = [] } = (0, components_1.useExecuteRequest)(services_1.BillServices.fieldNames());
+    const hasInFlightRef = (0, react_1.useRef)(false);
+    const filterPanelOpenRef = (0, react_1.useRef)(false);
+    const instanceId = 'ebr_bills';
+    (0, components_1.useMultiEventSubscriber)(instanceId, {
+        events: [utils_1.BillCreatedEvent, utils_1.BillUpdatedEvent, utils_1.BillDeletedEvent],
+        sharedCallback: () => { var _a, _b; return (_b = (_a = objectSearchRef.current) === null || _a === void 0 ? void 0 : _a.refreshCurrentPage) === null || _b === void 0 ? void 0 : _b.call(_a); }
+    });
+    // pick up status changes (Pending → Processing → Done / Error) without a manual refresh
+    (0, react_1.useEffect)(() => {
+        const timer = setInterval(() => {
+            var _a, _b;
+            if (hasInFlightRef.current && !filterPanelOpenRef.current) {
+                (_b = (_a = objectSearchRef.current) === null || _a === void 0 ? void 0 : _a.refreshCurrentPage) === null || _b === void 0 ? void 0 : _b.call(_a);
+            }
+        }, RefreshInterval);
+        return () => clearInterval(timer);
+    }, []);
+    const getAll = (0, react_1.useCallback)((page, pageSize, query, filters, _sort) => __awaiter(void 0, void 0, void 0, function* () {
+        const filter = (0, utils_1.buildListFilter)(query, filters);
+        const { data, error } = yield (0, components_1.executeConfig)(uxpContext, services_1.BillServices.list(pageSize, (page - 1) * pageSize, filter));
+        if (error) {
+            toast.error(uxpContext.$L('ebr.message.load-failed'));
+            return {
+                items: []
+            };
+        }
+        const items = data !== null && data !== void 0 ? data : [];
+        hasInFlightRef.current = items.some(b => (0, utils_1.isInFlight)(b.status));
+        return {
+            items
+        };
+    }), []);
+    // ── Upload (runs in the background so the user can keep working) ──
+    const startUpload = (0, react_1.useCallback)((file) => __awaiter(void 0, void 0, void 0, function* () {
+        toast.info(uxpContext.$L('ebr.message.uploading', {
+            name: file.name
+        }));
+        const { data: url, error: uploadError } = yield (0, services_1.uploadBillFile)(uxpContext, file);
+        if (uploadError || !(0, components_1.hasValue)(url)) {
+            toast.error(uxpContext.$L('ebr.message.upload-failed', {
+                name: file.name
+            }));
+            return;
+        }
+        const { data, error } = yield (0, components_1.executeConfig)(uxpContext, services_1.BillServices.upload(url, file.name));
+        if (error) {
+            toast.error(uxpContext.$L('ebr.message.upload-failed', {
+                name: file.name
+            }));
+            return;
+        }
+        toast.success(uxpContext.$L('ebr.message.uploaded', {
+            name: file.name
+        }));
+        (0, utils_1.triggerBillCreatedEvent)(getNewBillId(data));
+    }), []);
+    const download = (0, react_1.useCallback)((bill) => {
+        const url = (0, services_1.getFileUrl)(uxpContext, bill === null || bill === void 0 ? void 0 : bill.filePath);
+        if (!url) {
+            toast.error(uxpContext.$L('ebr.message.no-file'));
+            return;
+        }
+        window.open(url, '_blank', 'noopener');
+    }, []);
+    const renderName = (0, react_1.useCallback)((bill) => react_1.default.createElement("div", { className: "ebr_billsview__name-3a2ac3b5", title: (0, utils_1.getBillName)(bill) },
+        react_1.default.createElement(components_1.Icon, { icon: (0, utils_1.getFileIcon)(bill), className: "ebr_billsview__name-icon-3a2ac3b5" }),
+        react_1.default.createElement("span", { className: "ebr_billsview__name-text-3a2ac3b5" }, (0, utils_1.getBillName)(bill))), []);
+    const columns = (0, react_1.useMemo)(() => [{
+            id: 'fileName',
+            label: uxpContext.$L('ebr.field.file-name'),
+            isResizable: true,
+            renderColumn: item => renderName(item),
+            formatter: (_value, row) => (0, utils_1.getBillName)(row)
+        }, {
+            id: 'status',
+            label: uxpContext.$L('ebr.field.status'),
+            isResizable: true,
+            renderColumn: item => react_1.default.createElement(BillDetails_1.BillStatusChip, { bill: item })
+        }, {
+            id: 'uploadedAt',
+            label: uxpContext.$L('ebr.field.uploaded-at'),
+            isResizable: true,
+            renderColumn: (item) => (0, utils_1.formatDateTime)(item.uploadedAt),
+            formatter: value => (0, utils_1.formatDateTime)(value)
+        }, {
+            id: 'uploadedBy',
+            label: uxpContext.$L('ebr.field.uploaded-by'),
+            isResizable: true
+        }, ...(fieldNames || []).map((name) => ({
+            id: `${FieldColumnPrefix}${name}`,
+            label: (0, utils_1.toFieldLabel)(name),
+            isResizable: true,
+            renderColumn: (item) => react_1.default.createElement("div", { className: "ebr_billsview__field-3a2ac3b5", title: (0, utils_1.formatFieldValue)((0, utils_1.getFieldValue)(item, name)) }, (0, utils_1.formatFieldValue)((0, utils_1.getFieldValue)(item, name))),
+            formatter: (_value, row) => (0, utils_1.formatFieldValue)((0, utils_1.getFieldValue)(row, name))
+        }))], [renderName, fieldNames]);
+    const actionButtons = (0, react_1.useMemo)(() => react_1.default.createElement(components_1.ButtonComponent, { title: uxpContext.$L('ebr.action.upload-bill'), leftIcon: "fal cloud-arrow-up", variant: "primary", onClick: () => navigate(generateURL({
+            searchParams: {
+                upload: '1'
+            }
+        })) }), []);
+    const filterConfiguration = (0, react_1.useMemo)(() => ({
+        formFields: [{
+                title: '',
+                columns: 1,
+                fields: [{
+                        name: 'status',
+                        label: uxpContext.$L('ebr.field.status'),
+                        type: 'select',
+                        options: [{
+                                label: uxpContext.$L('ebr.filter.all'),
+                                value: ''
+                            }, ...services_1.BillStatuses.map(s => ({
+                                label: uxpContext.$L(`ebr.status.${s.toLowerCase()}`),
+                                value: s
+                            }))]
+                    }]
+            }]
+    }), []);
+    const viewsConfig = (0, react_1.useMemo)(() => {
+        const allView = {
+            id: 'all-bills',
+            name: uxpContext.$L('ebr.view.all'),
+            group: uxpContext.$L('ebr.view.group'),
+            configurations: {
+                filters: {
+                    filters: {}
+                },
+                sort: {
+                    uploadedAt: -1
+                },
+                columns: DefaultColumns
+            }
+        };
+        const statusViews = services_1.BillStatuses.map(s => ({
+            id: `${s.toLowerCase()}-bills`,
+            name: uxpContext.$L(`ebr.view.${s.toLowerCase()}`),
+            group: uxpContext.$L('ebr.view.group'),
+            configurations: {
+                filters: {
+                    filters: {
+                        status: s
+                    }
+                },
+                sort: {
+                    uploadedAt: -1
+                },
+                columns: DefaultColumns
+            }
+        }));
+        return {
+            listId: 'ebr-bill-search',
+            defaultViews: [allView, ...statusViews],
+            allowToMangeCustomViews: true,
+            defaultviewId: 'all-bills'
+        };
+    }, []);
+    const defaultActionColumns = (0, react_1.useMemo)(() => ({
+        actionsColumn: {
+            enable: true,
+            headerActions: {
+                sort: false,
+                multiColumnSort: false,
+                customiseColumns: true
+            },
+            rowActions: (item) => {
+                const actions = [];
+                if ((0, components_1.hasValue)(item.filePath)) {
+                    actions.push({
+                        icon: 'fal download',
+                        label: uxpContext.$L('ebr.action.download'),
+                        onClick: () => __awaiter(void 0, void 0, void 0, function* () { return download(item); })
+                    });
+                }
+                if (item.status === 'Done') {
+                    actions.push({
+                        icon: 'fal pencil',
+                        label: uxpContext.$L('ebr.action.edit'),
+                        onClick: () => __awaiter(void 0, void 0, void 0, function* () {
+                            return navigate(generateURL({
+                                searchParams: {
+                                    objectKey: item.id,
+                                    edit: '1'
+                                }
+                            }));
+                        })
+                    });
+                }
+                return actions;
+            }
+        }
+    }), [download]);
+    const detailsPanel = (0, react_1.useMemo)(() => ({
+        columns: [{
+                id: 'details',
+                label: uxpContext.$L('ebr.field.bill'),
+                renderColumn: (item) => react_1.default.createElement("div", { className: "ebr_billsview__collapsed-3a2ac3b5" },
+                    renderName(item),
+                    react_1.default.createElement("div", { className: "ebr_billsview__collapsed-meta-3a2ac3b5" },
+                        react_1.default.createElement(BillDetails_1.BillStatusChip, { bill: item }),
+                        react_1.default.createElement("span", { className: "ebr_billsview__collapsed-date-3a2ac3b5" }, (0, utils_1.formatDateTime)(item.uploadedAt))))
+            }],
+        renderDetails: (itemId, onClose) => react_1.default.createElement(BillDetails_1.BillDetails, { billId: itemId, onClose: onClose })
+    }), [renderName]);
+    const search = (0, react_1.useMemo)(() => ({
+        enable: true
+    }), []);
+    const closeUpload = (0, react_1.useCallback)(() => {
+        navigate(generateURL({
+            removeParams: ['upload']
+        }));
+    }, []);
+    return react_1.default.createElement("div", { className: "ebr_billsview__container-3a2ac3b5" },
+        react_1.default.createElement(components_1.ObjectSearchComponent, { ref: objectSearchRef, title: uxpContext.$L('ebr.text.title'), data: getAll, idField: "id", columns: columns, pageSize: 50, total: 0, actionButtons: actionButtons, filters: filterConfiguration, views: viewsConfig, defaultActionColumns: defaultActionColumns, search: search, detailsPanel: detailsPanel, collapsedWidth: '25rem', appendToURL: true, clearParamsOnSelect: ['edit'], noItemsMessage: uxpContext.$L('ebr.text.no-bills'), onFilterPanelToggle: isOpen => filterPanelOpenRef.current = isOpen }),
+        react_1.default.createElement(UploadBillDialog_1.UploadBillDialog, { isOpen: upload === '1', onClose: closeUpload, onUpload: startUpload }));
+};
+exports.BillsView = (0, react_1.memo)(BillsViewBase);
+
+
+/***/ },
+
+/***/ "react"
+/*!************************!*\
+  !*** external "React" ***!
+  \************************/
+(module) {
+
+"use strict";
+module.exports = React;
+
+/***/ },
+
+/***/ "uxp/components"
+/*!********************************!*\
+  !*** external "UXPComponents" ***!
+  \********************************/
+(module) {
+
+"use strict";
+module.exports = UXPComponents;
+
+/***/ },
+
+/***/ "./node_modules/axios/dist/browser/axios.cjs"
+/*!***************************************************!*\
+  !*** ./node_modules/axios/dist/browser/axios.cjs ***!
+  \***************************************************/
+(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+/*! Axios v1.21.0 Copyright (c) 2026 Matt Zabriskie and contributors */
+
+
+/**
+ * Create a bound version of a function with a specified `this` context
+ *
+ * @param {Function} fn - The function to bind
+ * @param {*} thisArg - The value to be passed as the `this` parameter
+ * @returns {Function} A new function that will call the original function with the specified `this` context
+ */
+function bind(fn, thisArg) {
+  return function wrap() {
+    return fn.apply(thisArg, arguments);
+  };
+}
+
+// utils is a library of generic helper functions non-specific to axios
+
+const { toString } = Object.prototype;
+const { getPrototypeOf } = Object;
+const { iterator, toStringTag } = Symbol;
+
+/* Creating a function that will check if an object has a property. */
+const hasOwnProperty = (
+  ({ hasOwnProperty }) =>
+  (obj, prop) =>
+    hasOwnProperty.call(obj, prop)
+)(Object.prototype);
+
+const isUnsafeObjectKey = (prop) =>
+  typeof prop === 'string' &&
+  (prop === '__proto__' || prop === 'constructor' || prop === 'prototype');
+
+/**
+ * Determine whether an inherited object must be treated as a shared-prototype
+ * boundary. Cross-realm Object.prototype objects cannot be distinguished
+ * reliably from application-created null-prototype objects because their
+ * properties are mutable, so all inherited terminal prototypes are excluded
+ * as a fail-closed boundary. A null-prototype source still keeps its own
+ * properties, as produced by mergeConfig and other safe materialization paths.
+ *
+ * @param {*} obj The object to inspect
+ * @param {*} prototype The object's prototype
+ * @param {boolean} source Whether obj is the original traversal source
+ *
+ * @returns {boolean} True when obj is a safe prototype traversal boundary
+ */
+const isPrototypeBoundary = (obj, prototype, source) =>
+  obj === Object.prototype || (!source && prototype === null);
+
+/**
+ * Determine whether an object can retain its identity through code paths that
+ * add, replace, and remove config properties without bypassing unsafe-key
+ * filtering. Immutable objects, unsafe-key-bearing objects, and objects with
+ * accessor or restricted data properties must be materialized instead.
+ *
+ * @param {*} obj The object to inspect
+ *
+ * @returns {boolean} True when every own property is safe and fully mutable
+ */
+const isSafeAndFullyMutable = (obj) => {
+  if (!Object.isExtensible(obj)) {
+    return false;
+  }
+
+  const props = Object.getOwnPropertyNames(obj);
+
+  if (Object.getOwnPropertySymbols) {
+    props.push(...Object.getOwnPropertySymbols(obj));
+  }
+
+  return props.every((prop) => {
+    if (isUnsafeObjectKey(prop)) {
+      return false;
+    }
+
+    const descriptor = Object.getOwnPropertyDescriptor(obj, prop);
+
+    return !!descriptor && descriptor.configurable && descriptor.writable === true;
+  });
+};
+
+/**
+ * Walk the prototype chain (excluding the source realm's Object.prototype)
+ * looking for an own `prop`. This distinguishes genuine own/inherited members
+ * — including class accessors and template prototypes — from members injected
+ * via Object.prototype pollution (e.g. `Object.prototype.username = '...'`),
+ * which live on Object.prototype itself and are therefore never matched.
+ *
+ * @param {*} thing The value whose chain to inspect
+ * @param {string|symbol} prop The property key to look for
+ *
+ * @returns {boolean} True when `prop` is owned below Object.prototype
+ */
+const hasOwnInPrototypeChain = (thing, prop) => {
+  let obj = thing;
+  const seen = [];
+
+  while (obj != null) {
+    if (seen.indexOf(obj) !== -1) {
+      return false;
+    }
+    seen.push(obj);
+
+    const prototype = getPrototypeOf(obj);
+
+    if (isPrototypeBoundary(obj, prototype, obj === thing)) {
+      return false;
+    }
+
+    if (hasOwnProperty(obj, prop)) {
+      return true;
+    }
+    obj = prototype;
+  }
+  return false;
+};
+
+/**
+ * Read `obj[prop]` only when it is safe from Object.prototype pollution. Own
+ * properties and members inherited from a non-Object.prototype source (a class
+ * instance or template object) are honored; a value reachable only through a
+ * polluted Object.prototype is ignored and `undefined` is returned.
+ *
+ * @param {*} obj The source object
+ * @param {string|symbol} prop The property key to read
+ *
+ * @returns {*} The resolved value, or undefined when unsafe/absent
+ */
+const getSafeProp = (obj, prop) =>
+  obj != null && hasOwnInPrototypeChain(obj, prop) ? obj[prop] : undefined;
+
+/**
+ * Flatten an object and its application-defined prototype chain into a
+ * null-prototype object. Members inherited only from the source realm's
+ * Object.prototype are deliberately excluded, while class/template members
+ * below that boundary are preserved.
+ *
+ * @param {*} thing The value to flatten
+ *
+ * @returns {*} A null-prototype copy, or the original value when it is already
+ * structurally safe or is not an object
+ */
+const toSafeFlatObject = (thing) => {
+  if (thing == null || (typeof thing !== 'object' && typeof thing !== 'function')) {
+    return thing;
+  }
+
+  const sourcePrototype = getPrototypeOf(thing);
+
+  if (sourcePrototype === null && isSafeAndFullyMutable(thing)) {
+    return thing;
+  }
+
+  const result = Object.create(null);
+  const merged = Object.create(null);
+  const seen = [];
+  let current = thing;
+
+  while (current != null) {
+    if (seen.indexOf(current) !== -1) {
+      break;
+    }
+
+    seen.push(current);
+
+    const prototype = current === thing ? sourcePrototype : getPrototypeOf(current);
+
+    if (isPrototypeBoundary(current, prototype, current === thing)) {
+      break;
+    }
+
+    const props = Object.getOwnPropertyNames(current);
+
+    if (Object.getOwnPropertySymbols) {
+      props.push(...Object.getOwnPropertySymbols(current));
+    }
+
+    for (const prop of props) {
+      if (isUnsafeObjectKey(prop)) {
+        continue;
+      }
+
+      if (!hasOwnProperty(merged, prop)) {
+        result[prop] = thing[prop];
+        merged[prop] = true;
+      }
+    }
+
+    current = prototype;
+  }
+
+  return result;
+};
+
+const kindOf = ((cache) => (thing) => {
+  const str = toString.call(thing);
+  return cache[str] || (cache[str] = str.slice(8, -1).toLowerCase());
+})(Object.create(null));
+
+const kindOfTest = (type) => {
+  type = type.toLowerCase();
+  return (thing) => kindOf(thing) === type;
+};
+
+const typeOfTest = (type) => (thing) => typeof thing === type;
+
+/**
+ * Determine if a value is a non-null object
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is an Array, otherwise false
+ */
+const { isArray } = Array;
+
+/**
+ * Determine if a value is undefined
+ *
+ * @param {*} val The value to test
+ *
+ * @returns {boolean} True if the value is undefined, otherwise false
+ */
+const isUndefined = typeOfTest('undefined');
+
+/**
+ * Determine if a value is a Buffer
+ *
+ * @param {*} val The value to test
+ *
+ * @returns {boolean} True if value is a Buffer, otherwise false
+ */
+function isBuffer(val) {
+  return (
+    val !== null &&
+    !isUndefined(val) &&
+    val.constructor !== null &&
+    !isUndefined(val.constructor) &&
+    isFunction$1(val.constructor.isBuffer) &&
+    val.constructor.isBuffer(val)
+  );
+}
+
+/**
+ * Determine if a value is an ArrayBuffer
+ *
+ * @param {*} val The value to test
+ *
+ * @returns {boolean} True if value is an ArrayBuffer, otherwise false
+ */
+const isArrayBuffer = kindOfTest('ArrayBuffer');
+
+/**
+ * Determine if a value is a view on an ArrayBuffer
+ *
+ * @param {*} val The value to test
+ *
+ * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
+ */
+function isArrayBufferView(val) {
+  let result;
+  if (typeof ArrayBuffer !== 'undefined' && ArrayBuffer.isView) {
+    result = ArrayBuffer.isView(val);
+  } else {
+    result = val && val.buffer && isArrayBuffer(val.buffer);
+  }
+  return result;
+}
+
+/**
+ * Determine if a value is a String
+ *
+ * @param {*} val The value to test
+ *
+ * @returns {boolean} True if value is a String, otherwise false
+ */
+const isString = typeOfTest('string');
+
+/**
+ * Determine if a value is a Function
+ *
+ * @param {*} val The value to test
+ * @returns {boolean} True if value is a Function, otherwise false
+ */
+const isFunction$1 = typeOfTest('function');
+
+/**
+ * Determine if a value is a Number
+ *
+ * @param {*} val The value to test
+ *
+ * @returns {boolean} True if value is a Number, otherwise false
+ */
+const isNumber = typeOfTest('number');
+
+/**
+ * Determine if a value is an Object
+ *
+ * @param {*} thing The value to test
+ *
+ * @returns {boolean} True if value is an Object, otherwise false
+ */
+const isObject = (thing) => thing !== null && typeof thing === 'object';
+
+/**
+ * Determine if a value is a Boolean
+ *
+ * @param {*} thing The value to test
+ * @returns {boolean} True if value is a Boolean, otherwise false
+ */
+const isBoolean = (thing) => thing === true || thing === false;
+
+/**
+ * Determine if a value is a plain Object
+ *
+ * @param {*} val The value to test
+ *
+ * @returns {boolean} True if value is a plain Object, otherwise false
+ */
+const isPlainObject = (val) => {
+  if (!isObject(val)) {
+    return false;
+  }
+
+  const prototype = getPrototypeOf(val);
+  return (
+    (prototype === null || prototype === Object.prototype || getPrototypeOf(prototype) === null) &&
+    // Treat own Symbol.toStringTag or Symbol.iterator members as evidence the
+    // value is tagged/iterable, ignoring members reachable only through shared
+    // or terminal prototype boundaries. This is exactly what
+    // hasOwnInPrototypeChain(val, prop) computes here: every prototype admitted
+    // above (null, Object.prototype, or a terminal null-prototype template) is
+    // a boundary, so the walk never inspects anything but `val`'s own members,
+    // and stops before even those when `val` is itself the boundary
+    // Object.prototype. Checking that inline avoids allocating the walker's
+    // `seen` list twice per call on the mergeConfig / merge hot path.
+    (isPrototypeBoundary(val, prototype, true) ||
+      (!hasOwnProperty(val, toStringTag) && !hasOwnProperty(val, iterator)))
+  );
+};
+
+/**
+ * Determine if a value is an empty object (safely handles Buffers)
+ *
+ * @param {*} val The value to test
+ *
+ * @returns {boolean} True if value is an empty object, otherwise false
+ */
+const isEmptyObject = (val) => {
+  // Early return for non-objects or Buffers to prevent RangeError
+  if (!isObject(val) || isBuffer(val)) {
+    return false;
+  }
+
+  try {
+    return Object.keys(val).length === 0 && Object.getPrototypeOf(val) === Object.prototype;
+  } catch (e) {
+    // Fallback for any other objects that might cause RangeError with Object.keys()
+    return false;
+  }
+};
+
+/**
+ * Determine if a value is a Date
+ *
+ * @param {*} val The value to test
+ *
+ * @returns {boolean} True if value is a Date, otherwise false
+ */
+const isDate = kindOfTest('Date');
+
+/**
+ * Determine if a value is a File
+ *
+ * @param {*} val The value to test
+ *
+ * @returns {boolean} True if value is a File, otherwise false
+ */
+const isFile = kindOfTest('File');
+
+/**
+ * Determine if a value is a React Native Blob
+ * React Native "blob": an object with a `uri` attribute. Optionally, it can
+ * also have a `name` and `type` attribute to specify filename and content type
+ *
+ * @see https://github.com/facebook/react-native/blob/26684cf3adf4094eb6c405d345a75bf8c7c0bf88/Libraries/Network/FormData.js#L68-L71
+ *
+ * @param {*} value The value to test
+ *
+ * @returns {boolean} True if value is a React Native Blob, otherwise false
+ */
+const isReactNativeBlob = (value) => {
+  return !!(value && typeof value.uri !== 'undefined');
+};
+
+/**
+ * Determine if environment is React Native
+ * ReactNative `FormData` has a non-standard `getParts()` method
+ *
+ * @param {*} formData The formData to test
+ *
+ * @returns {boolean} True if environment is React Native, otherwise false
+ */
+const isReactNative = (formData) => formData && typeof formData.getParts !== 'undefined';
+
+/**
+ * Determine if a value is a Blob
+ *
+ * @param {*} val The value to test
+ *
+ * @returns {boolean} True if value is a Blob, otherwise false
+ */
+const isBlob = kindOfTest('Blob');
+
+/**
+ * Determine if a value is a FileList
+ *
+ * @param {*} val The value to test
+ *
+ * @returns {boolean} True if value is a FileList, otherwise false
+ */
+const isFileList = kindOfTest('FileList');
+const isSet = kindOfTest('Set');
+
+/**
+ * Determine if a value is a Stream
+ *
+ * @param {*} val The value to test
+ *
+ * @returns {boolean} True if value is a Stream, otherwise false
+ */
+const isStream = (val) => isObject(val) && isFunction$1(val.pipe);
+
+/**
+ * Determine if a value is a FormData
+ *
+ * @param {*} thing The value to test
+ *
+ * @returns {boolean} True if value is an FormData, otherwise false
+ */
+function getGlobal() {
+  if (typeof globalThis !== 'undefined') return globalThis;
+  if (typeof self !== 'undefined') return self;
+  if (typeof window !== 'undefined') return window;
+  if (typeof __webpack_require__.g !== 'undefined') return __webpack_require__.g;
+  return {};
+}
+
+const G = getGlobal();
+const FormDataCtor = typeof G.FormData !== 'undefined' ? G.FormData : undefined;
+
+const isFormData = (thing) => {
+  if (!thing) return false;
+  if (FormDataCtor && thing instanceof FormDataCtor) return true;
+  // Reject plain objects inheriting directly from Object.prototype so prototype-pollution gadgets can't spoof FormData.
+  const proto = getPrototypeOf(thing);
+  if (!proto || proto === Object.prototype) return false;
+  if (!isFunction$1(thing.append)) return false;
+  const kind = kindOf(thing);
+  return (
+    kind === 'formdata' ||
+    // detect form-data instance
+    (kind === 'object' && isFunction$1(thing.toString) && thing.toString() === '[object FormData]')
+  );
+};
+
+/**
+ * Determine if a value is a URLSearchParams object
+ *
+ * @param {*} val The value to test
+ *
+ * @returns {boolean} True if value is a URLSearchParams object, otherwise false
+ */
+const isURLSearchParams = kindOfTest('URLSearchParams');
+
+const [isReadableStream, isRequest, isResponse, isHeaders] = [
+  'ReadableStream',
+  'Request',
+  'Response',
+  'Headers',
+].map(kindOfTest);
+
+/**
+ * Trim excess whitespace off the beginning and end of a string
+ *
+ * @param {String} str The String to trim
+ *
+ * @returns {String} The String freed of excess whitespace
+ */
+const trim = (str) => {
+  return str.trim ? str.trim() : str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+};
+/**
+ * Iterate over an Array or an Object invoking a function for each item.
+ *
+ * If `obj` is an Array callback will be called passing
+ * the value, index, and complete array for each item.
+ *
+ * If 'obj' is an Object callback will be called passing
+ * the value, key, and complete object for each property.
+ *
+ * @param {Object|Array<unknown>} obj The object to iterate
+ * @param {Function} fn The callback to invoke for each item
+ *
+ * @param {Object} [options]
+ * @param {Boolean} [options.allOwnKeys = false]
+ * @returns {any}
+ */
+function forEach(obj, fn, { allOwnKeys = false } = {}) {
+  // Don't bother if no value provided
+  if (obj === null || typeof obj === 'undefined') {
+    return;
+  }
+
+  let i;
+  let l;
+
+  // Force an array if not already something iterable
+  if (typeof obj !== 'object') {
+    /*eslint no-param-reassign:0*/
+    obj = [obj];
+  }
+
+  if (isArray(obj)) {
+    // Iterate over array values
+    for (i = 0, l = obj.length; i < l; i++) {
+      fn.call(null, obj[i], i, obj);
+    }
+  } else {
+    // Buffer check
+    if (isBuffer(obj)) {
+      return;
+    }
+
+    // Iterate over object keys
+    const keys = allOwnKeys ? Object.getOwnPropertyNames(obj) : Object.keys(obj);
+    const len = keys.length;
+    let key;
+
+    for (i = 0; i < len; i++) {
+      key = keys[i];
+      fn.call(null, obj[key], key, obj);
+    }
+  }
+}
+
+/**
+ * Finds a key in an object, case-insensitive, returning the actual key name.
+ * Returns null if the object is a Buffer or if no match is found.
+ *
+ * @param {Object} obj - The object to search.
+ * @param {string} key - The key to find (case-insensitive).
+ * @returns {?string} The actual key name if found, otherwise null.
+ */
+function findKey(obj, key) {
+  if (isBuffer(obj)) {
+    return null;
+  }
+
+  key = key.toLowerCase();
+  const keys = Object.keys(obj);
+  let i = keys.length;
+  let _key;
+  while (i-- > 0) {
+    _key = keys[i];
+    if (key === _key.toLowerCase()) {
+      return _key;
+    }
+  }
+  return null;
+}
+
+const _global = (() => {
+  /*eslint no-undef:0*/
+  if (typeof globalThis !== 'undefined') return globalThis;
+  return typeof self !== 'undefined' ? self : typeof window !== 'undefined' ? window : __webpack_require__.g;
+})();
+
+const isContextDefined = (context) => !isUndefined(context) && context !== _global;
+
+/**
+ * Accepts varargs expecting each argument to be an object, then
+ * immutably merges the properties of each object and returns result.
+ *
+ * When multiple objects contain the same key the later object in
+ * the arguments list will take precedence.
+ *
+ * Example:
+ *
+ * ```js
+ * const result = merge({foo: 123}, {foo: 456});
+ * console.log(result.foo); // outputs 456
+ * ```
+ *
+ * @param {Object} obj1 Object to merge
+ *
+ * @returns {Object} Result of all merge properties
+ */
+function merge(...objs) {
+  const { caseless, skipUndefined } = (isContextDefined(this) && this) || {};
+  const result = {};
+  // Caseless lookup only applies to string keys — symbol keys are
+  // identity-matched. Every string key that reaches `result` passes through
+  // this index first, so it can never hold two case variants of one key and a
+  // lowercase -> key map is exactly what findKey(result, key) would rescan
+  // Object.keys(result) for on each assignment.
+  const lowerCaseKeys = caseless ? Object.create(null) : null;
+  const assignValue = (val, key) => {
+    // Skip dangerous property names to prevent prototype pollution
+    if (key === '__proto__' || key === 'constructor' || key === 'prototype') {
+      return;
+    }
+
+    let targetKey = key;
+    if (lowerCaseKeys && typeof key === 'string') {
+      const lowerKey = key.toLowerCase();
+      const knownKey = lowerCaseKeys[lowerKey];
+      // A key recorded but absent from `result` was skipped by skipUndefined;
+      // the later spelling wins then, as it does for findKey.
+      if (knownKey !== undefined && hasOwnProperty(result, knownKey)) {
+        targetKey = knownKey;
+      } else {
+        lowerCaseKeys[lowerKey] = key;
+      }
+    }
+    // Read via own-prop only — a bare `result[targetKey]` walks the prototype
+    // chain, so a polluted Object.prototype value could surface here and get
+    // copied into the merged result.
+    const existing = hasOwnProperty(result, targetKey) ? result[targetKey] : undefined;
+    if (isPlainObject(existing) && isPlainObject(val)) {
+      result[targetKey] = merge(existing, val);
+    } else if (isPlainObject(val)) {
+      result[targetKey] = merge({}, val);
+    } else if (isArray(val)) {
+      result[targetKey] = val.slice();
+    } else if (!skipUndefined || !isUndefined(val)) {
+      result[targetKey] = val;
+    }
+  };
+
+  for (let i = 0, l = objs.length; i < l; i++) {
+    const source = objs[i];
+    if (!source || isBuffer(source)) {
+      continue;
+    }
+
+    forEach(source, assignValue);
+
+    if (typeof source !== 'object' || isArray(source) || !Object.getOwnPropertySymbols) {
+      continue;
+    }
+
+    const symbols = Object.getOwnPropertySymbols(source);
+    for (let j = 0; j < symbols.length; j++) {
+      const symbol = symbols[j];
+      if (propertyIsEnumerable.call(source, symbol)) {
+        assignValue(source[symbol], symbol);
+      }
+    }
+  }
+  return result;
+}
+
+/**
+ * Extends object a by mutably adding to it the properties of object b.
+ *
+ * @param {Object} a The object to be extended
+ * @param {Object} b The object to copy properties from
+ * @param {Object} thisArg The object to bind function to
+ *
+ * @param {Object} [options]
+ * @param {Boolean} [options.allOwnKeys]
+ * @returns {Object} The resulting value of object a
+ */
+const extend = (a, b, thisArg, { allOwnKeys } = {}) => {
+  forEach(
+    b,
+    (val, key) => {
+      if (thisArg && isFunction$1(val)) {
+        Object.defineProperty(a, key, {
+          // Null-proto descriptor so a polluted Object.prototype.get cannot
+          // hijack defineProperty's accessor-vs-data resolution.
+          __proto__: null,
+          value: bind(val, thisArg),
+          writable: true,
+          enumerable: true,
+          configurable: true,
+        });
+      } else {
+        Object.defineProperty(a, key, {
+          __proto__: null,
+          value: val,
+          writable: true,
+          enumerable: true,
+          configurable: true,
+        });
+      }
+    },
+    { allOwnKeys }
+  );
+  return a;
+};
+
+/**
+ * Remove byte order marker. This catches EF BB BF (the UTF-8 BOM)
+ *
+ * @param {string} content with BOM
+ *
+ * @returns {string} content value without BOM
+ */
+const stripBOM = (content) => {
+  if (content.charCodeAt(0) === 0xfeff) {
+    content = content.slice(1);
+  }
+  return content;
+};
+
+/**
+ * Inherit the prototype methods from one constructor into another
+ * @param {function} constructor
+ * @param {function} superConstructor
+ * @param {object} [props]
+ * @param {object} [descriptors]
+ *
+ * @returns {void}
+ */
+const inherits = (constructor, superConstructor, props, descriptors) => {
+  constructor.prototype = Object.create(superConstructor.prototype, descriptors);
+  Object.defineProperty(constructor.prototype, 'constructor', {
+    __proto__: null,
+    value: constructor,
+    writable: true,
+    enumerable: false,
+    configurable: true,
+  });
+  Object.defineProperty(constructor, 'super', {
+    __proto__: null,
+    value: superConstructor.prototype,
+  });
+  props && Object.assign(constructor.prototype, props);
+};
+
+/**
+ * Resolve object with deep prototype chain to a flat object
+ * @param {Object} sourceObj source object
+ * @param {Object} [destObj]
+ * @param {Function|Boolean} [filter]
+ * @param {Function} [propFilter]
+ *
+ * @returns {Object}
+ */
+const toFlatObject = (sourceObj, destObj, filter, propFilter) => {
+  let props;
+  let i;
+  let prop;
+  const merged = {};
+
+  destObj = destObj || {};
+  // eslint-disable-next-line no-eq-null,eqeqeq
+  if (sourceObj == null) return destObj;
+
+  do {
+    props = Object.getOwnPropertyNames(sourceObj);
+    i = props.length;
+    while (i-- > 0) {
+      prop = props[i];
+      if ((!propFilter || propFilter(prop, sourceObj, destObj)) && !merged[prop]) {
+        destObj[prop] = sourceObj[prop];
+        merged[prop] = true;
+      }
+    }
+    sourceObj = filter !== false && getPrototypeOf(sourceObj);
+  } while (sourceObj && (!filter || filter(sourceObj, destObj)) && sourceObj !== Object.prototype);
+
+  return destObj;
+};
+
+/**
+ * Determines whether a string ends with the characters of a specified string
+ *
+ * @param {String} str
+ * @param {String} searchString
+ * @param {Number} [position= 0]
+ *
+ * @returns {boolean}
+ */
+const endsWith = (str, searchString, position) => {
+  str = String(str);
+  if (position === undefined || position > str.length) {
+    position = str.length;
+  }
+  position -= searchString.length;
+  const lastIndex = str.indexOf(searchString, position);
+  return lastIndex !== -1 && lastIndex === position;
+};
+
+/**
+ * Returns new array from array like object or null if failed
+ *
+ * @param {*} [thing]
+ *
+ * @returns {?Array}
+ */
+const toArray = (thing) => {
+  if (!thing) return null;
+  if (isArray(thing)) return thing;
+  let i = thing.length;
+  if (!Number.isSafeInteger(i) || i < 0 || i > 0xffffffff) return null;
+
+  // Bound the copy by actual indexed properties, including hidden and inherited
+  // members of array-like collections, rather than by the declared length alone.
+  const indexes = new Set();
+  const seen = new Set();
+  let source = thing;
+
+  while (source != null && indexes.size < i) {
+    if (seen.has(source)) return null;
+    seen.add(source);
+
+    const prototype = getPrototypeOf(source);
+    if (isPrototypeBoundary(source, prototype, source === thing)) break;
+
+    Object.getOwnPropertyNames(source).forEach((key) => {
+      const index = +key;
+      if (
+        Number.isInteger(index) &&
+        index >= 0 &&
+        index < i &&
+        String(index) === key &&
+        hasOwnProperty(source, key)
+      ) {
+        indexes.add(index);
+      }
+    });
+    source = prototype;
+  }
+
+  if (indexes.size !== i) return null;
+  const arr = new Array(i);
+  while (i-- > 0) {
+    arr[i] = thing[i];
+  }
+  return arr;
+};
+
+/**
+ * Checking if the Uint8Array exists and if it does, it returns a function that checks if the
+ * thing passed in is an instance of Uint8Array
+ *
+ * @param {TypedArray}
+ *
+ * @returns {Array}
+ */
+// eslint-disable-next-line func-names
+const isTypedArray = ((TypedArray) => {
+  // eslint-disable-next-line func-names
+  return (thing) => {
+    return TypedArray && thing instanceof TypedArray;
+  };
+})(typeof Uint8Array !== 'undefined' && getPrototypeOf(Uint8Array));
+
+/**
+ * For each entry in the object, call the function with the key and value.
+ *
+ * @param {Object<any, any>} obj - The object to iterate over.
+ * @param {Function} fn - The function to call for each entry.
+ *
+ * @returns {void}
+ */
+const forEachEntry = (obj, fn) => {
+  const generator = obj && obj[iterator];
+
+  const _iterator = generator.call(obj);
+
+  let result;
+
+  while ((result = _iterator.next()) && !result.done) {
+    const pair = result.value;
+    fn.call(obj, pair[0], pair[1]);
+  }
+};
+
+/**
+ * It takes a regular expression and a string, and returns an array of all the matches
+ *
+ * @param {string} regExp - The regular expression to match against.
+ * @param {string} str - The string to search.
+ *
+ * @returns {Array<boolean>}
+ */
+const matchAll = (regExp, str) => {
+  let matches;
+  const arr = [];
+
+  while ((matches = regExp.exec(str)) !== null) {
+    arr.push(matches);
+  }
+
+  return arr;
+};
+
+/* Checking if the kindOfTest function returns true when passed an HTMLFormElement. */
+const isHTMLForm = kindOfTest('HTMLFormElement');
+
+const toCamelCase = (str) => {
+  return str.toLowerCase().replace(/[-_\s]([a-z\d])(\w*)/g, function replacer(m, p1, p2) {
+    return p1.toUpperCase() + p2;
+  });
+};
+
+const { propertyIsEnumerable } = Object.prototype;
+
+/**
+ * Determine if a value is a RegExp object
+ *
+ * @param {*} val The value to test
+ *
+ * @returns {boolean} True if value is a RegExp object, otherwise false
+ */
+const isRegExp = kindOfTest('RegExp');
+
+const reduceDescriptors = (obj, reducer) => {
+  const descriptors = Object.getOwnPropertyDescriptors(obj);
+  const reducedDescriptors = {};
+
+  forEach(descriptors, (descriptor, name) => {
+    let ret;
+    if ((ret = reducer(descriptor, name, obj)) !== false) {
+      reducedDescriptors[name] = ret || descriptor;
+    }
+  });
+
+  Object.defineProperties(obj, reducedDescriptors);
+};
+
+/**
+ * Makes all methods read-only
+ * @param {Object} obj
+ */
+
+const freezeMethods = (obj) => {
+  reduceDescriptors(obj, (descriptor, name) => {
+    // skip restricted props in strict mode
+    if (isFunction$1(obj) && ['arguments', 'caller', 'callee'].includes(name)) {
+      return false;
+    }
+
+    const value = obj[name];
+
+    if (!isFunction$1(value)) return;
+
+    descriptor.enumerable = false;
+
+    if ('writable' in descriptor) {
+      descriptor.writable = false;
+      return;
+    }
+
+    if (!descriptor.set) {
+      descriptor.set = () => {
+        throw Error("Can not rewrite read-only method '" + name + "'");
+      };
+    }
+  });
+};
+
+/**
+ * Converts an array or a delimited string into an object set with values as keys and true as values.
+ * Useful for fast membership checks.
+ *
+ * @param {Array|string} arrayOrString - The array or string to convert.
+ * @param {string} delimiter - The delimiter to use if input is a string.
+ * @returns {Object} An object with keys from the array or string, values set to true.
+ */
+const toObjectSet = (arrayOrString, delimiter) => {
+  const obj = {};
+
+  const define = (arr) => {
+    arr.forEach((value) => {
+      obj[value] = true;
+    });
+  };
+
+  isArray(arrayOrString) ? define(arrayOrString) : define(String(arrayOrString).split(delimiter));
+
+  return obj;
+};
+
+const noop = () => {};
+
+const toFiniteNumber = (value, defaultValue) => {
+  return value != null && Number.isFinite((value = +value)) ? value : defaultValue;
+};
+
+/**
+ * If the thing is a FormData object, return true, otherwise return false.
+ *
+ * @param {unknown} thing - The thing to check.
+ *
+ * @returns {boolean}
+ */
+function isSpecCompliantForm(thing) {
+  return !!(
+    thing &&
+    isFunction$1(thing.append) &&
+    thing[toStringTag] === 'FormData' &&
+    thing[iterator]
+  );
+}
+
+/**
+ * Recursively converts an object to a JSON-compatible object, handling circular references and Buffers.
+ *
+ * @param {Object} obj - The object to convert.
+ * @returns {Object} The JSON-compatible object.
+ */
+const toJSONObject = (obj) => {
+  const visited = new WeakSet();
+
+  const visit = (source) => {
+    if (isObject(source)) {
+      if (visited.has(source)) {
+        return;
+      }
+
+      //Buffer check
+      if (isBuffer(source)) {
+        return source;
+      }
+
+      if (!('toJSON' in source)) {
+        // add-on descent / delete-on-ascent: preserves path semantics, so DAG nodes serialise at every occurrence (see #7230).
+        visited.add(source);
+
+        let target;
+
+        if (isSet(source)) {
+          target = [];
+          for (const value of source) {
+            const reducedValue = visit(value);
+            !isUndefined(reducedValue) && target.push(reducedValue);
+          }
+        } else {
+          target = isArray(source) ? [] : {};
+
+          forEach(source, (value, key) => {
+            const reducedValue = visit(value);
+            !isUndefined(reducedValue) && (target[key] = reducedValue);
+          });
+        }
+
+        visited.delete(source);
+
+        return target;
+      }
+    }
+
+    return source;
+  };
+
+  return visit(obj);
+};
+
+/**
+ * Determines if a value is an async function.
+ *
+ * @param {*} thing - The value to test.
+ * @returns {boolean} True if value is an async function, otherwise false.
+ */
+const isAsyncFn = kindOfTest('AsyncFunction');
+
+/**
+ * Determines if a value is thenable (has then and catch methods).
+ *
+ * @param {*} thing - The value to test.
+ * @returns {boolean} True if value is thenable, otherwise false.
+ */
+const isThenable = (thing) =>
+  thing &&
+  (isObject(thing) || isFunction$1(thing)) &&
+  isFunction$1(thing.then) &&
+  isFunction$1(thing.catch);
+
+// original code
+// https://github.com/DigitalBrainJS/AxiosPromise/blob/16deab13710ec09779922131f3fa5954320f83ab/lib/utils.js#L11-L34
+
+/**
+ * Provides a cross-platform setImmediate implementation.
+ * Uses native setImmediate if available, otherwise falls back to postMessage or setTimeout.
+ *
+ * @param {boolean} setImmediateSupported - Whether setImmediate is supported.
+ * @param {boolean} postMessageSupported - Whether postMessage is supported.
+ * @returns {Function} A function to schedule a callback asynchronously.
+ */
+const _setImmediate = ((setImmediateSupported, postMessageSupported) => {
+  if (setImmediateSupported) {
+    return setImmediate;
+  }
+
+  return postMessageSupported
+    ? ((token, callbacks) => {
+        _global.addEventListener(
+          'message',
+          ({ source, data }) => {
+            if (source === _global && data === token) {
+              callbacks.length && callbacks.shift()();
+            }
+          },
+          false
+        );
+
+        return (cb) => {
+          callbacks.push(cb);
+          _global.postMessage(token, '*');
+        };
+      })(`axios@${Math.random()}`, [])
+    : (cb) => setTimeout(cb);
+})(typeof setImmediate === 'function', isFunction$1(_global.postMessage));
+
+/**
+ * Schedules a microtask or asynchronous callback as soon as possible.
+ * Uses queueMicrotask if available, otherwise falls back to process.nextTick or _setImmediate.
+ *
+ * @type {Function}
+ */
+const asap =
+  typeof queueMicrotask !== 'undefined'
+    ? queueMicrotask.bind(_global)
+    : (typeof process !== 'undefined' && process.nextTick) || _setImmediate;
+
+// *********************
+
+const isIterable = (thing) => thing != null && isFunction$1(thing[iterator]);
+
+/**
+ * Determine if a value is iterable via an iterator that is NOT sourced solely
+ * from a polluted Object.prototype. Use this instead of `isIterable` whenever
+ * the iterable comes from untrusted input (e.g. user-supplied header sources),
+ * so `Object.prototype[Symbol.iterator] = ...` cannot turn an ordinary object
+ * into an attacker-controlled entries iterator.
+ *
+ * @param {*} thing The value to test
+ *
+ * @returns {boolean} True if value has a non-polluted iterator
+ */
+const isSafeIterable = (thing) =>
+  thing != null && hasOwnInPrototypeChain(thing, iterator) && isIterable(thing);
+
+var utils$1 = {
+  isArray,
+  isArrayBuffer,
+  isBuffer,
+  isFormData,
+  isArrayBufferView,
+  isString,
+  isNumber,
+  isBoolean,
+  isObject,
+  isPlainObject,
+  isEmptyObject,
+  isReadableStream,
+  isRequest,
+  isResponse,
+  isHeaders,
+  isUndefined,
+  isDate,
+  isFile,
+  isReactNativeBlob,
+  isReactNative,
+  isBlob,
+  isRegExp,
+  isFunction: isFunction$1,
+  isStream,
+  isURLSearchParams,
+  isTypedArray,
+  isFileList,
+  forEach,
+  merge,
+  extend,
+  trim,
+  stripBOM,
+  inherits,
+  toFlatObject,
+  kindOf,
+  kindOfTest,
+  endsWith,
+  toArray,
+  forEachEntry,
+  matchAll,
+  isHTMLForm,
+  hasOwnProperty,
+  hasOwnProp: hasOwnProperty, // an alias to avoid ESLint no-prototype-builtins detection
+  hasOwnInPrototypeChain,
+  getSafeProp,
+  toSafeFlatObject,
+  reduceDescriptors,
+  freezeMethods,
+  toObjectSet,
+  toCamelCase,
+  noop,
+  toFiniteNumber,
+  findKey,
+  global: _global,
+  isContextDefined,
+  isSpecCompliantForm,
+  toJSONObject,
+  isAsyncFn,
+  isThenable,
+  setImmediate: _setImmediate,
+  asap,
+  isIterable,
+  isSafeIterable,
+};
+
+// RawAxiosHeaders whose duplicates are ignored by node
+// c.f. https://nodejs.org/api/http.html#http_message_headers
+const ignoreDuplicateOf = utils$1.toObjectSet([
+  'age',
+  'authorization',
+  'content-length',
+  'content-type',
+  'etag',
+  'expires',
+  'from',
+  'host',
+  'if-modified-since',
+  'if-unmodified-since',
+  'last-modified',
+  'location',
+  'max-forwards',
+  'proxy-authorization',
+  'referer',
+  'retry-after',
+  'user-agent',
+]);
+
+/**
+ * Parse headers into an object
+ *
+ * ```
+ * Date: Wed, 27 Aug 2014 08:58:49 GMT
+ * Content-Type: application/json
+ * Connection: keep-alive
+ * Transfer-Encoding: chunked
+ * ```
+ *
+ * @param {String} rawHeaders Headers needing to be parsed
+ *
+ * @returns {Object} Headers parsed into an object
+ */
+var parseHeaders = (rawHeaders) => {
+  // Header names are data, including __proto__; avoid inherited setters.
+  const parsed = Object.create(null);
+  let key;
+  let val;
+  let i;
+
+  rawHeaders &&
+    rawHeaders.split('\n').forEach(function parser(line) {
+      i = line.indexOf(':');
+      key = line.substring(0, i).trim().toLowerCase();
+      val = line.substring(i + 1).trim();
+
+      const hasKey = utils$1.hasOwnProp(parsed, key);
+
+      if (!key || (hasKey && utils$1.hasOwnProp(ignoreDuplicateOf, key))) {
+        return;
+      }
+
+      if (key === 'set-cookie') {
+        if (hasKey) {
+          parsed[key].push(val);
+        } else {
+          parsed[key] = [val];
+        }
+      } else {
+        parsed[key] = hasKey ? parsed[key] + ', ' + val : val;
+      }
+    });
+
+  return parsed;
+};
+
+function trimSPorHTAB(str) {
+  let start = 0;
+  let end = str.length;
+
+  while (start < end) {
+    const code = str.charCodeAt(start);
+
+    if (code !== 0x09 && code !== 0x20) {
+      break;
+    }
+
+    start += 1;
+  }
+
+  while (end > start) {
+    const code = str.charCodeAt(end - 1);
+
+    if (code !== 0x09 && code !== 0x20) {
+      break;
+    }
+
+    end -= 1;
+  }
+
+  return start === 0 && end === str.length ? str : str.slice(start, end);
+}
+
+// The control-code ranges are intentional: header sanitization strips C0/DEL bytes.
+// eslint-disable-next-line no-control-regex
+const INVALID_UNICODE_HEADER_VALUE_CHARS = new RegExp('[\\u0000-\\u0008\\u000a-\\u001f\\u007f]+', 'g');
+// eslint-disable-next-line no-control-regex
+const INVALID_BYTE_STRING_HEADER_VALUE_CHARS = new RegExp('[^\\u0009\\u0020-\\u007e\\u0080-\\u00ff]+', 'g');
+
+function sanitizeValue(value, invalidChars) {
+  if (utils$1.isArray(value)) {
+    return value.map((item) => sanitizeValue(item, invalidChars));
+  }
+
+  return trimSPorHTAB(String(value).replace(invalidChars, ''));
+}
+
+const sanitizeHeaderValue = (value) =>
+  sanitizeValue(value, INVALID_UNICODE_HEADER_VALUE_CHARS);
+
+const sanitizeByteStringHeaderValue = (value) =>
+  sanitizeValue(value, INVALID_BYTE_STRING_HEADER_VALUE_CHARS);
+
+function toByteStringHeaderObject(headers) {
+  const byteStringHeaders = Object.create(null);
+
+  utils$1.forEach(headers.toJSON(), (value, header) => {
+    byteStringHeaders[header] = sanitizeByteStringHeaderValue(value);
+  });
+
+  return byteStringHeaders;
+}
+
+const $internals$1 = Symbol('internals');
+
+function normalizeHeader(header) {
+  return header && String(header).trim().toLowerCase();
+}
+
+function normalizeValue(value) {
+  if (value === false || value == null) {
+    return value;
+  }
+
+  return utils$1.isArray(value) ? value.map(normalizeValue) : sanitizeHeaderValue(String(value));
+}
+
+function parseTokens(str) {
+  const tokens = Object.create(null);
+  const tokensRE = /([^\s,;=]+)\s*(?:=\s*([^,;]+))?/g;
+  let match;
+
+  while ((match = tokensRE.exec(str))) {
+    tokens[match[1]] = match[2];
+  }
+
+  return tokens;
+}
+
+const parameterNameRE = /^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$/;
+
+function trimOWS(value) {
+  let start = 0;
+  let end = value.length;
+
+  while (start < end) {
+    const code = value.charCodeAt(start);
+
+    if (code !== 0x09 && code !== 0x20) {
+      break;
+    }
+
+    start += 1;
+  }
+
+  while (end > start) {
+    const code = value.charCodeAt(end - 1);
+
+    if (code !== 0x09 && code !== 0x20) {
+      break;
+    }
+
+    end -= 1;
+  }
+
+  return start === 0 && end === value.length ? value : value.slice(start, end);
+}
+
+function decodeQuotedString(value) {
+  const last = value.length - 1;
+
+  if (last < 1 || value.charCodeAt(0) !== 0x22 || value.charCodeAt(last) !== 0x22) {
+    return value;
+  }
+
+  let decoded = '';
+
+  for (let i = 1; i < last; i++) {
+    const code = value.charCodeAt(i);
+
+    if (code === 0x22) {
+      return value;
+    }
+
+    if (code === 0x5c) {
+      i += 1;
+
+      if (i >= last) {
+        return value;
+      }
+    }
+
+    decoded += value[i];
+  }
+
+  return decoded;
+}
+
+function parseParameters(value) {
+  const parameters = Object.create(null);
+  const str = String(value);
+  let start = 0;
+  let quoted = false;
+  let escaped = false;
+
+  function parseParameter(end) {
+    const part = trimOWS(str.slice(start, end));
+    const equals = part.indexOf('=');
+
+    if (equals < 1) {
+      return;
+    }
+
+    const name = trimOWS(part.slice(0, equals));
+
+    if (!parameterNameRE.test(name)) {
+      return;
+    }
+
+    const normalizedName = name.toLowerCase();
+
+    if (
+      normalizedName === '__proto__' ||
+      normalizedName === 'constructor' ||
+      normalizedName === 'prototype'
+    ) {
+      return;
+    }
+
+    const parameterValue = trimOWS(part.slice(equals + 1));
+    parameters[normalizedName] = decodeQuotedString(parameterValue);
+  }
+
+  for (let i = 0; i < str.length; i++) {
+    const code = str.charCodeAt(i);
+
+    if (quoted) {
+      if (escaped) {
+        escaped = false;
+      } else if (code === 0x5c) {
+        escaped = true;
+      } else if (code === 0x22) {
+        quoted = false;
+      }
+    } else if (code === 0x22) {
+      quoted = true;
+    } else if (code === 0x2c || code === 0x3b) {
+      parseParameter(i);
+      start = i + 1;
+    }
+  }
+
+  parseParameter(str.length);
+
+  return parameters;
+}
+
+const isValidHeaderName = (str) => /^[-_a-zA-Z0-9^`|~,!#$%&'*+.]+$/.test(str.trim());
+
+// `__proto__` is a valid field name, and the one name the uppercase mapping at
+// the bottom of this file cannot reach: it is inherited from Object.prototype
+// instead of being declared on AxiosHeaders.prototype, so `self.__proto__ = v`
+// runs the inherited setter. That silently discards the header, and an array
+// value replaces the instance prototype, taking every method with it.
+// Store it under the same kind of case variant that mapping uses for `set` and
+// `constructor`. Header lookup is caseless, so it reads back under either
+// spelling, and no own `__proto__` slot is ever created for a later
+// `Object.assign` to copy onto a plain object through the same setter.
+const PROTO_HEADER_SLOT = '__Proto__';
+
+const headerSlot = (name) => (name === '__proto__' ? PROTO_HEADER_SLOT : name);
+
+function matchHeaderValue(context, value, header, filter, isHeaderNameFilter) {
+  if (utils$1.isFunction(filter)) {
+    return filter.call(context, value, header);
+  }
+
+  if (isHeaderNameFilter) {
+    value = header;
+  }
+
+  if (!utils$1.isString(value)) return;
+
+  if (utils$1.isString(filter)) {
+    return value.indexOf(filter) !== -1;
+  }
+
+  if (utils$1.isRegExp(filter)) {
+    return filter.test(value);
+  }
+}
+
+function formatHeader(header) {
+  return header
+    .trim()
+    .toLowerCase()
+    .replace(/([a-z\d])(\w*)/g, (w, char, str) => {
+      return char.toUpperCase() + str;
+    });
+}
+
+function buildAccessors(obj, header) {
+  const accessorName = utils$1.toCamelCase(' ' + header);
+
+  ['get', 'set', 'has'].forEach((methodName) => {
+    Object.defineProperty(obj, methodName + accessorName, {
+      // Null-proto descriptor so a polluted Object.prototype.get cannot turn
+      // this data descriptor into an accessor descriptor on the way in.
+      __proto__: null,
+      value: function (arg1, arg2, arg3) {
+        return this[methodName].call(this, header, arg1, arg2, arg3);
+      },
+      configurable: true,
+    });
+  });
+}
+
+class AxiosHeaders {
+  constructor(headers) {
+    headers && this.set(headers);
+  }
+
+  set(header, valueOrRewrite, rewrite) {
+    const self = this;
+
+    function setHeader(_value, _header, _rewrite) {
+      const lHeader = normalizeHeader(_header);
+
+      if (!lHeader) {
+        return;
+      }
+
+      const key = utils$1.findKey(self, lHeader);
+
+      if (
+        !key ||
+        self[key] === undefined ||
+        _rewrite === true ||
+        (_rewrite === undefined && self[key] !== false)
+      ) {
+        self[headerSlot(key || _header)] = normalizeValue(_value);
+      }
+    }
+
+    const setHeaders = (headers, _rewrite) =>
+      utils$1.forEach(headers, (_value, _header) => setHeader(_value, _header, _rewrite));
+
+    if (utils$1.isPlainObject(header) || header instanceof this.constructor) {
+      setHeaders(header, valueOrRewrite);
+    } else if (utils$1.isString(header) && (header = header.trim()) && !isValidHeaderName(header)) {
+      setHeaders(parseHeaders(header), valueOrRewrite);
+    } else if (utils$1.isObject(header) && utils$1.isSafeIterable(header)) {
+      let obj = Object.create(null),
+        dest,
+        key;
+      for (const entry of header) {
+        if (!utils$1.isArray(entry)) {
+          throw new TypeError('Object iterator must return a key-value pair');
+        }
+
+        key = entry[0];
+
+        if (utils$1.hasOwnProp(obj, key)) {
+          dest = obj[key];
+          obj[key] = utils$1.isArray(dest) ? [...dest, entry[1]] : [dest, entry[1]];
+        } else {
+          obj[key] = entry[1];
+        }
+      }
+
+      setHeaders(obj, valueOrRewrite);
+    } else {
+      header != null && setHeader(valueOrRewrite, header, rewrite);
+    }
+
+    return this;
+  }
+
+  get(header, parser) {
+    header = normalizeHeader(header);
+
+    if (header) {
+      const key = utils$1.findKey(this, header);
+
+      if (key) {
+        const value = this[key];
+
+        if (!parser) {
+          return value;
+        }
+
+        if (parser === true) {
+          return parseTokens(value);
+        }
+
+        if (utils$1.isFunction(parser)) {
+          return parser.call(this, value, key);
+        }
+
+        if (utils$1.isRegExp(parser)) {
+          return parser.exec(value);
+        }
+
+        throw new TypeError('parser must be boolean|regexp|function');
+      }
+    }
+  }
+
+  has(header, matcher) {
+    header = normalizeHeader(header);
+
+    if (header) {
+      const key = utils$1.findKey(this, header);
+
+      return !!(
+        key &&
+        this[key] !== undefined &&
+        (!matcher || matchHeaderValue(this, this[key], key, matcher))
+      );
+    }
+
+    return false;
+  }
+
+  delete(header, matcher) {
+    const self = this;
+    let deleted = false;
+
+    function deleteHeader(_header) {
+      _header = normalizeHeader(_header);
+
+      if (_header) {
+        const key = utils$1.findKey(self, _header);
+
+        if (key && (!matcher || matchHeaderValue(self, self[key], key, matcher))) {
+          delete self[key];
+
+          deleted = true;
+        }
+      }
+    }
+
+    if (utils$1.isArray(header)) {
+      header.forEach(deleteHeader);
+    } else {
+      deleteHeader(header);
+    }
+
+    return deleted;
+  }
+
+  clear(matcher) {
+    const keys = Object.keys(this);
+    let i = keys.length;
+    let deleted = false;
+
+    while (i--) {
+      const key = keys[i];
+      if (!matcher || matchHeaderValue(this, this[key], key, matcher, true)) {
+        delete this[key];
+        deleted = true;
+      }
+    }
+
+    return deleted;
+  }
+
+  normalize(format) {
+    const self = this;
+    const headers = Object.create(null);
+
+    utils$1.forEach(this, (value, header) => {
+      const key = utils$1.findKey(headers, header);
+
+      if (key) {
+        self[key] = normalizeValue(value);
+        delete self[header];
+        return;
+      }
+
+      const normalized = headerSlot(format ? formatHeader(header) : String(header).trim());
+
+      if (normalized !== header) {
+        delete self[header];
+      }
+
+      self[normalized] = normalizeValue(value);
+
+      headers[normalized] = true;
+    });
+
+    return this;
+  }
+
+  concat(...targets) {
+    return this.constructor.concat(this, ...targets);
+  }
+
+  toJSON(asStrings) {
+    const obj = Object.create(null);
+
+    utils$1.forEach(this, (value, header) => {
+      value != null &&
+        value !== false &&
+        (obj[header] = asStrings && utils$1.isArray(value) ? value.join(', ') : value);
+    });
+
+    return obj;
+  }
+
+  [Symbol.iterator]() {
+    return Object.entries(this.toJSON())[Symbol.iterator]();
+  }
+
+  toString() {
+    return Object.entries(this.toJSON())
+      .map(([header, value]) => header + ': ' + value)
+      .join('\n');
+  }
+
+  getSetCookie() {
+    const value = this.get('set-cookie');
+    return utils$1.isArray(value) ? value : value == null || value === false ? [] : [value];
+  }
+
+  get [Symbol.toStringTag]() {
+    return 'AxiosHeaders';
+  }
+
+  static from(thing) {
+    return thing instanceof this ? thing : new this(thing);
+  }
+
+  static parseParameters(value) {
+    return parseParameters(value);
+  }
+
+  static concat(first, ...targets) {
+    const computed = new this(first);
+
+    targets.forEach((target) => computed.set(target));
+
+    return computed;
+  }
+
+  static accessor(header) {
+    const internals =
+      (this[$internals$1] =
+      this[$internals$1] =
+        {
+          accessors: {},
+        });
+
+    const accessors = internals.accessors;
+    const prototype = this.prototype;
+
+    function defineAccessor(_header) {
+      const lHeader = normalizeHeader(_header);
+
+      if (!accessors[lHeader]) {
+        buildAccessors(prototype, _header);
+        accessors[lHeader] = true;
+      }
+    }
+
+    utils$1.isArray(header) ? header.forEach(defineAccessor) : defineAccessor(header);
+
+    return this;
+  }
+}
+
+AxiosHeaders.accessor([
+  'Content-Type',
+  'Content-Length',
+  'Accept',
+  'Accept-Encoding',
+  'User-Agent',
+  'Authorization',
+]);
+
+// reserved names hotfix
+utils$1.reduceDescriptors(AxiosHeaders.prototype, ({ value }, key) => {
+  let mapped = key[0].toUpperCase() + key.slice(1); // map `set` => `Set`
+  return {
+    get: () => value,
+    set(headerValue) {
+      this[mapped] = headerValue;
+    },
+  };
+});
+
+utils$1.freezeMethods(AxiosHeaders);
+
+const REDACTED = '[REDACTED ****]';
+
+function hasOwnOrPrototypeToJSON(source) {
+  if (utils$1.hasOwnProp(source, 'toJSON')) {
+    return true;
+  }
+
+  let prototype = Object.getPrototypeOf(source);
+
+  while (prototype && prototype !== Object.prototype) {
+    if (utils$1.hasOwnProp(prototype, 'toJSON')) {
+      return true;
+    }
+
+    prototype = Object.getPrototypeOf(prototype);
+  }
+
+  return false;
+}
+
+// Build a plain-object snapshot of `config` and replace the value of any key
+// (case-insensitive) listed in `redactKeys` with REDACTED. Walks through arrays
+// and AxiosHeaders, and short-circuits on circular references.
+function redactConfig(config, redactKeys) {
+  const lowerKeys = new Set(redactKeys.map((k) => String(k).toLowerCase()));
+  const seen = [];
+
+  const visit = (source) => {
+    if (source === null || typeof source !== 'object') return source;
+    if (utils$1.isBuffer(source)) return source;
+    if (seen.indexOf(source) !== -1) return undefined;
+
+    if (source instanceof AxiosHeaders) {
+      source = source.toJSON();
+    }
+
+    seen.push(source);
+
+    let result;
+    if (utils$1.isArray(source)) {
+      result = [];
+      source.forEach((v, i) => {
+        const reducedValue = visit(v);
+        if (!utils$1.isUndefined(reducedValue)) {
+          result[i] = reducedValue;
+        }
+      });
+    } else {
+      if (!utils$1.isPlainObject(source) && hasOwnOrPrototypeToJSON(source)) {
+        seen.pop();
+        return source;
+      }
+
+      result = Object.create(null);
+      for (const [key, value] of Object.entries(source)) {
+        const reducedValue = lowerKeys.has(key.toLowerCase()) ? REDACTED : visit(value);
+        if (!utils$1.isUndefined(reducedValue)) {
+          result[key] = reducedValue;
+        }
+      }
+    }
+
+    seen.pop();
+    return result;
+  };
+
+  return visit(config);
+}
+
+function stringifySafely$1(value) {
+  try {
+    return String(value);
+  } catch (err) {
+    return '';
+  }
+}
+
+function aggregateErrorMessage(error) {
+  const message = error.errors
+    .map((entry) => {
+      try {
+        return entry && entry.message ? stringifySafely$1(entry.message) : stringifySafely$1(entry);
+      } catch (err) {
+        return '';
+      }
+    })
+    .filter(Boolean)
+    .join('; ');
+
+  return message || error.name || 'AggregateError';
+}
+
+// Shared with `Axios.prototype.request`, which splices the reconstructed
+// caller frames in ahead of this marker.
+const CAUSED_BY_SEPARATOR = '\nCaused by: ';
+const $causeStack = Symbol('causeStack');
+
+// Match the section we appended, not marker-like text in an error message or
+// a replacement stack supplied by the caller. Do not re-read the cause's stack.
+function getCauseStackIndex(error, stack) {
+  const causeStack = utils$1.hasOwnProp(error, $causeStack) && error[$causeStack];
+
+  return causeStack && stack.endsWith(causeStack) ? stack.length - causeStack.length : -1;
+}
+
+/**
+ * Append the stack of a wrapped error to `target.stack`.
+ *
+ * `cause` already exposes the original error for tooling that walks the standard
+ * cause chain, but many error reporters read `stack` and nothing else. Inlining
+ * the wrapped stack there means those reporters surface the underlying failure
+ * instead of the axios frames that normalized it (see #6670).
+ *
+ * Every read is defensive: a custom `Error.prepareStackTrace` hook, a runtime
+ * without stack support, or a replaced `stack` property can leave the value
+ * missing, non-string, or read-only, and normalizing an error must not throw
+ * because of that.
+ *
+ * @param {Error} target The AxiosError being built.
+ * @param {Error} source The error being wrapped.
+ *
+ * @returns {void}
+ */
+function appendCauseStack(target, source) {
+  try {
+    const sourceStack = source && source.stack;
+
+    if (typeof sourceStack !== 'string' || !sourceStack) {
+      return;
+    }
+
+    const targetStack = target.stack;
+
+    if (typeof targetStack !== 'string' || !targetStack) {
+      return;
+    }
+
+    // Each call to `from()` creates a fresh target. Re-wrapping includes the
+    // previous stack verbatim, adding one cause section per wrap.
+    const causeStack = CAUSED_BY_SEPARATOR + sourceStack;
+    target.stack = targetStack + causeStack;
+    Object.defineProperty(target, $causeStack, { __proto__: null, value: causeStack });
+  } catch (e) {
+    // Ignore failures from custom stack hooks or un-writable stack properties.
+  }
+}
+
+class AxiosError extends Error {
+  static from(error, code, config, request, response, customProps) {
+    // `AggregateError` (thrown by Node on dual-stack/Happy-Eyeballs connection
+    // failures) has an empty `message`; its detail lives in `errors[]`. Without
+    // this, the wrapped error surfaces with a blank message (see #6721).
+    let message = error.message;
+    if (!message && utils$1.isArray(error.errors) && error.errors.length) {
+      message = aggregateErrorMessage(error);
+    }
+
+    const axiosError = new AxiosError(message, code || error.code, config, request, response);
+    // Match native `Error` `cause` semantics: non-enumerable. The wrapped
+    // error often carries circular internals (sockets, requests, agents), so
+    // an enumerable `cause` makes structured loggers (pino/winston) and any
+    // own-property walk throw "Converting circular structure to JSON".
+    // Regression from #6982; see #7205. `__proto__: null` mirrors the
+    // `message` descriptor below (prototype-pollution-safe descriptor).
+    Object.defineProperty(axiosError, 'cause', {
+      __proto__: null,
+      value: error,
+      writable: true,
+      enumerable: false,
+      configurable: true,
+    });
+    axiosError.name = error.name;
+
+    // Inline the wrapped stack for reporters that read only `stack`; the `cause`
+    // property above already covers cause-aware tooling.
+    appendCauseStack(axiosError, error);
+
+    // Preserve status from the original error if not already set from response
+    if (error.status != null && axiosError.status == null) {
+      axiosError.status = error.status;
+    }
+
+    customProps && Object.assign(axiosError, customProps);
+    return axiosError;
+  }
+
+  /**
+   * Create an Error with the specified message, config, error code, request and response.
+   *
+   * @param {string} message The error message.
+   * @param {string} [code] The error code (for example, 'ECONNABORTED').
+   * @param {Object} [config] The config.
+   * @param {Object} [request] The request.
+   * @param {Object} [response] The response.
+   *
+   * @returns {Error} The created error.
+   */
+  constructor(message, code, config, request, response) {
+    super(message);
+
+    // Make message enumerable to maintain backward compatibility
+    // The native Error constructor sets message as non-enumerable,
+    // but axios < v1.13.3 had it as enumerable
+    Object.defineProperty(this, 'message', {
+      // Null-proto descriptor so a polluted Object.prototype.get cannot turn
+      // this data descriptor into an accessor descriptor on the way in.
+      __proto__: null,
+      value: message,
+      enumerable: true,
+      writable: true,
+      configurable: true,
+    });
+
+    this.name = 'AxiosError';
+    this.isAxiosError = true;
+    code && (this.code = code);
+    config && (this.config = config);
+    request && (this.request = request);
+    if (response) {
+      this.response = response;
+      this.status = response.status;
+    }
+  }
+
+  toJSON() {
+    // Opt-in redaction: when the request config carries a `redact` array, the
+    // value of any matching key (case-insensitive, at any depth) is replaced
+    // with REDACTED in the serialized snapshot. Undefined or empty leaves the
+    // existing serialization behavior unchanged.
+    const config = this.config;
+    const redactKeys = config && utils$1.hasOwnProp(config, 'redact') ? config.redact : undefined;
+    const serializedConfig =
+      utils$1.isArray(redactKeys) && redactKeys.length > 0
+        ? redactConfig(config, redactKeys)
+        : utils$1.toJSONObject(config);
+
+    return {
+      // Standard
+      message: this.message,
+      name: this.name,
+      // Microsoft
+      description: this.description,
+      number: this.number,
+      // Mozilla
+      fileName: this.fileName,
+      lineNumber: this.lineNumber,
+      columnNumber: this.columnNumber,
+      stack: this.stack,
+      // Axios
+      config: serializedConfig,
+      code: this.code,
+      status: this.status,
+    };
+  }
+}
+
+// This can be changed to static properties as soon as the parser options in .eslint.cjs are updated.
+AxiosError.ERR_BAD_OPTION_VALUE = 'ERR_BAD_OPTION_VALUE';
+AxiosError.ERR_BAD_OPTION = 'ERR_BAD_OPTION';
+AxiosError.ECONNABORTED = 'ECONNABORTED';
+AxiosError.ETIMEDOUT = 'ETIMEDOUT';
+AxiosError.ECONNREFUSED = 'ECONNREFUSED';
+AxiosError.ERR_NETWORK = 'ERR_NETWORK';
+AxiosError.ERR_FR_TOO_MANY_REDIRECTS = 'ERR_FR_TOO_MANY_REDIRECTS';
+AxiosError.ERR_DEPRECATED = 'ERR_DEPRECATED';
+AxiosError.ERR_BAD_RESPONSE = 'ERR_BAD_RESPONSE';
+AxiosError.ERR_BAD_REQUEST = 'ERR_BAD_REQUEST';
+AxiosError.ERR_CANCELED = 'ERR_CANCELED';
+AxiosError.ERR_NOT_SUPPORT = 'ERR_NOT_SUPPORT';
+AxiosError.ERR_INVALID_URL = 'ERR_INVALID_URL';
+AxiosError.ERR_FORM_DATA_DEPTH_EXCEEDED = 'ERR_FORM_DATA_DEPTH_EXCEEDED';
+
+// eslint-disable-next-line strict
+var httpAdapter = null;
+
+// Default nesting limit shared with the inverse transform (formDataToJSON) so
+// the FormData <-> JSON round-trip stays symmetric.
+const DEFAULT_FORM_DATA_MAX_DEPTH = 100;
+
+/**
+ * Determines if the given thing is a array or js object.
+ *
+ * @param {string} thing - The object or array to be visited.
+ *
+ * @returns {boolean}
+ */
+function isVisitable(thing) {
+  return utils$1.isPlainObject(thing) || utils$1.isArray(thing);
+}
+
+/**
+ * It removes the brackets from the end of a string
+ *
+ * @param {string} key - The key of the parameter.
+ *
+ * @returns {string} the key without the brackets.
+ */
+function removeBrackets(key) {
+  return utils$1.endsWith(key, '[]') ? key.slice(0, -2) : key;
+}
+
+/**
+ * It takes a path, a key, and a boolean, and returns a string
+ *
+ * @param {string} path - The path to the current key.
+ * @param {string} key - The key of the current object being iterated over.
+ * @param {string} dots - If true, the key will be rendered with dots instead of brackets.
+ *
+ * @returns {string} The path to the current key.
+ */
+function renderKey(path, key, dots) {
+  if (!path) return key;
+  return path
+    .concat(key)
+    .map(function each(token, i) {
+      // eslint-disable-next-line no-param-reassign
+      token = removeBrackets(token);
+      return !dots && i ? '[' + token + ']' : token;
+    })
+    .join(dots ? '.' : '');
+}
+
+/**
+ * If the array is an array and none of its elements are visitable, then it's a flat array.
+ *
+ * @param {Array<any>} arr - The array to check
+ *
+ * @returns {boolean}
+ */
+function isFlatArray(arr) {
+  return utils$1.isArray(arr) && !arr.some(isVisitable);
+}
+
+const predicates = utils$1.toFlatObject(utils$1, {}, null, function filter(prop) {
+  return /^is[A-Z]/.test(prop);
+});
+
+/**
+ * Convert a data object to FormData
+ *
+ * @param {Object} obj
+ * @param {?Object} [formData]
+ * @param {?Object} [options]
+ * @param {Function} [options.visitor]
+ * @param {Boolean} [options.metaTokens = true]
+ * @param {Boolean} [options.dots = false]
+ * @param {?Boolean} [options.indexes = false]
+ *
+ * @returns {Object}
+ **/
+
+/**
+ * It converts an object into a FormData object
+ *
+ * @param {Object<any, any>} obj - The object to convert to form data.
+ * @param {string} formData - The FormData object to append to.
+ * @param {Object<string, any>} options
+ *
+ * @returns
+ */
+function toFormData(obj, formData, options) {
+  if (!utils$1.isObject(obj)) {
+    throw new TypeError('target must be an object');
+  }
+
+  // eslint-disable-next-line no-param-reassign
+  formData = formData || new (FormData)();
+
+  const option = (name, fallback) => {
+    const value = utils$1.getSafeProp(options, name);
+    return utils$1.isUndefined(value) ? fallback : value;
+  };
+
+  const metaTokens = option('metaTokens', true);
+  // eslint-disable-next-line no-use-before-define
+  const visitor = option('visitor') || defaultVisitor;
+  const dots = option('dots', false);
+  const indexes = option('indexes', false);
+  const _Blob = option('Blob') || (typeof Blob !== 'undefined' && Blob);
+  const maxDepth = option('maxDepth', DEFAULT_FORM_DATA_MAX_DEPTH);
+  const useBlob = _Blob && utils$1.isSpecCompliantForm(formData);
+  const stack = [];
+
+  if (!utils$1.isFunction(visitor)) {
+    throw new TypeError('visitor must be a function');
+  }
+
+  function convertValue(value) {
+    if (value === null) return '';
+
+    if (utils$1.isDate(value)) {
+      return value.toISOString();
+    }
+
+    if (utils$1.isBoolean(value)) {
+      return value.toString();
+    }
+
+    if (!useBlob && utils$1.isBlob(value)) {
+      throw new AxiosError('Blob is not supported. Use a Buffer instead.');
+    }
+
+    if (utils$1.isArrayBuffer(value) || utils$1.isTypedArray(value)) {
+      if (useBlob && typeof _Blob === 'function') {
+        return new _Blob([value]);
+      }
+      throw new AxiosError(
+        'Blob is not supported. Use a Buffer instead.',
+        AxiosError.ERR_NOT_SUPPORT
+      );
+    }
+
+    return value;
+  }
+
+  function throwIfMaxDepthExceeded(depth) {
+    if (depth > maxDepth) {
+      throw new AxiosError(
+        'Object is too deeply nested (' + depth + ' levels). Max depth: ' + maxDepth,
+        AxiosError.ERR_FORM_DATA_DEPTH_EXCEEDED
+      );
+    }
+  }
+
+  function stringifyWithDepthLimit(value, depth) {
+    if (maxDepth === Infinity) {
+      return JSON.stringify(value);
+    }
+
+    const ancestors = [];
+
+    return JSON.stringify(value, function limitDepth(_key, currentValue) {
+      if (!utils$1.isObject(currentValue)) {
+        return currentValue;
+      }
+
+      while (ancestors.length && ancestors[ancestors.length - 1] !== this) {
+        ancestors.pop();
+      }
+
+      ancestors.push(currentValue);
+      throwIfMaxDepthExceeded(depth + ancestors.length - 1);
+
+      return currentValue;
+    });
+  }
+
+  /**
+   * Default visitor.
+   *
+   * @param {*} value
+   * @param {String|Number} key
+   * @param {Array<String|Number>} path
+   * @this {FormData}
+   *
+   * @returns {boolean} return true to visit the each prop of the value recursively
+   */
+  function defaultVisitor(value, key, path) {
+    let arr = value;
+
+    if (utils$1.isReactNative(formData) && utils$1.isReactNativeBlob(value)) {
+      formData.append(renderKey(path, key, dots), convertValue(value));
+      return false;
+    }
+
+    if (value && !path && typeof value === 'object') {
+      if (utils$1.endsWith(key, '{}')) {
+        // eslint-disable-next-line no-param-reassign
+        key = metaTokens ? key : key.slice(0, -2);
+        // eslint-disable-next-line no-param-reassign
+        value = stringifyWithDepthLimit(value, 1);
+      } else if (
+        (utils$1.isArray(value) && isFlatArray(value)) ||
+        ((utils$1.isFileList(value) || utils$1.endsWith(key, '[]')) && (arr = utils$1.toArray(value)))
+      ) {
+        // eslint-disable-next-line no-param-reassign
+        key = removeBrackets(key);
+
+        arr.forEach(function each(el, index) {
+          !(utils$1.isUndefined(el) || el === null) &&
+            formData.append(
+              // eslint-disable-next-line no-nested-ternary
+              indexes === true
+                ? renderKey([key], index, dots)
+                : indexes === null
+                  ? key
+                  : key + '[]',
+              convertValue(el)
+            );
+        });
+        return false;
+      }
+    }
+
+    if (isVisitable(value)) {
+      return true;
+    }
+
+    formData.append(renderKey(path, key, dots), convertValue(value));
+
+    return false;
+  }
+
+  const exposedHelpers = Object.assign(predicates, {
+    defaultVisitor,
+    convertValue,
+    isVisitable,
+  });
+
+  function build(value, path, depth = 0) {
+    if (utils$1.isUndefined(value)) return;
+
+    throwIfMaxDepthExceeded(depth);
+
+    if (stack.indexOf(value) !== -1) {
+      throw new Error('Circular reference detected in ' + path.join('.'));
+    }
+
+    stack.push(value);
+
+    utils$1.forEach(value, function each(el, key) {
+      const result =
+        !(utils$1.isUndefined(el) || el === null) &&
+        visitor.call(formData, el, utils$1.isString(key) ? key.trim() : key, path, exposedHelpers);
+
+      if (result === true) {
+        build(el, path ? path.concat(key) : [key], depth + 1);
+      }
+    });
+
+    stack.pop();
+  }
+
+  if (!utils$1.isObject(obj)) {
+    throw new TypeError('data must be an object');
+  }
+
+  build(obj);
+
+  return formData;
+}
+
+/**
+ * It encodes a string by replacing all characters that are not in the unreserved set with
+ * their percent-encoded equivalents
+ *
+ * @param {string} str - The string to encode.
+ *
+ * @returns {string} The encoded string.
+ */
+function encode$1(str) {
+  const charMap = {
+    '!': '%21',
+    "'": '%27',
+    '(': '%28',
+    ')': '%29',
+    '~': '%7E',
+    '%20': '+',
+  };
+  return encodeURIComponent(str).replace(/[!'()~]|%20/g, function replacer(match) {
+    return charMap[match];
+  });
+}
+
+/**
+ * It takes a params object and converts it to a FormData object
+ *
+ * @param {Object<string, any>} params - The parameters to be converted to a FormData object.
+ * @param {Object<string, any>} options - The options object passed to the Axios constructor.
+ *
+ * @returns {void}
+ */
+function AxiosURLSearchParams(params, options) {
+  this._pairs = [];
+
+  params && toFormData(params, this, options);
+}
+
+const prototype = AxiosURLSearchParams.prototype;
+
+prototype.append = function append(name, value) {
+  this._pairs.push([name, value]);
+};
+
+prototype.toString = function toString(encoder) {
+  const _encode = encoder
+    ? (value) => encoder.call(this, value, encode$1)
+    : encode$1;
+
+  return this._pairs
+    .map(function each(pair) {
+      return _encode(pair[0]) + '=' + _encode(pair[1]);
+    }, '')
+    .join('&');
+};
+
+/**
+ * It replaces URL-encoded forms of `:`, `$`, `,`, and spaces with
+ * their plain counterparts (`:`, `$`, `,`, `+`).
+ *
+ * @param {string} val The value to be encoded.
+ *
+ * @returns {string} The encoded value.
+ */
+function encode(val) {
+  return encodeURIComponent(val)
+    .replace(/%3A/gi, ':')
+    .replace(/%24/g, '$')
+    .replace(/%2C/gi, ',')
+    .replace(/%20/g, '+');
+}
+
+/**
+ * Build a URL by appending params to the end
+ *
+ * @param {string} url The base of the url (e.g., http://www.google.com)
+ * @param {object} [params] The params to be appended
+ * @param {?(object|Function)} options
+ *
+ * @returns {string} The formatted url
+ */
+function buildURL(url, params, options) {
+  if (!params) {
+    return url;
+  }
+  url = url || '';
+
+  const _options = utils$1.isFunction(options)
+    ? {
+        serialize: options,
+      }
+    : options;
+
+  // Read serializer options pollution-safely: own properties and methods on a
+  // class/template prototype are honored, but values injected onto a polluted
+  // Object.prototype are ignored.
+  const _encode = utils$1.getSafeProp(_options, 'encode') || encode;
+  const serializeFn = utils$1.getSafeProp(_options, 'serialize');
+
+  let serializedParams;
+
+  if (serializeFn) {
+    serializedParams = serializeFn(params, _options);
+  } else {
+    serializedParams = utils$1.isURLSearchParams(params)
+      ? params.toString()
+      : new AxiosURLSearchParams(params, _options).toString(_encode);
+  }
+
+  if (serializedParams) {
+    const hashmarkIndex = url.indexOf('#');
+
+    if (hashmarkIndex !== -1) {
+      url = url.slice(0, hashmarkIndex);
+    }
+    url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
+  }
+
+  return url;
+}
+
+const $internals = Symbol('internals');
+
+// `handlers` is public and may be replaced with a nullish value by user code;
+// `clear()` has always tolerated that. Treat it as an empty stack rather than
+// dereferencing it.
+function countHandlers(handlers) {
+  return handlers ? handlers.length : 0;
+}
+
+function trimHandlers(handlers) {
+  if (!handlers) {
+    return;
+  }
+
+  while (handlers.length && handlers[handlers.length - 1] === null) {
+    handlers.pop();
+  }
+}
+
+// Preserve the array-key coercion used before IDs were stored in a Map, without
+// treating null, empty strings, or noncanonical numeric strings as ID zero.
+function normalizeHandlerId(id) {
+  if (typeof id === 'string' && id !== '' && String(Number(id)) === id) {
+    return Number(id);
+  }
+
+  return id;
+}
+
+function syncHandlerEntries(manager, internals) {
+  const handlers = manager.handlers;
+  const length = countHandlers(handlers);
+
+  if (handlers !== internals.handlersRef) {
+    internals.handlersRef = handlers;
+    internals.handlerEntries.clear();
+  } else if (length !== internals.handlersLength) {
+    if (!length) {
+      internals.handlerEntries.clear();
+    } else {
+      internals.handlerEntries.forEach(function removeStaleEntry(entry, id) {
+        if (handlers[entry.index] !== entry.handler) {
+          internals.handlerEntries.delete(id);
+        }
+      });
+    }
+  }
+
+  internals.handlersLength = length;
+}
+
+class InterceptorManager {
+  constructor() {
+    this.handlers = [];
+    this[$internals] = {
+      handlersRef: this.handlers,
+      handlersLength: this.handlers.length,
+      handlerEntries: new Map(),
+      iterationDepth: 0,
+      nextId: 0,
+    };
+  }
+
+  /**
+   * Add a new interceptor to the stack
+   *
+   * @param {Function} fulfilled The function to handle `then` for a `Promise`
+   * @param {Function} rejected The function to handle `reject` for a `Promise`
+   * @param {Object} options The options for the interceptor, synchronous and runWhen
+   *
+   * @return {Number} An ID used to remove interceptor later
+   */
+  use(fulfilled, rejected, options) {
+    const handler = {
+      fulfilled,
+      rejected,
+      synchronous: options ? options.synchronous : false,
+      runWhen: options ? options.runWhen : null,
+    };
+    const internals = this[$internals];
+
+    if (this.handlers == null) {
+      this.handlers = [];
+    }
+
+    syncHandlerEntries(this, internals);
+
+    const id = internals.nextId++;
+
+    this.handlers.push(handler);
+    internals.handlerEntries.set(id, {
+      handler,
+      index: this.handlers.length - 1,
+    });
+    internals.handlersLength = this.handlers.length;
+
+    return id;
+  }
+
+  /**
+   * Remove an interceptor from the stack
+   *
+   * @param {Number} id The ID that was returned by `use`
+   *
+   * @returns {void}
+   */
+  eject(id) {
+    const internals = this[$internals];
+
+    syncHandlerEntries(this, internals);
+
+    const handlerId = normalizeHandlerId(id);
+    const entry = internals.handlerEntries.get(handlerId);
+
+    if (entry) {
+      internals.handlerEntries.delete(handlerId);
+
+      // Ignore IDs invalidated by clear or direct replacement of handlers.
+      if (this.handlers[entry.index] !== entry.handler) {
+        return;
+      }
+
+      this.handlers[entry.index] = null;
+
+      // Do not reuse an index while forEach is walking its length snapshot.
+      if (!internals.iterationDepth) {
+        trimHandlers(this.handlers);
+        internals.handlersLength = this.handlers.length;
+      }
+    }
+  }
+
+  /**
+   * Clear all interceptors from the stack
+   *
+   * @returns {void}
+   */
+  clear() {
+    if (this.handlers) {
+      this.handlers = [];
+      syncHandlerEntries(this, this[$internals]);
+    }
+  }
+
+  /**
+   * Iterate over all the registered interceptors
+   *
+   * This method is particularly useful for skipping over any
+   * interceptors that may have become `null` calling `eject`.
+   *
+   * @param {Function} fn The function to call for each interceptor
+   *
+   * @returns {void}
+   */
+  forEach(fn) {
+    const internals = this[$internals];
+
+    syncHandlerEntries(this, internals);
+
+    internals.iterationDepth++;
+
+    try {
+      utils$1.forEach(this.handlers, function forEachHandler(h) {
+        if (h !== null) {
+          fn(h);
+        }
+      });
+    } finally {
+      if (!--internals.iterationDepth) {
+        syncHandlerEntries(this, internals);
+        trimHandlers(this.handlers);
+        internals.handlersLength = countHandlers(this.handlers);
+      }
+    }
+  }
+}
+
+var transitionalDefaults = {
+  silentJSONParsing: true,
+  forcedJSONParsing: true,
+  clarifyTimeoutError: false,
+  legacyInterceptorReqResOrdering: true,
+  advertiseZstdAcceptEncoding: false,
+  validateStatusUndefinedResolves: true,
+  encodeBasicAuthUsername: false,
+};
+
+var URLSearchParams$1 = typeof URLSearchParams !== 'undefined' ? URLSearchParams : AxiosURLSearchParams;
+
+var FormData$1 = typeof FormData !== 'undefined' ? FormData : null;
+
+var Blob$1 = typeof Blob !== 'undefined' ? Blob : null;
+
+var platform$1 = {
+  isBrowser: true,
+  classes: {
+    URLSearchParams: URLSearchParams$1,
+    FormData: FormData$1,
+    Blob: Blob$1,
+  },
+  protocols: ['http', 'https', 'file', 'blob', 'url', 'data'],
+};
+
+const hasBrowserEnv = typeof window !== 'undefined' && typeof document !== 'undefined';
+
+const _navigator = (typeof navigator === 'object' && navigator) || undefined;
+
+/**
+ * Determine if we're running in a standard browser environment
+ *
+ * This allows axios to run in a web worker, and react-native.
+ * Both environments support XMLHttpRequest, but not fully standard globals.
+ *
+ * web workers:
+ *  typeof window -> undefined
+ *  typeof document -> undefined
+ *
+ * react-native:
+ *  navigator.product -> 'ReactNative'
+ * nativescript
+ *  navigator.product -> 'NativeScript' or 'NS'
+ *
+ * @returns {boolean}
+ */
+const hasStandardBrowserEnv =
+  hasBrowserEnv &&
+  (!_navigator || ['ReactNative', 'NativeScript', 'NS'].indexOf(_navigator.product) < 0);
+
+/**
+ * Determine if we're running in a standard browser webWorker environment
+ *
+ * Although the `isStandardBrowserEnv` method indicates that
+ * `allows axios to run in a web worker`, the WebWorker will still be
+ * filtered out due to its judgment standard
+ * `typeof window !== 'undefined' && typeof document !== 'undefined'`.
+ * This leads to a problem when axios post `FormData` in webWorker
+ */
+const hasStandardBrowserWebWorkerEnv = (() => {
+  return (
+    typeof WorkerGlobalScope !== 'undefined' &&
+    // eslint-disable-next-line no-undef
+    self instanceof WorkerGlobalScope &&
+    typeof self.importScripts === 'function'
+  );
+})();
+
+const origin = (hasBrowserEnv && window.location.href) || 'http://localhost';
+
+var utils = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  hasBrowserEnv: hasBrowserEnv,
+  hasStandardBrowserEnv: hasStandardBrowserEnv,
+  hasStandardBrowserWebWorkerEnv: hasStandardBrowserWebWorkerEnv,
+  navigator: _navigator,
+  origin: origin
+});
+
+var platform = {
+  ...utils,
+  ...platform$1,
+};
+
+function toURLEncodedForm(data, options) {
+  return toFormData(data, new platform.classes.URLSearchParams(), {
+    visitor: function (value, key, path, helpers) {
+      if (platform.isNode && utils$1.isBuffer(value)) {
+        this.append(key, value.toString('base64'));
+        return false;
+      }
+
+      return helpers.defaultVisitor.apply(this, arguments);
+    },
+    ...options,
+  });
+}
+
+const MAX_DEPTH = DEFAULT_FORM_DATA_MAX_DEPTH;
+
+function throwIfDepthExceeded(index) {
+  if (index > MAX_DEPTH) {
+    throw new AxiosError(
+      'FormData field is too deeply nested (' + index + ' levels). Max depth: ' + MAX_DEPTH,
+      AxiosError.ERR_FORM_DATA_DEPTH_EXCEEDED
+    );
+  }
+}
+
+/**
+ * It takes a string like `foo[x][y][z]` and returns an array like `['foo', 'x', 'y', 'z']
+ *
+ * @param {string} name - The name of the property to get.
+ *
+ * @returns An array of strings.
+ */
+function parsePropPath(name) {
+  // foo[x][y][z] -> ['foo', 'x', 'y', 'z']
+  // foo.x.y.z    -> ['foo', 'x', 'y', 'z']
+  // A path is split on `.` and on `[...]` groups. A segment — whether written
+  // in dot notation or captured inside brackets — may contain any character
+  // except `.`, `[` and `]`, so a key like `user-name` or `user name` is kept
+  // literal instead of being split (#5402). `.`, `[` and `]` keep their existing
+  // meaning, e.g. `foo[bar.baz]` -> ['foo', 'bar', 'baz'] and `[]` is an array push.
+  // Excluding `[` from the bracket group also makes the match fail fast at the
+  // next `[`, so a malformed name cannot rescan to the end of the string from
+  // every unmatched `[` — parsing stays linear in the length of the name.
+  const path = [];
+  const pattern = /[^.[\]]+|\[([^.[\]]*)]/g;
+  let match;
+
+  while ((match = pattern.exec(name)) !== null) {
+    throwIfDepthExceeded(path.length);
+    path.push(match[0] === '[]' ? '' : match[1] || match[0]);
+  }
+
+  return path;
+}
+
+/**
+ * Convert an array to an object.
+ *
+ * @param {Array<any>} arr - The array to convert to an object.
+ *
+ * @returns An object with the same keys and values as the array.
+ */
+function arrayToObject(arr) {
+  const obj = {};
+  const keys = Object.keys(arr);
+  let i;
+  const len = keys.length;
+  let key;
+  for (i = 0; i < len; i++) {
+    key = keys[i];
+    obj[key] = arr[key];
+  }
+  return obj;
+}
+
+function normalizeArray(value) {
+  if (!utils$1.isArray(value)) return value;
+
+  const keys = Object.keys(value);
+  return keys.length !== value.length || keys.some((key, index) => key !== String(index))
+    ? arrayToObject(value)
+    : value;
+}
+
+function normalizeArrays(obj) {
+  const pending = [obj];
+  while (pending.length) {
+    const target = pending.pop();
+    Object.keys(target).forEach((key) => {
+      const value = (target[key] = normalizeArray(target[key]));
+      if (utils$1.isArray(value) || utils$1.isPlainObject(value)) {
+        pending.push(value);
+      }
+    });
+  }
+  return obj;
+}
+
+/**
+ * It takes a FormData object and returns a JavaScript object
+ *
+ * @param {string} formData The FormData object to convert to JSON.
+ *
+ * @returns {Object<string, any> | null} The converted object.
+ */
+function formDataToJSON(formData) {
+  function buildPath(path, value, target, index) {
+    throwIfDepthExceeded(index);
+
+    let name = path[index++];
+
+    if (name === '__proto__') return true;
+
+    const isNumericKey = Number.isFinite(+name);
+    const isLast = index >= path.length;
+    name = !name && utils$1.isArray(target) ? target.length : name;
+
+    if (isLast) {
+      if (utils$1.hasOwnProp(target, name)) {
+        target[name] = normalizeArray(target[name]);
+        target[name] = utils$1.isArray(target[name])
+          ? target[name].concat(value)
+          : [target[name], value];
+      } else {
+        target[name] = value;
+      }
+
+      return !isNumericKey;
+    }
+
+    if (!utils$1.hasOwnProp(target, name) || !utils$1.isObject(target[name])) {
+      target[name] = [];
+    }
+
+    const result = buildPath(path, value, target[name], index);
+
+    if (result && utils$1.isArray(target[name])) {
+      target[name] = arrayToObject(target[name]);
+    }
+
+    return !isNumericKey;
+  }
+
+  if (utils$1.isFormData(formData) && utils$1.isFunction(formData.entries)) {
+    const obj = {};
+
+    utils$1.forEachEntry(formData, (name, value) => {
+      buildPath(parsePropPath(name), value, obj, 0);
+    });
+
+    return normalizeArrays(obj);
+  }
+
+  return null;
+}
+
+const methodList = Object.freeze([
+  'get',
+  'delete',
+  'head',
+  'options',
+  'post',
+  'put',
+  'patch',
+  'purge',
+  'link',
+  'unlink',
+  'query',
+]);
+
+const own = (obj, key) => (obj != null && utils$1.hasOwnProp(obj, key) ? obj[key] : undefined);
+
+/**
+ * It takes a string, tries to parse it, and if it fails, it returns the stringified version
+ * of the input
+ *
+ * @param {any} rawValue - The value to be stringified.
+ * @param {Function} parser - A function that parses a string into a JavaScript object.
+ * @param {Function} encoder - A function that takes a value and returns a string.
+ *
+ * @returns {string} A stringified version of the rawValue.
+ */
+function stringifySafely(rawValue, parser, encoder) {
+  if (utils$1.isString(rawValue)) {
+    try {
+      (parser || JSON.parse)(rawValue);
+      return utils$1.trim(rawValue);
+    } catch (e) {
+      if (e.name !== 'SyntaxError') {
+        throw e;
+      }
+    }
+  }
+
+  return (encoder || JSON.stringify)(rawValue);
+}
+
+const defaults = {
+  transitional: transitionalDefaults,
+
+  adapter: ['xhr', 'http', 'fetch'],
+
+  transformRequest: [
+    function transformRequest(data, headers) {
+      const contentType = headers.getContentType() || '';
+      const hasJSONContentType = contentType.indexOf('application/json') > -1;
+      const isObjectPayload = utils$1.isObject(data);
+
+      if (isObjectPayload && utils$1.isHTMLForm(data)) {
+        data = new FormData(data);
+      }
+
+      const isFormData = utils$1.isFormData(data);
+
+      if (isFormData) {
+        return hasJSONContentType ? JSON.stringify(formDataToJSON(data)) : data;
+      }
+
+      if (
+        utils$1.isArrayBuffer(data) ||
+        utils$1.isBuffer(data) ||
+        utils$1.isStream(data) ||
+        utils$1.isFile(data) ||
+        utils$1.isBlob(data) ||
+        utils$1.isReadableStream(data)
+      ) {
+        return data;
+      }
+      if (utils$1.isArrayBufferView(data)) {
+        return data.buffer;
+      }
+      if (utils$1.isURLSearchParams(data)) {
+        headers.setContentType('application/x-www-form-urlencoded;charset=utf-8', false);
+        return data.toString();
+      }
+
+      let isFileList;
+
+      if (isObjectPayload) {
+        const formSerializer = own(this, 'formSerializer');
+        if (contentType.indexOf('application/x-www-form-urlencoded') > -1) {
+          return toURLEncodedForm(data, formSerializer).toString();
+        }
+
+        if (
+          (isFileList = utils$1.isFileList(data)) ||
+          contentType.indexOf('multipart/form-data') > -1
+        ) {
+          const env = own(this, 'env');
+          const _FormData = env && env.FormData;
+
+          return toFormData(
+            isFileList ? { 'files[]': data } : data,
+            _FormData && new _FormData(),
+            formSerializer
+          );
+        }
+      }
+
+      if (isObjectPayload || hasJSONContentType) {
+        headers.setContentType('application/json', false);
+        return stringifySafely(data);
+      }
+
+      return data;
+    },
+  ],
+
+  transformResponse: [
+    function transformResponse(data) {
+      const transitional = own(this, 'transitional') || defaults.transitional;
+      const forcedJSONParsing = transitional && transitional.forcedJSONParsing;
+      const responseType = own(this, 'responseType');
+      const JSONRequested = responseType === 'json';
+
+      if (utils$1.isResponse(data) || utils$1.isReadableStream(data)) {
+        return data;
+      }
+
+      if (
+        data &&
+        utils$1.isString(data) &&
+        ((forcedJSONParsing && !responseType) || JSONRequested)
+      ) {
+        const silentJSONParsing = transitional && transitional.silentJSONParsing;
+        const strictJSONParsing = !silentJSONParsing && JSONRequested;
+
+        try {
+          return JSON.parse(data, own(this, 'parseReviver'));
+        } catch (e) {
+          if (strictJSONParsing) {
+            if (e.name === 'SyntaxError') {
+              throw AxiosError.from(e, AxiosError.ERR_BAD_RESPONSE, this, null, own(this, 'response'));
+            }
+            throw e;
+          }
+        }
+      }
+
+      return data;
+    },
+  ],
+
+  /**
+   * A timeout in milliseconds to abort a request. If set to 0 (default) a
+   * timeout is not created.
+   */
+  timeout: 0,
+
+  xsrfCookieName: 'XSRF-TOKEN',
+  xsrfHeaderName: 'X-XSRF-TOKEN',
+
+  maxContentLength: -1,
+  maxBodyLength: -1,
+
+  env: {
+    FormData: platform.classes.FormData,
+    Blob: platform.classes.Blob,
+  },
+
+  validateStatus: function validateStatus(status) {
+    return status >= 200 && status < 300;
+  },
+
+  headers: {
+    common: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': undefined,
+    },
+  },
+};
+
+utils$1.forEach(methodList, (method) => {
+  defaults.headers[method] = {};
+});
+
+/**
+ * Transform the data for a request or a response
+ *
+ * @param {Array|Function} fns A single function or Array of functions
+ * @param {?Object} response The response object
+ *
+ * @returns {*} The resulting transformed data
+ */
+function transformData(fns, response) {
+  const config = this || defaults;
+  const context = response || config;
+  const headers = AxiosHeaders.from(context.headers);
+  let data = context.data;
+
+  utils$1.forEach(fns, function transform(fn) {
+    data = fn.call(config, data, headers.normalize(), response ? response.status : undefined);
+  });
+
+  headers.normalize();
+
+  return data;
+}
+
+function isCancel(value) {
+  return !!(value && value.__CANCEL__);
+}
+
+class CanceledError extends AxiosError {
+  /**
+   * A `CanceledError` is an object that is thrown when an operation is canceled.
+   *
+   * @param {string=} message The message.
+   * @param {Object=} config The config.
+   * @param {Object=} request The request.
+   *
+   * @returns {CanceledError} The created error.
+   */
+  constructor(message, config, request) {
+    super(message == null ? 'canceled' : message, AxiosError.ERR_CANCELED, config, request);
+    this.name = 'CanceledError';
+    this.__CANCEL__ = true;
+  }
+}
+
+/**
+ * Resolve or reject a Promise based on response status.
+ *
+ * @param {Function} resolve A function that resolves the promise.
+ * @param {Function} reject A function that rejects the promise.
+ * @param {object} response The response.
+ *
+ * @returns {object} The response.
+ */
+function settle(resolve, reject, response) {
+  const validateStatus = response.config.validateStatus;
+  if (!response.status || !validateStatus || validateStatus(response.status)) {
+    resolve(response);
+  } else {
+    reject(new AxiosError(
+      'Request failed with status code ' + response.status,
+      response.status >= 400 && response.status < 500 ? AxiosError.ERR_BAD_REQUEST : AxiosError.ERR_BAD_RESPONSE,
+      response.config,
+      response.request,
+      response
+    ));
+  }
+}
+
+const urlParserControlCharacters = /[\t\n\r]/g;
+
+/**
+ * Match WHATWG URL preprocessing before checking a URL's protocol.
+ *
+ * @param {string} url
+ *
+ * @returns {string}
+ */
+function normalizeURLForProtocolCheck(url) {
+  if (typeof url !== 'string') {
+    return url;
+  }
+
+  let start = 0;
+
+  while (start < url.length && url.charCodeAt(start) <= 0x20) {
+    start++;
+  }
+
+  return url.slice(start).replace(urlParserControlCharacters, '');
+}
+
+function parseProtocol(url) {
+  const match = /^([-+\w]{1,25}):(?:\/\/)?/.exec(url);
+  return (match && match[1].toLowerCase()) || '';
+}
+
+const decodeCookieValue = (value) => {
+  try {
+    return decodeURIComponent(value);
+  } catch (e) {
+    return value;
+  }
+};
+
+var cookies = platform.hasStandardBrowserEnv
+  ? // Standard browser envs support document.cookie
+    {
+      write(name, value, expires, path, domain, secure, sameSite) {
+        if (typeof document === 'undefined') return;
+
+        const cookie = [`${name}=${encodeURIComponent(value)}`];
+
+        if (utils$1.isNumber(expires)) {
+          cookie.push(`expires=${new Date(expires).toUTCString()}`);
+        }
+        if (utils$1.isString(path)) {
+          cookie.push(`path=${path}`);
+        }
+        if (utils$1.isString(domain)) {
+          cookie.push(`domain=${domain}`);
+        }
+        if (secure === true) {
+          cookie.push('secure');
+        }
+        if (utils$1.isString(sameSite)) {
+          cookie.push(`SameSite=${sameSite}`);
+        }
+
+        document.cookie = cookie.join('; ');
+      },
+
+      read(name) {
+        if (typeof document === 'undefined') return null;
+        const cookieString = document.cookie;
+        if (!cookieString) return null;
+        // Match name=value by splitting on the semicolon separator instead of building a
+        // RegExp from `name` — interpolating an unescaped string into a RegExp would let
+        // metacharacters (e.g. `.+?` in an attacker-influenced cookie name) cause ReDoS or
+        // match the wrong cookie. Browsers may serialize cookie pairs as either ";" or
+        // "; ", so ignore optional whitespace before each cookie name.
+        const cookies = cookieString.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+          const cookie = cookies[i].replace(/^\s+/, '');
+          const eq = cookie.indexOf('=');
+          if (eq !== -1 && cookie.slice(0, eq) === name) {
+            return decodeCookieValue(cookie.slice(eq + 1));
+          }
+        }
+        return null;
+      },
+
+      async readAsync(name) {
+        try {
+          const store = typeof window !== 'undefined' && window.cookieStore;
+          if (store && utils$1.isFunction(store.get)) {
+            const cookie = await store.get(name);
+            // Both APIs expose stored bytes; preserve Axios's existing URI decoding.
+            return cookie ? decodeCookieValue(cookie.value) : null;
+          }
+        } catch (e) {
+          // Restricted or unavailable storage retains the synchronous fallback.
+        }
+
+        return this.read(name);
+      },
+
+      remove(name) {
+        this.write(name, '', Date.now() - 86400000, '/');
+      },
+    }
+  : // Non-standard browser env (web workers, react-native) lack needed support.
+    {
+      write() {},
+      read() {
+        return null;
+      },
+      async readAsync() {
+        return null;
+      },
+      remove() {},
+    };
+
+/**
+ * Calculate data maxRate
+ * @param {Number} [samplesCount= 10]
+ * @param {Number} [min= 1000]
+ * @returns {Function}
+ */
+function speedometer(samplesCount, min) {
+  samplesCount = samplesCount || 10;
+  const bytes = new Array(samplesCount);
+  const timestamps = new Array(samplesCount);
+  let head = 0;
+  let tail = 0;
+  let firstSampleTS;
+
+  min = min !== undefined ? min : 1000;
+
+  return function push(chunkLength) {
+    const now = Date.now();
+
+    const startedAt = timestamps[tail];
+
+    if (!firstSampleTS) {
+      firstSampleTS = now;
+    }
+
+    bytes[head] = chunkLength;
+    timestamps[head] = now;
+
+    let i = tail;
+    let bytesCount = 0;
+
+    while (i !== head) {
+      bytesCount += bytes[i++];
+      i = i % samplesCount;
+    }
+
+    head = (head + 1) % samplesCount;
+
+    if (head === tail) {
+      tail = (tail + 1) % samplesCount;
+    }
+
+    if (now - firstSampleTS < min) {
+      return;
+    }
+
+    const passed = startedAt && now - startedAt;
+
+    return passed ? Math.round((bytesCount * 1000) / passed) : undefined;
+  };
+}
+
+/**
+ * Throttle decorator
+ * @param {Function} fn
+ * @param {Number} freq
+ * @return {Array<Function>}
+ */
+function throttle(fn, freq) {
+  let timestamp = 0;
+  let threshold = 1000 / freq;
+  let lastArgs;
+  let timer;
+
+  const invoke = (args, now = Date.now()) => {
+    timestamp = now;
+    lastArgs = null;
+    if (timer) {
+      clearTimeout(timer);
+      timer = null;
+    }
+    fn(...args);
+  };
+
+  const throttled = (...args) => {
+    const now = Date.now();
+    const passed = now - timestamp;
+    if (passed >= threshold) {
+      invoke(args, now);
+    } else {
+      lastArgs = args;
+      if (!timer) {
+        timer = setTimeout(() => {
+          timer = null;
+          invoke(lastArgs);
+        }, threshold - passed);
+      }
+    }
+  };
+
+  const flush = () => lastArgs && invoke(lastArgs);
+  const flushWith = (...args) => invoke(args);
+
+  return [throttled, flush, flushWith];
+}
+
+const progressEventReducer = (listener, isDownloadStream, freq = 3) => {
+  let bytesNotified = 0;
+  const _speedometer = speedometer(50, 250);
+
+  return throttle((e) => {
+    if (!e || !utils$1.isNumber(e.loaded)) {
+      return;
+    }
+    const rawLoaded = e.loaded;
+    const total = e.lengthComputable ? e.total : undefined;
+    const loaded = Math.max(0, total != null ? Math.min(rawLoaded, total) : rawLoaded);
+    const progressBytes = Math.max(0, loaded - bytesNotified);
+    const rate = _speedometer(progressBytes);
+
+    bytesNotified = Math.max(bytesNotified, loaded);
+
+    const data = {
+      loaded,
+      total,
+      progress: total ? loaded / total : undefined,
+      bytes: progressBytes,
+      rate: rate ? rate : undefined,
+      estimated: rate && total ? (total - loaded) / rate : undefined,
+      event: e,
+      lengthComputable: total != null,
+      [isDownloadStream ? 'download' : 'upload']: true,
+    };
+
+    listener(data);
+  }, freq);
+};
+
+const progressEventDecorator = (total, throttled) => {
+  const lengthComputable = total != null;
+
+  return [
+    (loaded) =>
+      throttled[0]({
+        lengthComputable,
+        total,
+        loaded,
+      }),
+    throttled[1],
+  ];
+};
+
+const asyncDecorator =
+  (fn, scheduler = utils$1.asap) =>
+  (...args) =>
+    scheduler(() => fn(...args));
+
+var isURLSameOrigin = platform.hasStandardBrowserEnv
+  ? ((origin) => (url) => {
+      url = new URL(url, document.baseURI || platform.origin);
+
+      return (
+        origin.protocol === url.protocol && origin.host === url.host && origin.port === url.port
+      );
+    })(new URL(platform.origin))
+  : () => true;
+
+/**
+ * Determines whether the specified URL is absolute
+ *
+ * @param {string} url The URL to test
+ *
+ * @returns {boolean} True if the specified URL is absolute, otherwise false
+ */
+function isAbsoluteURL(url) {
+  // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
+  // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
+  // by any combination of letters, digits, plus, period, or hyphen.
+  if (typeof url !== 'string') {
+    return false;
+  }
+
+  return /^([a-z][a-z\d+\-.]*:)?\/\//i.test(url);
+}
+
+/**
+ * Creates a new URL by combining the specified URLs
+ *
+ * @param {string} baseURL The base URL
+ * @param {string} relativeURL The relative URL
+ *
+ * @returns {string} The combined URL
+ */
+function combineURLs(baseURL, relativeURL) {
+  if (!relativeURL) {
+    return baseURL;
+  }
+
+  let end = baseURL.length;
+
+  while (end > 0 && baseURL.charCodeAt(end - 1) === 47) {
+    end--;
+  }
+
+  return baseURL.slice(0, end) + '/' + relativeURL.replace(/^\/+/, '');
+}
+
+const malformedHttpProtocol = /^https?:(?!\/\/)/i;
+
+// Redact the parts of a URL that can carry secrets before it is embedded in an
+// error message. AxiosError.toJSON() serializes `message` verbatim and errors
+// are commonly logged, while the opt-in `config.redact` model only cleans
+// config keys — it cannot reach the message. Redact only the genuinely
+// sensitive substrings — userinfo (credentials), query parameter values and
+// fragment contents — with the same REDACTED marker the config redaction uses,
+// while keeping the scheme, host, path and parameter names so the offending
+// request stays accurately identifiable.
+function redactFragment(fragment) {
+  if (!fragment) {
+    return fragment;
+  }
+
+  return fragment.replace(/(^|&)([^=&]*=)?[^&]+/g, (match, separator, parameterName = '') => {
+    return `${separator}${parameterName}${REDACTED}`;
+  });
+}
+
+function redactSensitiveURLParts(url) {
+  const redactedURL = url.replace(/^(https?:\/{0,2})[^/?#]*@/i, `$1${REDACTED}@`);
+  const fragmentIndex = redactedURL.indexOf('#');
+  const urlWithoutFragment =
+    fragmentIndex === -1 ? redactedURL : redactedURL.slice(0, fragmentIndex);
+  const redactedURLWithoutFragment = urlWithoutFragment.replace(
+    /([?&][^=&#]*=)[^&#]*/g,
+    `$1${REDACTED}`
+  );
+
+  if (fragmentIndex === -1) {
+    return redactedURLWithoutFragment;
+  }
+
+  return `${redactedURLWithoutFragment}#${redactFragment(redactedURL.slice(fragmentIndex + 1))}`;
+}
+
+function assertValidHttpProtocolURL(url, config) {
+  if (typeof url === 'string') {
+    const normalizedURL = normalizeURLForProtocolCheck(url);
+    if (malformedHttpProtocol.test(normalizedURL)) {
+      throw new AxiosError(
+        `Invalid URL ${JSON.stringify(redactSensitiveURLParts(normalizedURL))}: missing "//" after protocol`,
+        AxiosError.ERR_INVALID_URL,
+        config
+      );
+    }
+  }
+}
+
+/**
+ * Creates a new URL by combining the baseURL with the requestedURL,
+ * only when the requestedURL is not already an absolute URL.
+ * If the requestURL is absolute, this function returns the requestedURL untouched.
+ *
+ * @param {string} baseURL The base URL
+ * @param {string} requestedURL Absolute or relative URL to combine
+ *
+ * @returns {string} The combined full path
+ */
+function buildFullPath(baseURL, requestedURL, allowAbsoluteUrls, config) {
+  assertValidHttpProtocolURL(requestedURL, config);
+  let isRelativeUrl = !isAbsoluteURL(requestedURL);
+  if (baseURL && (isRelativeUrl || allowAbsoluteUrls === false)) {
+    assertValidHttpProtocolURL(baseURL, config);
+    return combineURLs(baseURL, requestedURL);
+  }
+  return requestedURL;
+}
+
+function assertParamsAcyclic(params) {
+  const pending = [{ value: params }];
+  const active = new WeakSet();
+  const visited = new WeakSet();
+
+  while (pending.length) {
+    const { value, done } = pending.pop();
+    if (!utils$1.isPlainObject(value) && !utils$1.isArray(value)) continue;
+    if (done) {
+      active.delete(value);
+      continue;
+    }
+    if (active.has(value)) {
+      throw new AxiosError(
+        'Circular reference detected in params',
+        AxiosError.ERR_BAD_OPTION_VALUE
+      );
+    }
+    if (visited.has(value)) continue;
+    visited.add(value);
+    active.add(value);
+    pending.push({ value, done: true });
+
+    const keys = Object.keys(value);
+    if (Object.getOwnPropertySymbols && Object.getOwnPropertyDescriptor) {
+      Object.getOwnPropertySymbols(value).forEach((key) => {
+        const descriptor = Object.getOwnPropertyDescriptor(value, key);
+        if (descriptor && descriptor.enumerable) keys.push(key);
+      });
+    }
+    // Shallow array elements retain fields filtered during plain-object merges.
+    // Inspect reserved data properties without evaluating their accessors.
+    keys.forEach((key) => {
+      if (key === '__proto__' || key === 'constructor' || key === 'prototype') {
+        const descriptor = Object.getOwnPropertyDescriptor(value, key);
+        if (descriptor && utils$1.hasOwnProp(descriptor, 'value')) {
+          pending.push({ value: descriptor.value });
+        }
+      } else {
+        pending.push({ value: value[key] });
+      }
+    });
+  }
+}
+
+const headersToObject = (thing) => (thing instanceof AxiosHeaders ? { ...thing } : thing);
+
+const ownEnumerableKeys = (thing) => {
+  if (Object.getOwnPropertySymbols && Object.getOwnPropertyDescriptor) {
+    return Object.keys(thing).concat(
+      Object.getOwnPropertySymbols(thing).filter((symbol) => {
+        const descriptor = Object.getOwnPropertyDescriptor(thing, symbol);
+        return descriptor && descriptor.enumerable;
+      })
+    );
+  }
+  return Object.keys(thing);
+};
+
+// Copy params without recursive merges so the serializer remains responsible
+// for its depth policy. Only visit defaults that contribute to the result.
+function mergeParams(a, b) {
+  const pending = [];
+  const copies = new WeakMap();
+  const empty = {};
+
+  function copy(target, source) {
+    if (!utils$1.isPlainObject(source)) {
+      return utils$1.isArray(source) ? source.slice() : source;
+    }
+
+    const base = utils$1.isPlainObject(target) ? target : empty;
+    let bases = copies.get(source);
+    if (!bases) {
+      bases = new WeakMap();
+      copies.set(source, bases);
+    }
+    if (bases.has(base)) return bases.get(base);
+
+    const result = {};
+    bases.set(base, result);
+    pending.push({ base, source, result });
+    return result;
+  }
+
+  const result = utils$1.isUndefined(b) ? copy(undefined, a) : copy(a, b);
+  while (pending.length) {
+    const { base, source, result: target } = pending.pop();
+    const baseKeys = new Set(ownEnumerableKeys(base));
+    const sourceKeys = new Set(ownEnumerableKeys(source));
+    const keys = new Set([...baseKeys, ...sourceKeys]);
+
+    keys.forEach((key) => {
+      if (key === '__proto__' || key === 'constructor' || key === 'prototype') return;
+      const hasSource = sourceKeys.has(key);
+      const value = hasSource ? source[key] : undefined;
+      const previous =
+        (!hasSource || utils$1.isPlainObject(value)) && baseKeys.has(key) ? base[key] : undefined;
+      target[key] = hasSource ? copy(previous, value) : copy(undefined, previous);
+    });
+  }
+
+  assertParamsAcyclic(result);
+  return result;
+}
+
+function getMergedValue(target, source, prop, caseless) {
+  if (utils$1.isPlainObject(target) && utils$1.isPlainObject(source)) {
+    return utils$1.merge.call({ caseless }, target, source);
+  } else if (utils$1.isPlainObject(source)) {
+    return utils$1.merge({}, source);
+  } else if (utils$1.isArray(source)) {
+    return source.slice();
+  }
+  return source;
+}
+
+function mergeDeepProperties(a, b, prop, caseless) {
+  if (!utils$1.isUndefined(b)) {
+    return getMergedValue(a, b, prop, caseless);
+  } else if (!utils$1.isUndefined(a)) {
+    return getMergedValue(undefined, a, prop, caseless);
+  }
+}
+
+// eslint-disable-next-line consistent-return
+function valueFromConfig2(a, b) {
+  if (!utils$1.isUndefined(b)) {
+    return getMergedValue(undefined, b);
+  }
+}
+
+// eslint-disable-next-line consistent-return
+function defaultToConfig2(a, b) {
+  if (!utils$1.isUndefined(b)) {
+    return getMergedValue(undefined, b);
+  } else if (!utils$1.isUndefined(a)) {
+    return getMergedValue(undefined, a);
+  }
+}
+
+function getMergedTransitionalOption(config1, config2, prop) {
+  const transitional2 = utils$1.hasOwnProp(config2, 'transitional')
+    ? config2.transitional
+    : undefined;
+
+  if (!utils$1.isUndefined(transitional2)) {
+    if (utils$1.isPlainObject(transitional2)) {
+      if (utils$1.hasOwnProp(transitional2, prop)) {
+        return transitional2[prop];
+      }
+    } else {
+      return undefined;
+    }
+  }
+
+  const transitional1 = utils$1.hasOwnProp(config1, 'transitional')
+    ? config1.transitional
+    : undefined;
+
+  if (utils$1.isPlainObject(transitional1) && utils$1.hasOwnProp(transitional1, prop)) {
+    return transitional1[prop];
+  }
+
+  return undefined;
+}
+
+// eslint-disable-next-line consistent-return
+function mergeDirectKeys(a, b, prop, config1, config2) {
+  if (utils$1.hasOwnProp(config2, prop)) {
+    return getMergedValue(a, b);
+  } else if (utils$1.hasOwnProp(config1, prop)) {
+    return getMergedValue(undefined, a);
+  }
+}
+
+function mergeHeaders(a, b, prop) {
+  return mergeDeepProperties(headersToObject(a), headersToObject(b), prop, true);
+}
+
+// Null-proto, frozen descriptor so a polluted Object.prototype.get cannot turn
+// this data descriptor into an accessor descriptor on the way in.
+// defineProperty only reads it, so one shared instance serves every call.
+const hasOwnPropertyDescriptor = Object.freeze({
+  __proto__: null,
+  value: Object.prototype.hasOwnProperty,
+  enumerable: false,
+  writable: true,
+  configurable: true,
+});
+
+// The strategy table and the strategies above are stateless, so they are
+// built once at module load instead of on every call: mergeConfig runs at
+// most twice per request (once from a method alias, once from `_request`).
+const mergeMap = {
+  url: valueFromConfig2,
+  method: valueFromConfig2,
+  data: valueFromConfig2,
+  baseURL: defaultToConfig2,
+  transformRequest: defaultToConfig2,
+  transformResponse: defaultToConfig2,
+  params: mergeParams,
+  paramsSerializer: defaultToConfig2,
+  timeout: defaultToConfig2,
+  timeoutErrorMessage: defaultToConfig2,
+  withCredentials: defaultToConfig2,
+  withXSRFToken: defaultToConfig2,
+  adapter: defaultToConfig2,
+  responseType: defaultToConfig2,
+  xsrfCookieName: defaultToConfig2,
+  xsrfHeaderName: defaultToConfig2,
+  onUploadProgress: defaultToConfig2,
+  onDownloadProgress: defaultToConfig2,
+  decompress: defaultToConfig2,
+  maxContentLength: defaultToConfig2,
+  maxBodyLength: defaultToConfig2,
+  beforeRedirect: defaultToConfig2,
+  transport: defaultToConfig2,
+  httpAgent: defaultToConfig2,
+  httpsAgent: defaultToConfig2,
+  cancelToken: defaultToConfig2,
+  socketPath: defaultToConfig2,
+  allowedSocketPaths: defaultToConfig2,
+  responseEncoding: defaultToConfig2,
+  validateStatus: mergeDirectKeys,
+  headers: mergeHeaders,
+};
+
+/**
+ * Config-specific merge-function which creates a new config-object
+ * by merging two configuration objects together.
+ *
+ * @param {Object} config1
+ * @param {Object} config2
+ *
+ * @returns {Object} New object resulting from merging config2 to config1
+ */
+function mergeConfig(config1, config2) {
+  // eslint-disable-next-line no-param-reassign
+  config1 = config1 || {};
+  config2 = config2 || {};
+
+  // Use a null-prototype object so that downstream reads such as `config.auth`
+  // or `config.baseURL` cannot inherit polluted values from Object.prototype.
+  // `hasOwnProperty` is restored as a non-enumerable own slot to preserve
+  // ergonomics for user code that relies on it.
+  const config = Object.create(null);
+  Object.defineProperty(config, 'hasOwnProperty', hasOwnPropertyDescriptor);
+
+  const keys = ownEnumerableKeys({ ...config1, ...config2 });
+
+  for (let i = 0, len = keys.length; i < len; i++) {
+    const prop = keys[i];
+    if (prop === '__proto__' || prop === 'constructor' || prop === 'prototype') continue;
+    const merge = utils$1.hasOwnProp(mergeMap, prop) ? mergeMap[prop] : mergeDeepProperties;
+    const a = utils$1.hasOwnProp(config1, prop) ? config1[prop] : undefined;
+    const b = utils$1.hasOwnProp(config2, prop) ? config2[prop] : undefined;
+    const configValue =
+      merge === mergeDirectKeys ? merge(a, b, prop, config1, config2) : merge(a, b, prop);
+    (utils$1.isUndefined(configValue) && merge !== mergeDirectKeys) || (config[prop] = configValue);
+  }
+
+  if (
+    utils$1.hasOwnProp(config2, 'validateStatus') &&
+    utils$1.isUndefined(config2.validateStatus) &&
+    getMergedTransitionalOption(config1, config2, 'validateStatusUndefinedResolves') === false
+  ) {
+    if (utils$1.hasOwnProp(config1, 'validateStatus')) {
+      config.validateStatus = getMergedValue(undefined, config1.validateStatus);
+    } else {
+      delete config.validateStatus;
+    }
+  }
+
+  return config;
+}
+
+const FORM_DATA_CONTENT_HEADERS = ['content-type', 'content-length'];
+
+/**
+ * Apply the headers generated by a FormData implementation to the request headers,
+ * honoring the `formDataHeaderPolicy` option: with 'content-only', copy only the
+ * content-* headers; otherwise merge all of them.
+ *
+ * @param {AxiosHeaders} headers - the request headers to mutate
+ * @param {Object | null | undefined} formHeaders - headers produced by the FormData implementation
+ * @param {String} [policy] - the resolved `formDataHeaderPolicy` config value
+ *
+ * @returns {void}
+ */
+function setFormDataHeaders(headers, formHeaders, policy) {
+  if (policy !== 'content-only') {
+    headers.set(formHeaders);
+    return;
+  }
+
+  Object.entries(formHeaders || {}).forEach(([key, val]) => {
+    if (FORM_DATA_CONTENT_HEADERS.includes(key.toLowerCase())) {
+      headers.set(key, val);
+    }
+  });
+}
+
+/**
+ * Encode a UTF-8 string to a Latin-1 byte string for use with btoa().
+ * This is a modern replacement for the deprecated unescape(encodeURIComponent(str)) pattern.
+ *
+ * @param {string} str The string to encode
+ *
+ * @returns {string} UTF-8 bytes as a Latin-1 string
+ */
+const encodeUTF8$1 = (str) =>
+  encodeURIComponent(str).replace(/%([0-9A-F]{2})/gi, (_, hex) =>
+    String.fromCharCode(parseInt(hex, 16))
+  );
+
+const readCookie = (name) => cookies.read(name);
+
+function resolveConfig(config, readXsrfCookie = readCookie) {
+  const newConfig = mergeConfig({}, config);
+
+  // Read only own properties to prevent prototype pollution gadgets
+  // (e.g. Object.prototype.baseURL = 'https://evil.com').
+  const own = (key) => (utils$1.hasOwnProp(newConfig, key) ? newConfig[key] : undefined);
+
+  const data = own('data');
+  let withXSRFToken = own('withXSRFToken');
+  const xsrfHeaderName = own('xsrfHeaderName');
+  const xsrfCookieName = own('xsrfCookieName');
+  let headers = own('headers');
+  const auth = own('auth');
+  const baseURL = own('baseURL');
+  const allowAbsoluteUrls = own('allowAbsoluteUrls');
+  const url = own('url');
+
+  newConfig.headers = headers = AxiosHeaders.from(headers);
+
+  newConfig.url = buildURL(
+    buildFullPath(baseURL, url, allowAbsoluteUrls, newConfig),
+    own('params'),
+    own('paramsSerializer')
+  );
+
+  // HTTP basic authentication
+  if (auth) {
+    const username = utils$1.getSafeProp(auth, 'username') || '';
+    const password = utils$1.getSafeProp(auth, 'password') || '';
+    const transitional = own('transitional');
+    const encodeUsername =
+      transitional &&
+      utils$1.hasOwnProp(transitional, 'encodeBasicAuthUsername') &&
+      transitional.encodeBasicAuthUsername === true;
+
+    try {
+      headers.set(
+        'Authorization',
+        // Preserve legacy username bytes unless the caller opts in to UTF-8.
+        'Basic ' +
+          btoa(
+            (encodeUsername ? encodeUTF8$1(username) : username) +
+              ':' +
+              (password ? encodeUTF8$1(password) : '')
+          )
+      );
+    } catch (e) {
+      throw AxiosError.from(e, AxiosError.ERR_BAD_OPTION_VALUE, config);
+    }
+  }
+
+  if (utils$1.isFormData(data)) {
+    const getHeaders = utils$1.getSafeProp(data, 'getHeaders');
+
+    if (
+      platform.hasStandardBrowserEnv ||
+      platform.hasStandardBrowserWebWorkerEnv ||
+      utils$1.isReactNative(data)
+    ) {
+      headers.setContentType(undefined); // browser/web worker/RN handles it
+    } else if (utils$1.isFunction(getHeaders)) {
+      // Node.js FormData (like form-data package)
+      setFormDataHeaders(headers, getHeaders.call(data), own('formDataHeaderPolicy'));
+    }
+  }
+
+  // Add xsrf header
+  // This is only done if running in a standard browser environment.
+  // Specifically not if we're in a web worker, or react-native.
+
+  if (platform.hasStandardBrowserEnv) {
+    if (utils$1.isFunction(withXSRFToken)) {
+      withXSRFToken = withXSRFToken(newConfig);
+    }
+
+    // Strict boolean check — prevents proto-pollution gadgets (e.g. Object.prototype.withXSRFToken = 1)
+    // and misconfigurations (e.g. "false") from short-circuiting the same-origin check and leaking
+    // the XSRF token cross-origin.
+    const shouldSendXSRF =
+      withXSRFToken === true || (withXSRFToken == null && isURLSameOrigin(newConfig.url));
+
+    if (shouldSendXSRF) {
+      const xsrfValue = xsrfHeaderName && xsrfCookieName && readXsrfCookie(xsrfCookieName);
+
+      if (xsrfValue) {
+        headers.set(xsrfHeaderName, xsrfValue);
+      }
+    }
+  }
+
+  return newConfig;
+}
+
+const isXHRAdapterSupported = typeof XMLHttpRequest !== 'undefined';
+
+var xhrAdapter = isXHRAdapterSupported &&
+  function (config) {
+    return new Promise(function dispatchXhrRequest(resolve, reject) {
+      let useAsyncXsrf;
+      try {
+        const store =
+          platform.hasStandardBrowserEnv && typeof window !== 'undefined' && window.cookieStore;
+        useAsyncXsrf = store && utils$1.isFunction(store.get);
+      } catch (e) {
+        // A restricted Cookie Store getter must retain the synchronous fallback.
+      }
+      let xsrfCookieName;
+      const _config = resolveConfig(
+        config,
+        useAsyncXsrf
+          ? (name) => {
+              xsrfCookieName = name;
+              return null;
+            }
+          : undefined
+      );
+      let requestData = _config.data;
+      const requestHeaders = AxiosHeaders.from(_config.headers).normalize();
+      let { responseType, onUploadProgress, onDownloadProgress } = _config;
+      let onCanceled;
+      let timeoutId;
+      let uploadThrottled, downloadThrottled;
+      let flushUpload, flushDownload, flushDownloadWithEvent;
+
+      function done() {
+        clearTimeout(timeoutId);
+        // A final progress callback must not prevent the remaining cleanup.
+        // Report errors asynchronously, as onloadend and the throttle timer do.
+        try {
+          flushUpload && flushUpload(); // flush events
+        } catch (err) {
+          setTimeout(() => {
+            throw err;
+          });
+        }
+        try {
+          flushDownload && flushDownload(); // flush events
+        } catch (err) {
+          setTimeout(() => {
+            throw err;
+          });
+        }
+
+        // A flush can synchronously cancel the request and reenter done().
+        // In that case the inner call has already detached these listeners.
+        if (request) {
+          downloadThrottled && request.removeEventListener('progress', downloadThrottled);
+          if (request.upload) {
+            uploadThrottled && request.upload.removeEventListener('progress', uploadThrottled);
+            flushUpload && request.upload.removeEventListener('loadend', flushUpload);
+          }
+        }
+
+        _config.cancelToken && _config.cancelToken.unsubscribe(onCanceled);
+
+        _config.signal && _config.signal.removeEventListener('abort', onCanceled);
+      }
+
+      let request = new XMLHttpRequest();
+
+      request.open(_config.method.toUpperCase(), _config.url, true);
+
+      // Set the request timeout in MS
+      request.timeout = _config.timeout;
+
+      function onloadend(event) {
+        if (!request) {
+          return;
+        }
+
+        // Status 0 means no response was received, which onerror and onabort normally
+        // reject before this runs. Firefox 152 fires only readystatechange and loadend for
+        // navigation-canceled requests (https://bugzilla.mozilla.org/show_bug.cgi?id=1505389),
+        // leaving settle() to resolve them as an empty success. ECONNABORTED is the error
+        // onabort raised on Firefox 151. Reads over file:, which some environments report as
+        // status 0 on success, are excluded by the request URL's scheme after browser-style
+        // preprocessing, by the page origin's scheme for relative URLs (which inherit it), or
+        // by responseURL where implemented.
+        if (
+          request.status === 0 &&
+          (parseProtocol(normalizeURLForProtocolCheck(_config.url)) ||
+            parseProtocol(platform.origin)) !== 'file' &&
+          !(request.responseURL && request.responseURL.startsWith('file:'))
+        ) {
+          reject(new AxiosError('Request aborted', AxiosError.ECONNABORTED, config, request));
+          done();
+
+          // Clean up request
+          request = null;
+          return;
+        }
+
+        // When loadend is still dispatching, flushing with it gives progress
+        // listeners a final delivery whose event has a live target. The legacy
+        // ready-state fallback has no event, so replay its pending progress.
+        // A throwing listener must not block settlement; rethrow asynchronously,
+        // matching how listener errors surface on the throttle timer path.
+        try {
+          if (event) {
+            flushDownloadWithEvent && flushDownloadWithEvent(event);
+          } else {
+            flushDownload && flushDownload();
+          }
+        } catch (err) {
+          setTimeout(() => {
+            throw err;
+          });
+        }
+
+        // A final progress callback can cancel the request synchronously.
+        if (!request) {
+          return;
+        }
+
+        // Prepare the response
+        const responseHeaders = AxiosHeaders.from(
+          'getAllResponseHeaders' in request && request.getAllResponseHeaders()
+        );
+        const responseData =
+          !responseType || responseType === 'text' || responseType === 'json'
+            ? request.responseText
+            : request.response;
+        const response = {
+          data: responseData,
+          status: request.status,
+          statusText: request.statusText,
+          headers: responseHeaders,
+          config,
+          request,
+        };
+
+        settle(
+          function _resolve(value) {
+            resolve(value);
+            done();
+          },
+          function _reject(err) {
+            reject(err);
+            done();
+          },
+          response
+        );
+
+        // Clean up request
+        request = null;
+      }
+
+      if ('onloadend' in request) {
+        // Use onloadend if available
+        request.onloadend = onloadend;
+      } else {
+        // Listen for ready state to emulate onloadend
+        request.onreadystatechange = function handleLoad() {
+          if (!request || request.readyState !== 4) {
+            return;
+          }
+
+          // The request errored out and we didn't get a response, this will be
+          // handled by onerror instead
+          // With one exception: request that using file: protocol, most browsers
+          // will return status as 0 even though it's a successful request
+          if (
+            request.status === 0 &&
+            !(request.responseURL && request.responseURL.startsWith('file:'))
+          ) {
+            return;
+          }
+          // readystate handler is calling before onerror or ontimeout handlers,
+          // so we should call onloadend on the next 'tick'
+          setTimeout(onloadend);
+        };
+      }
+
+      // Handle browser request cancellation (as opposed to a manual cancellation)
+      request.onabort = function handleAbort() {
+        if (!request) {
+          return;
+        }
+
+        reject(new AxiosError('Request aborted', AxiosError.ECONNABORTED, config, request));
+        done();
+
+        // Clean up request
+        request = null;
+      };
+
+      // Handle low level network errors
+      request.onerror = function handleError(event) {
+        // Browsers deliver a ProgressEvent in XHR onerror
+        // (message may be empty; when present, surface it)
+        // See https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/error_event
+        const msg = event && event.message ? event.message : 'Network Error';
+        const err = new AxiosError(msg, AxiosError.ERR_NETWORK, config, request);
+        // attach the underlying event for consumers who want details
+        err.event = event || null;
+        reject(err);
+        done();
+        request = null;
+      };
+
+      // Handle timeout
+      request.ontimeout = function handleTimeout() {
+        if (!request) return;
+        let timeoutErrorMessage = _config.timeout
+          ? 'timeout of ' + _config.timeout + 'ms exceeded'
+          : 'timeout exceeded';
+        const transitional = _config.transitional || transitionalDefaults;
+        if (_config.timeoutErrorMessage) {
+          timeoutErrorMessage = _config.timeoutErrorMessage;
+        }
+        reject(
+          new AxiosError(
+            timeoutErrorMessage,
+            transitional.clarifyTimeoutError ? AxiosError.ETIMEDOUT : AxiosError.ECONNABORTED,
+            config,
+            request
+          )
+        );
+        done();
+
+        // Clean up request
+        request = null;
+      };
+
+      // Remove Content-Type if data is undefined
+      requestData === undefined && requestHeaders.setContentType(null);
+
+      // Add withCredentials to request if needed
+      if (!utils$1.isUndefined(_config.withCredentials)) {
+        request.withCredentials = !!_config.withCredentials;
+      }
+
+      // Add responseType to request if needed
+      if (responseType && responseType !== 'json') {
+        request.responseType = _config.responseType;
+      }
+
+      // Handle progress if needed
+      if (onDownloadProgress) {
+        [downloadThrottled, flushDownload, flushDownloadWithEvent] = progressEventReducer(
+          onDownloadProgress,
+          true
+        );
+        request.addEventListener('progress', downloadThrottled);
+      }
+
+      // Not all browsers support upload events
+      if (onUploadProgress && request.upload) {
+        [uploadThrottled, flushUpload] = progressEventReducer(onUploadProgress);
+
+        request.upload.addEventListener('progress', uploadThrottled);
+
+        request.upload.addEventListener('loadend', flushUpload);
+      }
+
+      if (_config.cancelToken || _config.signal) {
+        // Handle cancellation
+        // eslint-disable-next-line func-names
+        onCanceled = (cancel) => {
+          if (!request) {
+            return;
+          }
+          reject(!cancel || cancel.type ? new CanceledError(null, config, request) : cancel);
+          const xhr = request;
+          done();
+          request = null;
+          xhr.abort();
+        };
+
+        _config.cancelToken && _config.cancelToken.subscribe(onCanceled);
+        if (!request) return;
+        if (_config.signal) {
+          _config.signal.aborted
+            ? onCanceled()
+            : _config.signal.addEventListener('abort', onCanceled);
+        }
+      }
+
+      if (!request) return;
+
+      const protocol = parseProtocol(_config.url);
+
+      if (protocol && !platform.protocols.includes(protocol)) {
+        reject(
+          new AxiosError(
+            'Unsupported protocol ' + protocol + ':',
+            AxiosError.ERR_BAD_REQUEST,
+            config
+          )
+        );
+        done();
+        return;
+      }
+
+      const sendRequest = () => {
+        if (!request) return;
+        // Apply headers after an asynchronous XSRF read so existing headers are
+        // replaced through AxiosHeaders rather than appended by the native XHR.
+        if ('setRequestHeader' in request) {
+          utils$1.forEach(
+            toByteStringHeaderObject(requestHeaders),
+            function setRequestHeader(val, key) {
+              request.setRequestHeader(key, val);
+            }
+          );
+        }
+        request.send(requestData || null);
+      };
+
+      if (xsrfCookieName) {
+        // Native XHR timeout starts at send(). Cover cookie preparation and the
+        // subsequent request with the same budget and existing timeout handler.
+        const now =
+          typeof performance !== 'undefined' && utils$1.isFunction(performance.now)
+            ? () => performance.now()
+            : Date.now;
+        const deadline = request.timeout > 0 ? now() + Number(request.timeout) : undefined;
+        const abortOnTimeout = () => {
+          if (!request) return;
+          const xhr = request;
+          xhr.ontimeout();
+          xhr.abort();
+        };
+        if (deadline !== undefined) {
+          const scheduleTimeout = () => {
+            const remaining = deadline - now();
+            if (remaining > 0) {
+              // Browser timers overflow above the signed 32-bit delay limit.
+              timeoutId = setTimeout(scheduleTimeout, Math.min(remaining, 0x7fffffff));
+            } else {
+              abortOnTimeout();
+            }
+          };
+          scheduleTimeout();
+        }
+
+        cookies
+          .readAsync(xsrfCookieName)
+          .then((value) => {
+            if (!request) return;
+            // Promise callbacks may run before an overdue timer after a busy task.
+            if (deadline !== undefined && now() >= deadline) {
+              abortOnTimeout();
+              return;
+            }
+            if (value) {
+              const headerName =
+                utils$1.hasOwnProp(_config, 'xsrfHeaderName') && _config.xsrfHeaderName;
+              requestHeaders.set(headerName, value);
+            }
+            sendRequest();
+          })
+          .catch((error) => {
+            if (!request) return;
+            reject(AxiosError.from(error, null, config, request));
+            done();
+            request = null;
+          });
+      } else {
+        sendRequest();
+      }
+    });
+  };
+
+const composeSignals = (signals, timeout) => {
+  signals = signals ? signals.filter(Boolean) : [];
+
+  if (!timeout && !signals.length) {
+    return;
+  }
+
+  const controller = new AbortController();
+
+  let aborted = false;
+
+  const onabort = function (reason) {
+    if (!aborted) {
+      aborted = true;
+      unsubscribe();
+      const err = reason instanceof Error ? reason : this.reason;
+      controller.abort(
+        err instanceof AxiosError
+          ? err
+          : new CanceledError(err instanceof Error ? err.message : err)
+      );
+    }
+  };
+
+  let timer =
+    timeout &&
+    setTimeout(() => {
+      timer = null;
+      onabort(new AxiosError(`timeout of ${timeout}ms exceeded`, AxiosError.ETIMEDOUT));
+    }, timeout);
+
+  const unsubscribe = () => {
+    if (!signals) {
+      return;
+    }
+    timer && clearTimeout(timer);
+    timer = null;
+    signals.forEach((signal) => {
+      const unsubscribeSignal = utils$1.getSafeProp(signal, 'unsubscribe');
+      utils$1.isFunction(unsubscribeSignal)
+        ? unsubscribeSignal.call(signal, onabort)
+        : signal.removeEventListener('abort', onabort);
+    });
+    signals = null;
+  };
+
+  signals.forEach((signal) => {
+    if (aborted) {
+      return;
+    }
+
+    if (signal.aborted) {
+      onabort.call(signal);
+      return;
+    }
+
+    signal.addEventListener('abort', onabort, { once: true });
+  });
+
+  const { signal } = controller;
+
+  signal.unsubscribe = () => utils$1.asap(unsubscribe);
+
+  return signal;
+};
+
+const streamChunk = function* (chunk, chunkSize) {
+  let len = chunk.byteLength;
+
+  if (len < chunkSize) {
+    yield chunk;
+    return;
+  }
+
+  let pos = 0;
+  let end;
+
+  while (pos < len) {
+    end = pos + chunkSize;
+    yield chunk.slice(pos, end);
+    pos = end;
+  }
+};
+
+const readBytes = async function* (iterable, chunkSize) {
+  for await (const chunk of readStream(iterable)) {
+    yield* streamChunk(chunk, chunkSize);
+  }
+};
+
+const readStream = async function* (stream) {
+  if (stream[Symbol.asyncIterator]) {
+    yield* stream;
+    return;
+  }
+
+  const reader = stream.getReader();
+  try {
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) {
+        break;
+      }
+      yield value;
+    }
+  } finally {
+    await reader.cancel();
+  }
+};
+
+const trackStream = (stream, chunkSize, onProgress, onFinish) => {
+  const iterator = readBytes(stream, chunkSize);
+
+  let bytes = 0;
+  let done;
+  let _onFinish = (e) => {
+    if (!done) {
+      done = true;
+      onFinish && onFinish(e);
+    }
+  };
+
+  return new ReadableStream(
+    {
+      async pull(controller) {
+        try {
+          const { done, value } = await iterator.next();
+
+          if (done) {
+            _onFinish();
+            controller.close();
+            return;
+          }
+
+          let len = value.byteLength;
+          if (onProgress) {
+            let loadedBytes = (bytes += len);
+            onProgress(loadedBytes);
+          }
+          controller.enqueue(new Uint8Array(value));
+        } catch (err) {
+          _onFinish(err);
+          throw err;
+        }
+      },
+      cancel(reason) {
+        _onFinish(reason);
+        return iterator.return();
+      },
+    },
+    {
+      highWaterMark: 2,
+    }
+  );
+};
+
+const CRLF = '\r\n';
+const normalizeLines = (value) => String(value).replace(/\r\n|\r|\n/g, CRLF);
+const escapeName = (value) =>
+  String(value).replace(/[\r\n"]/g, (char) =>
+    char === '\r' ? '%0D' : char === '\n' ? '%0A' : '%22'
+  );
+
+// Count UTF-8 bytes without allocating an encoded copy of a field. FormData
+// string values normalize line endings; Blob/File contents remain unchanged.
+const stringBytes = (value, normalize) => {
+  let length = 0;
+  for (let i = 0; i < value.length; i++) {
+    const code = value.charCodeAt(i);
+    if (normalize && (code === 13 || code === 10)) {
+      if (code === 13 && value.charCodeAt(i + 1) === 10) i++;
+      length += 2;
+    } else if (code < 0x80) {
+      length++;
+    } else if (code < 0x800) {
+      length += 2;
+    } else if (
+      code >= 0xd800 &&
+      code <= 0xdbff &&
+      value.charCodeAt(i + 1) >= 0xdc00 &&
+      value.charCodeAt(i + 1) <= 0xdfff
+    ) {
+      length += 4;
+      i++;
+    } else {
+      length += 3;
+    }
+  }
+  return length;
+};
+
+// Describe serialization failures independently of any request library.
+class FormDataError extends TypeError {
+  constructor(message, reason) {
+    super(message);
+    this.name = 'FormDataError';
+    this.reason = reason;
+  }
+}
+
+// The caller supplies the boundary, Blob implementation, and limit error.
+function formDataToBlob(form, Blob, limit, limitError, boundary) {
+  if (!utils$1.isFunction(Blob)) {
+    throw new FormDataError('Blob is not supported', 'blob');
+  }
+
+  if (
+    !utils$1.isString(boundary) ||
+    !/^[A-Za-z0-9'()+_,./:=? -]{1,70}$/.test(boundary) ||
+    / $/.test(boundary)
+  ) {
+    throw new FormDataError('Invalid multipart boundary', 'boundary');
+  }
+  const footer = '--' + boundary + '--' + CRLF;
+  let length = footer.length;
+  const parts = [];
+  const checkLength = (extra) => {
+    if (length + extra > limit) throw limitError();
+  };
+  checkLength(0);
+
+  for (const [name, value] of form) {
+    const isString = utils$1.isString(value);
+    const valueLength = isString ? stringBytes(value, true) : value.size;
+    if (!Number.isFinite(valueLength) || valueLength < 0) {
+      throw new FormDataError('Unsupported FormData part size', 'part');
+    }
+    // Reject large values and names before building normalized header strings.
+    checkLength(
+      valueLength +
+        stringBytes(name, true) +
+        (!isString && value.name ? stringBytes(value.name, false) : 0) +
+        (!isString && value.type ? stringBytes(value.type, false) : 0)
+    );
+
+    let header =
+      '--' +
+      boundary +
+      CRLF +
+      'Content-Disposition: form-data; name="' +
+      escapeName(normalizeLines(name)) +
+      '"';
+    if (!isString) {
+      header +=
+        '; filename="' +
+        escapeName(utils$1.isString(value.name) ? value.name : 'blob') +
+        '"' +
+        CRLF +
+        'Content-Type: ' +
+        String(value.type || 'application/octet-stream').replace(/[\r\n]/g, '');
+    }
+    header += CRLF + CRLF;
+    const partLength = stringBytes(header, false) + valueLength + CRLF.length;
+    checkLength(partLength);
+    length += partLength;
+    parts.push({ header, value, isString });
+  }
+
+  // Native Blob composition retains existing Blob/File data. No file is read
+  // and no complete multipart ArrayBuffer is created to determine its length.
+  const blobParts = [];
+  for (const part of parts) {
+    blobParts.push(part.header, part.isString ? normalizeLines(part.value) : part.value, CRLF);
+  }
+  blobParts.push(footer);
+  return new Blob(blobParts, { type: 'multipart/form-data; boundary=' + boundary });
+}
+
+function createMultipartBody(form, Blob, limit, limitError, boundary) {
+  // Report missing Blob support before trying to select a random source.
+  if (!utils$1.isFunction(Blob)) {
+    throw new AxiosError('Blob is not supported', AxiosError.ERR_NOT_SUPPORT);
+  }
+
+  if (boundary === undefined) {
+    if (utils$1.isFunction(platform.generateString)) {
+      boundary = 'axios-' + platform.generateString(36, '0123456789abcdef');
+    } else {
+      const crypto = utils$1.global.crypto;
+      if (!crypto || !utils$1.isFunction(crypto.getRandomValues)) {
+        throw new AxiosError('Random byte generation is not supported', AxiosError.ERR_NOT_SUPPORT);
+      }
+      const random = new Uint8Array(18);
+      crypto.getRandomValues(random);
+      boundary =
+        'axios-' + Array.from(random, (value) => ('0' + value.toString(16)).slice(-2)).join('');
+    }
+  }
+
+  try {
+    return formDataToBlob(form, Blob, limit, limitError, boundary);
+  } catch (error) {
+    if (error instanceof FormDataError) {
+      const code =
+        error.reason === 'boundary' ? AxiosError.ERR_BAD_OPTION_VALUE : AxiosError.ERR_BAD_REQUEST;
+      throw new AxiosError(error.message, code);
+    }
+    throw error;
+  }
+}
+
+/**
+ * Estimate data: URL byte lengths *without* allocating large buffers.
+ * - Fetch percent-decodes a base64 body before decoding it.
+ * - Node's Buffer.from(body, 'base64') sizes its backing allocation from the
+ *   percent-decoded body, including ignored characters and content after padding.
+ * - Non-base64 data is percent-decoded and then encoded as UTF-8.
+ */
+const isHexDigit = (charCode) =>
+  (charCode >= 48 && charCode <= 57) ||
+  (charCode >= 65 && charCode <= 70) ||
+  (charCode >= 97 && charCode <= 102);
+
+const isPercentEncodedByte = (str, i, len) =>
+  i + 2 < len && isHexDigit(str.charCodeAt(i + 1)) && isHexDigit(str.charCodeAt(i + 2));
+
+const hexValue = (charCode) => (charCode <= 57 ? charCode - 48 : (charCode & 0xdf) - 55);
+
+const isBase64Char = (charCode) =>
+  (charCode >= 65 && charCode <= 90) || // A-Z
+  (charCode >= 97 && charCode <= 122) || // a-z
+  (charCode >= 48 && charCode <= 57) || // 0-9
+  charCode === 43 || // +
+  charCode === 47 || // /
+  charCode === 45 || // - (base64url)
+  charCode === 95; // _ (base64url)
+
+const isBase64Whitespace = (charCode) =>
+  charCode === 9 || charCode === 10 || charCode === 12 || charCode === 13 || charCode === 32;
+
+const base64Bytes = (significant) => {
+  const groups = Math.floor(significant / 4);
+  const remainder = significant % 4;
+  return groups * 3 + (remainder === 2 ? 1 : remainder === 3 ? 2 : 0);
+};
+
+// Buffer.byteLength(body, 'base64') uses the raw string length as an allocation
+// upper bound even when Buffer.from later ignores characters or stops at '='.
+const estimateBase64BufferAllocation = (body) => {
+  const len = body.length;
+  let padding = 0;
+
+  if (len > 0 && body.charCodeAt(len - 1) === 61 /* '=' */) {
+    padding++;
+
+    if (len > 1 && body.charCodeAt(len - 2) === 61 /* '=' */) {
+      padding++;
+    }
+  }
+
+  return Math.floor(((len - padding) * 3) / 4);
+};
+
+const estimatePercentDecodedBase64Bytes = (body) => {
+  const len = body.length;
+  let significant = 0;
+  let padding = 0;
+  let invalid = false;
+
+  for (let i = 0; i < len; i++) {
+    let code = body.charCodeAt(i);
+
+    if (code === 37 /* '%' */ && isPercentEncodedByte(body, i, len)) {
+      code = hexValue(body.charCodeAt(i + 1)) * 16 + hexValue(body.charCodeAt(i + 2));
+      i += 2;
+    }
+
+    if (isBase64Whitespace(code)) {
+      continue;
+    }
+
+    if (code === 61 /* '=' */) {
+      padding++;
+      continue;
+    }
+
+    if (!isBase64Char(code) || padding > 0) {
+      invalid = true;
+      continue;
+    }
+
+    significant++;
+  }
+
+  // Fetch rejects malformed forgiving-base64 input. Returning the raw-size
+  // allocation bound keeps that invalid input from becoming a pre-check bypass.
+  if (
+    invalid ||
+    padding > 2 ||
+    (padding > 0 && (significant + padding) % 4 !== 0) ||
+    significant % 4 === 1
+  ) {
+    return estimateBase64BufferAllocation(body);
+  }
+
+  return base64Bytes(significant);
+};
+
+const estimateDataURLBytes = (url, estimateBase64, base64Pattern) => {
+  if (!url || typeof url !== 'string') return 0;
+  if (!/^data:/i.test(url)) return 0;
+
+  const comma = url.indexOf(',');
+  if (comma < 0) return 0;
+
+  const meta = url.slice(5, comma);
+  const body = url.slice(comma + 1);
+  const isBase64 = base64Pattern.test(meta);
+
+  if (isBase64) {
+    return estimateBase64(body);
+  }
+
+  // Compute UTF-8 byte length directly from UTF-16 code units without allocating
+  // a byte buffer (TextEncoder.encode would defeat the DoS guard on large bodies).
+  // Valid %XX triplets count as one decoded byte; this matches the bytes that
+  // decodeURIComponent(body) would produce before Buffer re-encodes the string.
+  let bytes = 0;
+  for (let i = 0, len = body.length; i < len; i++) {
+    const c = body.charCodeAt(i);
+    if (c === 37 /* '%' */ && isPercentEncodedByte(body, i, len)) {
+      bytes += 1;
+      i += 2;
+    } else if (c < 0x80) {
+      bytes += 1;
+    } else if (c < 0x800) {
+      bytes += 2;
+    } else if (c >= 0xd800 && c <= 0xdbff && i + 1 < len) {
+      const next = body.charCodeAt(i + 1);
+      if (next >= 0xdc00 && next <= 0xdfff) {
+        bytes += 4;
+        i++;
+      } else {
+        bytes += 3;
+      }
+    } else {
+      bytes += 3;
+    }
+  }
+  return bytes;
+};
+
+/**
+ * Estimate the percent-decoded payload size used by Fetch data: URLs.
+ *
+ * @param {string} url
+ * @returns {number}
+ */
+function estimateDataURLDecodedBytes(url) {
+  // Fetch removes URL fragments before processing a data: URL.
+  const fragmentIndex = typeof url === 'string' ? url.indexOf('#') : -1;
+
+  return estimateDataURLBytes(
+    fragmentIndex === -1 ? url : url.slice(0, fragmentIndex),
+    estimatePercentDecodedBase64Bytes,
+    /; *base64[\t\n\f\r ]*$/i
+  );
+}
+
+const VERSION = "1.21.0";
+
+const DEFAULT_CHUNK_SIZE = 64 * 1024;
+
+const DEFAULT_REQUEST_OPTIONS = {
+  cache: 'default',
+  redirect: 'follow',
+  referrer: 'about:client',
+  referrerPolicy: '',
+  mode: 'cors',
+  integrity: '',
+  keepalive: false,
+  priority: 'auto',
+  window: null,
+};
+
+const { isFunction } = utils$1;
+
+/**
+ * Encode a UTF-8 string to a Latin-1 byte string for use with btoa().
+ * This is a modern replacement for the deprecated unescape(encodeURIComponent(str)) pattern.
+ *
+ * @param {string} str The string to encode
+ *
+ * @returns {string} UTF-8 bytes as a Latin-1 string
+ */
+const encodeUTF8 = (str) =>
+  encodeURIComponent(str).replace(/%([0-9A-F]{2})/gi, (_, hex) =>
+    String.fromCharCode(parseInt(hex, 16))
+  );
+
+// Node's WHATWG URL parser returns `username` and `password` percent-encoded.
+// Decode before composing the `auth` option so credentials such as
+// `my%40email.com:pass` are sent as `my@email.com:pass`. Falls back to the
+// original value for malformed input so a bad encoding never throws.
+const decodeURIComponentSafe = (value) => {
+  if (!utils$1.isString(value)) {
+    return value;
+  }
+
+  try {
+    return decodeURIComponent(value);
+  } catch (error) {
+    return value;
+  }
+};
+
+const test = (fn, ...args) => {
+  try {
+    return !!fn(...args);
+  } catch (e) {
+    return false;
+  }
+};
+
+const maybeWithAuthCredentials = (url) => {
+  const protocolIndex = url.indexOf('://');
+  let urlToCheck = url;
+  if (protocolIndex !== -1) {
+    urlToCheck = urlToCheck.slice(protocolIndex + 3);
+  }
+  return urlToCheck.includes('@') || urlToCheck.includes(':');
+};
+
+const factory = (env) => {
+  const globalObject =
+    utils$1.global !== undefined && utils$1.global !== null ? utils$1.global : globalThis;
+  const { ReadableStream, TextEncoder } = globalObject;
+
+  env = utils$1.merge.call(
+    {
+      skipUndefined: true,
+    },
+    {
+      Request: globalObject.Request,
+      Response: globalObject.Response,
+      Blob: globalObject.Blob,
+    },
+    env
+  );
+
+  const envFetch = utils$1.hasOwnProp(env, 'fetch') ? env.fetch : undefined;
+  const { Request, Response, Blob } = env;
+  const isFetchSupported = envFetch ? isFunction(envFetch) : typeof fetch === 'function';
+  const isRequestSupported = isFunction(Request);
+  const isResponseSupported = isFunction(Response);
+
+  if (!isFetchSupported) {
+    return false;
+  }
+
+  const isReadableStreamSupported = isFetchSupported && isFunction(ReadableStream);
+
+  const encodeText =
+    isFetchSupported &&
+    (typeof TextEncoder === 'function'
+      ? (
+          (encoder) => (str) =>
+            encoder.encode(str)
+        )(new TextEncoder())
+      : async (str) => new Uint8Array(await new Request(str).arrayBuffer()));
+
+  const supportsRequestStream =
+    isRequestSupported &&
+    isReadableStreamSupported &&
+    test(() => {
+      let duplexAccessed = false;
+
+      const request = new Request(platform.origin, {
+        body: new ReadableStream(),
+        method: 'POST',
+        get duplex() {
+          duplexAccessed = true;
+          return 'half';
+        },
+      });
+
+      const hasContentType = request.headers.has('Content-Type');
+
+      if (request.body != null) {
+        request.body.cancel();
+      }
+
+      return duplexAccessed && !hasContentType;
+    });
+
+  const supportsResponseStream =
+    isResponseSupported &&
+    isReadableStreamSupported &&
+    test(() => utils$1.isReadableStream(new Response('').body));
+
+  // Some runtimes reject every explicit cache mode. Use own defaults for both
+  // probes so unrelated polluted options cannot affect cache-mode detection.
+  const requestDefaults = Object.assign(Object.create(null), DEFAULT_REQUEST_OPTIONS);
+
+  if (isRequestSupported && !test(() => new Request(platform.origin, requestDefaults))) {
+    delete requestDefaults.cache;
+
+    // Only omit cache when that makes Request construction succeed. Otherwise
+    // retain the explicit default that protects supporting runtimes from pollution.
+    if (!test(() => new Request(platform.origin, requestDefaults))) {
+      requestDefaults.cache = DEFAULT_REQUEST_OPTIONS.cache;
+    }
+  }
+
+  const resolvers = {
+    stream: supportsResponseStream && ((res) => res.body),
+  };
+
+  isFetchSupported &&
+    (() => {
+      ['text', 'arrayBuffer', 'blob', 'formData', 'stream'].forEach((type) => {
+        !resolvers[type] &&
+          (resolvers[type] = (res, config) => {
+            let method = res && res[type];
+
+            if (method) {
+              return method.call(res);
+            }
+
+            throw new AxiosError(
+              `Response type '${type}' is not supported`,
+              AxiosError.ERR_NOT_SUPPORT,
+              config
+            );
+          });
+      });
+    })();
+
+  const getBodyLength = async (body) => {
+    if (body == null) {
+      return 0;
+    }
+
+    if (utils$1.isBlob(body)) {
+      return body.size;
+    }
+
+    if (utils$1.isArrayBufferView(body) || utils$1.isArrayBuffer(body)) {
+      return body.byteLength;
+    }
+
+    if (utils$1.isURLSearchParams(body)) {
+      body = body + '';
+    }
+
+    if (utils$1.isString(body)) {
+      return (await encodeText(body)).byteLength;
+    }
+  };
+
+  const resolveBodyLength = async (headers, body) => {
+    const length = utils$1.toFiniteNumber(headers.getContentLength());
+
+    return length == null ? getBodyLength(body) : length;
+  };
+
+  return async (config) => {
+    let {
+      url,
+      method,
+      data,
+      signal,
+      cancelToken,
+      timeout,
+      onDownloadProgress,
+      onUploadProgress,
+      responseType,
+      headers,
+      withCredentials = 'same-origin',
+      fetchOptions,
+      maxContentLength,
+      maxBodyLength,
+      maxRedirects,
+    } = resolveConfig(config);
+
+    const hasMaxContentLength = utils$1.isNumber(maxContentLength) && maxContentLength > -1;
+    const hasMaxBodyLength = utils$1.isNumber(maxBodyLength) && maxBodyLength > -1;
+    const own = (key) => (utils$1.hasOwnProp(config, key) ? config[key] : undefined);
+
+    let _fetch = envFetch || fetch;
+
+    responseType = responseType ? (responseType + '').toLowerCase() : 'text';
+
+    let composedSignal = composeSignals(
+      [signal, cancelToken && cancelToken.toAbortSignal()],
+      timeout
+    );
+
+    let request = null;
+
+    const unsubscribe =
+      composedSignal &&
+      composedSignal.unsubscribe &&
+      (() => {
+        composedSignal.unsubscribe();
+      });
+
+    let requestContentLength;
+
+    // AxiosErrors we raise while request or response bodies are being streamed. Captured
+    // by identity so the catch block can surface it directly, regardless of
+    // how the runtime wraps the resulting fetch rejection (undici exposes it
+    // as `err.cause`; some browsers drop the original error entirely).
+    let pendingBodyError = null;
+    let pendingResponseError = null;
+
+    const maxBodyLengthError = () =>
+      new AxiosError(
+        'Request body larger than maxBodyLength limit',
+        AxiosError.ERR_BAD_REQUEST,
+        config,
+        request
+      );
+
+    try {
+      // HTTP basic authentication
+      let auth = undefined;
+      const configAuth = own('auth');
+
+      if (configAuth) {
+        const username = utils$1.getSafeProp(configAuth, 'username') || '';
+        const password = utils$1.getSafeProp(configAuth, 'password') || '';
+        auth = {
+          username,
+          password,
+        };
+      }
+
+      let parsedURL;
+      if (maybeWithAuthCredentials(url)) {
+        parsedURL = new URL(url, platform.origin);
+
+        if (!auth && (parsedURL.username || parsedURL.password)) {
+          const urlUsername = decodeURIComponentSafe(parsedURL.username);
+          const urlPassword = decodeURIComponentSafe(parsedURL.password);
+          auth = {
+            username: urlUsername,
+            password: urlPassword,
+          };
+        }
+
+        if (parsedURL.username || parsedURL.password) {
+          parsedURL.username = '';
+          parsedURL.password = '';
+          url = parsedURL.href;
+        }
+      }
+
+      if (auth) {
+        headers.delete('authorization');
+        headers.set(
+          'Authorization',
+          'Basic ' + btoa(encodeUTF8((auth.username || '') + ':' + (auth.password || '')))
+        );
+      }
+
+      // Enforce maxContentLength for data: URLs up-front so we never materialize
+      // an oversized payload. The HTTP adapter applies the same check (see http.js
+      // "if (protocol === 'data:')" branch).
+      if (hasMaxContentLength && parsedURL && parsedURL.protocol === 'data:') {
+        const estimated = estimateDataURLDecodedBytes(parsedURL.href);
+        if (estimated > maxContentLength) {
+          throw new AxiosError(
+            'maxContentLength size of ' + maxContentLength + ' exceeded',
+            AxiosError.ERR_BAD_RESPONSE,
+            config,
+            request
+          );
+        }
+      }
+
+      const formContentType =
+        utils$1.isSpecCompliantForm(data) && AxiosHeaders.from(own('headers')).getContentType();
+      let formBoundary;
+      if (
+        utils$1.isString(formContentType) &&
+        /^multipart\/form-data(?:\s*;|$)/i.test(formContentType.trim())
+      ) {
+        const parameters = AxiosHeaders.parseParameters(formContentType);
+        if (utils$1.hasOwnProp(parameters, 'boundary')) formBoundary = parameters.boundary;
+      }
+
+      if (
+        utils$1.isSpecCompliantForm(data) &&
+        method !== 'get' &&
+        method !== 'head' &&
+        (hasMaxBodyLength ||
+          (onUploadProgress && supportsRequestStream) ||
+          formBoundary !== undefined)
+      ) {
+        data = createMultipartBody(
+          data,
+          Blob,
+          hasMaxBodyLength ? maxBodyLength : Infinity,
+          maxBodyLengthError,
+          formBoundary
+        );
+        // Blob.type lowercases its value, including a case-sensitive boundary.
+        // Retain the caller's header when an explicit boundary was serialized.
+        headers.setContentType(formBoundary === undefined ? data.type : formContentType);
+        requestContentLength = data.size;
+      }
+
+      // Enforce maxBodyLength against known-size bodies before dispatch using
+      // the body's *actual* size — never a caller-declared Content-Length,
+      // which could under-report to slip an oversized body past the check.
+      // Unknown-size streams return undefined here and are counted per-chunk
+      // below as fetch consumes them.
+      if (hasMaxBodyLength && method !== 'get' && method !== 'head') {
+        const outboundLength = await getBodyLength(data);
+        if (typeof outboundLength === 'number' && isFinite(outboundLength)) {
+          requestContentLength = outboundLength;
+          if (outboundLength > maxBodyLength) {
+            throw maxBodyLengthError();
+          }
+        }
+      }
+
+      // A streamed body under maxBodyLength must be counted as fetch consumes
+      // it; its size is never trusted from a caller-declared Content-Length.
+      const mustEnforceStreamBody =
+        hasMaxBodyLength && (utils$1.isReadableStream(data) || utils$1.isStream(data));
+
+      const trackRequestStream = (stream, onProgress, flush) =>
+        trackStream(
+          stream,
+          DEFAULT_CHUNK_SIZE,
+          (loadedBytes) => {
+            if (hasMaxBodyLength && loadedBytes > maxBodyLength) {
+              throw (pendingBodyError = maxBodyLengthError());
+            }
+            onProgress && onProgress(loadedBytes);
+          },
+          flush
+        );
+
+      if (
+        supportsRequestStream &&
+        method !== 'get' &&
+        method !== 'head' &&
+        (onUploadProgress || mustEnforceStreamBody)
+      ) {
+        requestContentLength =
+          requestContentLength == null
+            ? await resolveBodyLength(headers, data)
+            : requestContentLength;
+
+        // A declared length of 0 is only trusted to skip the wrap when we are
+        // not enforcing a stream limit (which must not rely on that header).
+        if (requestContentLength !== 0 || mustEnforceStreamBody) {
+          let _request = new Request(url, {
+            method: 'POST',
+            body: data,
+            duplex: 'half',
+          });
+
+          let contentTypeHeader;
+
+          if (
+            utils$1.isFormData(data) &&
+            (contentTypeHeader = _request.headers.get('content-type'))
+          ) {
+            headers.setContentType(contentTypeHeader);
+          }
+
+          if (_request.body) {
+            const [onProgress, flush] =
+              (onUploadProgress &&
+                progressEventDecorator(
+                  requestContentLength,
+                  progressEventReducer(asyncDecorator(onUploadProgress))
+                )) ||
+              [];
+
+            data = trackRequestStream(_request.body, onProgress, flush);
+          }
+        }
+      } else if (
+        mustEnforceStreamBody &&
+        !isRequestSupported &&
+        isReadableStreamSupported &&
+        method !== 'get' &&
+        method !== 'head'
+      ) {
+        data = trackRequestStream(data);
+      } else if (
+        mustEnforceStreamBody &&
+        isRequestSupported &&
+        !supportsRequestStream &&
+        method !== 'get' &&
+        method !== 'head'
+      ) {
+        throw new AxiosError(
+          'Stream request bodies are not supported by the current fetch implementation',
+          AxiosError.ERR_NOT_SUPPORT,
+          config,
+          request
+        );
+      }
+
+      if (!utils$1.isString(withCredentials)) {
+        withCredentials = withCredentials ? 'include' : 'omit';
+      }
+
+      // Cloudflare Workers throws when credentials are defined
+      // see https://github.com/cloudflare/workerd/issues/902
+      const isCredentialsSupported = isRequestSupported && 'credentials' in Request.prototype;
+
+      // If data is FormData and Content-Type is multipart/form-data without boundary,
+      // delete it so fetch can set it correctly with the boundary
+      if (utils$1.isFormData(data)) {
+        const contentType = headers.getContentType();
+        if (
+          contentType &&
+          /^multipart\/form-data/i.test(contentType) &&
+          !/boundary=/i.test(contentType)
+        ) {
+          headers.delete('content-type');
+        }
+      }
+
+      // Set User-Agent header if not already set (fetch defaults to 'node' in Node.js)
+      headers.set('User-Agent', 'axios/' + VERSION, false);
+
+      const safeFetchOptions =
+        fetchOptions == null ? fetchOptions : Object.assign(Object.create(null), fetchOptions);
+
+      if (safeFetchOptions) {
+        // These options are owned by Axios and are already reflected in the
+        // resolved Request passed to fetch.
+        delete safeFetchOptions.body;
+        delete safeFetchOptions.headers;
+        delete safeFetchOptions.method;
+        delete safeFetchOptions.signal;
+        delete safeFetchOptions.duplex;
+        delete safeFetchOptions.credentials;
+      }
+
+      const resolvedOptions = Object.assign(Object.create(null), safeFetchOptions, {
+        signal: composedSignal,
+        method: method.toUpperCase(),
+        headers: toByteStringHeaderObject(headers.normalize()),
+        body: data,
+        duplex: 'half',
+        credentials: isCredentialsSupported ? withCredentials : undefined,
+      });
+
+      if (isRequestSupported) {
+        utils$1.forEach(requestDefaults, (value, key) => {
+          if (resolvedOptions[key] === undefined) {
+            resolvedOptions[key] = value;
+          }
+        });
+
+        if (resolvedOptions.signal === undefined) {
+          resolvedOptions.signal = null;
+        }
+
+        if (resolvedOptions.body === undefined) {
+          resolvedOptions.body = null;
+        }
+      }
+
+      if (maxRedirects === 0) {
+        resolvedOptions.redirect = 'manual';
+
+        if (safeFetchOptions) {
+          safeFetchOptions.redirect = 'manual';
+        }
+      }
+
+      request = isRequestSupported && new Request(url, resolvedOptions);
+
+      let response = await (isRequestSupported
+        ? _fetch(request, safeFetchOptions)
+        : _fetch(url, resolvedOptions));
+
+      const responseHeaders = AxiosHeaders.from(response.headers);
+
+      // Cheap pre-check: if the server honestly declares a content-length that
+      // already exceeds the cap, reject before we start streaming.
+      if (hasMaxContentLength) {
+        const declaredLength = utils$1.toFiniteNumber(responseHeaders.getContentLength());
+        if (declaredLength != null && declaredLength > maxContentLength) {
+          throw new AxiosError(
+            'maxContentLength size of ' + maxContentLength + ' exceeded',
+            AxiosError.ERR_BAD_RESPONSE,
+            config,
+            request
+          );
+        }
+      }
+
+      const isStreamResponse =
+        supportsResponseStream && (responseType === 'stream' || responseType === 'response');
+
+      if (
+        supportsResponseStream &&
+        response.body &&
+        (onDownloadProgress || hasMaxContentLength || (isStreamResponse && unsubscribe))
+      ) {
+        const options = {};
+
+        ['status', 'statusText', 'headers'].forEach((prop) => {
+          options[prop] = response[prop];
+        });
+
+        const responseContentLength = utils$1.toFiniteNumber(responseHeaders.getContentLength());
+
+        const [onProgress, flush] =
+          (onDownloadProgress &&
+            progressEventDecorator(
+              responseContentLength,
+              progressEventReducer(asyncDecorator(onDownloadProgress), true)
+            )) ||
+          [];
+
+        let bytesRead = 0;
+        const onChunkProgress = (loadedBytes) => {
+          if (hasMaxContentLength) {
+            bytesRead = loadedBytes;
+            if (bytesRead > maxContentLength) {
+              throw (pendingResponseError = new AxiosError(
+                'maxContentLength size of ' + maxContentLength + ' exceeded',
+                AxiosError.ERR_BAD_RESPONSE,
+                config,
+                request
+              ));
+            }
+          }
+          onProgress && onProgress(loadedBytes);
+        };
+
+        response = new Response(
+          trackStream(response.body, DEFAULT_CHUNK_SIZE, onChunkProgress, () => {
+            flush && flush();
+            unsubscribe && unsubscribe();
+          }),
+          options
+        );
+      }
+
+      responseType = responseType || 'text';
+
+      let responseData = await resolvers[utils$1.findKey(resolvers, responseType) || 'text'](
+        response,
+        config
+      );
+
+      // Fallback enforcement for environments without ReadableStream support
+      // (legacy runtimes). Detect materialized size from typed output; skip
+      // streams/Response passthrough since the user will read those themselves.
+      if (hasMaxContentLength && !supportsResponseStream && !isStreamResponse) {
+        let materializedSize;
+        if (responseData != null) {
+          if (typeof responseData.byteLength === 'number') {
+            materializedSize = responseData.byteLength;
+          } else if (typeof responseData.size === 'number') {
+            materializedSize = responseData.size;
+          } else if (typeof responseData === 'string') {
+            materializedSize =
+              typeof TextEncoder === 'function'
+                ? new TextEncoder().encode(responseData).byteLength
+                : responseData.length;
+          }
+        }
+        if (typeof materializedSize === 'number' && materializedSize > maxContentLength) {
+          throw new AxiosError(
+            'maxContentLength size of ' + maxContentLength + ' exceeded',
+            AxiosError.ERR_BAD_RESPONSE,
+            config,
+            request
+          );
+        }
+      }
+
+      !isStreamResponse && unsubscribe && unsubscribe();
+
+      return await new Promise((resolve, reject) => {
+        settle(resolve, reject, {
+          data: responseData,
+          headers: AxiosHeaders.from(response.headers),
+          status: response.status,
+          statusText: response.statusText,
+          config,
+          request,
+        });
+      });
+    } catch (err) {
+      unsubscribe && unsubscribe();
+
+      // Safari can surface fetch aborts as a DOMException-like object whose
+      // branded getters throw. Prefer our composed signal reason before reading
+      // the caught error, preserving timeout vs cancellation semantics.
+      if (composedSignal && composedSignal.aborted && composedSignal.reason instanceof AxiosError) {
+        const canceledError = composedSignal.reason;
+        canceledError.config = config;
+        request && (canceledError.request = request);
+        if (err !== canceledError) {
+          // Non-enumerable to match native Error `cause` semantics so loggers
+          // don't recurse into circular fetch internals (see #7205).
+          Object.defineProperty(canceledError, 'cause', {
+            __proto__: null,
+            value: err,
+            writable: true,
+            enumerable: false,
+            configurable: true,
+          });
+        }
+        throw canceledError;
+      }
+
+      // Surface a maxBodyLength violation we raised while the request body was
+      // being streamed. Keeping the original error (rather than reading
+      // `err.cause.isAxiosError`) keeps the error deterministic across runtimes
+      // and avoids both prototype-pollution reads and mis-attributing a foreign
+      // AxiosError that merely happened to land in `err.cause`.
+      if (pendingBodyError) {
+        request && !pendingBodyError.request && (pendingBodyError.request = request);
+        throw pendingBodyError;
+      }
+
+      if (pendingResponseError) {
+        throw pendingResponseError;
+      }
+
+      // Re-throw AxiosErrors we raised synchronously (data: URL / content-length
+      // pre-checks, response size enforcement) without re-wrapping them.
+      if (err instanceof AxiosError) {
+        request && !err.request && (err.request = request);
+        throw err;
+      }
+
+      if (err && err.name === 'TypeError' && /Load failed|fetch/i.test(err.message)) {
+        const networkError = new AxiosError(
+          'Network Error',
+          AxiosError.ERR_NETWORK,
+          config,
+          request,
+          err && err.response
+        );
+        // Non-enumerable to match native Error `cause` semantics so loggers
+        // don't recurse into circular fetch internals (see #7205).
+        Object.defineProperty(networkError, 'cause', {
+          __proto__: null,
+          value: err.cause || err,
+          writable: true,
+          enumerable: false,
+          configurable: true,
+        });
+        throw networkError;
+      }
+
+      throw AxiosError.from(err, err && err.code, config, request, err && err.response);
+    }
+  };
+};
+
+const seedCache = new Map();
+
+const getFetch = (config) => {
+  const env = Object.create(null);
+  const configuredEnv = config && utils$1.hasOwnProp(config, 'env') && config.env;
+  ['fetch', 'Request', 'Response', 'Blob'].forEach((key) => {
+    if (configuredEnv && utils$1.hasOwnProp(configuredEnv, key)) {
+      env[key] = configuredEnv[key];
+    }
+  });
+  const { fetch, Request, Response, Blob } = env;
+  const seeds = [Request, Response, fetch, Blob];
+
+  let len = seeds.length,
+    i = len,
+    seed,
+    target,
+    map = seedCache;
+
+  while (i--) {
+    seed = seeds[i];
+    target = map.get(seed);
+
+    target === undefined && map.set(seed, (target = i ? new Map() : factory(env)));
+
+    map = target;
+  }
+
+  return target;
+};
+
+getFetch();
+
+/**
+ * Known adapters mapping.
+ * Provides environment-specific adapters for Axios:
+ * - `http` for Node.js
+ * - `xhr` for browsers
+ * - `fetch` for fetch API-based requests
+ *
+ * @type {Object<string, Function|Object>}
+ */
+const knownAdapters = {
+  http: httpAdapter,
+  xhr: xhrAdapter,
+  fetch: {
+    get: getFetch,
+  },
+};
+
+// Assign adapter names for easier debugging and identification
+utils$1.forEach(knownAdapters, (fn, value) => {
+  if (fn) {
+    try {
+      // Null-proto descriptors so a polluted Object.prototype.get cannot turn
+      // these data descriptors into accessor descriptors on the way in.
+      Object.defineProperty(fn, 'name', { __proto__: null, value });
+    } catch (e) {
+      // eslint-disable-next-line no-empty
+    }
+    Object.defineProperty(fn, 'adapterName', { __proto__: null, value });
+  }
+});
+
+/**
+ * Render a rejection reason string for unknown or unsupported adapters
+ *
+ * @param {string} reason
+ * @returns {string}
+ */
+const renderReason = (reason) => `- ${reason}`;
+
+/**
+ * Check if the adapter is resolved (function, null, or false)
+ *
+ * @param {Function|null|false} adapter
+ * @returns {boolean}
+ */
+const isResolvedHandle = (adapter) =>
+  utils$1.isFunction(adapter) || adapter === null || adapter === false;
+
+/**
+ * Get the first suitable adapter from the provided list.
+ * Tries each adapter in order until a supported one is found.
+ * Throws an AxiosError if no adapter is suitable.
+ *
+ * @param {Array<string|Function>|string|Function} adapters - Adapter(s) by name or function.
+ * @param {Object} config - Axios request configuration
+ * @throws {AxiosError} If no suitable adapter is available
+ * @returns {Function} The resolved adapter function
+ */
+function getAdapter(adapters, config) {
+  adapters = utils$1.isArray(adapters) ? adapters : [adapters];
+
+  const { length } = adapters;
+  let nameOrAdapter;
+  let adapter;
+
+  const rejectedReasons = {};
+
+  for (let i = 0; i < length; i++) {
+    nameOrAdapter = adapters[i];
+    let id;
+
+    adapter = nameOrAdapter;
+
+    if (!isResolvedHandle(nameOrAdapter)) {
+      adapter = knownAdapters[(id = String(nameOrAdapter)).toLowerCase()];
+
+      if (adapter === undefined) {
+        throw new AxiosError(`Unknown adapter '${id}'`);
+      }
+    }
+
+    if (adapter && (utils$1.isFunction(adapter) || (adapter = adapter.get(config)))) {
+      break;
+    }
+
+    rejectedReasons[id || '#' + i] = adapter;
+  }
+
+  if (!adapter) {
+    const reasons = Object.entries(rejectedReasons).map(
+      ([id, state]) =>
+        `adapter ${id} ` +
+        (state === false ? 'is not supported by the environment' : 'is not available in the build')
+    );
+
+    let s = length
+      ? reasons.length > 1
+        ? 'since :\n' + reasons.map(renderReason).join('\n')
+        : ' ' + renderReason(reasons[0])
+      : 'as no adapter specified';
+
+    throw new AxiosError(
+      `There is no suitable adapter to dispatch the request ` + s,
+      AxiosError.ERR_NOT_SUPPORT
+    );
+  }
+
+  return adapter;
+}
+
+/**
+ * Exports Axios adapters and utility to resolve an adapter
+ */
+var adapters = {
+  /**
+   * Resolve an adapter from a list of adapter names or functions.
+   * @type {Function}
+   */
+  getAdapter,
+
+  /**
+   * Exposes all known adapters
+   * @type {Object<string, Function|Object>}
+   */
+  adapters: knownAdapters,
+};
+
+/**
+ * Throws a `CanceledError` if cancellation has been requested.
+ *
+ * @param {Object} config The config that is to be used for the request
+ *
+ * @returns {void}
+ */
+function throwIfCancellationRequested(config) {
+  if (config.cancelToken) {
+    config.cancelToken.throwIfRequested();
+  }
+
+  if (config.signal && config.signal.aborted) {
+    throw new CanceledError(null, config);
+  }
+}
+
+/**
+ * Milliseconds elapsed since `start`, floored at zero.
+ *
+ * Wall-clock, to match the rest of the codebase (speedometer, throttle,
+ * AxiosTransformStream). A backwards clock adjustment mid-request would
+ * otherwise produce a negative duration, so the result is clamped.
+ *
+ * @param {number} start Timestamp from `Date.now()`
+ *
+ * @returns {number} Non-negative elapsed milliseconds
+ */
+function elapsedSince(start) {
+  return Math.max(0, Date.now() - start);
+}
+
+/**
+ * Dispatch a request to the server using the configured adapter.
+ *
+ * @param {object} config The config that is to be used for the request
+ *
+ * @returns {Promise} The Promise to be fulfilled
+ */
+function dispatchRequest(_config) {
+  // Interceptors may replace the merged config with an ordinary object. Flatten
+  // it at the dispatch boundary so shared prototype members cannot become
+  // request behavior, while preserving intentional template/class members.
+  const config = utils$1.toSafeFlatObject(_config);
+
+  throwIfCancellationRequested(config);
+
+  config.headers = AxiosHeaders.from(utils$1.getSafeProp(config, 'headers'));
+
+  // Transform request data
+  config.data = transformData.call(config, config.transformRequest);
+
+  if (['post', 'put', 'patch'].indexOf(config.method) !== -1) {
+    config.headers.setContentType('application/x-www-form-urlencoded', false);
+  }
+
+  const adapter = adapters.getAdapter(config.adapter || defaults.adapter, config);
+
+  const start = Date.now();
+
+  return adapter(config).then(
+    function onAdapterResolution(response) {
+      throwIfCancellationRequested(config);
+
+      response.duration = elapsedSince(start);
+
+      // Expose the current response on config so that transformResponse can
+      // attach it to any AxiosError it throws (e.g. on JSON parse failure).
+      // We clean it up afterwards to avoid polluting the config object.
+      config.response = response;
+      try {
+        response.data = transformData.call(config, config.transformResponse, response);
+      } finally {
+        delete config.response;
+      }
+
+      response.headers = AxiosHeaders.from(response.headers);
+
+      return response;
+    },
+    function onAdapterRejection(reason) {
+      if (!isCancel(reason)) {
+        throwIfCancellationRequested(config);
+
+        // Transform response data
+        if (reason && reason.response) {
+          reason.response.duration = elapsedSince(start);
+          config.response = reason.response;
+          try {
+            reason.response.data = transformData.call(
+              config,
+              config.transformResponse,
+              reason.response
+            );
+          } finally {
+            delete config.response;
+          }
+          reason.response.headers = AxiosHeaders.from(reason.response.headers);
+        }
+      }
+
+      return Promise.reject(reason);
+    }
+  );
+}
+
+const validators$1 = {};
+
+// eslint-disable-next-line func-names
+['object', 'boolean', 'number', 'function', 'string', 'symbol'].forEach((type, i) => {
+  validators$1[type] = function validator(thing) {
+    return typeof thing === type || 'a' + (i < 1 ? 'n ' : ' ') + type;
+  };
+});
+
+const deprecatedWarnings = {};
+
+/**
+ * Transitional option validator
+ *
+ * @param {function|boolean?} validator - set to false if the transitional option has been removed
+ * @param {string?} version - deprecated version / removed since version
+ * @param {string?} message - some message with additional info
+ *
+ * @returns {function}
+ */
+validators$1.transitional = function transitional(validator, version, message) {
+  function formatMessage(opt, desc) {
+    return (
+      '[Axios v' +
+      VERSION +
+      "] Transitional option '" +
+      opt +
+      "'" +
+      desc +
+      (message ? '. ' + message : '')
+    );
+  }
+
+  // eslint-disable-next-line func-names
+  return (value, opt, opts) => {
+    if (validator === false) {
+      throw new AxiosError(
+        formatMessage(opt, ' has been removed' + (version ? ' in ' + version : '')),
+        AxiosError.ERR_DEPRECATED
+      );
+    }
+
+    if (version && !deprecatedWarnings[opt]) {
+      deprecatedWarnings[opt] = true;
+      // eslint-disable-next-line no-console
+      console.warn(
+        formatMessage(
+          opt,
+          ' has been deprecated since v' + version + ' and will be removed in the near future'
+        )
+      );
+    }
+
+    return validator ? validator(value, opt, opts) : true;
+  };
+};
+
+validators$1.spelling = function spelling(correctSpelling) {
+  return (value, opt) => {
+    // eslint-disable-next-line no-console
+    console.warn(`${opt} is likely a misspelling of ${correctSpelling}`);
+    return true;
+  };
+};
+
+/**
+ * Assert object's properties type
+ *
+ * @param {object} options
+ * @param {object} schema
+ * @param {boolean?} allowUnknown
+ *
+ * @returns {object}
+ */
+
+function assertOptions(options, schema, allowUnknown) {
+  if (typeof options !== 'object' || options === null) {
+    throw new AxiosError('options must be an object', AxiosError.ERR_BAD_OPTION_VALUE);
+  }
+  const keys = Object.keys(options);
+  let i = keys.length;
+  while (i-- > 0) {
+    const opt = keys[i];
+    // Use hasOwnProperty so a polluted Object.prototype.<opt> cannot supply
+    // a non-function validator and cause a TypeError.
+    const validator = Object.prototype.hasOwnProperty.call(schema, opt) ? schema[opt] : undefined;
+    if (validator) {
+      const value = options[opt];
+      const result = value === undefined || validator(value, opt, options);
+      if (result !== true) {
+        throw new AxiosError(
+          'option ' + opt + ' must be ' + result,
+          AxiosError.ERR_BAD_OPTION_VALUE
+        );
+      }
+      continue;
+    }
+    if (allowUnknown !== true) {
+      throw new AxiosError('Unknown option ' + opt, AxiosError.ERR_BAD_OPTION);
+    }
+  }
+}
+
+var validator = {
+  assertOptions,
+  validators: validators$1,
+};
+
+const validators = validator.validators;
+
+// Recognize header maps without consuming objects intended as literal values.
+// AxiosHeaders from other builds share a brand and header-container interface,
+// but not constructor identity. A tag and toJSON alone can describe a literal.
+const isHeadersBucket = (value) => {
+  if (value == null || utils$1.isPlainObject(value) || value instanceof AxiosHeaders) {
+    return true;
+  }
+
+  try {
+    return (
+      utils$1.isObject(value) &&
+      utils$1.getSafeProp(value, Symbol.toStringTag) === 'AxiosHeaders' &&
+      [
+        'toJSON',
+        'set',
+        'get',
+        'has',
+        'delete',
+        'clear',
+        'normalize',
+        'concat',
+        'toString',
+        Symbol.iterator,
+      ].every((method) => utils$1.isFunction(utils$1.getSafeProp(value, method)))
+    );
+  } catch (e) {
+    // A failed optional brand probe must not prevent literal header serialization.
+    return false;
+  }
+};
+
+/**
+ * Create a new instance of Axios
+ *
+ * @param {Object} instanceConfig The default config for the instance
+ *
+ * @return {Axios} A new instance of Axios
+ */
+class Axios {
+  constructor(instanceConfig) {
+    this.defaults = instanceConfig || {};
+    this.interceptors = {
+      request: new InterceptorManager(),
+      response: new InterceptorManager(),
+    };
+  }
+
+  /**
+   * Dispatch a request
+   *
+   * @param {String|Object} configOrUrl The config specific for this request (merged with this.defaults)
+   * @param {?Object} config
+   *
+   * @returns {Promise} The Promise to be fulfilled
+   */
+  async request(configOrUrl, config) {
+    try {
+      return await this._request(configOrUrl, config);
+    } catch (err) {
+      if (err instanceof Error) {
+        try {
+          let dummy = {};
+
+          Error.captureStackTrace ? Error.captureStackTrace(dummy) : (dummy = new Error());
+
+          const dummyStack = dummy.stack;
+          let stack = '';
+
+          // slice off the Error: ... line
+          if (typeof dummyStack === 'string') {
+            const firstNewlineIndex = dummyStack.indexOf('\n');
+
+            stack = firstNewlineIndex === -1 ? '' : dummyStack.slice(firstNewlineIndex + 1);
+          }
+
+          if (!err.stack) {
+            err.stack = stack;
+          } else if (stack) {
+            // Match a common suffix after the 2 top frames when available,
+            // otherwise compare the full reconstructed stack.
+            const firstNewlineIndex = stack.indexOf('\n');
+            const secondNewlineIndex =
+              firstNewlineIndex === -1 ? -1 : stack.indexOf('\n', firstNewlineIndex + 1);
+            const duplicateCheckSuffix =
+              secondNewlineIndex === -1 ? stack : stack.slice(secondNewlineIndex + 1);
+
+            // `AxiosError.from()` may have already inlined the wrapped error's
+            // stack under a `Caused by:` marker. Keep the reconstructed caller
+            // frames ahead of that marker so stack-only reporters do not read
+            // them as part of the low-level cause.
+            const currentStack = String(err.stack);
+            const causeIndex = getCauseStackIndex(err, currentStack);
+            const stackHead = causeIndex === -1 ? currentStack : currentStack.slice(0, causeIndex);
+            const causeSection = causeIndex === -1 ? '' : currentStack.slice(causeIndex);
+
+            if (!stackHead.endsWith(duplicateCheckSuffix)) {
+              err.stack = stackHead + '\n' + stack + causeSection;
+            }
+          }
+        } catch (e) {
+          // Ignore failures from custom stack hooks or un-writable stack properties.
+        }
+      }
+
+      throw err;
+    }
+  }
+
+  _request(configOrUrl, config) {
+    /*eslint no-param-reassign:0*/
+    // Allow for axios('example/url'[, config]) a la fetch API
+    if (typeof configOrUrl === 'string') {
+      config = config || {};
+      config.url = configOrUrl;
+    } else {
+      config = configOrUrl || {};
+    }
+
+    config = mergeConfig(this.defaults, config);
+
+    const { transitional, paramsSerializer, headers } = config;
+
+    if (transitional !== undefined) {
+      validator.assertOptions(
+        transitional,
+        {
+          silentJSONParsing: validators.transitional(validators.boolean),
+          forcedJSONParsing: validators.transitional(validators.boolean),
+          clarifyTimeoutError: validators.transitional(validators.boolean),
+          legacyInterceptorReqResOrdering: validators.transitional(validators.boolean),
+          advertiseZstdAcceptEncoding: validators.transitional(validators.boolean),
+          validateStatusUndefinedResolves: validators.transitional(validators.boolean),
+          encodeBasicAuthUsername: validators.transitional(validators.boolean),
+        },
+        false
+      );
+    }
+
+    if (paramsSerializer != null) {
+      if (utils$1.isFunction(paramsSerializer)) {
+        config.paramsSerializer = {
+          serialize: paramsSerializer,
+        };
+      } else {
+        validator.assertOptions(
+          paramsSerializer,
+          {
+            encode: validators.function,
+            serialize: validators.function,
+          },
+          true
+        );
+      }
+    }
+
+    // Set config.allowAbsoluteUrls
+    if (config.allowAbsoluteUrls !== undefined) ; else if (
+      utils$1.hasOwnProp(this.defaults, 'allowAbsoluteUrls') &&
+      this.defaults.allowAbsoluteUrls !== undefined
+    ) {
+      config.allowAbsoluteUrls = this.defaults.allowAbsoluteUrls;
+    } else {
+      config.allowAbsoluteUrls = true;
+    }
+
+    validator.assertOptions(
+      config,
+      {
+        baseUrl: validators.spelling('baseURL'),
+        withXsrfToken: validators.spelling('withXSRFToken'),
+      },
+      true
+    );
+
+    // Set config.method
+    config.method = (
+      utils$1.getSafeProp(config, 'method') ||
+      utils$1.getSafeProp(this.defaults, 'method') ||
+      'get'
+    ).toLowerCase();
+
+    // Flatten header defaults without consuming literal method-named headers.
+    const commonHeaders = utils$1.getSafeProp(headers, 'common');
+    const methodHeaders = utils$1.getSafeProp(headers, config.method);
+    const contextHeaders =
+      headers &&
+      utils$1.merge(
+        isHeadersBucket(commonHeaders) ? commonHeaders : undefined,
+        isHeadersBucket(methodHeaders) ? methodHeaders : undefined
+      );
+
+    headers &&
+      utils$1.forEach(methodList.concat('common'), (method) => {
+        if (isHeadersBucket(utils$1.getSafeProp(headers, method))) {
+          delete headers[method];
+        }
+      });
+
+    config.headers = AxiosHeaders.concat(contextHeaders, headers);
+
+    // filter out skipped interceptors
+    const requestInterceptorChain = [];
+    let synchronousRequestInterceptors = true;
+    this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
+      if (typeof interceptor.runWhen === 'function' && interceptor.runWhen(config) === false) {
+        return;
+      }
+
+      synchronousRequestInterceptors = synchronousRequestInterceptors && interceptor.synchronous;
+
+      const transitional = config.transitional || transitionalDefaults;
+      const legacyInterceptorReqResOrdering =
+        transitional && transitional.legacyInterceptorReqResOrdering;
+
+      if (legacyInterceptorReqResOrdering) {
+        requestInterceptorChain.unshift(interceptor.fulfilled, interceptor.rejected);
+      } else {
+        requestInterceptorChain.push(interceptor.fulfilled, interceptor.rejected);
+      }
+    });
+
+    const responseInterceptorChain = [];
+    this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
+      responseInterceptorChain.push(interceptor.fulfilled, interceptor.rejected);
+    });
+
+    let promise;
+    let i = 0;
+    let len;
+
+    if (!synchronousRequestInterceptors) {
+      const chain = [dispatchRequest.bind(this), undefined];
+      chain.unshift(...requestInterceptorChain);
+      chain.push(...responseInterceptorChain);
+      len = chain.length;
+
+      promise = Promise.resolve(config);
+
+      while (i < len) {
+        promise = promise.then(chain[i++], chain[i++]);
+      }
+
+      return promise;
+    }
+
+    len = requestInterceptorChain.length;
+
+    let newConfig = config;
+
+    while (i < len) {
+      const onFulfilled = requestInterceptorChain[i++];
+      const onRejected = requestInterceptorChain[i++];
+      try {
+        newConfig = onFulfilled ? onFulfilled(newConfig) : newConfig;
+      } catch (error) {
+        if (!onRejected) {
+          promise = Promise.reject(error);
+          break;
+        }
+
+        try {
+          const rejectedResult = onRejected.call(this, error);
+
+          if (utils$1.isThenable(rejectedResult)) {
+            promise = Promise.resolve(rejectedResult).then(() =>
+              dispatchRequest.call(this, newConfig)
+            );
+          }
+        } catch (rejectedError) {
+          promise = Promise.reject(rejectedError);
+        }
+
+        break;
+      }
+    }
+
+    if (!promise) {
+      try {
+        promise = dispatchRequest.call(this, newConfig);
+      } catch (error) {
+        promise = Promise.reject(error);
+      }
+    }
+
+    i = 0;
+    len = responseInterceptorChain.length;
+
+    while (i < len) {
+      promise = promise.then(responseInterceptorChain[i++], responseInterceptorChain[i++]);
+    }
+
+    return promise;
+  }
+
+  getUri(config) {
+    config = mergeConfig(this.defaults, config);
+    const fullPath = buildFullPath(config.baseURL, config.url, config.allowAbsoluteUrls, config);
+    return buildURL(fullPath, config.params, config.paramsSerializer);
+  }
+}
+
+// Provide aliases for supported request methods
+utils$1.forEach(['delete', 'get', 'head', 'options'], function forEachMethodNoData(method) {
+  /*eslint func-names:0*/
+  Axios.prototype[method] = async function (url, config) {
+    return this.request(
+      mergeConfig(config || {}, {
+        method,
+        url,
+        data: config && utils$1.hasOwnProp(config, 'data') ? config.data : undefined,
+      })
+    );
+  };
+});
+
+utils$1.forEach(['post', 'put', 'patch', 'query'], function forEachMethodWithData(method) {
+  function generateHTTPMethod(isForm) {
+    return async function httpMethod(url, data, config) {
+      return this.request(
+        mergeConfig(config || {}, {
+          method,
+          headers: isForm
+            ? {
+                'Content-Type': 'multipart/form-data',
+              }
+            : {},
+          url,
+          data,
+        })
+      );
+    };
+  }
+
+  Axios.prototype[method] = generateHTTPMethod();
+
+  // QUERY is a safe/idempotent read method; multipart form bodies don't fit
+  // its semantics, so no queryForm shorthand is generated.
+  if (method !== 'query') {
+    Axios.prototype[method + 'Form'] = generateHTTPMethod(true);
+  }
+});
+
+/**
+ * A `CancelToken` is an object that can be used to request cancellation of an operation.
+ *
+ * @param {Function} executor The executor function.
+ *
+ * @returns {CancelToken}
+ */
+class CancelToken {
+  constructor(executor) {
+    if (typeof executor !== 'function') {
+      throw new TypeError('executor must be a function.');
+    }
+
+    let resolvePromise;
+
+    this.promise = new Promise(function promiseExecutor(resolve) {
+      resolvePromise = resolve;
+    });
+
+    const token = this;
+
+    // eslint-disable-next-line func-names
+    this.promise.then((cancel) => {
+      if (!token._listeners) return;
+
+      let i = token._listeners.length;
+
+      while (i-- > 0) {
+        token._listeners[i](cancel);
+      }
+      token._listeners = null;
+    });
+
+    // eslint-disable-next-line func-names
+    this.promise.then = (onfulfilled) => {
+      let _resolve;
+      // eslint-disable-next-line func-names
+      const promise = new Promise((resolve) => {
+        token.subscribe(resolve);
+        _resolve = resolve;
+      }).then(onfulfilled);
+
+      promise.cancel = function reject() {
+        token.unsubscribe(_resolve);
+      };
+
+      return promise;
+    };
+
+    executor(function cancel(message, config, request) {
+      if (token.reason) {
+        // Cancellation has already been requested
+        return;
+      }
+
+      token.reason = new CanceledError(message, config, request);
+      resolvePromise(token.reason);
+    });
+  }
+
+  /**
+   * Throws a `CanceledError` if cancellation has been requested.
+   */
+  throwIfRequested() {
+    if (this.reason) {
+      throw this.reason;
+    }
+  }
+
+  /**
+   * Subscribe to the cancel signal
+   */
+
+  subscribe(listener) {
+    if (this.reason) {
+      listener(this.reason);
+      return;
+    }
+
+    if (this._listeners) {
+      this._listeners.push(listener);
+    } else {
+      this._listeners = [listener];
+    }
+  }
+
+  /**
+   * Unsubscribe from the cancel signal
+   */
+
+  unsubscribe(listener) {
+    if (!this._listeners) {
+      return;
+    }
+    const index = this._listeners.indexOf(listener);
+    if (index !== -1) {
+      this._listeners.splice(index, 1);
+    }
+  }
+
+  toAbortSignal() {
+    const controller = new AbortController();
+
+    const abort = (err) => {
+      controller.abort(err);
+    };
+
+    this.subscribe(abort);
+
+    controller.signal.unsubscribe = () => this.unsubscribe(abort);
+
+    return controller.signal;
+  }
+
+  /**
+   * Returns an object that contains a new `CancelToken` and a function that, when called,
+   * cancels the `CancelToken`.
+   */
+  static source() {
+    let cancel;
+    const token = new CancelToken(function executor(c) {
+      cancel = c;
+    });
+    return {
+      token,
+      cancel,
+    };
+  }
+}
+
+/**
+ * Syntactic sugar for invoking a function and expanding an array for arguments.
+ *
+ * Common use case would be to use `Function.prototype.apply`.
+ *
+ *  ```js
+ *  function f(x, y, z) {}
+ *  const args = [1, 2, 3];
+ *  f.apply(null, args);
+ *  ```
+ *
+ * With `spread` this example can be re-written.
+ *
+ *  ```js
+ *  spread(function(x, y, z) {})([1, 2, 3]);
+ *  ```
+ *
+ * @param {Function} callback
+ *
+ * @returns {Function}
+ */
+function spread(callback) {
+  return function wrap(arr) {
+    return callback.apply(null, arr);
+  };
+}
+
+/**
+ * Determines whether the payload is an error thrown by Axios
+ *
+ * @param {*} payload The value to test
+ *
+ * @returns {boolean} True if the payload is an error thrown by Axios, otherwise false
+ */
+function isAxiosError(payload) {
+  return utils$1.isObject(payload) && payload.isAxiosError === true;
+}
+
+const HttpStatusCode = {
+  Continue: 100,
+  SwitchingProtocols: 101,
+  Processing: 102,
+  EarlyHints: 103,
+  Ok: 200,
+  Created: 201,
+  Accepted: 202,
+  NonAuthoritativeInformation: 203,
+  NoContent: 204,
+  ResetContent: 205,
+  PartialContent: 206,
+  MultiStatus: 207,
+  AlreadyReported: 208,
+  ImUsed: 226,
+  MultipleChoices: 300,
+  MovedPermanently: 301,
+  Found: 302,
+  SeeOther: 303,
+  NotModified: 304,
+  UseProxy: 305,
+  Unused: 306,
+  TemporaryRedirect: 307,
+  PermanentRedirect: 308,
+  BadRequest: 400,
+  Unauthorized: 401,
+  PaymentRequired: 402,
+  Forbidden: 403,
+  NotFound: 404,
+  MethodNotAllowed: 405,
+  NotAcceptable: 406,
+  ProxyAuthenticationRequired: 407,
+  RequestTimeout: 408,
+  Conflict: 409,
+  Gone: 410,
+  LengthRequired: 411,
+  PreconditionFailed: 412,
+  /**
+   * @deprecated Use `ContentTooLarge` instead.
+   */
+  PayloadTooLarge: 413,
+  ContentTooLarge: 413,
+  UriTooLong: 414,
+  UnsupportedMediaType: 415,
+  RangeNotSatisfiable: 416,
+  ExpectationFailed: 417,
+  ImATeapot: 418,
+  MisdirectedRequest: 421,
+  /**
+   * @deprecated Use `UnprocessableContent` instead.
+   */
+  UnprocessableEntity: 422,
+  UnprocessableContent: 422,
+  Locked: 423,
+  FailedDependency: 424,
+  TooEarly: 425,
+  UpgradeRequired: 426,
+  PreconditionRequired: 428,
+  TooManyRequests: 429,
+  RequestHeaderFieldsTooLarge: 431,
+  UnavailableForLegalReasons: 451,
+  InternalServerError: 500,
+  NotImplemented: 501,
+  BadGateway: 502,
+  ServiceUnavailable: 503,
+  GatewayTimeout: 504,
+  HttpVersionNotSupported: 505,
+  VariantAlsoNegotiates: 506,
+  InsufficientStorage: 507,
+  LoopDetected: 508,
+  NotExtended: 510,
+  NetworkAuthenticationRequired: 511,
+  WebServerReturnsAnUnknownError: 520,
+  WebServerIsDown: 521,
+  ConnectionTimedOut: 522,
+  OriginIsUnreachable: 523,
+  TimeoutOccurred: 524,
+  SslHandshakeFailed: 525,
+  InvalidSslCertificate: 526,
+};
+
+Object.entries(HttpStatusCode).forEach(([key, value]) => {
+  if (HttpStatusCode[value] === undefined) {
+    HttpStatusCode[value] = key;
+  }
+});
+
+/**
+ * Create an instance of Axios
+ *
+ * @param {Object} defaultConfig The default config for the instance
+ *
+ * @returns {Axios} A new instance of Axios
+ */
+function createInstance(defaultConfig) {
+  const context = new Axios(defaultConfig);
+  const instance = bind(Axios.prototype.request, context);
+
+  // Copy axios.prototype to instance
+  utils$1.extend(instance, Axios.prototype, context, { allOwnKeys: true });
+
+  // Copy context to instance
+  utils$1.extend(instance, context, null, { allOwnKeys: true });
+
+  // Factory for creating new instances
+  instance.create = function create(instanceConfig) {
+    return createInstance(mergeConfig(defaultConfig, instanceConfig));
+  };
+
+  return instance;
+}
+
+// Create the default instance to be exported
+const axios = createInstance(defaults);
+
+// Expose Axios class to allow class inheritance
+axios.Axios = Axios;
+
+// Expose Cancel & CancelToken
+axios.CanceledError = CanceledError;
+axios.CancelToken = CancelToken;
+axios.isCancel = isCancel;
+axios.VERSION = VERSION;
+axios.toFormData = toFormData;
+
+// Expose AxiosError class
+axios.AxiosError = AxiosError;
+
+// alias for CanceledError for backward compatibility
+axios.Cancel = axios.CanceledError;
+
+// Expose all/spread
+axios.all = function all(promises) {
+  return Promise.all(promises);
+};
+
+axios.spread = spread;
+
+// Expose isAxiosError
+axios.isAxiosError = isAxiosError;
+
+// Expose mergeConfig
+axios.mergeConfig = mergeConfig;
+
+axios.AxiosHeaders = AxiosHeaders;
+
+axios.formToJSON = (thing) => formDataToJSON(utils$1.isHTMLForm(thing) ? new FormData(thing) : thing);
+
+axios.getAdapter = adapters.getAdapter;
+
+axios.HttpStatusCode = HttpStatusCode;
+
+axios.default = axios;
+
+module.exports = axios;
+
+
+/***/ },
+
+/***/ "./bundle.json"
+/*!*********************!*\
+  !*** ./bundle.json ***!
+  \*********************/
+(module) {
+
+"use strict";
+module.exports = /*#__PURE__*/JSON.parse('{"id":"2be8c41a-80e8-4d20-808c-c49797bb6b3f","author":"eutech","widgets":[],"uis":[],"sidebarLinks":[],"components":[{"id":"ebr","name":"Energy Bill Recording","description":"Upload water and energy bills and review the fields extracted from them","modes":["ui"],"isTemplate":false,"tags":["ebr","energy","water","bills"],"vendor":"","icon":"fas fa-file-invoice"}]}');
+
+/***/ },
+
+/***/ "./localization.json"
+/*!***************************!*\
+  !*** ./localization.json ***!
+  \***************************/
+(module) {
+
+"use strict";
+module.exports = /*#__PURE__*/JSON.parse('{"ebr.text.title":{"en":"Utility Bills"},"ebr.text.no-bills":{"en":"No bills uploaded yet. Use Upload Bill to add one."},"ebr.field.bill":{"en":"Bill"},"ebr.field.file-name":{"en":"File"},"ebr.field.status":{"en":"Status"},"ebr.field.uploaded-at":{"en":"Uploaded At"},"ebr.field.uploaded-by":{"en":"Uploaded By"},"ebr.field.id":{"en":"Upload ID"},"ebr.field.error":{"en":"Error"},"ebr.status.pending":{"en":"Pending"},"ebr.status.processing":{"en":"Processing"},"ebr.status.done":{"en":"Done"},"ebr.status.error":{"en":"Error"},"ebr.filter.all":{"en":"All"},"ebr.view.group":{"en":"Bills"},"ebr.view.all":{"en":"All Bills"},"ebr.view.pending":{"en":"Pending Bills"},"ebr.view.processing":{"en":"Processing Bills"},"ebr.view.done":{"en":"Completed Bills"},"ebr.view.error":{"en":"Failed Bills"},"ebr.action.upload-bill":{"en":"Upload Bill"},"ebr.action.upload":{"en":"Upload"},"ebr.action.cancel":{"en":"Cancel"},"ebr.action.download":{"en":"Download"},"ebr.action.edit":{"en":"Edit Fields"},"ebr.upload.title":{"en":"Upload Bill"},"ebr.upload.hint":{"en":"Upload a water or energy bill (PDF or image). Fields will be extracted automatically once the upload completes."},"ebr.upload.drop-label":{"en":"Drop a bill here or click to browse"},"ebr.details.tab-fields":{"en":"Extracted Fields"},"ebr.details.tab-upload":{"en":"Upload Info"},"ebr.details.extracted-fields":{"en":"Extracted Fields"},"ebr.details.uploaded-on":{"en":"Uploaded $date"},"ebr.details.extraction-pending":{"en":"Fields are still being extracted from this bill."},"ebr.details.extraction-failed":{"en":"Field extraction failed for this bill."},"ebr.details.no-fields":{"en":"No fields were extracted from this bill."},"ebr.form.edit-title":{"en":"Edit Extracted Fields"},"ebr.message.uploading":{"en":"Uploading $name…"},"ebr.message.uploaded":{"en":"$name uploaded. Extraction has started."},"ebr.message.upload-failed":{"en":"Failed to upload $name"},"ebr.message.load-failed":{"en":"Failed to load bills"},"ebr.message.load-details-failed":{"en":"Failed to load bill details"},"ebr.message.update-failed":{"en":"Failed to save the extracted fields"},"ebr.message.no-file":{"en":"The original file is not available for this bill"},"ebr.action.delete":{"en":"Delete"},"ebr.delete.title":{"en":"Delete Bill"},"ebr.delete.confirm":{"en":"Are you sure you want to delete $name? This cannot be undone."},"ebr.message.delete-failed":{"en":"Failed to delete the bill"}}');
+
+/***/ }
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	const __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		const cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		const module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		if (!(moduleId in __webpack_modules__)) {
+/******/ 			delete __webpack_module_cache__[moduleId];
+/******/ 			const e = new Error("Cannot find module '" + moduleId + "'");
+/******/ 			e.code = 'MODULE_NOT_FOUND';
+/******/ 			throw e;
+/******/ 		}
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = (module) => {
+/******/ 		const getter = module && module.__esModule ?
+/******/ 			() => (module['default']) :
+/******/ 			() => (module);
+/******/ 		__webpack_require__.d(getter, { a: getter });
+/******/ 		return getter;
+/******/ 	};
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	// define getter/value functions for harmony exports
+/******/ 	__webpack_require__.d = (exports, definition) => {
+/******/ 		for(var key in definition) {
+/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 			}
+/******/ 		}
+/******/ 	};
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	__webpack_require__.g = (function() {
+/******/ 		if (typeof globalThis === 'object') return globalThis;
+/******/ 		try {
+/******/ 			return this || new Function('return this')();
+/******/ 		} catch (e) {
+/******/ 			if (typeof window === 'object') return window;
+/******/ 		}
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop));
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = (exports) => {
+/******/ 		Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/ 	
+/******/ 	/* webpack/runtime/nonce */
+/******/ 	__webpack_require__.nc = undefined;
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	let __webpack_exports__ = __webpack_require__("./src/index.tsx");
+/******/ 	
+/******/ })()
+;
 //# sourceMappingURL=main.js.map

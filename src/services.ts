@@ -124,6 +124,14 @@ export const BillServices = {
         defaultValue: null,
     }),
 
+    delete: (id: string): ExecuteActionConfig => ({
+        type: 'action',
+        model: BillModel,
+        action: 'Delete',
+        parameters: { id },
+        options: {},
+    }),
+
     // TODO: not part of the agreed action list yet — needed to save edited extracted fields
     update: (id: string, fields: Record<string, any>): ExecuteActionConfig => ({
         type: 'action',

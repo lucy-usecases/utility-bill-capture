@@ -29,6 +29,7 @@ import { BillDetails, BillStatusChip } from '../../components/bill-details/BillD
 import { UploadBillDialog } from '../../forms/upload-bill/UploadBillDialog';
 import {
     BillCreatedEvent,
+    BillDeletedEvent,
     BillUpdatedEvent,
     buildListFilter,
     formatDateTime,
@@ -78,7 +79,7 @@ const BillsViewBase: FunctionComponent = () => {
     const instanceId = 'ebr_bills';
 
     useMultiEventSubscriber(instanceId, {
-        events: [BillCreatedEvent, BillUpdatedEvent],
+        events: [BillCreatedEvent, BillUpdatedEvent, BillDeletedEvent],
         sharedCallback: () => objectSearchRef.current?.refreshCurrentPage?.(),
     });
 

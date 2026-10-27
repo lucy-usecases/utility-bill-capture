@@ -127,5 +127,17 @@
     },
     "ebr.message.no-file": {
         "en": "The original file is not available for this bill"
+    },
+    "ebr.action.delete": {
+        "en": "Delete"
+    },
+    "ebr.delete.title": {
+        "en": "Delete Bill"
+    },
+    "ebr.delete.confirm": {
+        "en": "Are you sure you want to delete $name? This cannot be undone."
+    },
+    "ebr.message.delete-failed": {
+        "en": "Failed to delete the bill"
     }
 }

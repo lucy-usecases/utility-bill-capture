@@ -4,9 +4,11 @@ import { Bill, BillStatus, BillSystemFields } from './services';
 // ── Events ──
 export const BillCreatedEvent = 'EBR:BillCreated';
 export const BillUpdatedEvent = 'EBR:BillUpdated';
+export const BillDeletedEvent = 'EBR:BillDeleted';
 
 export const triggerBillCreatedEvent = (id: string) => eventDispatcher(generateUUID(), BillCreatedEvent, { id });
 export const triggerBillUpdatedEvent = (id: string) => eventDispatcher(generateUUID(), BillUpdatedEvent, { id });
+export const triggerBillDeletedEvent = (id: string) => eventDispatcher(generateUUID(), BillDeletedEvent, { id });
 
 // ── List query ──
 const escapeRegExp = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');

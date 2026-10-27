@@ -28,6 +28,7 @@ import {
     getStatusVariant,
     isInFlight,
     toFieldLabel,
+    triggerBillDeletedEvent,
     triggerBillUpdatedEvent,
 } from '../../utils';
 import './BillDetails.scss';
@@ -117,6 +118,28 @@ const BillDetailsBase: FunctionComponent<BillDetailsProps> = ({ billId, onClose 
         window.open(url, '_blank', 'noopener');
     }, []);
 
+    const deleteBill = useCallback(
+        async (item: Bill) => {
+            const confirmed = await alerts.confirm({
+                title: uxpContext.$L('ebr.delete.title'),
+                content: uxpContext.$L('ebr.delete.confirm', { name: getBillName(item) }),
+                confirmButtonTitle: uxpContext.$L('ebr.action.delete'),
+                cancelButtonTitle: uxpContext.$L('ebr.action.cancel'),
+            });
+            if (!confirmed) return;
+
+            const { error } = await executeConfig(uxpContext, BillServices.delete(item.id));
+            if (error) {
+                alerts.error(uxpContext.$L('ebr.message.delete-failed'));
+                return;
+            }
+
+            triggerBillDeletedEvent(item.id);
+            onClose?.();
+        },
+        [onClose]
+    );
+
     const toolbarItems = useCallback(
         (item: Bill) => ({
             left: [
@@ -132,10 +155,16 @@ const BillDetailsBase: FunctionComponent<BillDetailsProps> = ({ billId, onClose 
                     visible: () => item?.status === 'Done',
                     onClick: () => navigate(generateURL({ searchParams: { edit: '1' } })),
                 },
+                {
+                    icon: 'fal trash',
+                    label: uxpContext.$L('ebr.action.delete'),
+                    visible: () => hasValue(item?.id),
+                    onClick: () => deleteBill(item),
+                },
             ] as ToolbarItem[],
             right: [] as ToolbarItem[],
         }),
-        [download]
+        [download, deleteBill]
     );
 
     const renderExtractedFields = useCallback((item: Bill, loading?: boolean) => {
